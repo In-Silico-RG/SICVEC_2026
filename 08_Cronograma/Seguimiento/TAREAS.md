@@ -19,6 +19,13 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [ ] Cotización de imprenta: programa, badges, diplomas, carpetas, afiches → `05_Material_Difusion/Impresos/`
 - [ ] Señalética y montaje de zona de pósters y expo verde
 
+## 🟠 Participación en línea (modalidad híbrida) — decidido 14 sept
+- [ ] Definir número de cupos en línea y tarifa virtual (¿gratuita para redes internacionales?) — AC
+- [ ] Elegir y cotizar plataforma de transmisión (Zoom Webinar / YouTube Live / Teams institucional) y persona encargada de la transmisión — SV
+- [ ] Verificar ancho de banda y equipos de transmisión en el venue — SV
+- [ ] Añadir opción "virtual" al formulario de inscripción y a la guía de resúmenes (ponencias virtuales para autores internacionales) — MXD
+- [ ] Preparar invitación para las redes internacionales (UPV/ITQ, aliados en América Latina) — AC
+
 ## 🟠 Difusión e inscripción
 - [ ] Flyer / afiche oficial → `05_Material_Difusion/Flyers_Posters/`
 - [ ] Formulario de inscripción online (tarifas: pregrado COP 20.000, posgrado 30.000, profesionales 40.000) → `04_Inscripcion/Formularios/`

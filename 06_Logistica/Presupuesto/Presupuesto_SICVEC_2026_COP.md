@@ -33,6 +33,7 @@
 | 17 | Alojamiento conferencistas (3 noches) | 3 | 150 | 450 | 1.383.000 | | |
 | 18 | Transporte local (taxis, traslados) | 1 | 300 | 300 | 922.000 | | |
 | | **Subtotal Transporte Y Alojamiento** | | | **2.550** | **7.834.000** | | |
+| 19 | Plataforma de transmisión en línea (licencia webinar + técnico) | 1 | por cotizar | — | — | | NUEVO 14 sept: modalidad híbrida |
 | | *6. CONTINGENCIA (10 %)* | | | 972 | 2.986.000 | | original decía 1.073 |
 | | **PRESUPUESTO TOTAL** | | | **10.697** | **32.864.000** | | original decía 11.198 USD |
 
