@@ -1,0 +1,327 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[many, breakable]{tcolorbox}
+\usepackage{float}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=verdeosc, urlcolor=verdeosc}
+
+% ── Colores institucionales ───────────────────────────────────────────────────
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{verdeclaro}{RGB}{232,244,232}
+\definecolor{rojo}{RGB}{220,53,69}
+\definecolor{amarillo}{RGB}{255,193,7}
+\definecolor{verde}{RGB}{40,167,69}
+
+% ── Encabezados ───────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{verdemid}SICVEC 2026 -- Evaluación Científica}
+\fancyhead[R]{\small Revisión \#: \_\_\_\_\_\_\_\_\_\_\_}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ── Secciones ─────────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{white}}
+  {\fcolorbox{verdeosc}{verdeosc}{\thesection}}{0.7em}{}
+  [\vspace{-2pt}\color{verdeosc}\rule{\linewidth}{0.8pt}]
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{verdemid}}{\thesubsection}{0.6em}{}
+
+% ============================================================================
+\begin{document}
+% ============================================================================
+
+\thispagestyle{empty}
+
+\begin{center}
+{\Large\bfseries\color{verdeosc} FORMULARIO DE EVALUACIÓN CIENTÍFICA}\\
+{\normalsize\color{verdemid} SICVEC 2026 -- Peer Review}\\[0.5cm]
+\small (Double-Blind Review Process)\\[1.5cm]
+\end{center}
+
+% ============================================================================
+\section{Información del Resumen}
+% ============================================================================
+
+\noindent
+\textbf{Código de resumen:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Título:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Modalidad:} \hspace{0.5cm} $\square$ Ponencia Oral \hspace{1cm} $\square$ Poster \hspace{1cm} $\square$ Taller
+
+\noindent
+\textbf{Eje temático:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\vspace{0.8cm}
+
+% ============================================================================
+\section{Información del Revisor}
+% ============================================================================
+
+\noindent
+\textbf{Nombre del revisor:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Institución/Afiliación:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Área de especialidad:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Email:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Fecha de evaluación:} \_\_\_/\_\_\_/\_\_\_\_\_
+
+\vspace{1cm}
+
+% ============================================================================
+\section{Evaluación por Criterios}
+% ============================================================================
+
+\subsection*{Instrucciones}
+Califica cada criterio en una escala de 1 a 5, donde:
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item \textbf{1 = Insuficiente} -- No cumple el criterio; requiere cambios significativos
+  \item \textbf{2 = Deficiente} -- Cumple parcialmente; necesita mejoras importantes
+  \item \textbf{3 = Aceptable} -- Cumple adecuadamente; es publicable con cambios menores
+  \item \textbf{4 = Bueno} -- Cumple bien el criterio; pocas mejoras necesarias
+  \item \textbf{5 = Excelente} -- Cumple excepcionalemente; listo para publicación
+\end{itemize}
+
+\vspace{0.8cm}
+
+% CRITERIO 1: RELEVANCIA
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdeosc, boxrule=1.5pt, left=8pt, right=8pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{1. RELEVANCIA AL EVENTO (Peso: 25\%)}
+
+¿Qué tan pertinente es el trabajo a los objetivos y ejes temáticos de SICVEC 2026?
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{14cm}}
+\textbf{Puntuación:} \hspace{1cm}
+$\square$ 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5 \\[0.3cm]
+\textbf{Comentarios:} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\end{tabular}
+
+\end{tcolorbox}
+
+\vspace{0.6cm}
+
+% CRITERIO 2: ORIGINALIDAD
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdemid, boxrule=1.5pt, left=8pt, right=8pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{2. ORIGINALIDAD E INNOVACIÓN (Peso: 25\%)}
+
+¿Presenta el trabajo ideas/resultados nuevos en ciencia verde y economía circular?
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{14cm}}
+\textbf{Puntuación:} \hspace{1cm}
+$\square$ 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5 \\[0.3cm]
+\textbf{Comentarios:} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\end{tabular}
+
+\end{tcolorbox}
+
+\vspace{0.6cm}
+
+% CRITERIO 3: CALIDAD CIENTÍFICA
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdeosc, boxrule=1.5pt, left=8pt, right=8pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{3. CALIDAD CIENTÍFICA (Peso: 25\%)}
+
+¿Usa metodología rigurosa? ¿Son válidos y confiables los resultados?
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{14cm}}
+\textbf{Puntuación:} \hspace{1cm}
+$\square$ 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5 \\[0.3cm]
+\textbf{Comentarios:} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\end{tabular}
+
+\end{tcolorbox}
+
+\vspace{0.6cm}
+
+% CRITERIO 4: CLARIDAD
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdemid, boxrule=1.5pt, left=8pt, right=8pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{4. CLARIDAD Y REDACCIÓN (Peso: 15\%)}
+
+¿Es el resumen bien escrito y fácil de entender? ¿Está bien estructurado?
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{14cm}}
+\textbf{Puntuación:} \hspace{1cm}
+$\square$ 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5 \\[0.3cm]
+\textbf{Comentarios:} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\end{tabular}
+
+\end{tcolorbox}
+
+\vspace{0.6cm}
+
+% CRITERIO 5: IMPACTO
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdeosc, boxrule=1.5pt, left=8pt, right=8pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{5. IMPACTO POTENCIAL (Peso: 10\%)}
+
+¿Puede este trabajo contribuir a soluciones en sostenibilidad e innovación verde?
+
+\vspace{0.3cm}
+
+\noindent
+\begin{tabular}{p{14cm}}
+\textbf{Puntuación:} \hspace{1cm}
+$\square$ 1 \quad $\square$ 2 \quad $\square$ 3 \quad $\square$ 4 \quad $\square$ 5 \\[0.3cm]
+\textbf{Comentarios:} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\rule{14cm}{0.4pt} \\
+\end{tabular}
+
+\end{tcolorbox}
+
+\newpage
+
+% ============================================================================
+\section{Evaluación General}
+% ============================================================================
+
+\subsection*{Resumen Ejecutivo de la Evaluación}
+
+\noindent
+\textbf{Fortalezas principales del trabajo:}
+
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+
+\vspace{0.8cm}
+
+\noindent
+\textbf{Aspectos a mejorar o debilidades:}
+
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+
+\vspace{0.8cm}
+
+\noindent
+\textbf{Sugerencias específicas de mejora:}
+
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+\rule{16cm}{0.4pt}
+
+% ============================================================================
+\section{Decisión Final}
+% ============================================================================
+
+\subsection*{Recomendación del Revisor}
+
+\noindent
+Basándome en los criterios evaluados, mi recomendación es:
+
+\vspace{0.8cm}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{verde!30}
+$\square$ & \textbf{ACEPTADO} & Apropiado para presentación en SICVEC 2026 \\
+\hline
+\rowcolor{amarillo!30}
+$\square$ & \textbf{ACEPTADO CON CAMBIOS} & Se solicitan cambios menores \\
+\hline
+\rowcolor{rojo!30}
+$\square$ & \textbf{RECHAZADO} & No cumple estándares de calidad \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+
+\noindent
+\textbf{Puntuación Promedio Ponderado:}
+
+\vspace{0.3cm}
+
+\noindent
+$(1 \times 0.25) + (2 \times 0.25) + (3 \times 0.25) + (4 \times 0.15) + (5 \times 0.10) = $ \_\_\_\_\_/5
+
+\vspace{1cm}
+
+% ============================================================================
+\section{Confidencialidad y Ética}
+% ============================================================================
+
+\noindent
+Confirmo que:
+
+\begin{itemize}[label={\textcolor{verdeosc}{\checkmark}}]
+  \item Mantengo confidencialidad de la identidad de los autores (revisión ciega)
+  \item No tengo conflicto de interés con los autores
+  \item Mi evaluación es objetiva y se basa en criterios científicos
+  \item No compartiré esta evaluación con personas no autorizadas
+\end{itemize}
+
+\vspace{1.5cm}
+
+\noindent
+\textbf{Firma del Revisor:} \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+\noindent
+\textbf{Fecha:} \_\_\_/\_\_\_/\_\_\_\_\_
+
+\vspace{1cm}
+
+\noindent
+\textit{\small Envíar este formulario completado a: sicvec.academico@unisucre.edu.co}
+
+\end{document}

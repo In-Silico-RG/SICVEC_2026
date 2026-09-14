@@ -1,0 +1,19 @@
+seccion,concepto,cantidad,unit_usd,subtotal_usd,subtotal_cop
+"1. INFRAESTRUCTURA Y ESPACIO","Alquiler salón principal (2 días)",2,400,800,2457816
+"1. INFRAESTRUCTURA Y ESPACIO","Alquiler salas paralelas (4 espacios)",2,200,400,1228908
+"1. INFRAESTRUCTURA Y ESPACIO","Equipo audiovisual (proyectores, audio)",2,300,600,1843362
+"1. INFRAESTRUCTURA Y ESPACIO","Catering (desayuno, café, almuerzo, cena)",150,15,2250,6912608
+"2. RECURSOS HUMANOS","Coordinadores (honorarios 2 días)",2,200,400,1228908
+"2. RECURSOS HUMANOS","Personal logístico (4 personas, 2 días)",8,50,400,1228908
+"3. MATERIALES Y PUBLICACIONES","Impresión programa (150 copias)",150,1.5,225.0,691261
+"3. MATERIALES Y PUBLICACIONES","Badges y lanyards",150,2,300,921681
+"3. MATERIALES Y PUBLICACIONES","Diplomas/constancias (150)",150,2,300,921681
+"3. MATERIALES Y PUBLICACIONES","Carpetas y blocs",150,2,300,921681
+"3. MATERIALES Y PUBLICACIONES","Carteles y señalética",1,200,200,614454
+"4. DIFUSIÓN Y COMUNICACIONES","Diseño y producción de flyers",1,300,300,921681
+"4. DIFUSIÓN Y COMUNICACIONES","Afiches (impresos)",100,2,200,614454
+"4. DIFUSIÓN Y COMUNICACIONES","Diseño gráfico en redes sociales",1,400,400,1228908
+"4. DIFUSIÓN Y COMUNICACIONES","Boletín de prensa",1,100,100,307227
+"5. TRANSPORTE Y ALOJAMIENTO","Vuelos conferencistas internacionales",3,600,1800,5530086
+"5. TRANSPORTE Y ALOJAMIENTO","Alojamiento conferencistas (3 noches)",3,150,450,1382522
+"5. TRANSPORTE Y ALOJAMIENTO","Transporte local (taxis, traslados)",1,300,300,921681

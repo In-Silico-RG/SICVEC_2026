@@ -1,0 +1,354 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[many, breakable]{tcolorbox}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=verdeosc, urlcolor=verdeosc}
+
+% ── Colores institucionales ───────────────────────────────────────────────────
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{azulclaro}{RGB}{236,240,247}
+\definecolor{verdeclaro}{RGB}{232,244,232}
+\definecolor{grisclaro}{RGB}{248,248,248}
+
+% ── Encabezados ───────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{verdemid}SICVEC 2026}
+\fancyhead[R]{\small\color{verdemid}Guía de Presentación}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{verdeosc}\leaders\hrule height\headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{dorado}\leaders\hrule height\footrulewidth\hfill}}
+
+% ── Secciones ─────────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{white}}
+  {\fcolorbox{verdeosc}{verdeosc}{\thesection}}{0.7em}{}
+  [\vspace{-2pt}\color{verdeosc}\rule{\linewidth}{0.8pt}]
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{verdemid}}{\thesubsection}{0.6em}{}
+
+% ── Cajas ─────────────────────────────────────────────────────────────────────
+\tcbset{
+  cajainfo/.style={enhanced,breakable,colback=verdeclaro,colframe=verdeosc,
+    fonttitle=\bfseries\small\color{white},coltitle=white,
+    attach boxed title to top left={yshift=-2mm,xshift=4mm},
+    boxed title style={colback=verdeosc},left=6pt,right=6pt,top=10pt,bottom=6pt},
+  cajaalerta/.style={enhanced,breakable,colback=yellow!10,colframe=orange,
+    left=6pt,right=6pt,top=6pt,bottom=6pt,boxrule=0.8pt}
+}
+
+% ============================================================================
+\begin{document}
+% ============================================================================
+
+\thispagestyle{empty}
+
+\begin{center}
+{\Large\bfseries\color{verdeosc} SIMPOSIO INTERNACIONAL DE CIENCIA VERDE Y ECONOMÍA CIRCULAR}\\
+{\normalsize\color{verdemid} SICVEC 2026}\\[1cm]
+{\Large\bfseries Guía para la Presentación de Resúmenes}\\[0.3cm]
+{\normalsize 19 -- 20 de octubre de 2026}\\[1cm]
+\end{center}
+
+\section*{Información Importante}
+
+\begin{tcolorbox}[cajainfo, title=Fechas Clave]
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item \textbf{Apertura de convocatoria:} 01 de agosto de 2026
+  \item \textbf{Cierre de recepción de resúmenes:} 28 de septiembre de 2026
+  \item \textbf{Notificación de aceptación:} 6 de octubre de 2026
+  \item \textbf{Envío de material final (aceptados):} 14 de octubre de 2026
+  \item \textbf{Simposio:} 19 -- 20 de octubre de 2026
+\end{itemize}
+\end{tcolorbox}
+
+\newpage
+
+% ============================================================================
+\section{Modalidades de Presentación}
+% ============================================================================
+
+\subsection{1. Ponencia Oral (Oral Presentation)}
+
+Presentación de investigación original con duración de \textbf{20 minutos} (15 min presentación + 5 min preguntas).
+
+\textbf{Requisitos:}
+\begin{itemize}[label={\textcolor{verdeosc}{\checkmark}}]
+  \item Resumen máximo 300 palabras
+  \item Investigación completa con resultados conclusivos
+  \item Presentación en PowerPoint
+  \item Investigador debe estar disponible para el evento
+\end{itemize}
+
+\textbf{Idoneidad:}
+\begin{itemize}
+  \item Investigaciones finalizadas o en etapa avanzada
+  \item Resultados innovadores y pertinentes a SICVEC
+  \item Calidad de redacción y claridad conceptual
+\end{itemize}
+
+\subsection{2. Poster Científico (Scientific Poster)}
+
+Presentación visual de investigación en formato póster (90 cm alto × 120 cm ancho).
+
+\textbf{Requisitos:}
+\begin{itemize}[label={\textcolor{verdeosc}{\checkmark}}]
+  \item Resumen máximo 250 palabras
+  \item Investigación en curso o proyectos preliminares aceptados
+  \item Póster en formato digital (PDF o imagen de alta resolución)
+  \item Sesión de networking/posters: 16:00-17:30 (Día 1)
+\end{itemize}
+
+\textbf{Idoneidad:}
+\begin{itemize}
+  \item Proyectos en desarrollo
+  \item Resultados preliminares o parciales
+  \item Experiencias innovadoras en sostenibilidad
+  \item Propuestas de investigación futura
+\end{itemize}
+
+\subsection{3. Taller Práctico (Workshop)}
+
+Capacitación hands-on con duración de \textbf{90 minutos}.
+
+\textbf{Requisitos:}
+\begin{itemize}[label={\textcolor{verdeosc}{\checkmark}}]
+  \item Propuesta descriptiva (máximo 500 palabras)
+  \item Metodología y recursos requeridos
+  \item Capacidad máxima de participantes (recomendado: 25-40)
+  \item Facilitador con experiencia en el tema
+\end{itemize}
+
+\textbf{Idoneidad:}
+\begin{itemize}
+  \item Transmisión de habilidades prácticas
+  \item Análisis de casos (case studies)
+  \item Demostración de tecnologías verdes
+  \item Herramientas de innovación circular
+\end{itemize}
+
+% ============================================================================
+\section{Estructura de Resúmenes}
+% ============================================================================
+
+\subsection{Resumen para Ponencia Oral y Poster}
+
+Los resúmenes deben estructurarse con las siguientes secciones:
+
+\begin{tcolorbox}[cajainfo, title=Estructura estándar]
+\begin{enumerate}[label={\textcolor{verdemid}{\textbf{\arabic{*}.}}}]
+  \item \textbf{Introducción/Justificación} -- ¿Por qué es importante este tema?
+  \item \textbf{Objetivos} -- ¿Qué se pretende lograr?
+  \item \textbf{Metodología} -- ¿Cómo se desarrolló la investigación?
+  \item \textbf{Resultados/Hallazgos} -- ¿Qué se encontró?
+  \item \textbf{Conclusiones/Implicaciones} -- ¿Cuál es el impacto?
+\end{enumerate}
+\end{tcolorbox}
+
+\subsection{Parámetros de Formato}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Parámetro} & \textbf{Ponencia Oral} & \textbf{Poster} \\
+\hline
+Extensión & Máx. 300 palabras & Máx. 250 palabras \\
+\hline
+Idioma & Español o Inglés & Español o Inglés \\
+\hline
+Fuente & Times New Roman, 11pt & Times New Roman, 11pt \\
+\hline
+Espaciado & 1.5 líneas & 1.5 líneas \\
+\hline
+Márgenes & 2.5 cm & 2.5 cm \\
+\hline
+Referencias & Máx. 5 & Máx. 5 \\
+\hline
+Figuras/Tablas & Máx. 1 & Máx. 2 \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================================
+\section{Proceso de Inscripción y Envío}
+% ============================================================================
+
+\subsection{Paso 1: Registro de Participante}
+
+Ingresa a la plataforma de inscripción y completa:
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Nombre completo y afiliación
+  \item Email y teléfono de contacto
+  \item Programa académico o profesión
+  \item País de procedencia
+\end{itemize}
+
+\subsection{Paso 2: Seleccionar Modalidad}
+
+Elige entre:
+\begin{enumerate}[label={\textcolor{verdemid}{\arabic{*}.}}]
+  \item Ponencia oral
+  \item Poster científico
+  \item Taller práctico
+  \item Solo asistencia
+\end{enumerate}
+
+\subsection{Paso 3: Enviar Resumen}
+
+Completa el formulario online con:
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Título de la investigación
+  \item Autores (máx. 5)
+  \item Resumen estructurado
+  \item Palabras clave (3-5)
+  \item Eje temático principal
+  \item Archivo PDF del resumen
+\end{itemize}
+
+\subsection{Paso 4: Confirmación}
+
+Recibirás un email de confirmación con:
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item Número de referencia
+  \item Estado de envío
+  \item Próximos pasos
+\end{itemize}
+
+\begin{tcolorbox}[cajaalerta]
+\textbf{Importante:} Solo se aceptarán resúmenes enviados hasta las 23:59 del 28 de septiembre de 2026 (zona horaria Colombia). Envíos posteriores no serán considerados.
+\end{tcolorbox}
+
+% ============================================================================
+\section{Evaluación y Peer Review}
+% ============================================================================
+
+\subsection{Criterios de Evaluación}
+
+Todos los resúmenes serán evaluados por un comité científico especializado usando una \textbf{rúbrica de 5 criterios}:
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|p{8cm}|c|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Criterio} & \textbf{Descripción} & \textbf{Peso} \\
+\hline
+\textbf{Relevancia} & Pertinencia del tema a SICVEC 2026 & 25\% \\
+\hline
+\textbf{Originalidad} & Novedad y aportación a la ciencia verde & 25\% \\
+\hline
+\textbf{Calidad Científica} & Rigor metodológico y validez de resultados & 25\% \\
+\hline
+\textbf{Claridad} & Redacción clara y bien estructurada & 15\% \\
+\hline
+\textbf{Impacto Potencial} & Aplicabilidad e impacto en sostenibilidad & 10\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Proceso de Revisión}
+
+\begin{enumerate}[label={\textcolor{verdemid}{\textbf{Etapa \arabic{*}:}}}]
+  \item \textbf{Admisibilidad} (Coordinación Académica) -- Verificación de completitud y formato
+  \item \textbf{Asignación de Revisores} -- 2 revisores especialistas por resumen
+  \item \textbf{Evaluación de Pares} -- Revisión ciega (double-blind peer review)
+  \item \textbf{Recomendación Inicial} -- Revisores proponen aceptación/rechazo
+  \item \textbf{Decisión Final} -- Comité científico define resultado
+  \item \textbf{Notificación} -- Email con decisión y feedback
+\end{enumerate}
+
+\subsection{Categorías de Decisión}
+
+\begin{tcolorbox}[cajainfo, title=Posibles resultados]
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item \textbf{Aceptado:} Será incluido en el programa oficial
+  \item \textbf{Aceptado con modificaciones:} Se solicitan cambios menores
+  \item \textbf{Rechazado:} No cumple criterios de calidad/relevancia
+\end{itemize}
+\end{tcolorbox}
+
+% ============================================================================
+\section{Derechos de Autor y Memorias}
+% ============================================================================
+
+\subsection{Memorias del Evento}
+
+SICVEC 2026 compilará las memorias que incluirán:
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Resúmenes de todas las ponencias aceptadas
+  \item Posters en formato digital
+  \item Listado de participantes
+  \item Programa científico
+  \item Documentos de política pública generados
+\end{itemize}
+
+\subsection{Propiedad Intelectual}
+
+\begin{tcolorbox}[cajainfo, title=Derechos y responsabilidades]
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item Los autores retienen todos los derechos sobre sus trabajos
+  \item SICVEC 2026 puede reproducir resúmenes en memorias con citación apropiada
+  \item Se requiere consentimiento escrito para cambios posteriores
+  \item Los resúmenes no pueden ser duplicados en otros eventos simultáneos
+\end{itemize}
+\end{tcolorbox}
+
+\subsection{Publicación de Artículos Completos}
+
+Se está coordinando con editoriales para posibilidad de publicación de artículos completos en:
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item Revista indexada en sostenibilidad ambiental
+  \item Libro de memoria arbitrado
+  \item Foro en línea de SICVEC
+\end{itemize}
+
+% ============================================================================
+\section{Contacto y Soporte}
+% ============================================================================
+
+Para dudas sobre el proceso de envío de resúmenes:
+
+\begin{tcolorbox}[cajainfo, title=Contacto Académico]
+\textbf{Coordinadora Académica: María Ximena Díaz}
+
+Email: \texttt{sicvec.academico@unisucre.edu.co}
+
+Teléfono: [Completar]
+
+Horario de atención: Lunes a viernes, 8:00 -- 17:00 (Hora Colombia)
+\end{tcolorbox}
+
+\vspace{0.5cm}
+
+\textbf{Sitio web del evento:} [URL del sitio web - Completar]
+
+\textbf{Plataforma de inscripción:} [URL de la plataforma - Completar]
+
+\end{document}

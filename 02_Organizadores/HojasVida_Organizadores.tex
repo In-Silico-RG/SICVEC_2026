@@ -1,0 +1,243 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[many, breakable]{tcolorbox}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=verdeosc, urlcolor=verdeosc}
+
+% ── Colores institucionales ───────────────────────────────────────────────────
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{azulclaro}{RGB}{236,240,247}
+\definecolor{verdeclaro}{RGB}{232,244,232}
+\definecolor{grisclaro}{RGB}{248,248,248}
+
+% ── Encabezados ───────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{verdemid}SICVEC 2026}
+\fancyhead[R]{\small\color{verdemid}Hojas de Vida -- Organizadores}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{verdeosc}\leaders\hrule height\headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{dorado}\leaders\hrule height\footrulewidth\hfill}}
+
+% ── Secciones ─────────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{white}}
+  {\fcolorbox{verdeosc}{verdeosc}{\thesection}}{0.7em}{}
+  [\vspace{-2pt}\color{verdeosc}\rule{\linewidth}{0.8pt}]
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{verdemid}}{\thesubsection}{0.6em}{}
+
+% ── Cajas ─────────────────────────────────────────────────────────────────────
+\tcbset{
+  cajainfo/.style={enhanced,breakable,colback=verdeclaro,colframe=verdeosc,
+    fonttitle=\bfseries\small\color{white},coltitle=white,
+    attach boxed title to top left={yshift=-2mm,xshift=4mm},
+    boxed title style={colback=verdeosc},left=6pt,right=6pt,top=10pt,bottom=6pt}
+}
+
+% ============================================================================
+\begin{document}
+% ============================================================================
+
+\thispagestyle{empty}
+
+\begin{center}
+{\Large\bfseries\color{verdeosc} SIMPOSIO INTERNACIONAL DE CIENCIA VERDE Y ECONOMÍA CIRCULAR}\\
+{\normalsize\color{verdemid} SICVEC 2026}\\[0.5cm]
+{\normalsize\bfseries Hojas de Vida -- Organizadores Principales}\\[1cm]
+\end{center}
+
+\newpage
+\thispagestyle{fancy}
+
+% ============================================================================
+\section{Aldo F. Combariza}
+% ============================================================================
+
+\textbf{Rol:} Coordinador General del Evento
+
+\subsection{Información de Contacto}
+
+\begin{tabular}{ll}
+\textbf{Email:} & aldo.combariza@unisucre.edu.co \\
+\textbf{Teléfono:} & [Completar] \\
+\textbf{Institución:} & Universidad de Sucre \\
+\textbf{Programa:} & [Completar] \\
+\end{tabular}
+
+\subsection{Formación Académica}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item \textbf{Pregrado:} [Programa y año de graduación]
+  \item \textbf{Posgrado:} [Maestría/Doctorado, institución, año]
+  \item \textbf{Certificaciones:} [Completar si aplica]
+\end{itemize}
+
+\subsection{Experiencia Profesional}
+
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item [Posición / Institución / Años]
+  \item [Posición / Institución / Años]
+  \item [Experiencia relevante en organización de eventos]
+\end{itemize}
+
+\subsection{Áreas de Especialidad}
+
+\begin{tcolorbox}[cajainfo, title=Líneas de investigación/trabajo]
+[Completar: temas de investigación, especialidades, áreas de interés]
+\end{tcolorbox}
+
+\subsection{Publicaciones y Producción}
+
+\begin{enumerate}[label={\textcolor{verdeosc}{\arabic{*}.}}]
+  \item [Publicación/Producto - año]
+  \item [Publicación/Producto - año]
+  \item [Hasta 5 más relevantes]
+\end{enumerate}
+
+\subsection{Contribuciones a SICVEC 2026}
+
+[Describir rol específico, responsabilidades, contribuciones esperadas]
+
+\vspace{1.5cm}
+
+% ============================================================================
+\section{María Ximena Díaz}
+% ============================================================================
+
+\textbf{Rol:} Coordinadora Académica del Evento
+
+\subsection{Información de Contacto}
+
+\begin{tabular}{ll}
+\textbf{Email:} & [Completar] \\
+\textbf{Teléfono:} & [Completar] \\
+\textbf{Institución:} & Universidad de Sucre \\
+\textbf{Programa:} & [Completar] \\
+\end{tabular}
+
+\subsection{Formación Académica}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item \textbf{Pregrado:} [Programa y año de graduación]
+  \item \textbf{Posgrado:} [Maestría/Doctorado, institución, año]
+  \item \textbf{Certificaciones:} [Completar si aplica]
+\end{itemize}
+
+\subsection{Experiencia Profesional}
+
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item [Posición / Institución / Años]
+  \item [Posición / Institución / Años]
+  \item [Experiencia en evaluación científica, dirección académica]
+\end{itemize}
+
+\subsection{Áreas de Especialidad}
+
+\begin{tcolorbox}[cajainfo, title=Líneas de investigación/trabajo]
+[Completar: temas de investigación, especialidades, áreas de interés en ciencia verde]
+\end{tcolorbox}
+
+\subsection{Publicaciones y Producción}
+
+\begin{enumerate}[label={\textcolor{verdeosc}{\arabic{*}.}}]
+  \item [Publicación/Producto - año]
+  \item [Publicación/Producto - año]
+  \item [Hasta 5 más relevantes]
+\end{enumerate}
+
+\subsection{Contribuciones a SICVEC 2026}
+
+[Describir rol específico, selección de conferencistas, evaluación de trabajos, etc.]
+
+\vspace{1.5cm}
+
+% ============================================================================
+\section{Sebastián Vargas}
+% ============================================================================
+
+\textbf{Rol:} Coordinador Logístico del Evento
+
+\subsection{Información de Contacto}
+
+\begin{tabular}{ll}
+\textbf{Email:} & [Completar] \\
+\textbf{Teléfono:} & [Completar] \\
+\textbf{Institución:} & Universidad de Sucre \\
+\textbf{Departamento/Área:} & [Completar] \\
+\end{tabular}
+
+\subsection{Formación Académica}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item \textbf{Pregrado:} [Programa y año de graduación]
+  \item \textbf{Posgrado:} [Maestría/Doctorado, institución, año]
+  \item \textbf{Certificaciones:} [Completar si aplica]
+\end{itemize}
+
+\subsection{Experiencia Profesional}
+
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item [Posición / Institución / Años]
+  \item [Posición / Institución / Años]
+  \item [Experiencia en coordinación de eventos, logística, gestión administrativa]
+\end{itemize}
+
+\subsection{Experiencia en Organización de Eventos}
+
+\begin{tcolorbox}[cajainfo, title=Eventos coordinados previamente]
+[Completar: eventos/actividades académicas organizadas, roles desempeñados, logros]
+\end{tcolorbox}
+
+\subsection{Habilidades Relevantes}
+
+\begin{enumerate}[label={\textcolor{verdeosc}{\arabic{*}.}}]
+  \item Gestión presupuestaria y administrativa
+  \item Coordinación con proveedores y servicios
+  \item Manejo de registros y asistencia
+  \item [Otras habilidades relevantes]
+\end{enumerate}
+
+\subsection{Contribuciones a SICVEC 2026}
+
+[Describir responsabilidades: reserva de espacios, coordinación de servicios de catering, transporte, coordinación de personal logístico, gestión presupuestaria, etc.]
+
+% ============================================================================
+\newpage
+\section*{Notas para Completar}
+% ============================================================================
+
+Por favor, completa la información de cada organizador:
+
+\begin{tcolorbox}[cajainfo, title=Instrucciones]
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item Reemplaza los campos entre corchetes [Completar] con la información correspondiente
+  \item Incluye hasta 5 publicaciones/productos más relevantes
+  \item Especifica experiencias que demuestren capacidad para el rol asignado
+  \item Puedes agregar una foto profesional al inicio de cada sección
+  \item Respeta el formato y los colores institucionales
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}

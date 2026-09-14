@@ -1,0 +1,363 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[many, breakable]{tcolorbox}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\tcbset{
+  cajainfo/.style={enhanced,breakable,colback=verdeclaro,colframe=verdeosc,
+    fonttitle=\bfseries\small\color{white},coltitle=white,
+    attach boxed title to top left={yshift=-2mm,xshift=4mm},
+    boxed title style={colback=verdeosc},left=6pt,right=6pt,top=10pt,bottom=6pt}
+}
+
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{azulclaro}{RGB}{236,240,247}
+\definecolor{verdeclaro}{RGB}{232,244,232}
+\definecolor{verde}{RGB}{40,167,69}
+\definecolor{rojo}{RGB}{220,53,69}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{verdemid}SICVEC 2026}
+\fancyhead[R]{\small\color{verdemid}Manual de Memorias}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{white}}
+  {\fcolorbox{verdeosc}{verdeosc}{\thesection}}{0.7em}{}
+  [\vspace{-2pt}\color{verdeosc}\rule{\linewidth}{0.8pt}]
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{verdemid}}{\thesubsection}{0.6em}{}
+
+% ============================================================================
+\begin{document}
+% ============================================================================
+
+\thispagestyle{empty}
+
+\begin{center}
+{\Large\bfseries\color{verdeosc} SIMPOSIO INTERNACIONAL DE CIENCIA VERDE Y ECONOMÍA CIRCULAR}\\
+{\normalsize\color{verdemid} SICVEC 2026 -- 19 y 20 de octubre}\\[1.5cm]
+{\LARGE\bfseries MANUAL DE MEMORIAS Y PROCESO}\\
+{\large\color{verdemid} Recepción de Resúmenes -- Peer Review -- Publicación}\\
+\end{center}
+
+\vspace{2cm}
+
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdeosc, boxrule=2pt, left=15pt, right=15pt, top=15pt, bottom=15pt]
+
+\noindent\textbf{\Large Objetivo del Manual}
+
+Este documento orienta a investigadores, estudiantes y profesionales sobre cómo participar en SICVEC 2026 con sus trabajos científicos, presentando resúmenes que serán sometidos a evaluación de pares (peer review) con estándares internacionales de calidad.
+
+\vspace{0.5cm}
+
+\noindent\textbf{Documentos relacionados:}
+\begin{itemize}[label={\color{verdemid}\checkmark}]
+  \item Guía de Presentación de Resúmenes
+  \item Template de Resumen Científico (para descargar y completar)
+  \item Rúbrica de Evaluación (usado por revisores)
+\end{itemize}
+
+\end{tcolorbox}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ============================================================================
+\section{Visión General del Proceso}
+% ============================================================================
+
+El proceso de gestión de memorias de SICVEC 2026 sigue estándares internacionales de publicaciones científicas:
+
+\begin{tcolorbox}[enhanced, colback=white, colframe=verdeosc, boxrule=1.5pt]
+
+\textbf{Flujo del Proceso:}
+
+\begin{enumerate}[label={\textcolor{verdemid}{\textbf{Paso \arabic{*}}}}]
+  \item \textbf{Convocatoria Abierta} (1 de agosto) -- Investigadores son invitados a participar
+  \item \textbf{Envío de Resúmenes} (hasta 28 septiembre) -- Autores cargan sus resúmenes
+  \item \textbf{Admisibilidad y Asignación de Revisores} (28-29 septiembre) -- Verificación de formato y 2 especialistas por resumen
+  \item \textbf{Evaluación de Pares} (30 sept-4 oct) -- Revisores califican en línea
+  \item \textbf{Decisión Académica} (5 octubre) -- Comité científico decide
+  \item \textbf{Notificación} (6 octubre) -- Email con resultado y feedback
+  \item \textbf{Material Final} (hasta 14 octubre) -- Autores aceptados envían versión definitiva
+  \item \textbf{Publicación en Memorias} (20 octubre) -- Disponible durante el evento
+  \item \textbf{Archivamiento Digital} (post-evento) -- Acceso permanente en plataforma
+\end{enumerate}
+
+\end{tcolorbox}
+
+% ============================================================================
+\section{Cronograma Detallado}
+% ============================================================================
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Fecha} & \textbf{Actividad} & \textbf{Responsable} \\
+\hline
+1 de agosto & Apertura de convocatoria & María Ximena Díaz \\
+\hline
+1 ago - 28 sept & Período de envío abierto & Autores \\
+\hline
+28 de septiembre 23:59 & CIERRE de recepción & Sistema automático \\
+\hline
+28-29 septiembre & Revisión admisibilidad y asignación de revisores & Coord. Académica \\
+\hline
+30 sept - 4 oct & Evaluación de pares & Revisores (2 por trabajo) \\
+\hline
+5 de octubre & Análisis de evaluaciones y decisiones finales & Comité Científico / Coord. Académica \\
+\hline
+6 de octubre & Notificación a autores & Sistema de email \\
+\hline
+7-14 octubre & Envío de material final & Autores aceptados \\
+\hline
+19-20 octubre & SIMPOSIO & Todos \\
+\hline
+20 octubre & Publicación de memorias & Coord. General \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================================
+\section{Tipos de Trabajos Aceptados}
+% ============================================================================
+
+\subsection{1. Ponencia Oral (20 minutos)}
+
+Presentación de investigaciones completas con resultados concluyentes.
+
+\textbf{Resumen:} Máx. 300 palabras | \textbf{Público:} Investigadores avanzados, profesionales
+
+\subsection{2. Poster Científico (formato: 90×120 cm)}
+
+Proyectos en desarrollo, resultados preliminares, experiencias innovadoras.
+
+\textbf{Resumen:} Máx. 250 palabras | \textbf{Público:} Estudiantes, investigadores junior
+
+\subsection{3. Taller Práctico (90 minutos)}
+
+Capacitación hands-on, case studies, demostraciones tecnológicas.
+
+\textbf{Propuesta:} Máx. 500 palabras | \textbf{Capacidad:} 25-40 participantes
+
+% ============================================================================
+\section{Criterios de Evaluación Científica}
+% ============================================================================
+
+Todos los resúmenes son evaluados mediante rúbrica de 5 criterios con ponderación:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|r|l|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Criterio} & \textbf{Peso} & \textbf{¿Qué se evalúa?} \\
+\hline
+Relevancia & 25\% & Pertinencia a SICVEC, aporte a ciencia verde \\
+\hline
+Originalidad & 25\% & Ideas nuevas, innovación, estado del arte \\
+\hline
+Calidad Científica & 25\% & Rigor metodológico, validez de resultados \\
+\hline
+Claridad & 15\% & Redacción clara, estructura lógica \\
+\hline
+Impacto Potencial & 10\% & Aplicabilidad, contribución a sostenibilidad \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Escala de calificación:} 1 (Insuficiente) a 5 (Excelente)
+
+\textbf{Puntuación mínima para aceptación:} 3.5/5.0
+
+% ============================================================================
+\section{Sistema de Peer Review}
+% ============================================================================
+
+\subsection{Características del Proceso}
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item \textbf{Double-Blind:} Identidades de autores y revisores confidenciales
+  \item \textbf{Especializados:} Revisores son expertos en el tema
+  \item \textbf{Transparente:} Feedback constructivo para mejorar trabajos
+  \item \textbf{Justo:} Criterios iguales para todos los trabajos
+  \item \textbf{Oportuno:} Decisiones en menos de 2 meses
+\end{itemize}
+
+\subsection{Rol de los Revisores}
+
+Los revisores son investigadores y profesionales calificados que:
+
+\begin{enumerate}
+  \item Evalúan objetivamente usando rúbrica estandarizada
+  \item Proporcionan feedback constructivo (comentarios detallados)
+  \item Recomiendan aceptación, aceptación con cambios, o rechazo
+  \item Respetan confidencialidad (revisión ciega)
+  \item Declaran ausencia de conflicto de interés
+\end{enumerate}
+
+\subsection{Posibles Decisiones}
+
+\begin{tcolorbox}[enhanced, colback=green!10, colframe=verde, boxrule=1pt, left=10pt, right=10pt, top=8pt, bottom=8pt]
+\textbf{ACEPTADO} -- Trabajo cumple con estándares de calidad. Será incluido en programa oficial del simposio y memorias.
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced, colback=yellow!15, colframe=dorado, boxrule=1pt, left=10pt, right=10pt, top=8pt, bottom=8pt]
+\textbf{ACEPTADO CON CAMBIOS} -- Se solicitan cambios menores. Autores deben corregir antes de 10 nov. para inclusion en memorias.
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced, colback=red!10, colframe=rojo, boxrule=1pt, left=10pt, right=10pt, top=8pt, bottom=8pt]
+\textbf{RECHAZADO} -- Trabajo no cumple criterios de calidad/relevancia. Se proporciona feedback para futuras mejoras.
+\end{tcolorbox}
+
+% ============================================================================
+\section{Memorias Digitales}
+% ============================================================================
+
+Las memorias de SICVEC 2026 incluirán:
+
+\subsection{Contenidos}
+
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item Resúmenes de todas las ponencias aceptadas (formato estandarizado)
+  \item Posters científicos en PDF (de alta calidad)
+  \item Biografías de conferencistas internacionales
+  \item Programa científico detallado (cronograma, horarios, salas)
+  \item Listado completo de participantes
+  \item Índices temáticos (por eje, por institución, por autor)
+  \item Documentos de política pública generados
+\end{itemize}
+
+\subsection{Formato y Distribución}
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item \textbf{Formato primario:} PDF interactivo descargable
+  \item \textbf{Acceso:} Plataforma en línea de SICVEC (acceso permanente)
+  \item \textbf{ISBN:} Memorias tendrán número de depósito legal
+  \item \textbf{Citas:} Se puede citar como: ``Memorias de SICVEC 2026''
+  \item \textbf{Idioma:} Inglés y español (abstracts bilingües preferiblemente)
+\end{itemize}
+
+\subsection{Derechos de Autor}
+
+\begin{tcolorbox}[cajainfo, title=Propiedad Intelectual]
+\begin{itemize}
+  \item Los \textbf{autores retienen} todos los derechos sobre sus trabajos
+  \item SICVEC 2026 tiene derecho a reproducir resúmenes en memorias
+  \item Se requiere \textbf{consentimiento escrito} para usos posteriores
+  \item Los resúmenes \textbf{no pueden duplicarse} en otros eventos simultáneos
+  \item Citación apropiada debe indicar ``Memorias SICVEC 2026''
+\end{itemize}
+\end{tcolorbox}
+
+% ============================================================================
+\section{Oportunidades Post-Evento}
+% ============================================================================
+
+\subsection{Publicación en Revista Indexada}
+
+Se está coordinando con editores para publicar artículos completos en:
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item Revista indexada en Scopus/WoS de sostenibilidad
+  \item Fast-track para autores de SICVEC 2026
+  \item Descuento en cuotas de publicación
+\end{itemize}
+
+\subsection{Libro de Memorias Arbitrado}
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item Selección de 15-20 mejores resúmenes
+  \item Expansión a artículos completos (5,000-8,000 palabras)
+  \item ISBN y depósito legal
+  \item Distribución nacional e internacional
+\end{itemize}
+
+\subsection{Repositorio Digital Permanente}
+
+\begin{itemize}[label={\textcolor{verdemid}{\checkmark}}]
+  \item Acceso abierto a todos los resúmenes aceptados
+  \item Búsqueda por tema, autor, institución
+  \item DOI para cada trabajo (citabilidad)
+  \item Integración con Google Scholar y ResearchGate
+\end{itemize}
+
+% ============================================================================
+\section{Preguntas Frecuentes}
+% ============================================================================
+
+\begin{tcolorbox}[enhanced, colback=azulclaro, colframe=verdemid, boxrule=1.5pt, left=10pt, right=10pt, top=10pt, bottom=10pt]
+
+\noindent\textbf{P: ¿Cuál es el límite de palabras para un resumen?}\\
+\textbf{R:} 300 palabras para ponencias, 250 para posters (excluye referencias).
+
+\vspace{0.5cm}
+
+\noindent\textbf{P: ¿Puedo enviar mi resumen en otro idioma además de español?}\\
+\textbf{R:} Sí, aceptamos español e inglés. Preferiblemente con resumen bilingüe.
+
+\vspace{0.5cm}
+
+\noindent\textbf{P: ¿Quién puede revisar mi trabajo?}\\
+\textbf{R:} Especialistas calificados del comité científico (autores desconocen identidad).
+
+\vspace{0.5cm}
+
+\noindent\textbf{P: ¿Recibiré feedback si rechazan mi trabajo?}\\
+\textbf{R:} Sí, los revisores proporcionan comentarios constructivos para mejora.
+
+\vspace{0.5cm}
+
+\noindent\textbf{P: ¿Mis datos estarán confidenciales durante peer review?}\\
+\textbf{R:} Totalmente. Sistema double-blind protege privacidad de autores y revisores.
+
+\end{tcolorbox}
+
+% ============================================================================
+\section{Contacto y Soporte}
+% ============================================================================
+
+Para preguntas sobre el proceso de memorias y peer review:
+
+\vspace{0.8cm}
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Coordinadora Académica:} & María Ximena Díaz \\
+\textbf{Email:} & sicvec.academico@unisucre.edu.co \\
+\textbf{Teléfono:} & [Completar] \\
+\textbf{Horario:} & Lunes-viernes, 8:00-17:00 (Hora Colombia) \\
+\end{tabular}
+\end{center}
+
+\vspace{1cm}
+
+\textbf{Plataforma de inscripción:} [URL - Completar]
+
+\textbf{Sitio web del evento:} www.sicvec2026.unisucre.edu.co
+
+\end{document}

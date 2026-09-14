@@ -1,0 +1,718 @@
+\documentclass[12pt,a4paper]{article}
+
+% ── Paquetes ──────────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[many, breakable]{tcolorbox}
+\usepackage{float}
+\usepackage{graphicx}
+\graphicspath{{../Logos/}{./}}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usetikzlibrary{calc, positioning}
+
+\hypersetup{colorlinks=true, linkcolor=verdeosc, urlcolor=verdeosc}
+
+% ── Colores institucionales ───────────────────────────────────────────────────
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{verdelimpio}{RGB}{76,175,80}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{azulclaro}{RGB}{236,240,247}
+\definecolor{verdeclaro}{RGB}{232,244,232}
+\definecolor{alertbg}{RGB}{255,243,205}
+\definecolor{alertbrd}{RGB}{212,172,13}
+\definecolor{grisclaro}{RGB}{248,248,248}
+
+% ── Encabezados ───────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{verdemid}UNISUCRE -- Simposio Científico}
+\fancyhead[R]{\small\color{verdemid}SICVEC 2026}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{verdeosc}\leaders\hrule height\headrulewidth\hfill}}
+\renewcommand{\footrule}{\hbox to\headwidth{\color{dorado}\leaders\hrule height\footrulewidth\hfill}}
+
+% ── Secciones ─────────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{verdeosc}}
+  {\fcolorbox{verdeosc}{verdeosc}{\color{white}\thesection}}{0.7em}{}
+  [\vspace{-4pt}\color{verdeosc}\rule{\linewidth}{0.8pt}]
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\color{verdemid}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\color{verdelimpio}}{\thesubsubsection}{0.6em}{}
+
+% ── Cajas ─────────────────────────────────────────────────────────────────────
+\tcbset{
+  cajainfo/.style={enhanced,breakable,colback=verdeclaro,colframe=verdeosc,
+    fonttitle=\bfseries\small\color{white},coltitle=white,
+    attach boxed title to top left={yshift=-2mm,xshift=4mm},
+    boxed title style={colback=verdeosc},left=6pt,right=6pt,top=10pt,bottom=6pt},
+  cajaalerta/.style={enhanced,breakable,colback=alertbg,colframe=alertbrd,
+    left=6pt,right=6pt,top=6pt,bottom=6pt,boxrule=0.8pt},
+  cajadef/.style={enhanced,breakable,colback=white,colframe=verdeosc!80,
+    left=6pt,right=6pt,top=6pt,bottom=6pt,boxrule=0.8pt,
+    fonttitle=\bfseries\color{verdeosc},coltitle=verdeosc,
+    attach boxed title to top left={yshift=-3mm,xshift=5mm},
+    boxed title style={colback=white,colframe=white}}
+}
+
+% ── Comandos personalizados ───────────────────────────────────────────────────
+\newcommand{\campoID}[2]{\noindent\textbf{#1:}\;\underline{\hspace{#2}}}
+
+% ============================================================================
+\begin{document}
+% ============================================================================
+
+% ── PORTADA ───────────────────────────────────────────────────────────────────
+\thispagestyle{empty}
+
+\begin{center}
+\vspace*{0.5cm}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=north west] at (current page.north west) [xshift=2cm, yshift=-1.7cm]
+    {\includegraphics[width=3.3cm]{logo_unisucre.png}};
+  \node[anchor=north east] at (current page.north east) [xshift=-2cm, yshift=-1.0cm]
+    {\includegraphics[width=2.5cm]{Logo_Bio.png}};
+\end{tikzpicture}
+
+\vspace{3.5cm}
+
+{\Large\bfseries\color{verdeosc} UNIVERSIDAD DE SUCRE}\\[0.3cm]
+{\normalsize Programa de Biología -- Facultad de Educación y Ciencias}\\[0.3cm]
+{\normalsize Grupo de Investigación IN SILICO}\\[0.3cm]
+{\normalsize Maestría en Biología}\\[0.3cm]
+{\normalsize Sincelejo, Sucre, Colombia}
+
+\vspace{2cm}
+
+
+\vspace{3cm}
+
+\begin{tcolorbox}[enhanced, colback=verdeclaro, colframe=verdeosc, boxrule=2pt,
+  width=0.85\textwidth, left=15pt, right=15pt, top=15pt, bottom=15pt]
+  \centering
+  {\Huge\bfseries\color{verdeosc} SIMPOSIO INTERNACIONAL\\[0.3cm]
+  DE CIENCIA VERDE\\[0.3cm]
+  Y ECONOMÍA CIRCULAR}
+
+  \vspace{0.5cm}
+
+  {\Large\color{verdemid}\textit{Procesos Sostenibles para el Futuro}}
+
+  \vspace{0.3cm}
+
+  {\normalsize\bfseries\color{dorado} SICVEC 2026}
+\end{tcolorbox}
+
+\vspace{2.5cm}
+
+{\large\bfseries\color{verdeosc} PROPUESTA FORMAL}
+
+\vspace{0.8cm}
+
+{\normalsize Julio de 2026}
+
+\end{center}
+
+\newpage
+
+% ── ÍNDICE ────────────────────────────────────────────────────────────────────
+\tableofcontents
+\newpage
+
+% ============================================================================
+\section{Presentación}
+% ============================================================================
+
+El \textbf{Simposio Internacional de Ciencia Verde y Economía Circular (SICVEC 2026)} es una iniciativa de la Universidad de Sucre (Colombia), orientada a generar espacios de diálogo, investigación e innovación en torno a los desafíos globales de sostenibilidad ambiental, procesos circulares y tecnologías verdes.
+
+\begin{tcolorbox}[cajainfo, title=Visión Estratégica]
+Posicionarse como un evento académico de referencia en América Latina para el intercambio de conocimiento sobre ciencia verde, economía circular y procesos sostenibles en industrias alimentarias y biotecnología.
+\end{tcolorbox}
+
+Este evento surge de la necesidad urgente de:
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Fortalecer la investigación en sostenibilidad ambiental
+  \item Vincular academia, industria y sector público en torno a soluciones verdes
+  \item Promover transferencia tecnológica entre instituciones
+  \item Visibilizar avances en economía circular en la región
+  \item Formar capacidades en estudiantes y profesionales
+\end{itemize}
+
+% ============================================================================
+\section{Justificación}
+% ============================================================================
+
+\subsection{Contexto Global}
+
+La \textbf{crisis ambiental} es uno de los desafíos más apremiantes del siglo XXI. Según estudios internacionales:
+
+\begin{itemize}[label={\textcolor{verdelimpio}{\textbullet}}]
+  \item El 90\% de la contaminación industrial proviene de procesos lineales (extracción-producción-desecho)
+  \item La economía circular puede reducir emisiones de CO\textsubscript{2} en un 39\% para 2050
+  \item América Latina produce 542 millones de toneladas de residuos anuales, de los cuales solo el 5\% se recicla
+  \item La biotecnología sostenible representa el 12\% del mercado biotecnológico global, con crecimiento del 8\% anual
+\end{itemize}
+
+\subsection{Pertinencia Nacional y Regional}
+
+Colombia y la región de América Latina comparten:
+
+\begin{enumerate}[label={\textcolor{verdeosc}{\arabic{*}.}}]
+  \item Ecosistemas megadiversos amenazados
+  \item Industrias alimentarias con potencial de transición verde
+  \item Investigadores activos en biotecnología y sostenibilidad
+  \item Programas académicos en formación ambiental
+  \item Instituciones públicas comprometidas con ODS 2030
+\end{enumerate}
+
+\subsection{Antecedentes}
+
+El exitoso \textbf{I Simposio Internacional de Investigación en Ciencias Biológicas y Biotecnología (SIICByB 2026)} celebrado en abril de 2026, demostró:
+
+\begin{itemize}[label={\textcolor{verdelimpio}{\textbullet}}]
+  \item Capacidad de UNISUCRE en organización de eventos académicos de calidad
+  \item Interés académico por temas de sostenibilidad e investigación
+  \item Participación de más de 80 asistentes
+  \item Calidad de investigaciones presentadas
+\end{itemize}
+
+SICVEC 2026 constituye la \textbf{evolución temática natural} de estos esfuerzos.
+
+% ============================================================================
+\section{Alineación con Objetivos de Desarrollo Sostenible (ODS) 2030}
+% ============================================================================
+
+SICVEC 2026 se alinea directamente con la \textbf{Agenda 2030} de las Naciones Unidas y contribuye a varios Objetivos de Desarrollo Sostenible:
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{ODS} & \textbf{Contribución de SICVEC 2026} \\
+\hline
+\textbf{ODS 12} & \textbf{Producción y Consumo Responsables} -- Promoción de economía circular, \\
+Consumo Responsable & valorización de residuos, procesos más limpios en industrias \\
+\hline
+\textbf{ODS 13} & \textbf{Acción por el Clima} -- Investigación en tecnologías verdes, \\
+Acción Climática & reducción de emisiones de carbono, sostenibilidad ambiental \\
+\hline
+\textbf{ODS 15} & \textbf{Vida de Ecosistemas Terrestres} -- Protección de biodiversidad, \\
+Vida Terrestre & procesos agroindustriales sostenibles, transición verde \\
+\hline
+\textbf{ODS 17} & \textbf{Alianzas para lograr los Objetivos} -- Colaboración académica, \\
+Alianzas & transferencia de tecnología, networking entre instituciones \\
+\hline
+\end{tabular}
+\end{table}
+
+A través de estas contribuciones, SICVEC 2026 se posiciona como un evento que \textbf{impulsa el cambio transformacional} necesario para cumplir la Agenda 2030.
+
+% ============================================================================
+\section{Objetivos}
+% ============================================================================
+
+\subsection{Objetivo General}
+
+Crear un espacio de diálogo y producción de conocimiento sobre ciencia verde y economía circular que fortalezca capacidades de investigadores, estudiantes y profesionales en América Latina.
+
+\subsection{Objetivos Específicos}
+
+\begin{tcolorbox}[cajadef, title=OE1]
+Difundir investigaciones de vanguardia en procesos sostenibles, biotecnología verde y economía circular.
+\end{tcolorbox}
+
+\begin{tcolorbox}[cajadef, title=OE2]
+Facilitar networking entre académicos, empresarios e innovadores verdes de Colombia y la región de América Latina.
+\end{tcolorbox}
+
+\begin{tcolorbox}[cajadef, title=OE3]
+Identificar oportunidades de colaboración interinstitucional para proyectos de investigación aplicada.
+\end{tcolorbox}
+
+\begin{tcolorbox}[cajadef, title=OE4]
+Fomentar formación de capacidades en estudiantes de pregrado y posgrado en sostenibilidad e innovación verde.
+\end{tcolorbox}
+
+\begin{tcolorbox}[cajadef, title=OE5]
+Documentar estado del arte en ciencia verde en la región para futuros impactos de política pública.
+\end{tcolorbox}
+
+% ============================================================================
+\section{Ejes Temáticos}
+% ============================================================================
+
+El simposio se organiza en \textbf{seis ejes temáticos} que coberturan la integralidad de la ciencia verde, química sostenible y sostenibilidad:
+
+\subsection{Eje 1: Economía Circular y Procesos Lineales}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+Transición de modelos lineales a circulares, diseño para la circularidad, valorización de residuos, economía de cascada, simbiosis industrial, análisis de ciclo de vida.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Ingenieros, diseñadores, gestores ambientales, empresarios.
+
+\subsection{Eje 2: Química Verde y Procesos Sostenibles}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+Síntesis verde, solventes y reactivos sostenibles, biocatálisis y catálisis, procesos limpios, diseño molecular para minimizar residuos, química farmacéutica sostenible, transformaciones eficientes, reducción de toxicidad, tecnologías de síntesis avanzadas (flujo continuo, microondas, ultrasonido), valorización de biomasa.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Químicos, ingenieros químicos, especialistas en procesos, investigadores en síntesis, doctorandos en química sostenible.
+
+\subsection{Eje 3: Biotecnología Sostenible}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+Bioproductos, fermentación microbiana, enzimas verdes, biorrefinerías, bioplásticos, bioetanol, biofertilizantes, enzimas industriales de fuente biológica.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Biólogos, biotecnólogos, químicos, microebiólogos.
+
+\subsection{Eje 4: Tecnologías Verdes y Energías Renovables}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+Energías limpias, tratamiento de aguas, remediación ambiental, tecnologías de captura de CO\textsubscript{2}, fotosíntesis artificial, energía solar y eólica en industria alimentaria.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Ingenieros ambientales, físicos, especialistas en energía.
+
+\subsection{Eje 5: Sostenibilidad en Cadenas de Suministro}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+Certificaciones verdes, huella de carbono, producción más limpia, innovación en agroindustria, agricultura sostenible, trazabilidad, cadenas cortas.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Administradores, empresarios agroindustriales, gestores de cadena.
+
+\subsection{Eje 6: Política Pública y Gobernanza Ambiental}
+
+\begin{tcolorbox}[cajainfo, title=Tópicos principales]
+ODS 2030, marcos regulatorios para economía circular, incentivos verdes, responsabilidad social empresarial, educación ambiental, gobiernos locales verdes.
+\end{tcolorbox}
+
+\textbf{Público objetivo:} Tomadores de decisión, formuladores de política, gestores públicos.
+
+% ============================================================================
+\section{Estructura y Modalidades}
+% ============================================================================
+
+\subsection{Modalidades de Participación}
+
+El evento contempla múltiples formas de participación y presentación:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{8cm}|c|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Modalidad} & \textbf{Descripción} & \textbf{Duración} \\
+\hline
+Conferencia magistral & Expertos internacionales en temas clave & 45 min \\
+\hline
+Ponencia oral & Investigación original, resultados completos & 20 min \\
+\hline
+Poster científico & Proyectos en curso, resultados preliminares & Sesión \\
+\hline
+Taller práctico & Capacitación hands-on, case studies & 90 min \\
+\hline
+Panel de debate & Diálogo expertos sobre desafíos actuales & 60 min \\
+\hline
+Exposición empresarial & Innovadores, startups, soluciones verdes & 2 días \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Ubicación y Venue}
+
+\begin{tcolorbox}[cajainfo, title=Lugar del Evento]
+\textbf{Centro Comercial Guacarí}
+
+Sincelejo, Sucre, Colombia
+
+El Centro Comercial Guacarí cuenta con infraestructura moderna de salas de conferencias, espacios de networking, catering disponible y fácil acceso desde diferentes zonas de la ciudad.
+\end{tcolorbox}
+
+\subsection{Estructura Temporal Propuesta}
+
+\subsubsection{Formato: Dos días (lunes y martes)}
+
+\begin{tcolorbox}[cajadef, title=Día 1 - Lunes 19 de octubre]
+\small
+\begin{tabular}{ll}
+08:00-09:00 & Inauguración oficial + Conferencia magistral \\
+09:00-10:30 & Ponencias Eje 1: Economía Circular \\
+10:30-11:00 & Receso (café) \\
+11:00-12:30 & Ponencias Eje 2: Química Verde y Procesos Sostenibles \\
+12:30-14:00 & Almuerzo \\
+14:00-15:30 & Ponencias Eje 3: Biotecnología Sostenible \\
+15:30-17:00 & Taller práctico 1 / Panel de debate \\
+17:00-17:30 & Posters + Networking (Expo verde) \\
+\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[cajadef, title=Día 2 - Martes 20 de octubre]
+\small
+\begin{tabular}{ll}
+08:30-09:30 & Conferencia magistral 2 \\
+09:30-11:00 & Ponencias Eje 4: Tecnologías Verdes \\
+11:00-11:30 & Receso (café) \\
+11:30-13:00 & Ponencias Eje 5: Sostenibilidad Cadena \\
+13:00-14:30 & Almuerzo \\
+14:30-16:00 & Taller práctico 2 / Panel de debate 2 \\
+16:00-17:00 & Eje 6: Política Pública (mesa redonda) \\
+17:00-17:30 & Clausura + Reconocimientos + Networking final \\
+\end{tabular}
+\end{tcolorbox}
+
+% ============================================================================
+\section{Público Objetivo}
+% ============================================================================
+
+SICVEC 2026 está dirigido a:
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item \textbf{Investigadores} en ciencias ambientales, biología, ingeniería y química
+  \item \textbf{Estudiantes} de programas de pregrado (Biología, Ingeniería) y posgrado
+  \item \textbf{Profesionales} en industrias alimentarias, química y agricultura
+  \item \textbf{Emprendedores} con iniciativas de innovación verde
+  \item \textbf{Gestores ambientales} y consultores
+  \item \textbf{Tomadores de decisión} del sector público
+  \item \textbf{Organizaciones de la sociedad civil} relacionadas con sostenibilidad
+\end{itemize}
+
+\textbf{Público esperado:} 120-150 participantes
+
+\textbf{Distribución geográfica:} Colombia (70\%), Otros países de América Latina (20\%), Otros países (10\%)
+
+% ============================================================================
+\section{Aspectos Organizacionales}
+% ============================================================================
+
+\subsection{Institución Organizadora}
+
+\begin{tcolorbox}[cajainfo, title=Universidad de Sucre]
+\textbf{Programa de Biología}
+
+Facultad de Educación y Ciencias
+
+Grupo de Investigación IN SILICO
+
+Maestría en Biología
+
+Sincelejo, Sucre, Colombia
+\end{tcolorbox}
+
+\subsection{Estructura Organizativa}
+
+\subsubsection{Organizadores Principales}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{8cm}|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Nombre} & \textbf{Rol} \\
+\hline
+Aldo F. Combariza & Coordinador General - UNISUCRE \\
+\hline
+María Ximena Díaz & Coordinadora Académica - UNISUCRE \\
+\hline
+Sebastián Vargas & Coordinador Logístico - UNISUCRE \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Co-organización: Departamentos Participantes}
+
+El evento cuenta con la participación activa de los siguientes departamentos académicos:
+
+\begin{itemize}[label={\textcolor{verdelimpio}{\checkmark}}]
+  \item \textbf{Departamento de Biología y Química} - UNISUCRE
+  \item \textbf{Departamento de Ingeniería Agroindustrial} - UNISUCRE
+  \item \textbf{Departamento de Ingeniería Agrícola} - UNISUCRE
+\end{itemize}
+
+Estos departamentos contribuyen con:
+\begin{itemize}[label={\textcolor{verdemid}{\textbullet}}]
+  \item Infraestructura y espacios académicos
+  \item Recursos humanos para logística
+  \item Asesoría científica en ejes temáticos
+  \item Difusión en sus comunidades académicas
+  \item Vinculación de estudiantes y profesores
+\end{itemize}
+
+\subsubsection{Estructura de Comités}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|p{7cm}|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Comité} & \textbf{Funciones} \\
+\hline
+Coordinación General & Aldo F. Combariza (UNISUCRE) \\
+& Supervisión general del evento, relaciones institucionales \\
+\hline
+Coordinación Académica & María Ximena Díaz (UNISUCRE) \\
+& Selección de conferencistas, evaluación de resúmenes \\
+\hline
+Logística & Delegados Dpto. Biología y Química \\
+& Infraestructura, catering, transporte \\
+\hline
+Difusión & Delegados Dpto. Ingeniería Agroindustrial \\
+& Comunicaciones, redes sociales, prensa \\
+\hline
+Académico/Científico & Delegados Dpto. Ingeniería Agrícola \\
+& Asesoría en ejes temáticos, evaluación científica \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Comité Científico}
+
+Integrado por investigadores reconocidos de ambas instituciones y posibles colaboradores internacionales en ciencia verde y sostenibilidad.
+
+\subsection{Aliados Potenciales}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Ministerio de Ambiente (Colombia)
+  \item Instituciones de I+D en sostenibilidad
+  \item Empresas líderes en tecnología verde
+  \item Organizaciones ambientales internacionales
+  \item Fondos verdes y de cooperación bilateral
+\end{itemize}
+
+% ============================================================================
+\section{Cronograma de Ejecución}
+% ============================================================================
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{|l|p{6cm}|l|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Mes} & \textbf{Actividades} & \textbf{Responsable} \\
+\hline
+\textbf{Julio} & Conformación comités, definición final de línea & Coord. General \\
+& de conferencistas & \\
+\hline
+\textbf{Agosto} & Lanzamiento oficial, difusión en redes, & Resp. Difusión \\
+& invitación a expertos, abierta de propuestas & \\
+\hline
+\textbf{Septiembre} & Cierre recepción de resúmenes (día 28), & Coord. Académico \\
+& admisibilidad y asignación de revisores & \\
+\hline
+\textbf{Octubre 1-6} & Evaluación de pares (hasta día 4), decisión & Coord. Académico \\
+& académica y notificación de aceptaciones (día 6) & \\
+\hline
+\textbf{Octubre 7-16} & Material final de autores (día 14), confirmación & Coord. General \\
+& conferencistas, programa final, cierre de inscripción, logística & \\
+\hline
+\textbf{Octubre 19-20} & \textbf{SIMPOSIO INTERNACIONAL SICVEC 2026} & Todos \\
+\hline
+\textbf{Noviembre} & Sistematización resultados, generación & Coord. General \\
+& informe final, agradecimientos & \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================================
+\section{Presupuesto Estimado}
+% ============================================================================
+
+\subsection{Concepto de Gastos}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|r|r|r|}
+\hline
+\rowcolor{verdeclaro}
+\textbf{Concepto} & \textbf{Cantidad} & \textbf{V. Unit. USD} & \textbf{Subtotal USD} \\
+\hline
+\multicolumn{4}{|l|}{\textit{1. INFRAESTRUCTURA Y ESPACIO}} \\
+\hline
+Alquiler salón principal (2 días) & 2 & 400 & 800 \\
+Alquiler salas paralelas (4 espacios) & 2 & 200 & 400 \\
+Equipo audiovisual (proyectores, audio) & 2 & 300 & 600 \\
+Catering (desayuno, café, almuerzo, cena) & 150 & 15 & 2.250 \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Subtotal Infraestructura:}} & \textbf{4.050} \\
+\hline
+\multicolumn{4}{|l|}{\textit{2. RECURSOS HUMANOS}} \\
+\hline
+Coordinadores (honorarios 2 días) & 2 & 200 & 400 \\
+Personal logístico (4 personas, 2 días) & 8 & 50 & 400 \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Subtotal RRHH:}} & \textbf{800} \\
+\hline
+\multicolumn{4}{|l|}{\textit{3. MATERIALES Y PUBLICACIONES}} \\
+\hline
+Impresión programa (150 copias) & 150 & 1.5 & 225 \\
+Badges y lanyards & 150 & 2 & 300 \\
+Diplomas/constancias (150) & 150 & 2 & 300 \\
+Carpetas y blocs & 150 & 2 & 300 \\
+Carteles y señalética & -- & -- & 200 \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Subtotal Materiales:}} & \textbf{1.325} \\
+\hline
+\multicolumn{4}{|l|}{\textit{4. DIFUSIÓN Y COMUNICACIONES}} \\
+\hline
+Diseño y producción de flyers & 1 & 300 & 300 \\
+Afiches (impresos) & 100 & 2 & 200 \\
+Diseño gráfico en redes sociales & 1 & 400 & 400 \\
+Boletín de prensa & -- & -- & 100 \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Subtotal Difusión:}} & \textbf{1.000} \\
+\hline
+\multicolumn{4}{|l|}{\textit{5. TRANSPORTE Y ALOJAMIENTO}} \\
+\hline
+Vuelos conferencistas internacionales & 3 & 600 & 1.800 \\
+Alojamiento conferencistas (3 noches) & 3 & 150 & 450 \\
+Transporte local (taxis, traslados) & -- & -- & 300 \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Subtotal Transporte:}} & \textbf{2.550} \\
+\hline
+\multicolumn{4}{|l|}{\textit{6. CONTINGENCIA (10\%)}} \\
+\hline
+Imprevistos & -- & -- & 1.073 \\
+\hline
+\rowcolor{verdeclaro}
+\multicolumn{3}{|r|}{\textbf{PRESUPUESTO TOTAL}} & \textbf{\$11.198 USD} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Notas Presupuestarias}
+
+\begin{tcolorbox}[cajaalerta]
+\begin{itemize}[label={\textcolor{alertbrd}{\textbullet}}]
+  \item Presupuesto referencial en USD
+  \item Sujeto a ajustes según cotizaciones finales
+  \item Puede optimizarse con aportes de patrocinadores
+  \item Incluye márgenes de contingencia
+\end{itemize}
+\end{tcolorbox}
+
+% ============================================================================
+\section{Sostenibilidad del Evento}
+% ============================================================================
+
+\subsection{Modelo de Financiamiento}
+
+\begin{enumerate}[label={\textcolor{verdeosc}{\arabic{*}.}}]
+  \item \textbf{Instituciones anfitrionas:} Aportes en infraestructura y personal
+  \item \textbf{Patrocinios:} Empresas de tecnología verde, fondos ambientales
+  \item \textbf{Cuota de inscripción:} Estudiantes de pregrado (COP 20.000), Estudiantes de posgrado (COP 30.000), Profesionales (COP 40.000)
+  \item \textbf{Convenios:} Ministerios, OCDE, bancos de desarrollo
+\end{enumerate}
+
+\subsection{Prácticas Sostenibles}
+
+El evento SICVEC 2026 será \textbf{ecológicamente responsable}:
+
+\begin{itemize}[label={\textcolor{verdelimpio}{\textbullet}}]
+  \item Catering con productos locales y orgánicos
+  \item Minimalización de material impreso
+  \item Uso de energías renovables en infraestructura
+  \item Compensación de huella de carbono por transporte
+  \item Gestión integral de residuos (reciclaje, compostaje)
+  \item Transmisión en vivo y disponibilidad de videos post-evento
+\end{itemize}
+
+% ============================================================================
+\section{Impactos Esperados}
+% ============================================================================
+
+\subsection{Impactos Académicos}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Generación de 60+ resúmenes de investigación en sostenibilidad
+  \item Identificación de posibles colaboraciones para publicaciones conjuntas
+  \item Fortalecimiento de redes de investigadores en ciencia verde
+  \item Publicación de memorias del evento
+\end{itemize}
+
+\subsection{Impactos Formativos}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Capacitación de 120+ estudiantes en temas emergentes
+  \item Motivación de nuevas vocaciones en sostenibilidad
+  \item Transferencia de tecnologías verdes a profesionales
+\end{itemize}
+
+\subsection{Impactos de Política Pública}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Documento de recomendaciones para tomadores de decisión
+  \item Visibilización de estado del arte en economía circular regional
+  \item Contribución a metas ODS 2030 (ODT 12, 13, 15)
+\end{itemize}
+
+\subsection{Impactos de Innovación}
+
+\begin{itemize}[label={\textcolor{verdeosc}{\textbullet}}]
+  \item Identificación de oportunidades de emprendimiento verde
+  \item Conexión entre investigadores e innovadores
+  \item Catálogo de soluciones verdes disponibles en el mercado
+\end{itemize}
+
+% ============================================================================
+\section{Conclusiones}
+% ============================================================================
+
+El \textbf{Simposio Internacional de Ciencia Verde y Economía Circular 2026} representa una oportunidad estratégica para:
+
+\begin{tcolorbox}[cajainfo, title=Propuesta integral]
+Posicionar a UNISUCRE como institución líder en investigación sobre sostenibilidad ambiental en América Latina, generando sinergias que trasciendan lo académico hacia impactos reales en gobernanza ambiental e innovación verde.
+\end{tcolorbox}
+
+Este evento \textbf{consolida} la colaboración binacional iniciada en 2026, \textbf{amplía} el alcance hacia nuevas temáticas de relevancia global, y \textbf{proyecta} un modelo de evento académico sostenible, inclusivo y orientado a resultados concretos.
+
+\vspace{1cm}
+
+\textbf{Invitamos a instituciones, empresas y organizaciones aliadas a sumarse en la construcción de una ciencia verde para el futuro.}
+
+% ============================================================================
+\section*{Apéndices}
+% ============================================================================
+
+\subsection*{A. Referencias Legislativas y de Política}
+
+\begin{itemize}
+  \item ONU. (2015). Objetivos de Desarrollo Sostenible 2030
+  \item UNEP. (2023). Global Circular Economy Report
+  \item Banco Interamericano de Desarrollo. (2022). Financiamiento verde en Latinoamérica
+  \item Colombia, Ministerio de Ambiente. (2022). Estrategia Nacional de Economía Circular
+\end{itemize}
+
+\subsection*{B. Contactos de Coordinación}
+
+\textbf{UNISUCRE - Coordinación General}\\
+Grupo de Investigación IN SILICO\\
+Programa de Biología\\
+Sincelejo, Sucre, Colombia\\
+Email: \texttt{evento.sicvec@unisucre.edu.co}
+
+
+\end{document}
