@@ -132,6 +132,7 @@ SICVEC_2026/
 - Biología y Química
 - Ingeniería Agroindustrial
 - Ingeniería Agrícola
+- Física
 
 ---
 
