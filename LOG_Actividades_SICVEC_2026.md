@@ -158,18 +158,45 @@ f7c898f Estructura inicial SICVEC 2026
 
 ---
 
-## PRÓXIMOS PASOS (INMEDIATOS)
+## 16 DE SEPTIEMBRE 2026 (Tarde/Noche - Sesión Amplificada)
 
-1. **Hoy 16 sept:** Envío de invitaciones a jefes, conferencistas e instituciones
-2. **Mañana 16 sept:** Confirmación de participación (esperada)
-3. **17 sept 4 PM:** Reunión de coordinadores (AC, MXD, SV + jefes)
-4. **18 sept 9 AM:** Lanzamiento oficial de convocatoria
-5. **18 sept - 4 oct:** Período abierto de resúmenes
-6. **4 oct 23:59:** Cierre de recepción
-7. **9 oct 12:00 PM:** Notificación de aceptación
-8. **19-20 oct:** SICVEC 2026
+### Identidad Visual y Comunicaciones
+- ✅ **Logo SICVEC 2026 agregado** a encabezado de propuesta (4 logos: UNISUCRE | SICVEC | IN SILICO | Biología)
+- ✅ **Logo SICVEC en TODAS las cartas** (4 documentos: jefes, conferencista, alianzas internacionales, comité científico)
+- ✅ **Flyer profesional SICVEC 2026** creado (A5, colores institucionales, 4 logos, listo para imprenta/digital)
+- ✅ **Plantillas email departamentos** (email genérico + 4 personalizadas para cada dpto + anuncios rápidos)
+- ✅ **Formato cartas mejorado** (reducción espacios verticales, 2 páginas en lugar de 3)
+
+### Cronograma: ACTUALIZACIÓN CRÍTICA
+- ✅ **Nuevas fechas de peer review establecidas:**
+  - Convocatoria: 22 sept - **4 oct** (antes hasta 28 sept)
+  - Evaluación: **5-7 oct** (antes 30 sept - 4 oct)
+  - Notificación: **8-9 oct** (antes 6 oct)
+  - **NUEVO:** Límite pago inscripciones **15 oct**
+- ✅ **Cronograma_Definitivo.md** — 6 fases, fechas realistas
+- ✅ **Propuesta_SICVEC_2026.pdf** — Tabla cronograma actualizada
+- ✅ **Manual_Memorias_PeerReview.pdf** — Fechas para autores
+
+### Publicación y Sincronización
+- ✅ **10+ commits pusheados** a GitHub main
+- ✅ Repo completamente sincronizado (https://github.com/In-Silico-RG/SICVEC_2026)
 
 ---
 
-**Generado:** 16 de septiembre de 2026, 17:30 (Colombia UTC-5)  
-**Próxima revisión:** 17 de septiembre (después reunión coordinadores)
+## PRÓXIMOS PASOS (INMEDIATOS)
+
+1. **16-17 sept:** Envío invitaciones a jefes (plantillas email preparadas)
+2. **16-19 sept:** Confirmación participación departamentos (24-48h esperado)
+3. **18 sept 4 PM:** Reunión de coordinadores (AC, MXD, SV + jefes)
+4. **19-21 sept 6 AM:** Lanzamiento público convocatoria (3 días difusión)
+5. **22 sept - 4 oct:** Período abierto resúmenes
+6. **4 oct 23:59:** CIERRE recepción
+7. **5-7 oct:** Evaluación pares
+8. **8-9 oct:** ENVÍO aceptación/rechazo
+9. **15 oct:** LÍMITE PAGO inscripciones
+10. **19-20 oct:** SICVEC 2026
+
+---
+
+**Sesión actualizada:** 16 de septiembre de 2026, 16:50 UTC-5  
+**Próxima revisión:** 18 de septiembre (post-reunión coordinadores)
