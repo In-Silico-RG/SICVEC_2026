@@ -14,6 +14,21 @@
 \definecolor{verdeosc}{RGB}{26,107,60}
 \definecolor{verdemid}{RGB}{46,139,87}
 
+\usepackage{fancyhdr}
+\setlength{\headheight}{40pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccc@{}}
+    \includegraphics[height=1.0cm]{logo_unisucre.png} &
+    \includegraphics[height=1.0cm]{logo_sicvec2026.png} &
+    \includegraphics[height=1.0cm]{Logo_insilico.jpeg} &
+    \includegraphics[height=1.0cm]{Logo_Bio.png} \\
+  \end{tabular*}%
+}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{verdeosc}\leaders\hrule height\headrulewidth\hfill}}
+
 \title{\textbf{\color{verdeosc}Conformación del Comité Científico}\\[0.5cm]
 {\normalsize SICVEC 2026 — Simposio Internacional de Ciencia Verde y Economía Circular}}
 \author{Aldo F. Combariza — Coordinador General}
