@@ -4,49 +4,51 @@
 
 ---
 
-## FASE 1: INVITACIONES Y COORDINACIÓN (15-18 de septiembre)
+## FASE 1: INVITACIONES Y COORDINACIÓN (16-21 de septiembre)
 
 | Fecha | Hora | Actividad | Responsable |
 |---|---|---|---|
 | **16 sept** | Todo el día | Envío de invitaciones formales a jefes de departamento, conferencistas e instituciones internacionales | AC |
-| **15-16 sept** | Flexible | Confirmación de participación de departamentos (respuesta esperada) | Jefes / AC |
-| **17 sept** | 4:00 PM | **REUNIÓN DE COORDINADORES** (presencial en UNISUCRE o virtual) — definir roles finales, revisar propuesta, aclarar dudas | AC / MXD / SV + Jefes |
-| **18 sept** | 9:00 AM | **LANZAMIENTO PÚBLICO DE CONVOCATORIA** — emails, redes sociales, prensa, universidades aliadas | MXD / Difusión |
+| **16-19 sept** | Flexible | Confirmación de participación de departamentos (respuesta esperada dentro de 3-4 días) | Jefes / AC |
+| **20 sept** | 4:00 PM | **REUNIÓN DE COORDINADORES** (presencial en UNISUCRE o virtual) — definir roles finales, revisar propuesta, aclarar dudas, confirmar datos coordinadores | AC / MXD / SV + Jefes |
+| **21 sept** | 9:00 AM | **LANZAMIENTO PÚBLICO DE CONVOCATORIA** — emails, redes sociales, prensa, universidades aliadas | MXD / Difusión |
 
 ---
 
-## FASE 2: CONVOCATORIA ABIERTA (18 sept - 4 oct)
+## FASE 2: CONVOCATORIA ABIERTA (21 sept - 28 sept)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **18 sept - 4 oct** | Período abierto de recepción de resúmenes | Autores / Sistema online |
-| **18 sept** | Anuncio en redes, newsletters, sitio web | Difusión |
-| **22 sept** | Recordatorio: 1 semana para cierre | MXD + Difusión |
-| **30 sept** | Recordatorio: 4 días para cierre | MXD + Difusión |
-| **4 oct 23:59** | **CIERRE DE RECEPCIÓN DE RESÚMENES** | Sistema automático |
+| **21 sept - 28 sept** | Período abierto de recepción de resúmenes | Autores / Sistema online |
+| **21 sept** | Anuncio en redes, newsletters, sitio web, universidades | Difusión |
+| **24 sept** | Recordatorio: 4 días para cierre | MXD + Difusión |
+| **27 sept** | Recordatorio: último día + 24h para cierre | MXD + Difusión |
+| **28 sept 23:59** | **CIERRE DE RECEPCIÓN DE RESÚMENES** | Sistema automático |
 
 ---
 
-## FASE 3: EVALUACIÓN Y DECISIÓN (5-9 de octubre)
+## FASE 3: EVALUACIÓN Y DECISIÓN (28 sept - 6 oct)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **5 oct** | Evaluación de pares completada | Comité Científico / Revisores |
-| **5-8 oct** | Análisis de evaluaciones y decisión académica | Comité Científico / MXD |
-| **9 oct 12:00 PM** | **NOTIFICACIÓN DE ACEPTACIÓN/RECHAZO** — emails con decisión y feedback | MXD |
+| **28-29 sept** | Admisibilidad de resúmenes y asignación de revisores | Comité Científico / MXD |
+| **30 sept - 4 oct** | Evaluación de pares (5 días para revisiones) | Revisores / Comité Científico |
+| **5 oct** | Análisis de evaluaciones y decisión académica final | Comité Científico / MXD |
+| **6 oct 12:00 PM** | **NOTIFICACIÓN DE ACEPTACIÓN/RECHAZO** — emails con decisión y feedback a autores | MXD |
 
 ---
 
-## FASE 4: PREPARACIÓN FINAL (10-18 de octubre)
+## FASE 4: PREPARACIÓN FINAL (7-18 de octubre)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **10-12 oct** | Confirmación de asistencia de aceptados | MXD |
-| **12 oct** | Cierre de inscripción en línea | SV |
-| **13-15 oct** | Preparación de programa final, orden de presentaciones | MXD / AC |
-| **15 oct** | Confirmación de conferencistas magistrales y equipamiento | AC / SV |
-| **16-18 oct** | Últimos detalles logísticos, briefing de personal | SV |
-| **18 oct** | Prueba de transmisión en línea y equipos audiovisuales | SV / Técnico |
+| **7-10 oct** | Confirmación de asistencia de aceptados | MXD |
+| **11 oct** | Cierre de inscripción en línea | SV |
+| **12-13 oct** | Preparación de programa final, orden de presentaciones, cronograma detallado | MXD / AC |
+| **14 oct 5:00 PM** | **CIERRE: Material final de aceptados** (presentaciones, resúmenes, imágenes) | MXD |
+| **15 oct** | Confirmación de conferencistas magistrales y equipamiento audiovisual | AC / SV |
+| **16-18 oct** | Últimos detalles logísticos, briefing de personal, coordinación final | SV |
+| **18 oct 4:00 PM** | Prueba de transmisión en línea y equipos audiovisuales | SV / Técnico |
 
 ---
 
@@ -83,5 +85,10 @@
 
 ---
 
-**Última actualización:** 16 de septiembre de 2026
-**Estado:** Aprobado
+**Última actualización:** 16 de septiembre de 2026 (cronograma actualizado con fechas realistas)
+**Estado:** Vigente
+**Próximas acciones urgentes:**
+- ✉️ Enviar invitaciones a jefes de departamento (16 sept)
+- ✓ Confirmar participación departamentos (19 sept)
+- 📅 Reunión de coordinadores (20 sept, 4:00 PM)
+- 📢 Lanzamiento público de convocatoria (21 sept, 9:00 AM)
