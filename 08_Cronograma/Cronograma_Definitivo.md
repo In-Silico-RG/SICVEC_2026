@@ -8,7 +8,7 @@
 
 | Fecha | Hora | Actividad | Responsable |
 |---|---|---|---|
-| **15 sept** | Todo el día | Envío de invitaciones formales a jefes de departamento, conferencistas e instituciones internacionales | AC |
+| **16 sept** | Todo el día | Envío de invitaciones formales a jefes de departamento, conferencistas e instituciones internacionales | AC |
 | **15-16 sept** | Flexible | Confirmación de participación de departamentos (respuesta esperada) | Jefes / AC |
 | **17 sept** | 4:00 PM | **REUNIÓN DE COORDINADORES** (presencial en UNISUCRE o virtual) — definir roles finales, revisar propuesta, aclarar dudas | AC / MXD / SV + Jefes |
 | **18 sept** | 9:00 AM | **LANZAMIENTO PÚBLICO DE CONVOCATORIA** — emails, redes sociales, prensa, universidades aliadas | MXD / Difusión |
@@ -83,5 +83,5 @@
 
 ---
 
-**Última actualización:** 15 de septiembre de 2026
+**Última actualización:** 16 de septiembre de 2026
 **Estado:** Aprobado

@@ -28,4 +28,4 @@
 
 **Resultado**: Ingresos cubren presupuesto y generan excedente de COP 2.300.000 para mejoras o reserva.
 
-*Aprobado 15 sept 2026 por Aldo F. Combariza.*
+*Aprobado 16 sept 2026 por Aldo F. Combariza.*

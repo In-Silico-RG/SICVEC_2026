@@ -1,6 +1,6 @@
 # LOG de Actividades — SICVEC 2026
 
-**Período:** 14-15 de septiembre de 2026  
+**Período:** 14-16 de septiembre de 2026  
 **Responsable:** Aldo F. Combariza + Claude AI  
 **Estado:** En ejecución
 
@@ -71,7 +71,7 @@
 
 #### Cronograma Definitivo
 - ✅ Cronograma finalizados con fechas específicas:
-  - 15 sept: Envío de invitaciones
+  - 16 sept: Envío de invitaciones
   - 15-16 sept: Confirmación de participación
   - **17 sept 4:00 PM:** Reunión de coordinadores
   - **18 sept 9:00 AM:** Lanzamiento de convocatoria
@@ -127,7 +127,7 @@
 ## COMMITS EN GITHUB
 
 ```
-fa1712d Cronograma definitivo con fechas específicas 15 sept - 20 oct
+fa1712d Cronograma definitivo con fechas específicas 16 sept - 20 oct
 d7452d8 Actualizar cronograma con fechas definitivas
 a7f6b83 Corregir sintaxis LaTeX en cartas
 a83d619 Carta de invitación a conferencista y solicitud de alianza
@@ -160,7 +160,7 @@ f7c898f Estructura inicial SICVEC 2026
 
 ## PRÓXIMOS PASOS (INMEDIATOS)
 
-1. **Hoy 15 sept:** Envío de invitaciones a jefes, conferencistas e instituciones
+1. **Hoy 16 sept:** Envío de invitaciones a jefes, conferencistas e instituciones
 2. **Mañana 16 sept:** Confirmación de participación (esperada)
 3. **17 sept 4 PM:** Reunión de coordinadores (AC, MXD, SV + jefes)
 4. **18 sept 9 AM:** Lanzamiento oficial de convocatoria
@@ -171,5 +171,5 @@ f7c898f Estructura inicial SICVEC 2026
 
 ---
 
-**Generado:** 15 de septiembre de 2026, 17:30 (Colombia UTC-5)  
+**Generado:** 16 de septiembre de 2026, 17:30 (Colombia UTC-5)  
 **Próxima revisión:** 17 de septiembre (después reunión coordinadores)
