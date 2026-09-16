@@ -4,24 +4,24 @@
 
 ---
 
-## FASE 1: INVITACIONES Y COORDINACIÓN (16-21 de septiembre)
+## FASE 1: INVITACIONES Y COORDINACIÓN (16-19 de septiembre)
 
 | Fecha | Hora | Actividad | Responsable |
 |---|---|---|---|
-| **16 sept** | Todo el día | Envío de invitaciones formales a jefes de departamento, conferencistas e instituciones internacionales | AC |
-| **16-19 sept** | Flexible | Confirmación de participación de departamentos (respuesta esperada dentro de 3-4 días) | Jefes / AC |
-| **20 sept** | 4:00 PM | **REUNIÓN DE COORDINADORES** (presencial en UNISUCRE o virtual) — definir roles finales, revisar propuesta, aclarar dudas, confirmar datos coordinadores | AC / MXD / SV + Jefes |
-| **21 sept** | 9:00 AM | **LANZAMIENTO PÚBLICO DE CONVOCATORIA** — emails, redes sociales, prensa, universidades aliadas | MXD / Difusión |
+| **16 sept** | Todo el día | Envío de invitaciones formales a JEFES DE DEPARTAMENTOS, conferencistas e instituciones internacionales | AC |
+| **16-17 sept** | Flexible | Confirmación de participación de departamentos (respuesta esperada dentro de 24-48h) | Jefes / AC |
+| **18 sept** | 4:00 PM | **REUNIÓN DE COORDINADORES** (presencial en UNISUCRE o virtual) — definir roles finales, revisar propuesta, aclarar dudas, confirmar datos coordinadores | AC / MXD / SV + Jefes |
+| **19-21 sept** | 6:00 AM | **LANZAMIENTO PÚBLICO DE CONVOCATORIA** — emails, redes sociales, prensa, universidades aliadas (3 días de difusión intensiva) | MXD / Difusión |
 
 ---
 
-## FASE 2: CONVOCATORIA ABIERTA (21 sept - 28 sept)
+## FASE 2: CONVOCATORIA ABIERTA (22 sept - 28 sept)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **21 sept - 28 sept** | Período abierto de recepción de resúmenes | Autores / Sistema online |
-| **21 sept** | Anuncio en redes, newsletters, sitio web, universidades | Difusión |
-| **24 sept** | Recordatorio: 4 días para cierre | MXD + Difusión |
+| **22 sept - 28 sept** | Período abierto de recepción de resúmenes | Autores / Sistema online |
+| **22 sept** | Convocatoria activa en redes, newsletters, sitio web, universidades | Difusión |
+| **25 sept** | Recordatorio: 3 días para cierre | MXD + Difusión |
 | **27 sept** | Recordatorio: último día + 24h para cierre | MXD + Difusión |
 | **28 sept 23:59** | **CIERRE DE RECEPCIÓN DE RESÚMENES** | Sistema automático |
 
