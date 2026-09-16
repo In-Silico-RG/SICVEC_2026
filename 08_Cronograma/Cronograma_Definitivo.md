@@ -15,38 +15,38 @@
 
 ---
 
-## FASE 2: CONVOCATORIA ABIERTA (22 sept - 28 sept)
+## FASE 2: CONVOCATORIA ABIERTA (22 sept - 4 oct)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **22 sept - 28 sept** | Período abierto de recepción de resúmenes | Autores / Sistema online |
+| **22 sept - 4 oct** | Período abierto de recepción de resúmenes | Autores / Sistema online |
 | **22 sept** | Convocatoria activa en redes, newsletters, sitio web, universidades | Difusión |
-| **25 sept** | Recordatorio: 3 días para cierre | MXD + Difusión |
-| **27 sept** | Recordatorio: último día + 24h para cierre | MXD + Difusión |
-| **28 sept 23:59** | **CIERRE DE RECEPCIÓN DE RESÚMENES** | Sistema automático |
+| **27 sept** | Recordatorio: 1 semana para cierre | MXD + Difusión |
+| **2 oct** | Recordatorio: 2 días para cierre | MXD + Difusión |
+| **4 oct 23:59** | **CIERRE DE RECEPCIÓN DE RESÚMENES** | Sistema automático |
 
 ---
 
-## FASE 3: EVALUACIÓN Y DECISIÓN (28 sept - 6 oct)
+## FASE 3: EVALUACIÓN Y DECISIÓN (4 oct - 9 oct)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **28-29 sept** | Admisibilidad de resúmenes y asignación de revisores | Comité Científico / MXD |
-| **30 sept - 4 oct** | Evaluación de pares (5 días para revisiones) | Revisores / Comité Científico |
-| **5 oct** | Análisis de evaluaciones y decisión académica final | Comité Científico / MXD |
-| **6 oct 12:00 PM** | **NOTIFICACIÓN DE ACEPTACIÓN/RECHAZO** — emails con decisión y feedback a autores | MXD |
+| **4-5 oct** | Admisibilidad de resúmenes y asignación de revisores | Comité Científico / MXD |
+| **5-7 oct** | Evaluación de pares (revisión de trabajos) | Revisores / Comité Científico |
+| **8-9 oct** | **ENVÍO DE ACEPTACIÓN/RECHAZO** — emails con decisión y feedback a autores | MXD |
 
 ---
 
-## FASE 4: PREPARACIÓN FINAL (7-18 de octubre)
+## FASE 4: PREPARACIÓN FINAL (10-18 de octubre)
 
 | Fecha | Actividad | Responsable |
 |---|---|---|
-| **7-10 oct** | Confirmación de asistencia de aceptados | MXD |
-| **11 oct** | Cierre de inscripción en línea | SV |
-| **12-13 oct** | Preparación de programa final, orden de presentaciones, cronograma detallado | MXD / AC |
+| **10-12 oct** | Confirmación de asistencia de aceptados | MXD |
+| **12 oct** | Cierre de inscripción en línea | SV |
+| **13-14 oct** | Preparación de programa final, orden de presentaciones, cronograma detallado | MXD / AC |
 | **14 oct 5:00 PM** | **CIERRE: Material final de aceptados** (presentaciones, resúmenes, imágenes) | MXD |
 | **15 oct** | Confirmación de conferencistas magistrales y equipamiento audiovisual | AC / SV |
+| **15 oct 5:00 PM** | **LÍMITE DE PAGO: Inscripciones presenciales** | Sistema online |
 | **16-18 oct** | Últimos detalles logísticos, briefing de personal, coordinación final | SV |
 | **18 oct 4:00 PM** | Prueba de transmisión en línea y equipos audiovisuales | SV / Técnico |
 
