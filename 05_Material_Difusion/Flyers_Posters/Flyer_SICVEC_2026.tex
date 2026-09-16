@@ -1,0 +1,215 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=0.8cm, top=0.8cm, bottom=0.8cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{{../../01_Propuesta/Logos/}{./}}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+
+% Colores institucionales
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{verdelimpio}{RGB}{76,175,80}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{blanco}{RGB}{255,255,255}
+\definecolor{grisclaro}{RGB}{248,248,248}
+
+% Sin encabezados/pies
+\pagestyle{empty}
+
+\begin{document}
+
+% ─────────────────────────────────────────────────────────────────────
+% FLYER A5 (mitad de página A4) — imprimible en ambos lados
+% ─────────────────────────────────────────────────────────────────────
+
+\vspace{-1.5cm}
+
+\begin{tikzpicture}[remember picture, overlay]
+  % Fondo superior degradado (verde oscuro)
+  \fill[verdeosc] (current page.north west) rectangle (current page.north east);
+
+  % Fondo inferior (verde claro)
+  \fill[grisclaro] (current page.south west) rectangle (current page.south east);
+
+  % Borde dorado en costado derecho
+  \draw[line width=8pt, dorado] (current page.north east) -- (current page.south east);
+\end{tikzpicture}
+
+% ═════════════════════════════════════════════════════════════════════
+% ENCABEZADO CON LOGOS
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \vspace{0.3cm}
+
+  \begin{minipage}{0.25\textwidth}
+    \centering
+    \includegraphics[width=1.8cm]{logo_unisucre.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.45\textwidth}
+    \centering
+    \textcolor{white}{\bfseries\Large SICVEC 2026} \\
+    \textcolor{verdelimpio}{\small Simposio Internacional de Ciencia Verde}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.25\textwidth}
+    \centering
+    \includegraphics[width=1.8cm]{Logo_insilico.jpeg}
+  \end{minipage}
+
+  \vspace{0.4cm}
+\end{center}
+
+% ═════════════════════════════════════════════════════════════════════
+% TÍTULO PRINCIPAL
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdeosc}{\textbf{\Large Economía Circular para el Futuro}}
+
+  \vspace{0.2cm}
+
+  \textcolor{verdemid}{\small Procesos Sostenibles • Investigación Verde • ODS 2030}
+
+  \vspace{0.4cm}
+\end{center}
+
+% ═════════════════════════════════════════════════════════════════════
+% INFORMACIÓN CLAVE
+% ═════════════════════════════════════════════════════════════════════
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  \textcolor{verdeosc}{\textbf{$\bullet$ FECHAS}}
+
+  \vspace{0.15cm}
+
+  \textcolor{verdemid}{\textbf{19 y 20 de octubre 2026}}
+
+  Lunes y martes
+
+  \vspace{0.3cm}
+
+  \textcolor{verdeosc}{\textbf{* UBICACIÓN}}
+
+  \vspace{0.15cm}
+
+  Centro Comercial Guacarí
+
+  Sincelejo, Sucre, Colombia
+
+  \vspace{0.3cm}
+
+  \textcolor{verdeosc}{\textbf{+ MODALIDAD}}
+
+  \vspace{0.15cm}
+
+  Presencial + Híbrida
+
+  120-150 asistentes
+
+  100 cupos en línea
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \textcolor{verdeosc}{\textbf{6 EJES TEMÁTICOS}}
+
+  \vspace{0.15cm}
+
+  {\small
+  \begin{itemize}
+    \setlength{\itemsep}{0.05cm}
+    \setlength{\parskip}{0pt}
+    \item Economía Circular
+    \item Química Verde
+    \item Biotecnología Sostenible
+    \item Energías Renovables
+    \item Cadenas de Suministro
+    \item Política Ambiental
+  \end{itemize}
+  }
+
+  \vspace{0.2cm}
+
+  \textcolor{dorado}{\textbf{Alineado con ODS 12, 13, 15, 17}}
+\end{minipage}
+
+\vspace{0.3cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% CONVOCATORIA
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \begin{tikzpicture}
+    \node[draw=dorado, line width=2pt, inner sep=0.3cm, rounded corners=0.2cm, fill=blanco] {
+      \begin{minipage}{0.85\textwidth}
+        \centering
+        \textcolor{verdeosc}{\textbf{\large = ¡CONVOCATORIA ABIERTA!}} \\
+        \vspace{0.1cm}
+        \small Envía tu resúmen hasta \textcolor{dorado}{\textbf{28 de septiembre 2026}} \\
+        \vspace{0.08cm}
+        Presenta como \textbf{ponencia}, \textbf{poster} o participa como \textbf{revisor par}
+      \end{minipage}
+    };
+  \end{tikzpicture}
+\end{center}
+
+\vspace{0.3cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% PÚBLICO OBJETIVO
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdeosc}{\textbf{¿A quiénes invitamos?}}
+
+  \vspace{0.1cm}
+
+  {\small Estudiantes • Docentes • Investigadores • Profesionales en Química, Física, Biología, Matemáticas, Ingenierías, Ciencias Ambientales}
+\end{center}
+
+\vspace{0.3cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% CONTACTO Y ENLACES
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdemid}{\textbf{INFORMACIÓN Y CONTACTO}}
+
+  \vspace{0.15cm}
+
+  \small
+  \textbf{Aldo F. Combariza} — Grupo IN SILICO \\
+  → \href{mailto:aldo.combariza@unisucre.edu.co}{\textcolor{verdemid}{aldo.combariza@unisucre.edu.co}} \\
+
+  \vspace{0.1cm}
+
+  → \href{https://github.com/In-Silico-RG/SICVEC_2026}{\textcolor{verdemid}{github.com/In-Silico-RG/SICVEC\_2026}} \\
+
+  \vspace{0.15cm}
+
+  \textcolor{verdeosc}{\textbf{Universidad de Sucre}}
+
+  Programa de Biología — Facultad de Educación y Ciencias
+\end{center}
+
+\vspace{0.3cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% PIE DE PÁGINA
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{dorado}{\textbf{* Procesos Sostenibles para el Futuro *}}
+\end{center}
+
+\end{document}
