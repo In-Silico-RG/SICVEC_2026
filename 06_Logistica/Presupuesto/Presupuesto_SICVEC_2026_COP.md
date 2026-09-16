@@ -5,16 +5,16 @@
 
 | # | Concepto | Unitario COP | Subtotal COP | ✓ |
 |---|---|---:|---:|---|
-| 1 | Materiales: programa, badges, diplomas, carpetas (150 inscritos) | — | 1.000.000 | ✓ |
-| 2 | Difusión + profesional audiovisual (flyers, redes, técnico) | — | 1.000.000 | ✓ |
-| | **PRESUPUESTO TOTAL** | | **2.000.000 COP** | ✓ |
+| 1 | Materiales asistentes: escarapelas, libretas, flyers, lapiceros | — | 1.000.000 | ✓ |
+| 2 | Imagen y Audiovisuales: transmisión online, redes, publicidad | — | 1.500.000 | ✓ |
+| | **PRESUPUESTO TOTAL** | | **2.500.000 COP** | ✓ |
 
 ## Resumen
 
-**PRESUPUESTO TOTAL APROBADO: COP 2.000.000**
+**PRESUPUESTO TOTAL APROBADO: COP 2.500.000**
 
-- Materiales para 150 inscritos presenciales: 1.000.000 COP
-- Difusión (flyers, redes sociales) + profesional audiovisual: 1.000.000 COP
+- Materiales asistentes: 1.000.000 COP (escarapelas, libretas, flyers, lapiceros)
+- Imagen y Audiovisuales: 1.500.000 COP (transmisión online, redes, publicidad)
 - Infraestructura (C.C. Guacarí): cubierto
 - RRHH (coordinadores, personal): cubierto por UNISUCRE
 - Transporte y alojamiento (conferencistas): cubierto por aliados
