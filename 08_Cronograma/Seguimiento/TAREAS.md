@@ -5,8 +5,8 @@
 
 Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo Combariza (General), **MXD** = María Ximena Díaz (Académica), **SV** = Sebastián Vargas (Logística).
 
-## 🔴 Urgente (esta semana)
-- [ ] **Comunicar prórroga de la convocatoria**: nuevo cierre 28 sept y nueva fecha del evento 19-20 oct (email + redes) — AC / MXD
+## 🔴 Urgente (esta semana — actualizado 17 sept)
+- [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 4 oct (no 15 sept cierre), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
 - [ ] **Confirmar venue C.C. Guacarí** para 19-20 oct: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
 - [ ] **Datos de contacto** completos de los 3 coordinadores (teléfonos, email de MXD) — AC
 - [ ] **Revisar presupuesto ítem por ítem** (`06_Logistica/Presupuesto/Presupuesto_SICVEC_2026_COP.md`) — AC / SV
@@ -38,14 +38,15 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [ ] Confirmar conferencistas magistrales (2)
 - [ ] Completar hojas de vida de coordinadores (`02_Organizadores/`)
 
-## Calendario de peer review (vigente)
+## Calendario de peer review (vigente — actualizado 16 sept)
 | Hito | Fecha |
 |---|---|
-| Cierre de resúmenes | 28 sept, 23:59 |
-| Admisibilidad y asignación de revisores | 28-29 sept |
-| Evaluación de pares | 30 sept - 4 oct |
-| Decisión académica | 5 oct |
-| Notificación a autores | 6 oct |
+| Convocatoria abierta | 22 sept - 4 oct |
+| Cierre de resúmenes | 4 oct, 23:59 |
+| Admisibilidad y asignación de revisores | 4-5 oct |
+| Evaluación de pares | 5-7 oct |
+| Decisión académica | 8 oct |
+| Notificación a autores | 8-9 oct |
 | Material final de aceptados | 14 oct |
 | Simposio | 19-20 oct |
 | Publicación de memorias | 20 oct |

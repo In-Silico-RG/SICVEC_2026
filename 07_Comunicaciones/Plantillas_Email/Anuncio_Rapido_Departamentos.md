@@ -11,7 +11,7 @@ El **Departamento es co-organizador** del **SICVEC 2026** — Simposio Internaci
 🌍 **Modalidad híbrida** (presencial + en línea)
 
 ✅ Invitamos a docentes y estudiantes a:
-- Presentar ponencias (envíar resumen hasta 28 sept)
+- Presentar ponencias (envíar resumen hasta 4 oct, 23:59)
 - Exponer posters en área de pósters
 - Participar como revisores pares
 
@@ -44,7 +44,7 @@ El **Departamento es co-organizador** del **SICVEC 2026** — Simposio Internaci
 ║  • Política Pública y Gobernanza Ambiental                     ║
 ║                                                                ║
 ║  ✉️  ABIERTA LA CONVOCATORIA DE RESÚMENES                      ║
-║  ⏰  Cierre: 28 de septiembre de 2026, 23:59                   ║
+║  ⏰  Cierre: 4 de octubre de 2026, 23:59                       ║
 ║                                                                ║
 ║  🎯 PÚBLICO: Estudiantes, docentes, profesionales, investigadores
 ║                                                                ║
@@ -85,7 +85,7 @@ Desde la Universidad de Sucre y el Grupo IN SILICO, nos complace anunciar la **S
 - Revisor pares
 - Asistente
 
-⏰ **Convocatoria de resúmenes:** Cierre 28 septiembre 2026
+⏰ **Convocatoria de resúmenes:** Cierre 4 octubre 2026, 23:59
 
 📧 Información: https://github.com/In-Silico-RG/SICVEC_2026
 
