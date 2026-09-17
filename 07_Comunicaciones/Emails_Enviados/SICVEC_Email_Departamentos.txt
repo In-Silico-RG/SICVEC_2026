@@ -11,9 +11,8 @@ SUBJECT: SICVEC 2026 — Invitación a Co-organizar el Simposio Internacional
 Estimados Colegas,
 
 Desde el Grupo de Investigación IN SILICO del Programa de Biología, nos complace
-invitar formalmente al Departamento de [BIOLOGY AND CHEMISTRY] para ser
-CO-ORGANIZADOR del Simposio Internacional de Ciencia Verde y Economía Circular
-(SICVEC 2026).
+invitar formalmente a su Departamento para ser CO-ORGANIZADOR del Simposio
+Internacional de Ciencia Verde y Economía Circular (SICVEC 2026).
 
 
 📌 EVENTO EN BREVE
@@ -67,8 +66,9 @@ Público:      120-150 asistentes presenciales + 100 cupos en línea
 
 📎 DOCUMENTOS ADJUNTOS
 
-1. Carta_Jefes_Departamentos_Generica.pdf — Propuesta formal
-2. Conformacion_Comite_Cientifico.pdf — Funciones del comité científico
+1. Propuesta_SICVEC_2026.pdf — Propuesta formal del evento
+2. Carta_Jefes_Departamentos_Generica.pdf — Invitación co-organizadores
+3. Conformacion_Comite_Cientifico.pdf — Funciones del comité científico
 
 Todos los documentos disponibles en:
 Repositorio GitHub: https://github.com/In-Silico-RG/SICVEC_2026
