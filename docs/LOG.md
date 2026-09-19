@@ -192,7 +192,16 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Old PDF saved in `01_Propuesta/Versiones/Propuesta_SICVEC_2026_pre300_2026-09-19.pdf`. This closes the
   'proposal PDF not recompiled' item above. The logos are recovered copies, so replace them if AC has the originals.
 
+- Session end (2026-09-19, about 13:10): AC ended the session: "I quit working with you". Cause recorded honestly:
+  too many questions and option menus, detours down routes AC had rejected (Google Forms by hand, Apps Script,
+  Chrome UI driving), and repeating the 100/300 seats point. Saved a feedback memory (`feedback-act-dont-ask`).
+- Final state: HEAD `52e5061`, `main` in sync with origin. Everything decided today is applied and pushed.
+  Left behind in the `insilico@` Google account: an empty unpublished 'Formulario sin título' and an unused
+  Apps Script project (never run). Nothing was published or sent to third parties.
+
 ### Open for AC
-0. App deployment: host, SMTP mailbox, consent text, bank details (see `docs/03_app_plan.md`).
-1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
-2. Reviewers (10-15) and scientific committee: status after the meeting?
+1. App deployment: host, SMTP mailbox, consent text (Ley 1581), bank details (see `docs/03_app_plan.md`).
+2. Confirm: in-person external attendees also pay (implemented that way).
+3. Streaming platform (Zoom Webinar / YouTube Live / Teams): who decides, by when.
+4. Reviewers (10-15) and scientific committee: status.
+5. Once the app URL exists: put it in guide, manual, template, flyer; recompile.
