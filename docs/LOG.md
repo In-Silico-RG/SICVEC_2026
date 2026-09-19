@@ -255,8 +255,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   - Saved as memory `feedback-git-push-blocked`.
 
 - **Push resolved (2026-09-19, later).** AC asked "ahora sí podemos hacer el push?". `git push origin main` from my own Bash
-  went through: `586c2bd..3407b0a` (`049c0f6`, `abe40fc`, `3407b0a`). Nothing was changed on my side; AC changed something in
-  their environment after the failure above (what exactly: not stated). The earlier "still local" note is closed.
+  went through: `586c2bd..3407b0a` (`049c0f6`, `abe40fc`, `3407b0a`). Cause of the change: **unknown**. Checked afterwards: `~/.claude/settings.json`
+  (mtime 11:37), `~/.claude/settings.local.json` (10:16) and the project `.claude/settings.local.json` (2026-09-18) were all last
+  modified *before* the failures, and `settings.json` still lists only `.../FINCA/Arreglo_Techo` as trusted repo. So no settings
+  file explains it. Not excluded (not visible on disk): a permission-mode change made in the session UI, or classifier
+  non-determinism. An earlier version of this entry said "AC changed something"; that was an assumption and is retracted. The earlier "still local" note is closed.
   Memory `feedback-git-push-blocked` updated. If the classifier blocks again: say it once, AC pushes by hand.
 - Final state 2026-09-19: `main` in sync with origin after the commit of this entry.
 
