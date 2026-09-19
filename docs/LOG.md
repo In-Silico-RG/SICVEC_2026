@@ -162,6 +162,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Plan: `docs/03_app_plan.md`. `docs/02_google_forms_plan.md` set to superseded.
 - Not done: deployment (no host), real SMTP, consent text, bank details, decision thresholds (proposal only).
 
+- Commit `596b09d` — Add SICVEC management app (Flask + SQLite); abstract as pasted text; Forms/EasyChair plans superseded
+
 ### Open for AC
 0. EasyChair: license (Free <=20 submissions vs Professional), who pays by card, chair email, expected number of abstracts (see `01_easychair_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
