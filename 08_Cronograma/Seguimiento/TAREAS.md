@@ -1,7 +1,7 @@
 # Tareas SICVEC 2026 — seguimiento
 
 **Evento:** 19-20 de octubre de 2026 (lunes y martes), C.C. Guacarí, Sincelejo
-**Actualizado:** 14 de septiembre de 2026
+**Actualizado:** 19 de septiembre de 2026
 
 Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo Combariza (General), **MXD** = María Ximena Díaz (Académica), **SV** = Sebastián Vargas (Logística).
 
@@ -9,7 +9,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 4 oct (no 15 sept cierre), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
 - [ ] **Confirmar venue C.C. Guacarí** para 19-20 oct: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
 - [ ] **Datos de contacto** completos de los 3 coordinadores (teléfonos, email de MXD) — AC
-- [ ] **Revisar presupuesto ítem por ítem** (`06_Logistica/Presupuesto/Presupuesto_SICVEC_2026_COP.md`) — AC / SV
+- [x] **Presupuesto** fijado en COP 2.500.000 (AC, 19 sept) — 06_Logistica/Presupuesto/
 
 ## 🟠 Logística (SV)
 - [ ] Cotizaciones de catering (150 personas × 2 días: refrigerios AM/PM y almuerzo) → `06_Logistica/Catering/`
@@ -27,9 +27,9 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [ ] Preparar invitación para las redes internacionales (UPV/ITQ, aliados en América Latina) — AC
 
 ## 🟠 Difusión e inscripción
-- [ ] Flyer / afiche oficial → `05_Material_Difusion/Flyers_Posters/`
+- [x] Flyer / afiche oficial (16 sept, AC) → `05_Material_Difusion/Flyers_Posters/`
 - [ ] Formulario de inscripción online (tarifas: pregrado COP 20.000, posgrado 30.000, profesionales 40.000) → `04_Inscripcion/Formularios/`
-- [ ] Plantillas de email: convocatoria, prórroga, aceptación, rechazo → `07_Comunicaciones/Plantillas_Email/`
+- [ ] Plantillas de email: convocatoria, prórroga, aceptación, rechazo (departamentos ya hechas 16 sept; faltan aceptación/rechazo) → `07_Comunicaciones/Plantillas_Email/`
 - [ ] Campaña en redes sociales → `05_Material_Difusion/Redes_Sociales/`
 
 ## 🟡 Académico (MXD)

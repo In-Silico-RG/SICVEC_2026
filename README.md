@@ -145,7 +145,7 @@ SICVEC_2026/
 | **Fechas** | 19-20 de octubre de 2026 (lunes-martes) | 08_Cronograma/Propuesta |
 | **Lugar** | Centro Comercial Guacarí, Sincelejo | 06_Logistica/Venue |
 | **Público** | 120-150 participantes | 01_Propuesta/Documentos |
-| **Presupuesto** | USD $11,198 (ajustar a COP) | 06_Logistica/Presupuesto |
+| **Presupuesto** | COP 2.500.000 | 06_Logistica/Presupuesto |
 | **Modalidades** | Ponencias, Posters, Talleres | 03_Memorias_y_PeerReview/Guias_Autores |
 | **Cierre resúmenes** | 28 de septiembre de 2026 (23:59) | 03_Memorias_y_PeerReview/Guias_Autores |
 | **Notificación aceptación** | 6 de octubre de 2026 (material final: 14 oct) | 03_Memorias_y_PeerReview/Guias_Autores |
