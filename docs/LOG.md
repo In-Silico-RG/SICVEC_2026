@@ -218,6 +218,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Fixed in the `.tex`, PDF recompiled and checked with `pdftotext`. The letter went out with the errors (she replied to it);
   copies as sent in `07_Comunicaciones/Cartas_Departamentos/Versiones/`. Grep over the project: no other file has them.
 - `TAREAS.md`: keynote item updated.
-- Commit `abfcdf1` (13:42) — Escobar keynote record and letter fixes. Not pushed.
+- Commit `abfcdf1` (13:42) — Escobar keynote record and letter fixes.
 - Decision (AC, 2026-09-19): the talk title is the complete one, with "holopelágico". Recorded in `FICHA_Escobar.md`.
   No other project file used the title yet.
+- Pushed to origin by AC (`! git push origin main`) after the auto-mode classifier blocked my push: `e150c21..6087a47`. The `autoMode.allow` rule was not added (classifier blocks self-edits of my own permissions); `Bash(git push *)` in `settings.local.json` does not override the classifier.
