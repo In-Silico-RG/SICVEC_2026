@@ -1,0 +1,34 @@
+{% extends "base.html" %}{% block body %}
+<h1>Envío de resúmenes / Abstract submission</h1>
+<p>Cierre: {{ config.SUBMISSION_DEADLINE|fecha }} (hora Colombia). El resumen se pega como texto y
+<b>no debe incluir nombres de autores ni afiliaciones</b> (revisión ciega).
+Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster }}, taller {{ WORD_LIMITS.taller }}.</p>
+{% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+<form method="post">
+<input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<label>Correo de contacto <input type="email" name="email" value="{{ f.get('email','') }}" required></label>
+<label>Título del trabajo <input type="text" name="title" maxlength="200" value="{{ f.get('title','') }}" required></label>
+<label>Idioma del resumen
+<select name="language"><option value="es" {{ 'selected' if f.get('language')=='es' }}>Español</option><option value="en" {{ 'selected' if f.get('language')=='en' }}>English</option></select></label>
+<label>Modalidad
+<select name="modality">{% for k,v in MODALITIES.items() %}<option value="{{ k }}" {{ 'selected' if f.get('modality')==k }}>{{ v }}</option>{% endfor %}</select></label>
+<label>Presentación
+<select name="presentation"><option value="presencial" {{ 'selected' if f.get('presentation')=='presencial' }}>Presencial</option><option value="virtual" {{ 'selected' if f.get('presentation')=='virtual' }}>Virtual</option></select></label>
+<label>Eje temático principal
+<select name="axis">{% for a in AXES %}<option {{ 'selected' if f.get('axis')==a }}>{{ a }}</option>{% endfor %}</select></label>
+<label>Resumen (sin nombres de autores ni afiliaciones)
+<textarea name="abstract" required>{{ f.get('abstract','') }}</textarea></label>
+<label>Palabras clave <span class="ayuda">(3 a 5, separadas por comas)</span>
+<input type="text" name="keywords" value="{{ f.get('keywords','') }}" required></label>
+<h2>Autor que presenta</h2>
+<label>Nombre completo <input type="text" name="author_name" value="{{ f.get('author_name','') }}" required></label>
+<label>Institución <input type="text" name="author_institution" value="{{ f.get('author_institution','') }}" required></label>
+<label>Programa académico o profesión <input type="text" name="author_program" value="{{ f.get('author_program','') }}" required></label>
+<label>País de procedencia <input type="text" name="author_country" value="{{ f.get('author_country','') }}" required></label>
+<label>Otros autores <span class="ayuda">(opcional, uno por línea: nombre, institución; máximo 4 más)</span>
+<textarea name="other_authors">{{ f.get('other_authors','') }}</textarea></label>
+<label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT }}</span></label>
+<label class="check"><input type="checkbox" name="originality" value="1" {{ 'checked' if f.get('originality') }}> <span>El trabajo es original y no está en evaluación en otro evento.</span></label>
+<button type="submit">Enviar resumen</button>
+</form>
+{% endblock %}

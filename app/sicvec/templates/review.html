@@ -1,0 +1,24 @@
+{% extends "base.html" %}{% block body %}
+<h1>{{ a.ref }} — {{ a.title }}</h1>
+<p>{{ MODALITIES[a.modality] }} · {{ a.axis }} · Palabras clave: {{ a.keywords }}</p>
+<div class="abstract">{{ a.abstract }}</div>
+{% if closed %}<div class="aviso">El plazo de evaluación terminó.</div>{% endif %}
+{% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+<form method="post">
+<input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<p>Escala: 1 Insuficiente · 2 Deficiente · 3 Aceptable · 4 Bueno · 5 Excelente.</p>
+{% for key,label,w in CRITERIA %}
+<label>{{ label }} ({{ (w*100)|int }} %)</label>
+<div class="escala">{% for n in range(1,6) %}<label class="check"><input type="radio" name="s_{{ key }}" value="{{ n }}"
+ {{ 'checked' if mine and mine['s_'+key]==n }}> {{ n }}</label>{% endfor %}</div>
+{% endfor %}
+<label>Comentarios para los autores <textarea name="comments">{{ mine.comments if mine else '' }}</textarea></label>
+<label>Recomendación
+<select name="recommendation">{% for k,v in RECOMMENDATIONS.items() %}<option value="{{ k }}" {{ 'selected' if mine and mine.recommendation==k }}>{{ v }}</option>{% endfor %}</select></label>
+<label class="check"><input type="checkbox" name="c_conf" value="1"> <span>Mantengo la confidencialidad de la identidad de los autores.</span></label>
+<label class="check"><input type="checkbox" name="c_coi" value="1"> <span>No tengo conflicto de interés con los autores.</span></label>
+<label class="check"><input type="checkbox" name="c_obj" value="1"> <span>Mi evaluación es objetiva y no la compartiré con personas no autorizadas.</span></label>
+{% if not closed %}<button type="submit">Guardar evaluación</button>{% endif %}
+</form>
+<p><a href="{{ url_for('reviewer_home', token=r.token) }}">Volver a mis resúmenes</a></p>
+{% endblock %}

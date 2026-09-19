@@ -124,6 +124,44 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `www.sicvec2026.unisucre.edu.co`; nothing in the repo shows that URL exists. Both need AC's word.
 - AC asked if more than 20 abstracts exceeds the EasyChair free plan: yes (cap 20 submissions).
 
+- Decision (AC, 2026-09-19): "lets go with the google form" — Google Forms for abstract submission and
+  registration (read by Claude as covering both). **EasyChair dropped**: Free plan capped at 20 submissions,
+  Professional £2.90 per submission on credit card only, no software line in the COP 2.500.000 budget.
+  `docs/01_easychair_plan.md` status set to superseded (kept for the cost findings).
+- Wrote `docs/02_google_forms_plan.md` (status: draft) and `04_Inscripcion/Formularios/Especificacion_Formularios.md`
+  (three forms A/B/C, field lists). Claude cannot create the forms; AC builds them (or Claude drives Chrome).
+  Design choice proposed: abstract pasted as text, not a PDF upload (no Google sign-in for authors; blind
+  review by construction). Contradicts the guide's 'PDF' step until AC agrees.
+- `TAREAS.md`: form item rewritten to point at the plan.
+
+- Decisions (AC, 2026-09-19): (1) abstract pasted as text, not a PDF: OK. (2) forms owned by
+  `insilico@unisucre.edu.co`. (3) online seats: "300 seats open".
+- Done for (1): `Guia_Presentacion_Resumenes.tex` step 3.3 and `Template_Resumen_Cientifico.tex` checklist
+  changed to pasted text without author names; both PDFs recompiled and checked; old PDFs in
+  `Versiones/2026-09-19_pre_resumen_texto/`. `Manual_Memorias_PeerReview` had no PDF-submission step.
+- For (3): **not propagated yet.** The documents say 100 online seats (15 files, including the already sent
+  department email `Emails_Enviados/SICVEC_Email_Departamentos.txt`, the flyer and the proposal). It is unclear
+  whether 300 replaces 100 and whether it is free. Asked AC.
+
+- Tried and dropped (AC, 2026-09-19): building the Google Forms automatically. (1) Apps Script
+  (`04_Inscripcion/Formularios/crear_formularios.gs`) pasted into a new project in `insilico@`, **never run**:
+  it needs an OAuth grant (Forms, Sheets, triggers); AC answered "nope". (2) Driving the Forms editor in
+  Chrome: one blank form created and titled, one question added ('Correo de contacto'), description not
+  confirmed; AC said "stop" and "no vamos a seguir esa ruta". Cause of the dead end: Google Apps Script
+  cannot run without the account owner approving the permission screen; UI driving needs about 200 actions.
+  Left in the account: unpublished form 'Formulario sin título' and an unused Apps Script project.
+  Nothing was published or sent.
+
+- AC: "quiero hacer este proceso automatico, con codigo, algo nuevo, crea una app para ello". Claude first
+  offered four architectures (custom app, Pretalx+Pretix, Indico, serverless); AC: "no me estas dando
+  alternativas serias", then "me estas haciendo perder el tiempo". Lesson: build, do not ask. Claude built option A.
+- Built `app/` (Flask 3.1 + SQLite): public submission and registration forms, private-link reviewer area
+  (blind: reviewer queries never read author columns), admin panel, automatic deadlines, word-limit and
+  blind-text checks, balanced reviewer assignment with conflict checks, weighted score, decision
+  suggestion, decision emails, CSV export, email log. 22 pytest tests pass; server smoke-tested with curl.
+  Plan: `docs/03_app_plan.md`. `docs/02_google_forms_plan.md` set to superseded.
+- Not done: deployment (no host), real SMTP, consent text, bank details, decision thresholds (proposal only).
+
 ### Open for AC
 0. EasyChair: license (Free <=20 submissions vs Professional), who pays by card, chair email, expected number of abstracts (see `01_easychair_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.

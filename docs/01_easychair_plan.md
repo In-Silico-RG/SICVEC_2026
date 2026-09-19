@@ -5,8 +5,7 @@
 **Objective.** Set up EasyChair as the single system for abstract submission, blind peer
 review, decisions and author notifications for SICVEC 2026, and replace the
 `[URL - Completar]` placeholders in the author documents.
-**Status.** draft. Waiting on AC for the license decision, the chair account, and the
-expected number of abstracts.
+**Status.** superseded 2026-09-19 by `02_google_forms_plan.md`. AC chose Google Forms; EasyChair not used.
 Every change of this status line gets a dated line in `LOG.md`.
 
 ## 1. Requirements taken from the project documents

@@ -13,3 +13,9 @@
 Thumbs.db
 ~$*
 *.swp
+
+# App (Flask)
+app/.venv/
+app/instance/
+__pycache__/
+.pytest_cache/

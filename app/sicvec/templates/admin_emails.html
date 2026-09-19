@@ -1,0 +1,5 @@
+{% extends "admin_base.html" %}{% block admin %}
+<h1>Buzón de correos</h1>
+<table><tr><th>Fecha</th><th>Para</th><th>Asunto</th><th>Estado</th></tr>
+{% for e in rows %}<tr><td>{{ e.created_at }}</td><td>{{ e.to_addr }}</td><td>{{ e.subject }}</td><td>{{ e.status }}{% if e.error %}: {{ e.error }}{% endif %}</td></tr>{% endfor %}</table>
+{% endblock %}

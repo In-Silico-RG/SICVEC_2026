@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block body %}
+<h1>Simposio Internacional de Ciencia Verde y Economía Circular</h1>
+<p>19–20 de octubre de 2026 · C.C. Guacarí, Sincelejo · modalidad híbrida.</p>
+<table>
+<tr><th>Cierre de resúmenes</th><td>{{ config.SUBMISSION_DEADLINE|fecha }} (hora Colombia)</td></tr>
+<tr><th>Evaluación de pares</th><td>hasta {{ config.REVIEW_DEADLINE|fecha }}</td></tr>
+<tr><th>Límite de pago de inscripción</th><td>{{ config.PAYMENT_DEADLINE|fecha }}</td></tr>
+</table>
+<p><a class="btn" href="{{ url_for('submit') }}">Enviar un resumen</a>
+<a class="btn" href="{{ url_for('register') }}">Inscribirme</a></p>
+{% endblock %}

@@ -1,0 +1,29 @@
+:root{--verde:#1b5e3b;--verde2:#2e7d4f;--claro:#eef5f0;--borde:#c9d8cd;--texto:#1c2b22;--alerta:#a33;}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,sans-serif;color:var(--texto);background:#fafcfa;margin:0;line-height:1.5}
+header{background:var(--verde);color:#fff;padding:.9rem 1rem}
+header a{color:#fff;text-decoration:none;margin-right:1rem}
+header .titulo{font-weight:700;font-size:1.1rem}
+main{max-width:860px;margin:1.2rem auto;padding:0 1rem}
+h1{color:var(--verde);font-size:1.6rem}
+label{display:block;font-weight:600;margin-top:1rem}
+input[type=text],input[type=email],input[type=file],select,textarea{width:100%;padding:.55rem;border:1px solid var(--borde);border-radius:6px;font:inherit;background:#fff}
+textarea{min-height:11rem}
+.ayuda{font-weight:400;color:#556;font-size:.9rem}
+.check{display:flex;gap:.5rem;align-items:flex-start;font-weight:400}
+.check input{margin-top:.35rem}
+button,.btn{background:var(--verde2);color:#fff;border:0;border-radius:6px;padding:.6rem 1.1rem;font:inherit;cursor:pointer;margin-top:1rem;text-decoration:none;display:inline-block}
+button.sec{background:#fff;color:var(--verde);border:1px solid var(--verde)}
+.err{background:#fdeeee;border:1px solid #e3b4b4;color:var(--alerta);padding:.6rem 1rem;border-radius:6px;margin:1rem 0}
+.ok{background:var(--claro);border:1px solid var(--borde);padding:.6rem 1rem;border-radius:6px;margin:1rem 0}
+.aviso{background:#fff7e0;border:1px solid #e8d38a;padding:.6rem 1rem;border-radius:6px;margin:1rem 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem;background:#fff}
+th,td{border:1px solid var(--borde);padding:.4rem .55rem;text-align:left;vertical-align:top}
+th{background:var(--claro)}
+.cajas{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.7rem}
+.caja{background:#fff;border:1px solid var(--borde);border-radius:8px;padding:.7rem}
+.caja b{font-size:1.5rem;color:var(--verde);display:block}
+.escala{display:flex;gap:1rem;font-weight:400}
+.abstract{white-space:pre-wrap;background:#fff;border:1px solid var(--borde);padding:.8rem;border-radius:6px}
+form.inline{display:inline}
+.pie{color:#667;font-size:.85rem;margin-top:2rem}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}{% block body %}
+<h1>Inscripción / Registration</h1>
+<p>Tarifas: pregrado COP 20.000 · posgrado COP 30.000 · profesional COP 40.000 · asistencia virtual sin costo.
+Límite de pago: {{ config.PAYMENT_DEADLINE|fecha }}. Datos para la transferencia: <b>[PENDIENTE: banco, cuenta, titular]</b>.</p>
+{% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
+<form method="post" enctype="multipart/form-data">
+<input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<label>Nombre completo <input type="text" name="name" value="{{ f.get('name','') }}" required></label>
+<label>Correo electrónico <input type="email" name="email" value="{{ f.get('email','') }}" required></label>
+<label>Teléfono <input type="text" name="phone" value="{{ f.get('phone','') }}" required></label>
+<label>Documento de identidad (tipo y número) <input type="text" name="document" value="{{ f.get('document','') }}" required></label>
+<label>Institución <input type="text" name="institution" value="{{ f.get('institution','') }}" required></label>
+<label>País <input type="text" name="country" value="{{ f.get('country','') }}" required></label>
+<label>Categoría
+<select name="category">{% for k,v in CATEGORIES.items() %}<option value="{{ k }}" {{ 'selected' if f.get('category')==k }}>{{ v }}</option>{% endfor %}</select></label>
+<label>Modalidad de asistencia
+<select name="attendance"><option value="presencial" {{ 'selected' if f.get('attendance')=='presencial' }}>Presencial</option><option value="virtual" {{ 'selected' if f.get('attendance')=='virtual' }}>Virtual</option></select></label>
+<label class="check"><input type="checkbox" name="presents" value="1" {{ 'checked' if f.get('presents') }}> <span>Presento un trabajo</span></label>
+<label>Referencia del resumen (SICVEC-###) <input type="text" name="submission_ref" value="{{ f.get('submission_ref','') }}"></label>
+<label>Referencia o fecha de la transferencia <input type="text" name="payment_ref" value="{{ f.get('payment_ref','') }}"></label>
+<label>Comprobante de pago <span class="ayuda">(PDF, PNG o JPG, máx. 5 MB; opcional ahora)</span>
+<input type="file" name="receipt" accept=".pdf,.png,.jpg,.jpeg"></label>
+<label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT }}</span></label>
+<button type="submit">Enviar inscripción</button>
+</form>
+{% endblock %}

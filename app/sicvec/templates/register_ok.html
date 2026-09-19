@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block body %}
+<h1>Inscripción recibida</h1>
+<div class="ok">Su referencia es <b>{{ ref }}</b>. Valor: COP {{ '{:,}'.format(fee).replace(',', '.') }}. Le enviamos los detalles por correo.</div>
+{% endblock %}

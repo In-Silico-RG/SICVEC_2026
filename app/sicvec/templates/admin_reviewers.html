@@ -1,0 +1,11 @@
+{% extends "admin_base.html" %}{% block admin %}
+<h1>Revisores ({{ rows|length }})</h1>
+<form method="post"><input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<label>Nombre <input type="text" name="name" required></label>
+<label>Correo <input type="email" name="email" required></label>
+<button>Agregar revisor</button></form>
+<table><tr><th>Nombre</th><th>Correo</th><th>Asignados</th><th>Enlace personal</th><th></th></tr>
+{% for r in rows %}<tr><td>{{ r.name }}</td><td>{{ r.email }}</td><td>{{ r.n }}</td>
+<td>{{ config.BASE_URL }}/revisor/{{ r.token }}</td>
+<td><form method="post" action="{{ url_for('admin_invite', rid=r.id) }}"><input type="hidden" name="_csrf" value="{{ csrf_token() }}"><button class="sec">Invitar</button></form></td></tr>{% endfor %}</table>
+{% endblock %}

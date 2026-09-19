@@ -28,7 +28,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 
 ## 🟠 Difusión e inscripción
 - [x] Flyer / afiche oficial (16 sept, AC) → `05_Material_Difusion/Flyers_Posters/`
-- [ ] Formulario de inscripción online (tarifas: pregrado COP 20.000, posgrado 30.000, profesionales 40.000) → `04_Inscripcion/Formularios/`
+- [ ] Formularios en Google Forms (envío de resúmenes, inscripción, evaluación; especificación en `04_Inscripcion/Formularios/Especificacion_Formularios.md`, plan `docs/02_google_forms_plan.md`) — decidido AC 19 sept; formulario de inscripción (tarifas: pregrado COP 20.000, posgrado 30.000, profesionales 40.000) → `04_Inscripcion/Formularios/`
 - [ ] Plantillas de email: convocatoria, prórroga, aceptación, rechazo (departamentos ya hechas 16 sept; faltan aceptación/rechazo) → `07_Comunicaciones/Plantillas_Email/`
 - [ ] Campaña en redes sociales → `05_Material_Difusion/Redes_Sociales/`
 

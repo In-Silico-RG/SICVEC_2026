@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block body %}
+<p><a href="{{ url_for('admin_home') }}">Panel</a> · <a href="{{ url_for('admin_submissions') }}">Resúmenes</a> ·
+<a href="{{ url_for('admin_reviewers') }}">Revisores</a> · <a href="{{ url_for('admin_registrations') }}">Inscripciones</a> ·
+<a href="{{ url_for('admin_emails') }}">Correos</a></p>
+{% block admin %}{% endblock %}{% endblock %}

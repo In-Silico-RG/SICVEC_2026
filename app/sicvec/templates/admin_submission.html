@@ -1,0 +1,29 @@
+{% extends "admin_base.html" %}{% block admin %}
+<h1>{{ s.ref }} — {{ s.title }}</h1>
+<table>
+<tr><th>Autor</th><td>{{ s.author_name }} · {{ s.author_institution }} · {{ s.author_program }} · {{ s.author_country }} · {{ s.email }}</td></tr>
+<tr><th>Otros autores</th><td>{{ s.other_authors or '—' }}</td></tr>
+<tr><th>Modalidad / eje</th><td>{{ MODALITIES[s.modality] }} · {{ s.presentation }} · {{ s.axis }}</td></tr>
+<tr><th>Palabras clave</th><td>{{ s.keywords }}</td></tr>
+<tr><th>Estado</th><td>{{ s.status }}{% if s.flags %} — {{ s.flags }}{% endif %}</td></tr>
+</table>
+<h2>Resumen ({{ s.word_count }} palabras)</h2><div class="abstract">{{ s.abstract }}</div>
+<form method="post" action="{{ url_for('admin_status', sid=s.id) }}">
+<input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<select name="status"><option>admisible</option><option>revision_manual</option><option>no_admisible</option></select>
+<button class="sec">Cambiar estado</button></form>
+<h2>Evaluaciones</h2>
+<table><tr><th>Revisor</th><th>Puntaje ponderado</th><th>Recomendación</th><th>Comentarios</th></tr>
+{% for r in revs %}<tr><td>{{ r.reviewer }}</td><td>{{ r.weighted if r.weighted is not none else 'pendiente' }}</td>
+<td>{{ RECOMMENDATIONS[r.recommendation] if r.recommendation else '—' }}</td><td>{{ r.comments or '' }}</td></tr>
+{% else %}<tr><td colspan="4">Sin revisores asignados.</td></tr>{% endfor %}</table>
+<p><b>Sugerencia (regla propuesta, pendiente de aprobación de AC):</b>
+{{ RECOMMENDATIONS[suggestion] if suggestion else '—' }} — {{ note }}</p>
+<h2>Decisión</h2>
+<form method="post" action="{{ url_for('admin_decision', sid=s.id) }}">
+<input type="hidden" name="_csrf" value="{{ csrf_token() }}">
+<select name="decision">{% for k,v in RECOMMENDATIONS.items() %}<option value="{{ k }}" {{ 'selected' if (s.decision or suggestion)==k }}>{{ v }}</option>{% endfor %}</select>
+<label>Nota para los autores <textarea name="note">{{ s.decision_note }}</textarea></label>
+<button>Guardar decisión</button></form>
+{% if s.decision %}<p>Decidido {{ s.decided_at }}. {{ 'Notificado ' ~ s.notified_at if s.notified_at else 'Sin notificar.' }}</p>{% endif %}
+{% endblock %}

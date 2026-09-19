@@ -1,0 +1,8 @@
+{% extends "admin_base.html" %}{% block admin %}
+<h1>Inscripciones ({{ rows|length }})</h1>
+<table><tr><th>Ref.</th><th>Nombre</th><th>Correo</th><th>Categoría</th><th>Valor COP</th><th>Referencia de pago</th><th>Comprobante</th><th>Pagado</th></tr>
+{% for r in rows %}<tr><td>{{ r.ref }}</td><td>{{ r.name }}</td><td>{{ r.email }}</td><td>{{ CATEGORIES[r.category] }}</td>
+<td>{{ '{:,}'.format(fees[r.category]).replace(',', '.') }}</td><td>{{ r.payment_ref or '—' }}</td>
+<td>{% if r.receipt_file %}<a href="{{ url_for('admin_receipt', rid=r.id) }}">ver</a>{% else %}—{% endif %}</td>
+<td><form method="post" action="{{ url_for('admin_paid', rid=r.id) }}"><input type="hidden" name="_csrf" value="{{ csrf_token() }}"><button class="sec">{{ 'Sí' if r.paid else 'No' }}</button></form></td></tr>{% endfor %}</table>
+{% endblock %}

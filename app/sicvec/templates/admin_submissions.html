@@ -1,0 +1,7 @@
+{% extends "admin_base.html" %}{% block admin %}
+<h1>Resúmenes ({{ rows|length }})</h1>
+<table><tr><th>Ref.</th><th>Título</th><th>Modalidad</th><th>Palabras</th><th>Estado</th><th>Revisores</th><th>Evaluaciones</th><th>Decisión</th></tr>
+{% for s in rows %}<tr><td><a href="{{ url_for('admin_submission', sid=s.id) }}">{{ s.ref }}</a></td><td>{{ s.title }}</td>
+<td>{{ MODALITIES[s.modality] }}</td><td>{{ s.word_count }}</td><td>{{ s.status }}</td><td>{{ s.n_assign }}</td><td>{{ s.n_reviews }}</td>
+<td>{{ RECOMMENDATIONS[s.decision] if s.decision else '—' }}</td></tr>{% endfor %}</table>
+{% endblock %}

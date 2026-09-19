@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block body %}
+<h1>Resumen recibido</h1>
+<div class="ok">Su referencia es <b>{{ ref }}</b>. Le enviamos una confirmación por correo.</div>
+{% if flags %}<div class="aviso">El comité revisará manualmente su envío porque: <ul>{% for x in flags %}<li>{{ x }}</li>{% endfor %}</ul>
+Recuerde que el resumen no debe identificar a los autores.</div>{% endif %}
+{% endblock %}
