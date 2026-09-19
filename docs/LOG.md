@@ -253,3 +253,17 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   - Outcome: AC pushed by hand twice (`e150c21..6087a47`, `6087a47..586c2bd`). My proposed jq fix for
     `~/.claude/settings.json` was answered "nope" and is untested. Commits `049c0f6` and `abe40fc` are still local.
   - Saved as memory `feedback-git-push-blocked`.
+
+- **Push resolved (2026-09-19, later).** AC asked "ahora sí podemos hacer el push?". `git push origin main` from my own Bash
+  went through: `586c2bd..3407b0a` (`049c0f6`, `abe40fc`, `3407b0a`). Nothing was changed on my side; AC changed something in
+  their environment after the failure above (what exactly: not stated). The earlier "still local" note is closed.
+  Memory `feedback-git-push-blocked` updated. If the classifier blocks again: say it once, AC pushes by hand.
+- Final state 2026-09-19: `main` in sync with origin after the commit of this entry.
+
+### Open for AC (updated)
+1. App deployment: VPS + domain (kit in `app/deploy/`, untested on a real server), SMTP mailbox, bank details.
+2. `[PENDIENTE]` in the app: official UNISUCRE data-treatment text (`CONSENT_TEXT`) and data controller details (`INSTITUTION_DATA`).
+3. Confirm: in-person external attendees also pay (implemented that way).
+4. Streaming platform (Zoom Webinar / YouTube Live / Teams).
+5. Reviewers (10-15) and scientific committee; second keynote; Escobar's slot, email/phone.
+6. Once the app URL exists: put it in guide, manual, template, flyer; recompile.
