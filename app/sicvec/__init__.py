@@ -64,7 +64,7 @@ def create_app(overrides=None):
                                  CATEGORIES=logic.CATEGORIES, CRITERIA=logic.CRITERIA,
                                  RECOMMENDATIONS=logic.RECOMMENDATIONS, WORD_LIMITS=logic.WORD_LIMITS,
                                  fee_for=lambda c, a: logic.fee_for(app.config["FEES"], c, a),
-                                 config=app.config, now=now)
+                                 config=app.config, now=now, content=content)
 
     @app.template_filter("fecha")
     def fecha(dt):

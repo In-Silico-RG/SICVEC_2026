@@ -10,15 +10,24 @@
 {% for m in get_flashed_messages() %}<div class="ok">{{ m }}</div>{% endfor %}
 {% block body %}{% endblock %}
 </main>
-{% block footer %}<footer>
-<div class="logos">
+{% block footer %}<footer class="pie-sitio">
+<div class="pie-logos">
 <img src="{{ url_for('static', filename='logo_unisucre.jpg') }}" alt="Universidad de Sucre">
-<img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Programa de Biología">
+<img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Programa de Biología, Universidad de Sucre">
 <img src="{{ url_for('static', filename='logo_insilico.jpg') }}" alt="Grupo de Investigación IN SILICO">
 </div>
-<p><strong>I Simposio Internacional de Ciencia Verde y Economía Circular (SICVEC 2026)</strong> · 19-20 de octubre de 2026 · C.C. Guacarí, Sincelejo, Colombia · modalidad híbrida</p>
-<p>Organiza: Universidad de Sucre (UNISUCRE) — Programa de Biología, Facultad de Educación y Ciencias, y Grupo de Investigación IN SILICO.<br>
-Departamentos co-organizadores: Biología y Química, Ingeniería Agroindustrial, Ingeniería Agrícola y Física.</p>
-<p>Contacto: <a href="mailto:{{ config.MAIL_FROM }}">{{ config.MAIL_FROM }}</a></p>
+<div class="pie-cols">
+<div><h4>Organiza</h4>
+<p><strong>Universidad de Sucre (UNISUCRE)</strong><br>Facultad de Educación y Ciencias<br>Programa de Biología<br>Grupo de Investigación IN SILICO<br>Sincelejo, Sucre, Colombia</p></div>
+<div><h4>Departamentos co-organizadores</h4>
+<ul>{% for d in content.DEPARTAMENTOS %}<li>{{ d }}</li>{% endfor %}</ul>
+<p class="peq">Universidad de Sucre</p></div>
+<div><h4>Coordinación</h4>
+<ul>{% for n, r in content.COORDINADORES %}<li><strong>{{ n }}</strong><br><span class="peq">{{ r }}</span></li>{% endfor %}</ul></div>
+<div><h4>Evento y contacto</h4>
+<p><strong>SICVEC 2026</strong><br>19–20 de octubre de 2026<br>C.C. Guacarí, Sincelejo<br>Modalidad híbrida</p>
+<p><a href="mailto:{{ config.MAIL_FROM }}">{{ config.MAIL_FROM }}</a></p></div>
+</div>
+<p class="pie-fin">I Simposio Internacional de Ciencia Verde y Economía Circular · Universidad de Sucre, Colombia</p>
 </footer>{% endblock %}
 </body></html>

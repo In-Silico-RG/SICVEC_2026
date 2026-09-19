@@ -300,3 +300,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   day 1, while `Cronograma_Definitivo.md` says 08:30-09:00); no decision by AC yet.
 - Open for AC: (1) approve publishing Escobar's photo, bio and abstract on a public page (she sent them by email, no explicit
   consent to publish); (2) confirm or edit the preliminary programme; (3) the abstract-review look approval is still pending.
+
+- Footer redesigned after AC's review ("logos too small, footer style ugly, no coordinators or affiliations"; screenshot pasted).
+  Logos regenerated from the originals in `01_Propuesta/Logos/` (trimmed, 240 px high, shown at 88 px on a white band); dark-green
+  footer with four columns: Organiza (UNISUCRE, Facultad, Programa de Biología, IN SILICO), the four co-organizing departments,
+  the four coordinators with roles (proposal 8.2.1), event and contact. Data in `sicvec/content.py`. No personal emails or phones
+  on the public page. Checked with a headless Firefox screenshot; 25 tests pass. Reviewer pages still render no footer.
+- Open: logos of the Biología y Química and Física departments do not exist in the repo (only Agroindustrial and Ing. Agrícola);
+  departments are listed as text. Coordinators' own affiliations beyond "UNISUCRE" were not invented.

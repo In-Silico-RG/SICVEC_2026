@@ -123,3 +123,17 @@ SPEAKERS = [{
         "nuevas cadenas de valor a partir de un recurso marino disponible regionalmente.",
     ],
 }]
+
+# Footer. Source: proposal section 8.2 and CLAUDE.md/FICHA (roles). No personal emails or phones on the public page.
+COORDINADORES = [
+    ("Aldo F. Combariza", "Coordinación General"),
+    ("María Ximena Díaz", "Coordinación Académica"),
+    ("Sebastián Vargas", "Coordinación Logística"),
+    ("Selena Arias Avila", "Coordinación Administrativa"),
+]
+DEPARTAMENTOS = [
+    "Departamento de Biología y Química",
+    "Departamento de Ingeniería Agroindustrial",
+    "Departamento de Ingeniería Agrícola",
+    "Departamento de Física",
+]
