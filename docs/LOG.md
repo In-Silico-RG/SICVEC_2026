@@ -308,3 +308,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   on the public page. Checked with a headless Firefox screenshot; 25 tests pass. Reviewer pages still render no footer.
 - Open: logos of the Biología y Química and Física departments do not exist in the repo (only Agroindustrial and Ing. Agrícola);
   departments are listed as text. Coordinators' own affiliations beyond "UNISUCRE" were not invented.
+
+- Venue address added to the home page (AC asked: "the address surely can be found somewhere"). Web search: **Calle 28 No. 25B-97,
+  Barrio Bostón, Sincelejo**, from one local directory ([La Guía de Sincelejo](https://laguiadesincelejo.com/guacari/)); Páginas
+  Amarillas' page had no address, and individual shops in the mall list "Calle 25 ..." numbers. So the address is single-sourced
+  and **not confirmed by the venue**; AC to verify against the venue agreement. Google Maps button is a name search
+  (`maps/search/?api=1&query=Centro Comercial Guacarí Sincelejo Sucre`), no coordinates asserted. Room still pending.
