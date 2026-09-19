@@ -222,3 +222,13 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Decision (AC, 2026-09-19): the talk title is the complete one, with "holopelágico". Recorded in `FICHA_Escobar.md`.
   No other project file used the title yet.
 - Pushed to origin by AC (`! git push origin main`) after the auto-mode classifier blocked my push: `e150c21..6087a47`. The `autoMode.allow` rule was not added (classifier blocks self-edits of my own permissions); `Bash(git push *)` in `settings.local.json` does not override the classifier.
+
+- App review by AC (local run): "En modalidad: no hay talleres". Consistent with the earlier programme decision (line above:
+  "no practical workshops"), which had not reached the app or the author documents. Removed the workshop modality
+  (`taller`, 500 words) from the app (`logic.py`, `submit.html`, README; 24 tests pass) and from: author guide, manual,
+  rubric, abstract template, proposal (formats table), associated-entity request letter, form spec, root README,
+  `Cronograma_Definitivo.md`. PDFs recompiled and checked with `pdftotext` (0 mentions); old PDFs in
+  `Versiones/2026-09-19_pre_sin_talleres/`. Left on purpose: `docs/01`, `docs/02` and `crear_formularios.gs`
+  (superseded routes, kept as record). The proposal and the letter had already circulated with the workshop line.
+- Deployment kit for a plain Debian/Ubuntu VPS written in `app/deploy/` (`deploy.sh`, systemd unit, nginx with HTTPS and
+  rate limits, nightly backup). Syntax-checked with `bash -n`; **not run on a real server** (no VPS or domain yet).

@@ -6,7 +6,7 @@ notifications. Written 2026-09-19; plan and decisions in `../docs/03_app_plan.md
 ## What runs by itself
 - **Deadlines** are enforced by the clock (Colombia time, UTC-5): submission closes 2026-10-04 23:59,
   reviews 2026-10-07 23:59, payment noted 2026-10-15. No manual closing.
-- **Validation at submit**: word limit per modality (oral 300, poster 250, workshop 500), 3-5 keywords,
+- **Validation at submit**: word limit per modality (oral 300, poster 250), 3-5 keywords,
   at most 5 authors, axis from the six axes, consent and originality boxes, duplicate guard.
 - **Blind-review check**: abstracts that contain an email or an author's name go to `revision_manual`.
 - **Reference numbers** `SICVEC-###` and `REG-###`, and a confirmation email for each.

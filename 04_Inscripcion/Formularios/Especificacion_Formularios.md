@@ -14,10 +14,10 @@ sección "Confirmación" del final; cierre 4 oct 2026 23:59 (hora Colombia).
 | 1 | Correo de contacto | correo | obligatorio |
 | 2 | Título del trabajo | texto corto | obligatorio, máx. 200 caracteres |
 | 3 | Idioma del resumen | opción | Español / English |
-| 4 | Modalidad | opción | Ponencia oral (20 min) / Póster científico (90×120 cm) / Taller práctico |
+| 4 | Modalidad | opción | Ponencia oral (20 min) / Póster científico (90×120 cm) |
 | 5 | Presentación | opción | Presencial / Virtual |
 | 6 | Eje temático principal | opción | los seis ejes: Economía Circular; Química Verde y Procesos Sostenibles; Biotecnología Sostenible; Tecnologías Verdes y Energías Renovables; Sostenibilidad en Cadenas de Suministro; Política Pública y Gobernanza Ambiental |
-| 7 | Resumen (sin nombres de autores ni afiliaciones) | párrafo | obligatorio, máx. 3.600 caracteres; oral 300 palabras, póster 250, taller 500 (se verifica en admisibilidad) |
+| 7 | Resumen (sin nombres de autores ni afiliaciones) | párrafo | obligatorio, máx. 3.600 caracteres; oral 300 palabras, póster 250 (se verifica en admisibilidad) |
 | 8 | Palabras clave (3 a 5, separadas por comas) | texto corto | obligatorio |
 | 9 | Autor 1: nombre, institución, programa o profesión, país | texto corto ×4 | obligatorio; autor que presenta |
 | 10 | Autores 2 a 5 (opcionales): nombre, institución | párrafo | máx. 5 autores en total |

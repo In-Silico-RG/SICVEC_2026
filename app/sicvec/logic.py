@@ -9,9 +9,8 @@ AXES = [
     "Sostenibilidad en Cadenas de Suministro",
     "Política Pública y Gobernanza Ambiental",
 ]
-MODALITIES = {"oral": "Ponencia oral (20 min)", "poster": "Póster científico (90 × 120 cm)",
-              "taller": "Taller práctico"}
-WORD_LIMITS = {"oral": 300, "poster": 250, "taller": 500}   # Guia_Presentacion_Resumenes.tex
+MODALITIES = {"oral": "Ponencia oral (20 min)", "poster": "Póster científico (90 × 120 cm)"}
+WORD_LIMITS = {"oral": 300, "poster": 250}   # Guia_Presentacion_Resumenes.tex
 CATEGORIES = {"pregrado": "Pregrado", "posgrado": "Posgrado", "profesional": "Profesional",
               "virtual": "Asistencia virtual (cupos en línea)"}
 # Rubrica_PeerReview.tex: weights 25/25/25/15/10, scale 1-5.

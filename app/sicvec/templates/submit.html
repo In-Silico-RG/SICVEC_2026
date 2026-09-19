@@ -2,7 +2,7 @@
 <h1>Envío de resúmenes / Abstract submission</h1>
 <p>Cierre: {{ config.SUBMISSION_DEADLINE|fecha }} (hora Colombia). El resumen se pega como texto y
 <b>no debe incluir nombres de autores ni afiliaciones</b> (revisión ciega).
-Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster }}, taller {{ WORD_LIMITS.taller }}.</p>
+Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster }}.</p>
 {% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
 <form method="post">
 <input type="hidden" name="_csrf" value="{{ csrf_token() }}">

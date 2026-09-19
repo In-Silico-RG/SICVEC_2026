@@ -58,7 +58,7 @@
 |---|---|---|---|
 | **19 oct** | 8:00 AM | Llegada de equipos y personal | SV |
 | **19 oct** | 8:30-09:00 | Bienvenida e inauguración | AC |
-| **19-20 oct** | Todo el día | Conferencias magistrales, ponencias, paneles, talleres, posters | Todos |
+| **19-20 oct** | Todo el día | Conferencias magistrales, ponencias, paneles, posters | Todos |
 | **20 oct** | 5:00 PM | Clausura y agradecimientos | AC |
 | **20 oct** | 5:30 PM | Desmontaje y cierre | SV |
 
