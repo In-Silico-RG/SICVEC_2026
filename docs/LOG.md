@@ -98,6 +98,33 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   No further detail given (which rooms, capacity, cost, who owns the platform decision). `TAREAS.md`:
   venue item ticked, platform item flagged pending. `~/.claude/CLAUDE.md` synced.
 
+- AC asked which platform to use for registration and abstract submission; Claude recommended EasyChair
+  (submission + review) and Google Form/Sheet (registration + bank-transfer receipt). AC: "lets plan for
+  easychair". Plan written: `docs/01_easychair_plan.md` (status: draft).
+- Found: EasyChair Free is capped at 20 submissions; Professional is £2.90 per submission (min 20, max 60,
+  credit card only). Source: easychair.org license pages, read via WebFetch/WebSearch (pricing page
+  `/license_pricing` and `/pricing/` returned 502/404, so figures come from `/docs/license_pro`, `/docs/license_free`).
+- **Found: the 16 Sep schedule change (close 4 Oct) was never propagated to six files** that still show the
+  28 Sep close: `Guia_Presentacion_Resumenes.tex` (lines 80, 81, 243; notification still 6 Oct),
+  `Manual_Memorias_PeerReview.tex` (127, 135), `Template_Resumen_Cientifico.tex:210`,
+  `Flyer_SICVEC_2026.tex:161`, `Información_Evento_Conferencistas.tex:87`,
+  `Conformacion_Comite_Cientifico.tex:87`, plus `README.md:150-151`. The earlier log and memory said the
+  manual had been updated; it was not fully. Not yet fixed; awaiting AC's go-ahead.
+- Correction: 2026-09-22 is a Tuesday, not a Monday as stated in chat earlier.
+
+- Decision (AC, 2026-09-19): fix the dates, recompile, commit and push. Done in `8a8ebe0`: close 4 Oct 23:59,
+  admissibility 4-5 Oct, evaluation 5-7 Oct, decision 8 Oct, notification 8-9 Oct, final material 14 Oct,
+  payment deadline 15 Oct (added to guide, manual, info sheet); call opening 1 Aug -> 22 Sep in guide and manual.
+  Files: `Guia_Presentacion_Resumenes`, `Manual_Memorias_PeerReview`, `Template_Resumen_Cientifico`,
+  `Flyer_SICVEC_2026`, `Información_Evento_Conferencistas`, `Conformacion_Comite_Cientifico`, `README.md`.
+  All six PDFs recompiled (two passes), aux files removed, PDF text checked with `pdftotext`: no 28 Sep / 6 Oct / 1 Aug left.
+  Old PDFs saved in `Versiones/2026-09-19_pre_fecha_4oct/`.
+- Left as is: `Propuesta_Muestra_Empresarial` says sponsors pay 'antes de 30 septiembre' (sponsorship
+  confirmation, not the peer-review schedule). `Template_Resumen_Cientifico.tex:207` lists
+  `www.sicvec2026.unisucre.edu.co`; nothing in the repo shows that URL exists. Both need AC's word.
+- AC asked if more than 20 abstracts exceeds the EasyChair free plan: yes (cap 20 submissions).
+
 ### Open for AC
+0. EasyChair: license (Free <=20 submissions vs Professional), who pays by card, chair email, expected number of abstracts (see `01_easychair_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
 2. Reviewers (10-15) and scientific committee: status after the meeting?
