@@ -219,3 +219,5 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   copies as sent in `07_Comunicaciones/Cartas_Departamentos/Versiones/`. Grep over the project: no other file has them.
 - `TAREAS.md`: keynote item updated.
 - Commit `abfcdf1` (13:42) — Escobar keynote record and letter fixes. Not pushed.
+- Decision (AC, 2026-09-19): the talk title is the complete one, with "holopelágico". Recorded in `FICHA_Escobar.md`.
+  No other project file used the title yet.

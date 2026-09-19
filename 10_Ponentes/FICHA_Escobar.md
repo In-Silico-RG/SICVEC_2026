@@ -7,8 +7,7 @@
 | Status | **Accepted** (email 2026-09-18); invitation letter sent by AC | `Escobar_Respuesta_2026-09-18.md` |
 | Availability | 19 and 20 Oct 2026 (both days) | her email |
 | Format | Virtual (as offered in the invitation letter) | invitation letter; her email does not contradict it |
-| Talk title (abstract file) | Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados | `Resumen conferencia Transformación Sostenible.docx` |
-| Talk title (email body) | Transformación sostenible del sargazo en materiales funcionales avanzados | her email — differs by "holopelágico"; **ask which one goes in the program** |
+| Talk title (**decided, AC 2026-09-19: complete version**) | Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados | abstract file; her email body omits "holopelágico" |
 | Slot | [PENDIENTE] — depends on the programme | |
 | Technical details | She waits for our instructions; confirmation due **before 1 Oct** | her email |
 | Email / phone | [PENDIENTE] (reply address not in the pasted text) | |
