@@ -7,7 +7,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 
 ## 🔴 Urgente (esta semana — actualizado 17 sept)
 - [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 4 oct (no 15 sept cierre), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
-- [ ] **Confirmar venue C.C. Guacarí** para 19-20 oct: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
+- [x] **Venue confirmado** (reunión 18 sept, AC 19 sept). Verificar por escrito: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
 - [ ] **Datos de contacto** completos de los 3 coordinadores (teléfonos, email de MXD) — AC
 - [x] **Presupuesto** fijado en COP 2.500.000 (AC, 19 sept) — 06_Logistica/Presupuesto/
 
@@ -21,7 +21,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 
 ## 🟠 Participación en línea (modalidad híbrida) — decidido 14 sept
 - [ ] Definir número de cupos en línea y tarifa virtual (¿gratuita para redes internacionales?) — AC
-- [ ] Elegir y cotizar plataforma de transmisión (Zoom Webinar / YouTube Live / Teams institucional) y persona encargada de la transmisión — SV
+- [ ] **PENDIENTE tras reunión 18 sept** — elegir y cotizar plataforma de transmisión (Zoom Webinar / YouTube Live / Teams institucional) y persona encargada de la transmisión — SV
 - [ ] Verificar ancho de banda y equipos de transmisión en el venue — SV
 - [ ] Añadir opción "virtual" al formulario de inscripción y a la guía de resúmenes (ponencias virtuales para autores internacionales) — MXD
 - [ ] Preparar invitación para las redes internacionales (UPV/ITQ, aliados en América Latina) — AC

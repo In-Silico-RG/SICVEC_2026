@@ -94,5 +94,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Verified: `ssh -T git@github.com` authenticates as In-Silico-RG; `git ls-remote origin` works.
   Note: the same `id_ed25519` is the IdentityFile for the GUANE HPC hosts in `~/.ssh/config`.
 
+- 18 Sep meeting outcome (AC, 2026-09-19): **venue confirmed; streaming platform still pending.**
+  No further detail given (which rooms, capacity, cost, who owns the platform decision). `TAREAS.md`:
+  venue item ticked, platform item flagged pending. `~/.claude/CLAUDE.md` synced.
+
 ### Open for AC
-1. What came out of the 18 Sep meeting (venue, online seats/platform, reviewers)?
+1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
+2. Reviewers (10-15) and scientific committee: status after the meeting?
