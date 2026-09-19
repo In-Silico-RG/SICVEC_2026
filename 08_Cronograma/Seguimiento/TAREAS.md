@@ -35,7 +35,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 ## 🟡 Académico (MXD)
 - [ ] Lista de 10-15 revisores → `03_Memorias_y_PeerReview/Revisores/`
 - [ ] Comité científico formal
-- [ ] Confirmar conferencistas magistrales (2)
+- [ ] Confirmar conferencistas magistrales (2) — Escobar (CICY) aceptó 18 sept, ver `10_Ponentes/FICHA_Escobar.md`; pendiente: franja horaria, instrucciones técnicas antes del 1 oct, título definitivo; estado del segundo conferencista: [PENDIENTE]
 - [ ] Completar hojas de vida de coordinadores (`02_Organizadores/`)
 
 ## Calendario de peer review (vigente — actualizado 16 sept)

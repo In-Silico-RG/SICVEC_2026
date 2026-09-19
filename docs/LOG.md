@@ -205,3 +205,16 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 3. Streaming platform (Zoom Webinar / YouTube Live / Teams): who decides, by when.
 4. Reviewers (10-15) and scientific committee: status.
 5. Once the app URL exists: put it in guide, manual, template, flyer; recompile.
+
+## 2026-09-19 (second session)
+
+- AC asked to review `10_Ponentes/` (untracked): Escobar's bio, talk abstract and photo (received by email 2026-09-18).
+  Read all three. Then AC pasted her reply email; archived verbatim in `10_Ponentes/Escobar_Respuesta_2026-09-18.md`.
+- Her reply: accepts, available 19 and 20 Oct, sends title/abstract/bio/photo, awaits technical instructions before 1 Oct.
+  Speaker record in `10_Ponentes/FICHA_Escobar.md` (open: slot, email/phone, final title — the email title omits "holopelágico").
+- Found errors in the invitation letter (my drafting, earlier session): CICY expanded as "Centro de Investigación Científica y
+  de Educación Superior de Ensenada" (that is CICESE) with address Ensenada, Baja California; "Cátedra SECIHTI" and "Nivel I".
+  Her bio and signature say Centro de Investigación Científica de Yucatán (Mérida), Investigadora por México–SECIHTI, Nivel II.
+  Fixed in the `.tex`, PDF recompiled and checked with `pdftotext`. The letter went out with the errors (she replied to it);
+  copies as sent in `07_Comunicaciones/Cartas_Departamentos/Versiones/`. Grep over the project: no other file has them.
+- `TAREAS.md`: keynote item updated.
