@@ -26,6 +26,9 @@ def load_config(overrides=None):
         "CONSENT_TEXT": os.environ.get(
             "CONSENT_TEXT",
             "[PENDIENTE: texto oficial de la política de tratamiento de datos de UNISUCRE]"),
+        "INSTITUTION_DATA": os.environ.get(
+            "INSTITUTION_DATA",
+            "[PENDIENTE: responsable del tratamiento de datos (razón social, NIT, dirección y correo de contacto de UNISUCRE)]"),
         "SMTP_HOST": os.environ.get("SMTP_HOST", ""),
         "SMTP_PORT": int(os.environ.get("SMTP_PORT", "587")),
         "SMTP_USER": os.environ.get("SMTP_USER", ""),

@@ -22,6 +22,7 @@ Límite de pago: {{ config.PAYMENT_DEADLINE|fecha }}. Datos para la transferenci
 <label>Comprobante de pago <span class="ayuda">(PDF, PNG o JPG, máx. 5 MB; opcional ahora)</span>
 <input type="file" name="receipt" accept=".pdf,.png,.jpg,.jpeg"></label>
 <label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT }}</span></label>
+<p class="ayuda">{{ config.INSTITUTION_DATA }}</p>
 <button type="submit">Enviar inscripción</button>
 </form>
 {% endblock %}

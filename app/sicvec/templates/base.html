@@ -1,12 +1,24 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% block title %}SICVEC 2026{% endblock %}</title>
+<link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
 <body>
-<header><span class="titulo">SICVEC 2026</span> &nbsp;
+<header><a class="marca" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='marca_sicvec.jpg') }}" alt="SICVEC 2026"></a><span class="titulo">SICVEC 2026</span> &nbsp;
 <a href="{{ url_for('index') }}">Inicio</a><a href="{{ url_for('submit') }}">Enviar resumen</a><a href="{{ url_for('register') }}">Inscripción</a></header>
 <main>
 {% for m in get_flashed_messages() %}<div class="ok">{{ m }}</div>{% endfor %}
 {% block body %}{% endblock %}
-<p class="pie">Simposio Internacional de Ciencia Verde y Economía Circular · 19-20 de octubre de 2026 · Universidad de Sucre</p>
-</main></body></html>
+</main>
+{% block footer %}<footer>
+<div class="logos">
+<img src="{{ url_for('static', filename='logo_unisucre.jpg') }}" alt="Universidad de Sucre">
+<img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Programa de Biología">
+<img src="{{ url_for('static', filename='logo_insilico.jpg') }}" alt="Grupo de Investigación IN SILICO">
+</div>
+<p><strong>I Simposio Internacional de Ciencia Verde y Economía Circular (SICVEC 2026)</strong> · 19-20 de octubre de 2026 · C.C. Guacarí, Sincelejo, Colombia · modalidad híbrida</p>
+<p>Organiza: Universidad de Sucre (UNISUCRE) — Programa de Biología, Facultad de Educación y Ciencias, y Grupo de Investigación IN SILICO.<br>
+Departamentos co-organizadores: Biología y Química, Ingeniería Agroindustrial, Ingeniería Agrícola y Física.</p>
+<p>Contacto: <a href="mailto:{{ config.MAIL_FROM }}">{{ config.MAIL_FROM }}</a></p>
+</footer>{% endblock %}
+</body></html>

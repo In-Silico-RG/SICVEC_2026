@@ -232,3 +232,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (superseded routes, kept as record). The proposal and the letter had already circulated with the workshop line.
 - Deployment kit for a plain Debian/Ubuntu VPS written in `app/deploy/` (`deploy.sh`, systemd unit, nginx with HTTPS and
   rate limits, nightly backup). Syntax-checked with `bash -n`; **not run on a real server** (no VPS or domain yet).
+- App review by AC, second pass: (1) event image missing -> logo added to header, home page and favicon (web-sized copies made
+  from `07_Comunicaciones/logo_sicvec2026.png`, 2560 px -> 1200 px); (2) institutional data missing -> footer with UNISUCRE,
+  Programa de Biología and IN SILICO logos, organizer, co-organizing departments and contact (`MAIL_FROM`), plus a new
+  `INSTITUTION_DATA` setting shown under the consent checkbox. **Still `[PENDIENTE]`**: the official UNISUCRE data-treatment
+  text (`CONSENT_TEXT`) and the data controller's details (name, NIT, address, contact: `INSTITUTION_DATA`); I did not invent them.
+  The admin panel warns while either is pending.
+- Found by the test suite: the new footer named UNISUCRE on the blind-review pages. Reviewer pages now render no footer
+  (`{% block footer %}` overridden empty). 24 tests pass.

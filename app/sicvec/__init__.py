@@ -300,7 +300,7 @@ def create_app(overrides=None):
             "inscripciones pagadas": c("SELECT COUNT(*) FROM registrations WHERE paid=1"),
         }
         return render_template("admin_home.html", stats=stats, smtp=bool(app.config["SMTP_HOST"]),
-                               consent_pending="PENDIENTE" in app.config["CONSENT_TEXT"])
+                               consent_pending="PENDIENTE" in app.config["CONSENT_TEXT"] + app.config["INSTITUTION_DATA"])
 
     @app.get("/admin/resumenes")
     @admin_required

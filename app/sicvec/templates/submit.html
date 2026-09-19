@@ -28,6 +28,7 @@ Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster 
 <label>Otros autores <span class="ayuda">(opcional, uno por línea: nombre, institución; máximo 4 más)</span>
 <textarea name="other_authors">{{ f.get('other_authors','') }}</textarea></label>
 <label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT }}</span></label>
+<p class="ayuda">{{ config.INSTITUTION_DATA }}</p>
 <label class="check"><input type="checkbox" name="originality" value="1" {{ 'checked' if f.get('originality') }}> <span>El trabajo es original y no está en evaluación en otro evento.</span></label>
 <button type="submit">Enviar resumen</button>
 </form>

@@ -1,7 +1,7 @@
 {% extends "admin_base.html" %}{% block admin %}
 <h1>Panel de administración</h1>
 {% if not smtp %}<div class="aviso">SMTP no configurado: los correos se guardan como «simulado» y no salen del servidor.</div>{% endif %}
-{% if consent_pending %}<div class="aviso">El texto de tratamiento de datos sigue en [PENDIENTE]. Defina CONSENT_TEXT antes de abrir las convocatorias.</div>{% endif %}
+{% if consent_pending %}<div class="aviso">El texto de tratamiento de datos o los datos del responsable siguen en [PENDIENTE]. Defina CONSENT_TEXT e INSTITUTION_DATA antes de abrir las convocatorias.</div>{% endif %}
 <div class="cajas">{% for k,v in stats.items() %}<div class="caja"><b>{{ v }}</b>{{ k }}</div>{% endfor %}</div>
 <h2>Acciones</h2>
 <form method="post" action="{{ url_for('admin_assign') }}" class="inline"><input type="hidden" name="_csrf" value="{{ csrf_token() }}"><button>Asignar revisores automáticamente</button></form>
