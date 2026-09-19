@@ -270,3 +270,17 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 4. Streaming platform (Zoom Webinar / YouTube Live / Teams).
 5. Reviewers (10-15) and scientific committee; second keynote; Escobar's slot, email/phone.
 6. Once the app URL exists: put it in guide, manual, template, flyer; recompile.
+
+## 2026-09-19 (deploy kit test attempt)
+
+- AC asked to test `app/deploy/deploy.sh` in a local Debian container. **Not possible on this machine**: no docker, podman,
+  nspawn, debootstrap or qemu (only `bwrap`/`unshare`). Running the script on the workstation itself was rejected: it installs
+  nginx, writes `/etc`, enables `ufw` and requests a certificate. Installing a container runtime needs `sudo apt`; not done.
+- Done instead (no root, scratchpad venv, nothing installed system-wide): the app started under
+  `gunicorn --workers 2 run:app` with the environment the script generates (`SESSION_COOKIE_SECURE=1`, `BASE_URL=https://...`,
+  `ONLINE_SEATS=300`). `/`, `/enviar`, `/inscripcion` -> 200; `/admin` -> 401 without credentials, 200 with the admin
+  password. The routes that `nginx-sicvec.conf` throttles (`/enviar`, `/inscripcion`, `/admin`) exist in `sicvec/__init__.py`.
+  `systemd-analyze verify sicvec.service`: only complaint is that `/opt/sicvec/venv/bin/gunicorn` does not exist here (expected).
+- **Not tested**: `apt-get` stage, user/dir creation, rsync into `/opt`, `nginx -t` on the templates (nginx not installed here),
+  certbot, ufw, cron backup, systemd hardening options actually starting. A container would cover only part of this
+  (no ufw, no real DNS/certbot, systemd needs a special image); the real test is a first run on the actual server.
