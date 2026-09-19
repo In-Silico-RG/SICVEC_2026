@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block title %}Programa · SICVEC 2026{% endblock %}{% block body %}
+<h1>Programa</h1>
+<div class="aviso"><strong>Programa preliminar.</strong> Estructura propuesta por el comité organizador; el orden de presentaciones y las
+franjas de conferencistas se publicarán tras la evaluación de resúmenes (decisiones 8–9 de octubre) y pueden cambiar.
+Horario de Colombia (UTC−5). Modalidad híbrida.</div>
+{% for dia, filas in content.PROGRAMA %}
+<h2>{{ dia }}</h2>
+<table>{% for hora, act in filas %}<tr><th style="width:9.5rem">{{ hora }}</th><td>{{ act }}</td></tr>{% endfor %}</table>
+{% endfor %}
+<p><a class="btn" href="{{ url_for('conferencistas') }}">Conferencistas</a> <a class="btn sec" href="{{ url_for('submit') }}">Enviar resumen</a></p>
+{% endblock %}

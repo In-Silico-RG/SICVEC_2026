@@ -3,6 +3,11 @@
 Flask + SQLite app that automates abstract submission, blind peer review, registration and
 notifications. Written 2026-09-19; plan and decisions in `../docs/03_app_plan.md`.
 
+## Public pages
+`/` (about, objectives, six axes, SDGs, how to take part, fees, venue), `/programa` (preliminary two-day structure from the proposal),
+`/conferencistas` (Escobar). Content lives in `sicvec/content.py`; fees, seats and deadlines come from the config.
+Still `por anunciar/por confirmar` on the pages: streaming platform, room/address, keynote slot, second keynote.
+
 ## What runs by itself
 - **Deadlines** are enforced by the clock (Colombia time, UTC-5): submission closes 2026-10-04 23:59,
   reviews 2026-10-07 23:59, payment noted 2026-10-15. No manual closing.

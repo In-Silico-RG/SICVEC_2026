@@ -178,3 +178,14 @@ def test_virtual_attendance_is_free_and_in_person_pays(client):
 def test_default_online_seats_is_300(tmp_path):
     app = create_app({"TESTING": True, "DATABASE": str(tmp_path / "t.sqlite"), "UPLOAD_DIR": str(tmp_path / "u"), "SECRET_KEY": "k"})
     assert app.config["ONLINE_SEATS"] == 300
+
+
+def test_public_info_pages(client):
+    home = client.get("/").get_data(as_text=True)
+    for needle in ("Ejes temáticos", "ODS 12", "Pregrado: COP 20.000", "300 cupos en línea", "Centro Comercial Guacarí"):
+        assert needle in home
+    prog = client.get("/programa").get_data(as_text=True)
+    assert "Programa preliminar" in prog and "Lunes 19 de octubre" in prog and "Martes 20 de octubre" in prog
+    conf = client.get("/conferencistas").get_data(as_text=True)
+    assert "Beatriz Escobar Morales" in conf and "sargazo holopelágico" in conf
+    assert client.get("/static/speaker_escobar.jpg").status_code == 200

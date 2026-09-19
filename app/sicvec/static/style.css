@@ -35,3 +35,19 @@ form.inline{display:inline}
 footer{max-width:860px;margin:2rem auto 1rem;padding:1rem;border-top:1px solid var(--borde);font-size:.88rem;color:#456}
 footer .logos{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;margin-bottom:.6rem}
 footer .logos img{height:52px;width:auto}
+
+.lead{font-size:1.1rem}
+h2{color:var(--verde);margin-top:2rem;font-size:1.3rem}
+h3{font-size:1.02rem;margin:.2rem 0 .4rem}
+.tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.8rem}
+.tarjetas .caja p{margin:.2rem 0;font-size:.92rem}
+.tarjetas .caja b{font-size:1.15rem}
+.pend{background:#fff7e0;border-radius:4px;padding:0 .3rem}
+.ponente{display:flex;gap:1.2rem;align-items:flex-start;flex-wrap:wrap}
+.ponente img{width:180px;height:180px;object-fit:cover;border-radius:8px;border:1px solid var(--borde)}
+.ponente>div{flex:1;min-width:240px}
+.ponente h2{margin-top:0}
+.rol{color:var(--verde2);font-weight:600;margin:.1rem 0}
+details{margin:1rem 0;background:#fff;border:1px solid var(--borde);border-radius:6px;padding:.5rem .9rem}
+summary{cursor:pointer;font-weight:600;color:var(--verde)}
+@media (max-width:600px){header a{margin-right:.6rem}}

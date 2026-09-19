@@ -1,12 +1,56 @@
 {% extends "base.html" %}{% block body %}
 <img class="hero" src="{{ url_for('static', filename='logo_sicvec2026.jpg') }}" alt="SICVEC 2026 — I Simposio Internacional de Ciencia Verde y Economía Circular">
 <h1>Simposio Internacional de Ciencia Verde y Economía Circular</h1>
-<p>19–20 de octubre de 2026 · C.C. Guacarí, Sincelejo · modalidad híbrida.</p>
+<p class="lead">19–20 de octubre de 2026 · Centro Comercial Guacarí, Sincelejo, Sucre, Colombia · modalidad híbrida (presencial y en línea).</p>
+<p><a class="btn" href="{{ url_for('submit') }}">Enviar un resumen</a>
+<a class="btn" href="{{ url_for('register') }}">Inscribirme</a>
+<a class="btn sec" href="{{ url_for('programa') }}">Ver programa</a></p>
+
+<h2>Fechas importantes</h2>
 <table>
 <tr><th>Cierre de resúmenes</th><td>{{ config.SUBMISSION_DEADLINE|fecha }} (hora Colombia)</td></tr>
 <tr><th>Evaluación de pares</th><td>hasta {{ config.REVIEW_DEADLINE|fecha }}</td></tr>
-<tr><th>Límite de pago de inscripción</th><td>{{ config.PAYMENT_DEADLINE|fecha }}</td></tr>
+<tr><th>Límite de pago de inscripción presencial</th><td>{{ config.PAYMENT_DEADLINE|fecha }}</td></tr>
+<tr><th>Simposio</th><td>Lunes 19 y martes 20 de octubre de 2026</td></tr>
 </table>
-<p><a class="btn" href="{{ url_for('submit') }}">Enviar un resumen</a>
-<a class="btn" href="{{ url_for('register') }}">Inscribirme</a></p>
+
+<h2>Sobre el simposio</h2>
+<p>El Simposio Internacional de Ciencia Verde y Economía Circular (SICVEC 2026) es una iniciativa de la Universidad de Sucre
+(UNISUCRE) para generar espacios de diálogo, investigación e innovación en torno a los desafíos de sostenibilidad ambiental,
+los procesos circulares y las tecnologías verdes.</p>
+<p>{{ content.OBJETIVO_GENERAL }}</p>
+<h3>Objetivos específicos</h3>
+<ul>{% for o in content.OBJETIVOS %}<li>{{ o }}</li>{% endfor %}</ul>
+
+<h2>Ejes temáticos</h2>
+<div class="tarjetas">
+{% for name, topics in ejes %}<div class="caja"><h3>Eje {{ loop.index }}. {{ name }}</h3><p>{{ topics }}</p></div>{% endfor %}
+</div>
+
+<h2>Objetivos de Desarrollo Sostenible</h2>
+<div class="tarjetas">
+{% for n, t, d in content.ODS %}<div class="caja"><b>ODS {{ n }}</b><h3>{{ t }}</h3><p>{{ d }}</p></div>{% endfor %}
+</div>
+
+<h2>Cómo participar</h2>
+<div class="tarjetas">
+<div class="caja"><h3>Presentar un trabajo</h3>
+<p>{{ MODALITIES.oral }} o {{ MODALITIES.poster }}. Resúmenes evaluados por pares (revisión ciega) hasta el {{ config.SUBMISSION_DEADLINE|fecha }}.</p>
+<a class="btn" href="{{ url_for('submit') }}">Enviar resumen</a></div>
+<div class="caja"><h3>Asistir en Sincelejo</h3>
+<p>Inscripción presencial por categoría:</p>
+<ul><li>Pregrado: COP {{ '{:,}'.format(config.FEES.pregrado).replace(',', '.') }}</li>
+<li>Posgrado: COP {{ '{:,}'.format(config.FEES.posgrado).replace(',', '.') }}</li>
+<li>Profesional: COP {{ '{:,}'.format(config.FEES.profesional).replace(',', '.') }}</li></ul>
+<a class="btn" href="{{ url_for('register') }}">Inscribirme</a></div>
+<div class="caja"><h3>Asistir en línea</h3>
+<p>{{ config.ONLINE_SEATS }} cupos en línea, gratuitos para participantes externos e internacionales. Plataforma de transmisión: <span class="pend">por anunciar</span>.</p>
+<a class="btn" href="{{ url_for('register') }}">Reservar cupo</a></div>
+</div>
+
+<h2>Dirigido a</h2>
+<ul>{% for p in content.PUBLICO %}<li>{{ p }}</li>{% endfor %}</ul>
+
+<h2>Lugar</h2>
+<p><strong>Centro Comercial Guacarí</strong>, Sincelejo, Sucre, Colombia. <span class="pend">Salón y dirección exacta: por confirmar.</span></p>
 {% endblock %}

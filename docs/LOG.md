@@ -284,3 +284,19 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - **Not tested**: `apt-get` stage, user/dir creation, rsync into `/opt`, `nginx -t` on the templates (nginx not installed here),
   certbot, ufw, cron backup, systemd hardening options actually starting. A container would cover only part of this
   (no ufw, no real DNS/certbot, systemd needs a special image); the real test is a first run on the actual server.
+
+## 2026-09-19 (event pages)
+
+- AC: "build the richer event page in the same app". Added to the app: richer home (about, general and specific objectives,
+  six axes with topics, SDGs 12/13/15/17, how to take part with in-person fees from config and 300 online seats, target
+  audience, venue), `/programa` and `/conferencistas`; nav updated; content in `app/sicvec/content.py`; photo
+  `static/speaker_escobar.jpg` (640 px, from `10_Ponentes/`). 25 tests pass (1 new). Local review server restarted on :5000.
+- Sources: proposal sections 3-7 and 6.4 (objectives, axes, SDGs, programme structure, audience), `FICHA_Escobar.md`, her bio and
+  abstract (title and abstract verbatim; bio abridged to her own sentences).
+- Left out on purpose: the proposal's statistics (e.g. "90 % of industrial pollution...", "39 % CO2 by 2050"): no source in the
+  repo, not repeated on a public page.
+- Marked `por anunciar / por confirmar` on the pages: streaming platform, room and exact address, Escobar's date and time,
+  second keynote. The programme is labelled **preliminary**: it is the proposal's proposed structure (with a 08:00 opening on
+  day 1, while `Cronograma_Definitivo.md` says 08:30-09:00); no decision by AC yet.
+- Open for AC: (1) approve publishing Escobar's photo, bio and abstract on a public page (she sent them by email, no explicit
+  consent to publish); (2) confirm or edit the preliminary programme; (3) the abstract-review look approval is still pending.

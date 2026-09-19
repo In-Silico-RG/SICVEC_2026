@@ -9,7 +9,7 @@ from functools import wraps
 from flask import (Flask, Response, abort, flash, redirect, render_template, request,
                    send_from_directory, session, url_for)
 
-from . import logic
+from . import content, logic
 from .config import CO, load_config
 from .db import close_db, get_db, init_db
 from .mailer import send_email
@@ -76,7 +76,15 @@ def create_app(overrides=None):
     # ---------- public ----------
     @app.get("/")
     def index():
-        return render_template("index.html")
+        return render_template("index.html", content=content, ejes=list(zip(logic.AXES, content.EJES_TOPICOS)))
+
+    @app.get("/programa")
+    def programa():
+        return render_template("programa.html", content=content)
+
+    @app.get("/conferencistas")
+    def conferencistas():
+        return render_template("conferencistas.html", content=content)
 
     @app.route("/enviar", methods=["GET", "POST"])
     def submit():

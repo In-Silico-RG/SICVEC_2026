@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
 <body>
 <header><a class="marca" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='marca_sicvec.jpg') }}" alt="SICVEC 2026"></a><span class="titulo">SICVEC 2026</span> &nbsp;
-<a href="{{ url_for('index') }}">Inicio</a><a href="{{ url_for('submit') }}">Enviar resumen</a><a href="{{ url_for('register') }}">Inscripción</a></header>
+<a href="{{ url_for('index') }}">Inicio</a><a href="{{ url_for('programa') }}">Programa</a><a href="{{ url_for('conferencistas') }}">Conferencistas</a><a href="{{ url_for('submit') }}">Enviar resumen</a><a href="{{ url_for('register') }}">Inscripción</a></header>
 <main>
 {% for m in get_flashed_messages() %}<div class="ok">{{ m }}</div>{% endfor %}
 {% block body %}{% endblock %}
