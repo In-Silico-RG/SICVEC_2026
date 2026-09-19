@@ -185,6 +185,13 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 
 - Commit `bb0584f` — Set online seats to 300 (free for external/international; in-person pays); approve decision thresholds
 
+- Proposal PDF fixed (AC: "300 is the figure, just update"): the two missing logos were extracted from the
+  committed PDF (page-1 images 006 and 008, merged with their transparency masks) and saved as
+  `01_Propuesta/Logos/logo_agroin.png` and `logo_ingagrocola.png`. `Propuesta_SICVEC_2026.pdf` recompiled
+  (14 pages); text diff against the old PDF shows only the two 100 -> 300 lines; cover page checked visually.
+  Old PDF saved in `01_Propuesta/Versiones/Propuesta_SICVEC_2026_pre300_2026-09-19.pdf`. This closes the
+  'proposal PDF not recompiled' item above. The logos are recovered copies, so replace them if AC has the originals.
+
 ### Open for AC
 0. App deployment: host, SMTP mailbox, consent text, bank details (see `docs/03_app_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
