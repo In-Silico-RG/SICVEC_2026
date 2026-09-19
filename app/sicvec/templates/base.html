@@ -23,7 +23,8 @@
 <ul>{% for d in content.DEPARTAMENTOS %}<li>{{ d }}</li>{% endfor %}</ul>
 <p class="peq">Universidad de Sucre</p></div>
 <div><h4>Coordinación</h4>
-<ul>{% for n, r in content.COORDINADORES %}<li><strong>{{ n }}</strong><br><span class="peq">{{ r }}</span></li>{% endfor %}</ul></div>
+<ul>{% for n, r in content.COORDINADORES %}<li><strong>{{ n }}</strong><br><span class="peq">{{ r }}</span></li>{% endfor %}</ul>
+<p><a href="mailto:{{ content.EMAIL_COORDINACION }}">{{ content.EMAIL_COORDINACION }}</a></p></div>
 <div><h4>Evento y contacto</h4>
 <p><strong>SICVEC 2026</strong><br>19–20 de octubre de 2026<br>C.C. Guacarí, Sincelejo<br>Modalidad híbrida</p>
 <p><a href="mailto:{{ config.MAIL_FROM }}">{{ config.MAIL_FROM }}</a></p></div>

@@ -137,3 +137,5 @@ DEPARTAMENTOS = [
     "Departamento de Ingeniería Agrícola",
     "Departamento de Física",
 ]
+
+EMAIL_COORDINACION = "insilico@unisucre.edu.co"   # AC, 2026-09-19: the coordinators' contact email

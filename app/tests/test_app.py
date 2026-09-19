@@ -189,3 +189,9 @@ def test_public_info_pages(client):
     conf = client.get("/conferencistas").get_data(as_text=True)
     assert "Beatriz Escobar Morales" in conf and "sargazo holopelágico" in conf
     assert client.get("/static/speaker_escobar.jpg").status_code == 200
+
+
+def test_footer_has_coordinators_email(client):
+    home = client.get("/").get_data(as_text=True)
+    assert home.count("mailto:insilico@unisucre.edu.co") >= 2   # coordination column + contact column
+    assert "María Ximena Díaz" in home and "Selena Arias Avila" in home

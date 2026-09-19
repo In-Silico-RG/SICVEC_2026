@@ -314,3 +314,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Amarillas' page had no address, and individual shops in the mall list "Calle 25 ..." numbers. So the address is single-sourced
   and **not confirmed by the venue**; AC to verify against the venue agreement. Google Maps button is a name search
   (`maps/search/?api=1&query=Centro Comercial Guacarí Sincelejo Sucre`), no coordinates asserted. Room still pending.
+
+- Footer: coordinators' contact email `insilico@unisucre.edu.co` added under the Coordination column (AC, 2026-09-19); it was
+  already in the contact column. Stored as `EMAIL_COORDINACION` in `sicvec/content.py`. 26 tests pass.
