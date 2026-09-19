@@ -164,7 +164,26 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 
 - Commit `596b09d` — Add SICVEC management app (Flask + SQLite); abstract as pasted text; Forms/EasyChair plans superseded
 
+- Decisions (AC, 2026-09-19): "300 seats, local presential participation payment, external, international
+  free, thresholds OK". Read as: 300 online seats, free for external and international participants; in-person
+  participation pays by category; decision-suggestion thresholds approved.
+- Propagated 100 -> 300 online seats to 15 live sources (proposal `.tex`, flyer, 6 speaker/partner letters,
+  department letter, info sheet, sponsorship proposal, 4 email templates). PDFs recompiled and checked with
+  `pdftotext` (no '100 cupos' left) for all except the proposal. Old PDFs in `Versiones/2026-09-19_pre_300_cupos/`.
+  Not changed on purpose: `07_Comunicaciones/Emails_Enviados/SICVEC_Email_Departamentos.txt` (record of what was
+  sent; still says 100).
+- **Proposal PDF not recompiled**: `Propuesta_SICVEC_2026.tex` needs `logo_agroin.png` and `logo_ingagrocola.png`,
+  which are not in the repo (the committed PDF was built elsewhere and uploaded via the GitHub web on 17 Sep,
+  commits `18abd7a`, `e4c315d`). A failed compile deleted the local PDF; restored from git, unchanged. The
+  `.tex` says 300, the PDF still says 100. Need the two logo files from AC / Sebastián.
+- App: `ONLINE_SEATS` default 300; new rule `fee_for`: virtual attendance is free, in-person pays by category;
+  seat cap counts virtual attendance; thresholds marked approved. 24 tests pass.
+
+- Found: `test_full_flow_blind_review_and_decision` was flaky (bug in the test, not the app): it read reviewer
+  tokens with no `ORDER BY`, so SQLite returned them in random-token order and the token/assignment pairing failed
+  about half the time. Earlier '22 tests pass' runs were lucky. Fixed with `ORDER BY id`; 24 tests pass in 8 of 8 runs.
+
 ### Open for AC
-0. EasyChair: license (Free <=20 submissions vs Professional), who pays by card, chair email, expected number of abstracts (see `01_easychair_plan.md`).
+0. App deployment: host, SMTP mailbox, consent text, bank details (see `docs/03_app_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
 2. Reviewers (10-15) and scientific committee: status after the meeting?

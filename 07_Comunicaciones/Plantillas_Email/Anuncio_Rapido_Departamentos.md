@@ -69,7 +69,7 @@ Desde la Universidad de Sucre y el Grupo IN SILICO, nos complace anunciar la **S
 📌 **Evento:**
 - 📅 19-20 octubre 2026
 - 📍 Sincelejo, Sucre (+ en línea)
-- 🌍 Público: 150+ asistentes presenciales, 100 cupos virtuales
+- 🌍 Público: 150+ asistentes presenciales, 300 cupos virtuales
 
 📋 **6 Ejes de investigación** que abarcamos:
 1️⃣ Economía Circular  
@@ -102,7 +102,7 @@ Le comunicamos que el **Programa de Biología** (Facultad de Educación y Cienci
 Este simposio refuerza el **posicionamiento de UNISUCRE en investigación sostenible** y alineación con los **ODS 12, 13, 15 y 17** de Naciones Unidas.
 
 **Datos clave:**
-- 120-150 asistentes presenciales + 100 en línea
+- 120-150 asistentes presenciales + 300 en línea
 - Presencia de conferencistas nacionales e internacionales
 - Publicación de memorias Open Access
 - Difusión en redes académicas latinoamericanas

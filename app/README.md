@@ -13,7 +13,7 @@ notifications. Written 2026-09-19; plan and decisions in `../docs/03_app_plan.md
 - **Reviewer assignment**: one click assigns 2 reviewers per admissible abstract, balanced by load, skipping conflicts.
 - **Blind review**: reviewers open a private link (no account). The reviewer view never reads author columns.
 - **Score**: weighted mean with the rubric weights 25/25/25/15/10, plus a decision *suggestion*
-  (thresholds in `sicvec/logic.py`, marked PENDIENTE AC). The decision is always entered by a person.
+  (thresholds approved by AC 2026-09-19, in `sicvec/logic.py`). The decision is always entered by a person.
 - **Notifications**: one click emails every decided, not-yet-notified author with the anonymous comments.
 - **Registration**: fee by category, online-seat cap (`ONLINE_SEATS`), receipt upload (PDF/PNG/JPG checked by content).
 - **Exports**: CSV of abstracts, registrations, reviews (formula-injection neutralized). Every email is logged.
@@ -23,7 +23,7 @@ notifications. Written 2026-09-19; plan and decisions in `../docs/03_app_plan.md
 cd app
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
 ADMIN_PASSWORD='choose-one' .venv/bin/python -m flask --app run run     # http://localhost:5000
-.venv/bin/python -m pytest -q                                            # 22 tests
+.venv/bin/python -m pytest -q                                            # 24 tests
 ```
 Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default; without it the panel is off).
 
@@ -35,7 +35,7 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 | `BASE_URL` | public URL, used in reviewer invitation links |
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email. Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
 | `CONSENT_TEXT` | official UNISUCRE data-treatment text (still `[PENDIENTE]`) |
-| `ONLINE_SEATS` | cap for virtual registrations (unset = no cap; 100 vs 300 not settled) |
+| `ONLINE_SEATS` | cap for virtual registrations, default 300 (AC, 2026-09-19); virtual attendance is free, in-person pays by category |
 | `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-04T23:59:00-05:00` |
 | `DATABASE`, `UPLOAD_DIR` | paths; default `instance/` |
 | `SESSION_COOKIE_SECURE=1` | set behind HTTPS |

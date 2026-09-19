@@ -1,6 +1,7 @@
 {% extends "base.html" %}{% block body %}
 <h1>Inscripción / Registration</h1>
-<p>Tarifas: pregrado COP 20.000 · posgrado COP 30.000 · profesional COP 40.000 · asistencia virtual sin costo.
+<p>Asistencia presencial: pregrado COP 20.000 · posgrado COP 30.000 · profesional COP 40.000.
+Participación virtual: <b>gratuita</b> para participantes externos e internacionales ({{ config.ONLINE_SEATS }} cupos).
 Límite de pago: {{ config.PAYMENT_DEADLINE|fecha }}. Datos para la transferencia: <b>[PENDIENTE: banco, cuenta, titular]</b>.</p>
 {% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
 <form method="post" enctype="multipart/form-data">

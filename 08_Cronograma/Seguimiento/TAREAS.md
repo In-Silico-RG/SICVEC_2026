@@ -20,7 +20,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [ ] Señalética y montaje de zona de pósters y expo verde
 
 ## 🟠 Participación en línea (modalidad híbrida) — decidido 14 sept
-- [ ] Definir número de cupos en línea y tarifa virtual (¿gratuita para redes internacionales?) — AC
+- [x] Cupos en línea: **300**, gratuitos para participantes externos e internacionales; presencial paga por categoría (AC, 19 sept)
 - [ ] **PENDIENTE tras reunión 18 sept** — elegir y cotizar plataforma de transmisión (Zoom Webinar / YouTube Live / Teams institucional) y persona encargada de la transmisión — SV
 - [ ] Verificar ancho de banda y equipos de transmisión en el venue — SV
 - [ ] Añadir opción "virtual" al formulario de inscripción y a la guía de resúmenes (ponencias virtuales para autores internacionales) — MXD

@@ -102,7 +102,7 @@ def test_full_flow_blind_review_and_decision(client, app):
         from sicvec.db import get_db
         db = get_db()
         assert db.execute("SELECT COUNT(*) FROM assignments").fetchone()[0] == 2
-        toks = [x["token"] for x in db.execute("SELECT token FROM reviewers")]
+        toks = [x["token"] for x in db.execute("SELECT token FROM reviewers ORDER BY id")]
         aids = [x["id"] for x in db.execute("SELECT id FROM assignments ORDER BY id")]
     page = client.get(f"/revisor/{toks[0]}/{aids[0]}").get_data(as_text=True)
     assert "Pirólisis de lignina" in page and "conversión térmica" in page
@@ -164,3 +164,17 @@ def test_export_csv_neutralizes_formulas(client):
     client.post("/enviar", data=submission_data(client, title="=HYPERLINK(1)"))
     csv_text = client.get("/admin/exportar/resumenes.csv", headers=auth()).get_data(as_text=True)
     assert "'=HYPERLINK(1)" in csv_text
+
+
+def test_virtual_attendance_is_free_and_in_person_pays(client):
+    def reg(email, cat, att):
+        d = dict(_csrf=token(client, "/inscripcion"), name="N", email=email, phone="1", document="1",
+                 institution="I", country="C", category=cat, attendance=att, consent="1")
+        return client.post("/inscripcion", data=d).get_data(as_text=True)
+    assert "COP 0" in reg("a@x.co", "posgrado", "virtual")
+    assert "30.000" in reg("b@x.co", "posgrado", "presencial")
+
+
+def test_default_online_seats_is_300(tmp_path):
+    app = create_app({"TESTING": True, "DATABASE": str(tmp_path / "t.sqlite"), "UPLOAD_DIR": str(tmp_path / "u"), "SECRET_KEY": "k"})
+    assert app.config["ONLINE_SEATS"] == 300

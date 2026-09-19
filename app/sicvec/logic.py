@@ -22,10 +22,15 @@ RECOMMENDATIONS = {"aceptado": "Aceptado", "aceptado_con_cambios": "Aceptado con
                    "rechazado": "Rechazado"}
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
-# PENDIENTE AC: these thresholds are a proposal, not a decision. The final decision is always AC's / the committee's.
+# Thresholds approved by AC on 2026-09-19. They only produce a suggestion; the decision is always made by a person.
 ACCEPT_MIN = 3.5
 REJECT_BELOW = 2.5
 MAX_SPREAD = 2.0
+
+
+def fee_for(fees, category, attendance):
+    """AC, 2026-09-19: in-person attendance pays by category; virtual attendance (300 seats) is free."""
+    return 0 if attendance == "virtual" else fees[category]
 
 
 def word_count(text):

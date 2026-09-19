@@ -63,6 +63,7 @@ def create_app(overrides=None):
     app.jinja_env.globals.update(csrf_token=csrf_token, AXES=logic.AXES, MODALITIES=logic.MODALITIES,
                                  CATEGORIES=logic.CATEGORIES, CRITERIA=logic.CRITERIA,
                                  RECOMMENDATIONS=logic.RECOMMENDATIONS, WORD_LIMITS=logic.WORD_LIMITS,
+                                 fee_for=lambda c, a: logic.fee_for(app.config["FEES"], c, a),
                                  config=app.config, now=now)
 
     @app.template_filter("fecha")
@@ -185,8 +186,8 @@ def create_app(overrides=None):
             if not f.get("consent"):
                 errors.append("Debe autorizar el tratamiento de datos personales.")
             db = get_db()
-            if cat == "virtual" and cfg["ONLINE_SEATS"] is not None:
-                used = db.execute("SELECT COUNT(*) FROM registrations WHERE category='virtual'").fetchone()[0]
+            if att == "virtual" and cfg["ONLINE_SEATS"] is not None:
+                used = db.execute("SELECT COUNT(*) FROM registrations WHERE attendance='virtual'").fetchone()[0]
                 if used >= cfg["ONLINE_SEATS"]:
                     errors.append("Los cupos en línea están agotados.")
             receipt = ""
@@ -211,7 +212,7 @@ def create_app(overrides=None):
                     ref = ref_for("REG", cur.lastrowid)
                     db.execute("UPDATE registrations SET ref=? WHERE id=?", (ref, cur.lastrowid))
                     db.commit()
-                    fee = cfg["FEES"][cat]
+                    fee = logic.fee_for(cfg["FEES"], cat, att)
                     send_email(app, db, email, f"SICVEC 2026 — inscripción recibida ({ref})",
                                f"Hemos recibido su inscripción ({ref}).\nValor: COP {fee:,}\n"
                                f"Límite de pago: {cfg['PAYMENT_DEADLINE']:%d/%m/%Y} (hora Colombia).".replace(",", "."))

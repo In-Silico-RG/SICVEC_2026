@@ -18,7 +18,7 @@ Desde el Grupo de Investigación IN SILICO y el Programa de Biología, nos compl
 **EVENTO EN BREVE:**
 - **Fechas:** 19-20 de octubre de 2026 (lunes y martes)
 - **Lugar:** Centro Comercial Guacarí, Sincelejo, Sucre
-- **Modalidad:** Presencial + híbrida (120-150 asistentes + 100 cupos en línea)
+- **Modalidad:** Presencial + híbrida (120-150 asistentes + 300 cupos en línea)
 - **Público:** Académicos, investigadores, profesionales en ciencias e ingenierías
 
 **6 EJES TEMÁTICOS:**
