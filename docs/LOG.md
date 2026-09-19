@@ -81,6 +81,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Not touched: `LOG_Actividades_SICVEC_2026.md` and `.claude/worktrees/update-budget/` still carry old
   figures (USD 10.697 / COP 2.000.000); the former is a historical log, kept as is.
 
+- Decision (AC, 2026-09-19): removal of the 'Recursos' item from the international partner letter is
+  intended; commit and push everything.
+- Commit `ab4ec2b` 12:00 — Remove 'Recursos' item from international partner letter; add logo files
+- Commit `b953a9a` 12:00 — Sync budget (COP 2.500.000) in README and TAREAS; add docs/LOG.md with backfill
+
 ### Open for AC
-1. Commit the pending changes (letter 'Recursos' removal, logos, log, README, TAREAS)? Awaiting AC's decision.
-2. What came out of the 18 Sep meeting (venue, online seats/platform, reviewers)?
+1. What came out of the 18 Sep meeting (venue, online seats/platform, reviewers)?
