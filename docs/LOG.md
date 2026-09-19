@@ -86,5 +86,13 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Commit `ab4ec2b` 12:00 — Remove 'Recursos' item from international partner letter; add logo files
 - Commit `b953a9a` 12:00 — Sync budget (COP 2.500.000) in README and TAREAS; add docs/LOG.md with backfill
 
+- SSH broke: `~/.ssh` was regenerated 2026-09-19 09:33 (known_hosts deleted, new `id_ed25519` not registered
+  on GitHub; the registered one was 'Clave SSH para Aldo at Univac', 2026-07-04). Push of `93d5470` went once
+  over HTTPS with the `gh` token. Fix (AC asked to redo the connection): new key registered with
+  `gh ssh-key add` as 'Aldo new key 2026-09-19'; `known_hosts` rebuilt from the host keys returned by
+  `gh api meta` (fingerprints checked against GitHub's published ones), not by trust-on-first-use.
+  Verified: `ssh -T git@github.com` authenticates as In-Silico-RG; `git ls-remote origin` works.
+  Note: the same `id_ed25519` is the IdentityFile for the GUANE HPC hosts in `~/.ssh/config`.
+
 ### Open for AC
 1. What came out of the 18 Sep meeting (venue, online seats/platform, reviewers)?
