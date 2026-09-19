@@ -195,3 +195,7 @@ def test_footer_has_coordinators_email(client):
     home = client.get("/").get_data(as_text=True)
     assert home.count("mailto:insilico@unisucre.edu.co") >= 2   # coordination column + contact column
     assert "María Ximena Díaz" in home and "Selena Arias Avila" in home
+
+
+def test_home_names_the_venue_room(client):
+    assert "sala de conferencias del Centro Comercial Guacarí" in client.get("/").get_data(as_text=True)

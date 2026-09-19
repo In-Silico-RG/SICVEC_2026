@@ -317,3 +317,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 
 - Footer: coordinators' contact email `insilico@unisucre.edu.co` added under the Coordination column (AC, 2026-09-19); it was
   already in the contact column. Stored as `EMAIL_COORDINACION` in `sicvec/content.py`. 26 tests pass.
+
+- Venue room decided (AC, 2026-09-19): **sala de conferencias del Centro Comercial Guacarí**. Home page now says so; the
+  "por confirmar" tag for the room is removed. Streaming platform, Escobar's slot and second keynote remain pending.
