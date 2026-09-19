@@ -183,6 +183,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   tokens with no `ORDER BY`, so SQLite returned them in random-token order and the token/assignment pairing failed
   about half the time. Earlier '22 tests pass' runs were lucky. Fixed with `ORDER BY id`; 24 tests pass in 8 of 8 runs.
 
+- Commit `bb0584f` — Set online seats to 300 (free for external/international; in-person pays); approve decision thresholds
+
 ### Open for AC
 0. App deployment: host, SMTP mailbox, consent text, bank details (see `docs/03_app_plan.md`).
 1. Platform: who decides and by when? Candidates in TAREAS.md: Zoom Webinar / YouTube Live / Teams institucional.
