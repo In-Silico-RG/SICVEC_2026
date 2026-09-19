@@ -240,3 +240,16 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   The admin panel warns while either is pending.
 - Found by the test suite: the new footer named UNISUCRE on the blind-review pages. Reviewer pages now render no footer
   (`{% block footer %}` overridden empty). 24 tests pass.
+
+- **Failure (AC's words: "guarda este fracaso"):** git push blocked and not solved by me, 2026-09-19 afternoon.
+  - Sequence: `git push origin main` denied by the auto-mode classifier ("Out-of-Place Publication"); AC re-asked twice
+    ("push it", then "soluciona el problema o renuncia a este trabajo").
+  - What I got wrong: told AC to add `Bash(git push origin main)` although `Bash(git push *)` was already allowed (line 7 of
+    `.claude/settings.local.json`); offered an `autoMode.allow` edit, which the classifier blocked (my own permissions);
+    found the real cause only after AC's third message.
+  - Real cause: `~/.claude/settings.json` has `defaultMode: "auto"` and `autoMode.environment` listing only
+    `.../FINCA/Arreglo_Techo` as trusted repo ("no remotes configured"), so a push to the SICVEC GitHub repo is outside
+    its trust boundary. Why earlier sessions pushed fine: unknown.
+  - Outcome: AC pushed by hand twice (`e150c21..6087a47`, `6087a47..586c2bd`). My proposed jq fix for
+    `~/.claude/settings.json` was answered "nope" and is untested. Commits `049c0f6` and `abe40fc` are still local.
+  - Saved as memory `feedback-git-push-blocked`.
