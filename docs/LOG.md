@@ -218,3 +218,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Fixed in the `.tex`, PDF recompiled and checked with `pdftotext`. The letter went out with the errors (she replied to it);
   copies as sent in `07_Comunicaciones/Cartas_Departamentos/Versiones/`. Grep over the project: no other file has them.
 - `TAREAS.md`: keynote item updated.
+- Commit `abfcdf1` (13:42) — Escobar keynote record and letter fixes. Not pushed.
