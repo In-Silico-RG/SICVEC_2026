@@ -320,3 +320,21 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 
 - Venue room decided (AC, 2026-09-19): **sala de conferencias del Centro Comercial Guacarí**. Home page now says so; the
   "por confirmar" tag for the room is removed. Streaming platform, Escobar's slot and second keynote remain pending.
+
+## 2026-09-21 (mail check, no deployment)
+
+- AC asked to deploy the app on "the server". No host, domain or credentials exist in the repo, the memory,
+  `~/.ssh/config` (only GUANE HPC entries) or either mailbox (aldo.combariza@ and insilico@, searched for
+  servidor/VPS/hosting/dominio/TIC and provider names, 60 days). Deployment not started; blocked on host + domain.
+- insilico@ mailbox connected to Claude by AC and read. SICVEC news found there (not about the server):
+  - Wilson Castro (UNF, Peru) accepted on 21 Sept 19:59 UTC with title, abstract, bio and photo (inline image),
+    online, needs only a stable connection. Title: "Medicinal plant discrimination: a study of deep learning
+    techniques and a novel approach for data augmentation".
+  - Marianny Combariza (UIS) accepted on 21 Sept 16:25 UTC ("acepto gustosamente"); no title, abstract or bio yet.
+    First send to marianny.combariza@unisucre.edu.co bounced (no such user); resent to marianny@uis.edu.co.
+  - Departamento de Física confirmed co-organization (21 Sept 18:26 UTC, Yurimar Ruiz Rocha, head).
+  - Física and Biología acknowledged the 21 Sept 15:00 coordination meeting (Sala Digital 2). Agroindustrial and
+    Ing. Agrícola did not reply on the thread.
+  - Kafarov (UIS): no reply to the 18 Sept invitation.
+- Note: the invitation emails sent 18 Sept say "Modalidad: Virtual" and "100 cupos en línea"; the decided figures
+  are hybrid and 300 online seats. Speaker pages should follow the decided figures, not the emails.
