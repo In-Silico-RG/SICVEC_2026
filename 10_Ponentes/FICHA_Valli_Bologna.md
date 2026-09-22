@@ -6,7 +6,7 @@
 | Referred by | "Eleonora" (surname/affiliation [PENDIENTE]) | same chat |
 | Proposed topic | Valorization of agrifood by-products; extraction of bioactive compounds from olive pomace | same chat |
 | Speaker | Valli or a member of his research group (to be proposed by him) | same chat |
-| Status | **Invited** as keynote (AC decision 2026-09-22); brief + message sent by chat | `07_Comunicaciones/Mensaje_Enrico_Valli_2026-09-22.md` |
+| Status | **Invited** as keynote (AC decision 2026-09-22); message and PDF brief sent by chat by AC on 2026-09-22; awaiting his reply | `07_Comunicaciones/Mensaje_Enrico_Valli_2026-09-22.md` |
 | Format | Online, 45 + 15 min, English | speaker info sheet |
 | Email, phone | [PENDIENTE] | |
 | Title, abstract, bio, photo | [PENDIENTE] — requested by 30 Sept (date proposed by Claude, not yet confirmed by AC) | |

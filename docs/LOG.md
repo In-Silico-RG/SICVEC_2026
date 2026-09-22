@@ -366,4 +366,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Chat message drafted in `07_Comunicaciones/Mensaje_Enrico_Valli_2026-09-22.md`: invitation as keynote, English, online,
   material requested by **30 Sept** (date proposed here; the speaker sheet's 20 Sept international deadline has passed).
 - Record `10_Ponentes/FICHA_Valli_Bologna.md`; TAREAS.md keynote item updated. Would be the 4th keynote slot.
-- Not sent by me: AC pastes the message in the chat and attaches the PDF.
+- Message and PDF brief sent by AC in the chat, 2026-09-22 ("message sent, all set"). Awaiting reply: speaker name, title, abstract, bio, photo by 30 Sept.
