@@ -189,6 +189,9 @@ def test_public_info_pages(client):
     conf = client.get("/conferencistas").get_data(as_text=True)
     assert "Beatriz Escobar Morales" in conf and "sargazo holopelágico" in conf
     assert client.get("/static/speaker_escobar.jpg").status_code == 200
+    assert "Wilson Manuel Castro Silupu" in conf and "Medicinal plant discrimination" in conf
+    assert client.get("/static/speaker_castro.jpg").status_code == 200
+    assert "Marianny Y. Combariza" in conf and "Título de la conferencia: por confirmar" in conf
 
 
 def test_footer_has_coordinators_email(client):

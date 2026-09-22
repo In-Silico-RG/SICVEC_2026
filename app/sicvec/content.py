@@ -122,6 +122,64 @@ SPEAKERS = [{
         "costera en una oportunidad científica y tecnológica, promoviendo el desarrollo de procesos más sostenibles y "
         "nuevas cadenas de valor a partir de un recurso marino disponible regionalmente.",
     ],
+}, {
+    # Wilson Castro: title, abstract and bio verbatim from his acceptance email (insilico@, 2026-09-21). Colon in the title
+    # added by us; his text has none. Affiliation in his own words. Photo: inline image in his email (10_Ponentes/Foto Castro.png).
+    "name": "Dr. Wilson Manuel Castro Silupu",
+    "role": "Conferencista magistral",
+    "affiliation": "Profesor Principal y Docente Investigador, Universidad Nacional de Frontera (UNF), Perú. Investigador "
+                   "Distinguido reconocido por el CONCYTEC y miembro senior del IEEE",
+    "photo": "speaker_castro.jpg",
+    "talk": "Medicinal plant discrimination: A study of deep learning techniques and a novel approach for data augmentation",
+    "format": "Virtual",
+    "bio": [
+        "El Dr. Wilson Manuel Castro Silupu es Profesor Principal y Docente Investigador en la Universidad Nacional de "
+        "Frontera, Investigador Distinguido reconocido por el CONCYTEC y miembro senior del IEEE, distinción que consolida su "
+        "posicionamiento en comunidades científicas internacionales. Obtuvo el grado de Doctor en Ciencia, Tecnología y "
+        "Gestión Alimentaria y la Maestría en Ciencia e Ingeniería de los Alimentos en la Universidad Politécnica de "
+        "Valencia. Asimismo, en su proceso de continuo perfeccionamiento ha realizado estancias de investigación en "
+        "instituciones internacionales de Europa y América Latina, fortaleciendo colaboraciones científicas y promoviendo "
+        "la difusión de avances científicos en revistas indexadas de alto impacto.",
+        "Su producción científica se enfoca en la intersección entre Food Science, Agroindustrial Systems y Emerging "
+        "Technologies, con especial énfasis en Precision Agriculture, Hyperspectral Imaging, Machine Learning, Remote "
+        "Sensing, Spectroscopy y Data-Driven Modeling aplicados a la calidad, autenticidad e inocuidad de alimentos. Su "
+        "trabajo contribuye al desarrollo de metodologías no destructivas, sistemas inteligentes de monitoreo y "
+        "herramientas analíticas para la optimización de cadenas agroalimentarias sostenibles, totalizando más de setenta "
+        "artículos científicos en Scopus y Web of Science. Participa activamente en proyectos financiados mediante fondos "
+        "competitivos (FINCyT, PROCIENCIA, PNIA), consolidando redes de investigación y transferencia tecnológica, y la "
+        "generación de conocimiento de alto impacto, promoviendo la interdisciplinariedad, la colaboración internacional "
+        "y la publicación en revistas indexadas de alto impacto.",
+    ],
+    "abstract": [
+        "Medicinal plants in remote mountain ecosystems are threatened, requiring accurate identification for conservation "
+        "and sustainable management. However, traditional methods require specialized expertise, and ground surveys in "
+        "Peru's Paramos and cloud forests are logistically challenging. This study develops and validates a methodology "
+        "for discriminating six medicinal plant species using RGB images acquired from UAV and deep learning. Individual "
+        "plants from six species of medicinal plants were identified and georeferenced; from these, aerial RGB images "
+        "were acquired at 3 to 5 m altitude. The rectangular ROIs of each image were extracted using the Segment Anything "
+        "model (SAM), which constituted our image database. Then the image database was augmented through two methods "
+        "(a) Geometric transformation and (b) a proposal called “Cartesian subsampling”. Finally, five CNN "
+        "architectures for classifying tasks were trained, validated, and their results statistically compared.",
+        "Geometric transformation yielded higher overall accuracy, with MobileNetV2 achieving 97.86% and ResNet-50 "
+        "97.66%, while models trained from scratch performed lower (AlexNet-Deep: 90.14%, PhytoNet: 81.11%). Cartesian "
+        "subsampling showed advantages when geometric invariance was critical for transfer-learning models. Confusion "
+        "persisted between species of Myrcianthes that were morphologically similar, with F1 scores ranging from 0.76 to "
+        "0.97. Classification precisions from 81% to 97% were achieved, with geometric transformation outperforming "
+        "Cartesian methods in all models. ResNet-50 offers the best balance of accuracy, computational efficiency, and "
+        "training stability for practical conservation applications in remote mountain ecosystems.",
+    ],
+}, {
+    # Marianny Combariza: accepted 2026-09-21 (insilico@), one line, no material yet. Affiliation as written in our
+    # invitation letter (AC). Title, bio, abstract and photo: pending; the page shows "por confirmar".
+    "name": "Dra. Marianny Y. Combariza",
+    "role": "Conferencista magistral",
+    "affiliation": "Investigadora, Centro de Estudios e Investigaciones Ambientales (CEIAM), Universidad Industrial de "
+                   "Santander (UIS), Bucaramanga, Colombia",
+    "photo": None,
+    "talk": None,
+    "format": "Virtual",
+    "bio": [],
+    "abstract": [],
 }]
 
 # Footer. Source: proposal section 8.2 and CLAUDE.md/FICHA (roles). No personal emails or phones on the public page.

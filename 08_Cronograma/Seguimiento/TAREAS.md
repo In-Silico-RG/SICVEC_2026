@@ -35,7 +35,7 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 ## 🟡 Académico (MXD)
 - [ ] Lista de 10-15 revisores → `03_Memorias_y_PeerReview/Revisores/`
 - [ ] Comité científico formal
-- [ ] Confirmar conferencistas magistrales (2) — Escobar (CICY) aceptó 18 sept, ver `10_Ponentes/FICHA_Escobar.md`; pendiente: franja horaria, instrucciones técnicas antes del 1 oct, título definitivo; estado del segundo conferencista: [PENDIENTE]
+- [x] Confirmar conferencistas magistrales — 3 aceptaron: Escobar (CICY, 18 sept), Wilson Castro (UNF, 21 sept, material completo), Marianny Combariza (UIS, 21 sept, falta título/bio/foto). Kafarov (UIS): sin respuesta. Fichas en `10_Ponentes/`. Pendiente: franjas horarias, instrucciones técnicas antes del 1 oct, material de M. Combariza.
 - [ ] Completar hojas de vida de coordinadores (`02_Organizadores/`)
 
 ## Calendario de peer review (vigente — actualizado 16 sept)

@@ -2,17 +2,17 @@
 <h1>Conferencistas</h1>
 {% for s in content.SPEAKERS %}
 <section class="ponente">
-<img src="{{ url_for('static', filename=s.photo) }}" alt="{{ s.name }}">
+{% if s.photo %}<img src="{{ url_for('static', filename=s.photo) }}" alt="{{ s.name }}">{% else %}<div class="ponente-sinfoto" aria-hidden="true"></div>{% endif %}
 <div>
 <h2>{{ s.name }}</h2>
 <p class="rol">{{ s.role }} · {{ s.format }}</p>
 <p>{{ s.affiliation }}</p>
-<p><strong>Conferencia:</strong> {{ s.talk }}</p>
+{% if s.talk %}<p><strong>Conferencia:</strong> {{ s.talk }}</p>{% else %}<p class="pend">Título de la conferencia: por confirmar.</p>{% endif %}
 <p class="pend">Fecha y hora de la conferencia: por confirmar (19 o 20 de octubre).</p>
 </div>
 </section>
-<h3>Semblanza</h3>{% for p in s.bio %}<p>{{ p }}</p>{% endfor %}
-<details><summary>Resumen de la conferencia</summary>{% for p in s.abstract %}<p>{{ p }}</p>{% endfor %}</details>
+{% if s.bio %}<h3>Semblanza</h3>{% for p in s.bio %}<p>{{ p }}</p>{% endfor %}{% endif %}
+{% if s.abstract %}<details><summary>Resumen de la conferencia</summary>{% for p in s.abstract %}<p>{{ p }}</p>{% endfor %}</details>{% endif %}
 {% endfor %}
-<p class="aviso">Se anunciarán más conferencistas. <span class="pend">Segundo conferencista magistral: por confirmar.</span></p>
+<p class="aviso">Se anunciarán más conferencistas.</p>
 {% endblock %}

@@ -338,3 +338,20 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   - Kafarov (UIS): no reply to the 18 Sept invitation.
 - Note: the invitation emails sent 18 Sept say "Modalidad: Virtual" and "100 cupos en línea"; the decided figures
   are hybrid and 300 online seats. Speaker pages should follow the decided figures, not the emails.
+
+## 2026-09-22 (speakers page: Castro and M. Combariza)
+
+- AC: "agrega a Castro y Marianny en conferencistas". Done in the app (`sicvec/content.py`, `conferencistas.html`):
+  Castro with title, abstract (English, verbatim) and bio (verbatim, split in two paragraphs); M. Combariza with
+  affiliation only and "Título de la conferencia: por confirmar". Template now tolerates a speaker without photo, title,
+  bio or abstract. The "Segundo conferencista magistral: por confirmar" line is gone; "Se anunciarán más conferencistas"
+  stays (Kafarov pending). Speaker cards now have CSS (`.ponente`: 160 px round photo, grey circle when there is none).
+- Castro's photo recovered from the raw MIME of his email (inline `image003.png`, 512x525) via the Gmail connector's RAW
+  format and Python's `email` module: `10_Ponentes/Foto Castro.png`; web copy `static/speaker_castro.jpg` (640x640,
+  centre-cropped). The other inline image was the UNF crest, discarded.
+- Records: `10_Ponentes/FICHA_Castro.md`, `Castro_Respuesta_2026-09-21.md`, `FICHA_MCombariza.md`. TAREAS.md: keynote
+  item marked done (3 accepted), with the remaining sub-tasks.
+- Checks: 27 pytest tests pass (2 new assertions); page fetched with curl shows both speakers. Headless Firefox
+  screenshot timed out twice (fresh profile too); not retried. AC can open http://localhost:5000/conferencistas.
+- Open for AC: consent to publish Castro's photo/bio/abstract (sent "para promoción", no explicit consent); request
+  M. Combariza's title, abstract, bio and photo; slots for the three keynotes; acknowledgement email to Castro.

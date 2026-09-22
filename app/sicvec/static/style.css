@@ -44,3 +44,8 @@ form.inline{display:inline}
 .pie-sitio .peq{font-size:.82rem;color:#bfe0cc}
 .pie-fin{max-width:1000px;margin:1.4rem auto 0;padding-top:.8rem;border-top:1px solid #3f8a5f;font-size:.82rem;color:#bfe0cc;text-align:center}
 @media (max-width:600px){.pie-logos img{height:64px}}
+.ponente{display:flex;gap:1.2rem;align-items:flex-start;margin:1.5rem 0 .5rem}
+.ponente img,.ponente-sinfoto{width:160px;height:160px;flex:0 0 160px;border-radius:50%;object-fit:cover;border:3px solid #1b5e3a}
+.ponente-sinfoto{background:#e6efe9}
+.ponente h2{margin:.2rem 0}
+@media (max-width:600px){.ponente{flex-direction:column;align-items:center;text-align:center}}
