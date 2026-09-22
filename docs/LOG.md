@@ -355,3 +355,15 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   screenshot timed out twice (fresh profile too); not retried. AC can open http://localhost:5000/conferencistas.
 - Open for AC: consent to publish Castro's photo/bio/abstract (sent "para promoción", no explicit consent); request
   M. Combariza's title, abstract, bio and photo; slots for the three keynotes; acknowledgement email to Castro.
+
+## 2026-09-22 (University of Bologna contact)
+
+- Enrico Valli (Univ. of Bologna), referred by "Eleonora", asked AC by chat for the conference link and offered an oral
+  talk from his group on valorization of agrifood by-products (bioactives from olive pomace). AC: "we are inviting him,
+  or someone of his group to give a talk". No public link exists (app not deployed), so an English one-page brief was
+  written instead: `07_Comunicaciones/SICVEC_2026_Brief_EN.tex/.pdf` (event, aim, six axes, keynote format 45+15 online,
+  open call, key dates, contact; "website: to be announced"). Compiled with pdflatex, 1 page, text checked with pdftotext.
+- Chat message drafted in `07_Comunicaciones/Mensaje_Enrico_Valli_2026-09-22.md`: invitation as keynote, English, online,
+  material requested by **30 Sept** (date proposed here; the speaker sheet's 20 Sept international deadline has passed).
+- Record `10_Ponentes/FICHA_Valli_Bologna.md`; TAREAS.md keynote item updated. Would be the 4th keynote slot.
+- Not sent by me: AC pastes the message in the chat and attaches the PDF.
