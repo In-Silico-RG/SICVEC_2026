@@ -441,3 +441,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Reversed (AC, 2026-09-28: "claro que quiero darle la opción de enviar correos a la app"): the earlier refusal came from my
   unexplained request for a password. Email back on in `dist/sicvec.env` (smtp.gmail.com, insilico@unisucre.edu.co); AC to
   create a Google app password (not the account password; revocable) and paste it into the file.
+- AC created the Google app password "SICVEC" for insilico@unisucre.edu.co (2-Step Verification on) and pasted it in chat;
+  written into `dist/sicvec.env` (git-ignored, mode 600). SMTP login to smtp.gmail.com:587 tested OK (no email sent).
+  Note: the code is in this chat's transcript; revoke and recreate it at myaccount.google.com/apppasswords if that matters.
