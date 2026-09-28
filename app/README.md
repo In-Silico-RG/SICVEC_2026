@@ -38,7 +38,7 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 | `ADMIN_PASSWORD` | required for `/admin` |
 | `SECRET_KEY` | session key; set a fixed random value in production |
 | `BASE_URL` | public URL, used in reviewer invitation links |
-| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email. Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email, sent by a background thread (status `pendiente` → `enviado` or `error`, see Admin → Correos). Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
 | `CONSENT_TEXT` | official UNISUCRE data-treatment text (still `[PENDIENTE]`) |
 | `ONLINE_SEATS` | cap for virtual registrations, default 300 (AC, 2026-09-19); virtual attendance is free, in-person pays by category |
 | `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-04T23:59:00-05:00` |

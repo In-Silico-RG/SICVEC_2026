@@ -202,3 +202,30 @@ def test_footer_has_coordinators_email(client):
 
 def test_home_names_the_venue_room(client):
     assert "sala de conferencias del Centro Comercial Guacarí" in client.get("/").get_data(as_text=True)
+
+
+def test_smtp_sent_in_background(tmp_path, monkeypatch):
+    import sqlite3
+    import time
+    from sicvec import mailer
+    sent = []
+
+    class FakeSMTP:
+        def __init__(self, *a, **k): pass
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def starttls(self): pass
+        def login(self, *a): pass
+        def send_message(self, msg): sent.append(msg["To"])
+
+    monkeypatch.setattr(mailer.smtplib, "SMTP", FakeSMTP)
+    db_path = str(tmp_path / "s.sqlite")
+    app = create_app({"TESTING": True, "DATABASE": db_path, "UPLOAD_DIR": str(tmp_path / "up"),
+                      "ADMIN_PASSWORD": "pw-test", "SECRET_KEY": "k", "SMTP_HOST": "smtp.test", "MAIL_FROM": "x@y.co"})
+    c = app.test_client()
+    assert c.post("/enviar", data=submission_data(c)).status_code == 200
+    mailer._queue.join()
+    con = sqlite3.connect(db_path)
+    assert con.execute("PRAGMA journal_mode").fetchone()[0] == "wal"
+    assert con.execute("SELECT status FROM emails").fetchone()[0] == "enviado"
+    assert sent == ["ana@uni.co"]

@@ -12,7 +12,7 @@ from flask import (Flask, Response, abort, flash, redirect, render_template, req
 from . import content, logic
 from .config import CO, load_config
 from .db import close_db, get_db, init_db
-from .mailer import send_email
+from .mailer import requeue_pending, send_email
 
 
 def now():
@@ -25,6 +25,7 @@ def create_app(overrides=None):
     if not app.config["SECRET_KEY"]:
         app.config["SECRET_KEY"] = secrets.token_hex(32)  # sessions reset on restart; set SECRET_KEY in production
     init_db(app)
+    requeue_pending(app)
     app.teardown_appcontext(close_db)
 
     # ---------- security helpers ----------

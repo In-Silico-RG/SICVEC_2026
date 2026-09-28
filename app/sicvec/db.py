@@ -77,7 +77,7 @@ CREATE TABLE IF NOT EXISTS emails (
 
 def get_db():
     if "db" not in g:
-        g.db = sqlite3.connect(current_app.config["DATABASE"])
+        g.db = sqlite3.connect(current_app.config["DATABASE"], timeout=10)  # wait on a locked DB instead of failing
         g.db.row_factory = sqlite3.Row
         g.db.execute("PRAGMA foreign_keys = ON")
     return g.db
@@ -94,6 +94,7 @@ def init_db(app):
     os.makedirs(os.path.dirname(app.config["DATABASE"]) or ".", exist_ok=True)
     os.makedirs(app.config["UPLOAD_DIR"], exist_ok=True)
     con = sqlite3.connect(app.config["DATABASE"])
+    con.execute("PRAGMA journal_mode = WAL")  # persistent: readers no longer block writers
     con.executescript(SCHEMA)
     con.commit()
     con.close()

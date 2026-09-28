@@ -403,3 +403,12 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Sincelejo, Sucre". The PDF (online version) keeps the clickable Maps link over both blocks.
 - AC asked for more hosting options; a wider list was given in chat (VMs/credits, free PaaS + external DB, academic
   platforms CMT/Sciencesconf/EasyChair, static site + forms). Terms not checked against provider sites. Awaiting choice.
+- Capacity question (AC: 300 people on a simple server?): answered yes. Load is ~300 registrations plus submissions over
+  ~12 days, peak on the 4 Oct close; a 1 vCPU / 1 GB VM with gunicorn (2 workers) + nginx covers it. Video streaming is on the
+  separate platform, not this server. Two hardening items noted: SQLite in WAL mode, and SMTP sending inside the
+  request (15 s timeout, can stall a worker if the mail server is slow).
+- Both applied (AC, 2026-09-28: "apply both fixes and commit"). `db.py`: WAL set at init, 10 s lock wait per connection.
+  `mailer.py`: with SMTP configured, emails are stored as `pendiente` and sent by one background thread per process; a row is
+  claimed (`pendiente` -> `enviando`) before sending so two gunicorn workers never send it twice; leftovers re-queued at
+  startup. Without SMTP, behaviour unchanged (`simulado`). A row left in `enviando` by a crash is not retried (visible in
+  Admin -> Correos). New test with a fake SMTP; 28 pytest tests pass.
