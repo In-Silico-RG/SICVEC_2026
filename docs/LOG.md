@@ -420,3 +420,5 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `app/deploy/pythonanywhere_wsgi.py` (reads `~/sicvec.env`) and PythonAnywhere steps in `app/README.md`. 29 tests pass.
 - Open for AC: PythonAnywhere account (username; created by AC), a Gmail/Google Workspace account to send from with an app
   password (is `unisucre.edu.co` on Google Workspace?), GitHub read token for the clone.
+- AC, 2026-09-28: "UNISUCRE.EDU.CO RUNS ON GOOGLE". Sender = `insilico@unisucre.edu.co` via `smtp.gmail.com:587` with a
+  Google app password (needs 2-Step Verification on that account; a Workspace admin can disable app passwords).
