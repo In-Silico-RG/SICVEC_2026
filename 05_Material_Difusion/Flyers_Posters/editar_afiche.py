@@ -47,9 +47,16 @@ for cx, l1, l2 in [(404, "Dr. Wilson M.", "Castro"), (878, "Dra. Marianny Y.", "
     write(cx, 668, l1, 19, HEAVY)
     write(cx, 692, l2, 19, HEAVY)
 
-# 2. Venue (AC, 2026-09-19): C.C. Guacarí
-erase(480, 1216, 575, 1244)
-write(482, 1218, "C.C. Guacarí", 17.5, REG, TINTA, "la")
+# 2. Venue (AC, 2026-09-28): "Lugar: CC Guacarí, Sincelejo, Sucre ... con enlace a Maps".
+#    Pin block -> the venue; map block -> "Cómo llegar: Google Maps" (link only in the PDF, see MAPS_URL).
+MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Centro+Comercial+Guacar%C3%AD+Sincelejo+Sucre"  # same as the app
+erase(188, 1190, 362, 1242)
+write(191, 1191, "Lugar: C.C. Guacarí", 17.5, BOLD, VERDE_OSC, "la")
+write(191, 1218, "Sincelejo, Sucre (Colombia)", 13.5, REG, TINTA, "la")
+erase(480, 1190, 580, 1244)
+write(483, 1193, "Cómo llegar:", 17, BOLD, VERDE_OSC, "la")
+write(483, 1219, "Google Maps", 16.5, REG, TINTA, "la")
+LINK_BOXES = [(120, 1180, 580, 1260)]  # pin + map blocks, base-image pixels
 
 # 3. QR codes do not exist yet (no public URL): placeholder text inside the brackets
 for x in (70, 740):
@@ -91,5 +98,17 @@ write(920, FY + 67, "Departamento", 11, BOLD, VERDE_OSC)
 write(920, FY + 84, "de Física", 15, BOLD, VERDE_OSC)
 
 im.save(HERE / "Afiche_SICVEC_2026.png", optimize=True)
-im.save(HERE / "Afiche_SICVEC_2026.pdf", resolution=260)  # 2048 px / 260 dpi = 20 cm wide
+DPI = 260  # 2048 px / 260 dpi = 20 cm wide
+im.save(HERE / "Afiche_SICVEC_2026.pdf", resolution=DPI)
+
+# clickable Google Maps link over the venue blocks (PDF only)
+from pypdf import PdfReader, PdfWriter
+from pypdf.annotations import Link
+w = PdfWriter(clone_from=PdfReader(HERE / "Afiche_SICVEC_2026.pdf"))
+pt = 72 / DPI * K
+H = 1536 * pt
+for x0, y0, x1, y1 in LINK_BOXES:
+    ann = Link(rect=(x0 * pt, H - y1 * pt, x1 * pt, H - y0 * pt), url=MAPS_URL)
+    w.add_annotation(page_number=0, annotation=ann)
+w.write(HERE / "Afiche_SICVEC_2026.pdf")
 print("ok", im.size)

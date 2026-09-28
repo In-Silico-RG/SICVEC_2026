@@ -392,3 +392,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Output `Afiche_SICVEC_2026.png` (2048x3072) and `.pdf` (20 x 30 cm). The 90d8855 post/story/A4 removed; 19 Sept A4 restored.
 - Kept from AC's image without a record here: Dra. Monique Renon Eller (Universidade Federal de Viçosa, Brasil) as speaker.
 - Open: QR URLs (need the deployed site), Física logo, post/story formats of the new poster.
+- Venue on the poster (AC, 2026-09-28: "Lugar: CC Guacarí, Sincelejo, Sucre, etc! con enlace a Maps"): pin block now reads
+  "Lugar: C.C. Guacarí / Sincelejo, Sucre (Colombia)"; map block "Cómo llegar: Google Maps". The PDF carries a clickable
+  link over both blocks to the same Maps search URL the app uses; the PNG cannot hold links.
+- Hosting question from AC (free server for the event site): answered in chat. The app needs a persistent disk (SQLite + uploads),
+  so Render/Vercel free tiers are out; options given: UNISUCRE TIC subdomain, PythonAnywhere free, Oracle Cloud Always Free VM.
+  Recommended PythonAnywhere now + TIC request in parallel. Awaiting AC's choice.
