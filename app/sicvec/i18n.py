@@ -23,9 +23,9 @@ MODALITIES = {
 }
 CATEGORIES = {
     "en": {"pregrado": "Undergraduate student", "posgrado": "Graduate student", "profesional": "Professional",
-           "virtual": "Online attendance (online seats)"},
+           "virtual": "Online attendance"},
     "pt": {"pregrado": "Estudante de graduação", "posgrado": "Estudante de pós-graduação", "profesional": "Profissional",
-           "virtual": "Participação on-line (vagas on-line)"},
+           "virtual": "Participação on-line"},
 }
 DECISIONS = {
     "en": {"aceptado": "Accepted", "aceptado_con_cambios": "Accepted with changes", "rechazado": "Not accepted"},
@@ -110,13 +110,13 @@ T = {
     "fee_pos": ("Posgrado", "Graduate students", "Estudantes de pós-graduação"),
     "fee_pro": ("Profesional", "Professionals", "Profissionais"),
     "p_online_h": ("Asistir en línea", "Attend online", "Participar on-line"),
-    "p_online": ("{seats} cupos en línea, gratuitos para participantes externos e internacionales. Plataforma de "
+    "p_online": ("Participación en línea gratuita para participantes externos e internacionales. Plataforma de "
                  "transmisión: <span class=\"pend\">por anunciar</span>.",
-                 "{seats} online seats, free for external and international participants. Streaming platform: "
+                 "Online participation is free for external and international participants. Streaming platform: "
                  "<span class=\"pend\">to be announced</span>.",
-                 "{seats} vagas on-line, gratuitas para participantes externos e internacionais. Plataforma de "
+                 "Participação on-line gratuita para participantes externos e internacionais. Plataforma de "
                  "transmissão: <span class=\"pend\">a ser anunciada</span>."),
-    "btn_seat": ("Reservar cupo", "Book a seat", "Reservar vaga"),
+    "btn_seat": ("Inscribirme en línea", "Register online", "Inscrever-me on-line"),
     "h_audience": ("Dirigido a", "Who should attend", "Público-alvo"),
     "h_venue": ("Lugar", "Venue", "Local"),
     "venue_addr": ("Calle 28 No. 25B-97, Barrio Bostón, Sincelejo, Sucre, Colombia.",
@@ -205,13 +205,13 @@ T = {
     # registration form
     "reg_h1": ("Inscripción", "Registration", "Inscrição"),
     "reg_intro": ("Asistencia presencial: pregrado COP {pre} · posgrado COP {pos} · profesional COP {pro}. "
-                  "Participación virtual: <b>gratuita</b> para participantes externos e internacionales ({seats} cupos). "
+                  "Participación virtual: <b>gratuita</b> para participantes externos e internacionales. "
                   "Límite de pago: {date}. Datos para la transferencia: <b>[PENDIENTE: banco, cuenta, titular]</b>.",
                   "In-person attendance: undergraduate COP {pre} · graduate COP {pos} · professional COP {pro}. "
-                  "Online participation: <b>free</b> for external and international participants ({seats} seats). "
+                  "Online participation: <b>free</b> for external and international participants. "
                   "Payment deadline: {date}. Bank transfer details: <b>[to be announced]</b>.",
                   "Participação presencial: graduação COP {pre} · pós-graduação COP {pos} · profissional COP {pro}. "
-                  "Participação on-line: <b>gratuita</b> para participantes externos e internacionais ({seats} vagas). "
+                  "Participação on-line: <b>gratuita</b> para participantes externos e internacionais. "
                   "Prazo de pagamento: {date}. Dados para a transferência: <b>[a ser anunciado]</b>."),
     "l_email": ("Correo electrónico", "Email", "E-mail"),
     "l_phone": ("Teléfono", "Phone", "Telefone"),

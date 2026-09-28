@@ -492,3 +492,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC: "modalidad híbrida (presencial y en línea)" is redundant; now "modalidad híbrida" (all three languages).
 - AC saw "Pregrado: COP 20.000" on the live site: the server still runs the first zip (checked with curl: 20.000, no
   "Co-organizadores"). Every change since 554aad9 reaches the site only with the new zip.
+- AC, 2026-09-28: "No 300, quita eso" (online seats). Read as: no figure shown and no cap. App: texts in es/en/pt say
+  online participation is free for external and international participants, no number; `ONLINE_SEATS` now optional
+  (unset = no cap; one env line restores a cap); category label "Asistencia virtual"; button "Inscribirme en línea".
+  README, deploy.sh, docs/03 updated. A4 flyer: "300 cupos en línea" -> "En línea: gratuito", recompiled, checked with
+  pdftotext; previous PDF in `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-28_pre_sin300/`. Not changed
+  (already sent): Brief_EN, Información_Evento_Conferencistas, Propuesta_Muestra_Empresarial, departments' email.
+  33 tests pass.

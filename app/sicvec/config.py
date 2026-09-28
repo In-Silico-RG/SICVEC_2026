@@ -20,8 +20,9 @@ def load_config(overrides=None):
         "SUBMISSION_DEADLINE": _dt("SUBMISSION_DEADLINE", "2026-10-04T23:59:00-05:00"),
         "REVIEW_DEADLINE": _dt("REVIEW_DEADLINE", "2026-10-07T23:59:00-05:00"),
         "PAYMENT_DEADLINE": _dt("PAYMENT_DEADLINE", "2026-10-15T23:59:00-05:00"),
-        # AC, 2026-09-19: 300 online seats, free for external and international participants.
-        "ONLINE_SEATS": int(os.environ.get("ONLINE_SEATS", "300")),
+        # Online attendance is free for external and international participants. AC, 2026-09-28: no 300-seat figure;
+        # no cap unless ONLINE_SEATS is set (empty or unset = unlimited).
+        "ONLINE_SEATS": int(os.environ["ONLINE_SEATS"]) if os.environ.get("ONLINE_SEATS", "").strip() else None,
         "FEES": {"pregrado": 15000, "posgrado": 30000, "profesional": 40000, "virtual": 0},
         "CONSENT_TEXT": os.environ.get(
             "CONSENT_TEXT",

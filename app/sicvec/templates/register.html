@@ -1,6 +1,6 @@
 {% extends "base.html" %}{% block title %}{{ t('reg_h1') }} · SICVEC 2026{% endblock %}{% block body %}
 <h1>{{ t('reg_h1') }}</h1>
-<p>{{ t('reg_intro', pre=config.FEES.pregrado|cop, pos=config.FEES.posgrado|cop, pro=config.FEES.profesional|cop, seats=config.ONLINE_SEATS, date=config.PAYMENT_DEADLINE|fecha) }}</p>
+<p>{{ t('reg_intro', pre=config.FEES.pregrado|cop, pos=config.FEES.posgrado|cop, pro=config.FEES.profesional|cop, date=config.PAYMENT_DEADLINE|fecha) }}</p>
 {% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
 <form method="post" enctype="multipart/form-data">
 <input type="hidden" name="_csrf" value="{{ csrf_token() }}">

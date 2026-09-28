@@ -26,7 +26,7 @@ See `app/README.md`. Rules come from `Guia_Presentacion_Resumenes.tex` (modaliti
 - 2026-09-19, AC: build a code app to automate the process.
 - 2026-09-19, AC: **300 online seats**, free for external and international participants; in-person
   (local) participation is paid by category (15.000 / 30.000 / 40.000 COP; pregrado 20.000 -> 15.000, AC 2026-09-28). Implemented: virtual attendance is
-  free, capped at 300 (`ONLINE_SEATS`).
+  free, capped at 300 (`ONLINE_SEATS`). Superseded 2026-09-28 (AC, "No 300, quita eso"): no figure shown, no cap.
 - 2026-09-19, AC: decision-suggestion thresholds approved (accept at mean >= 3.5 with no 'rechazado', reject
   below 2.5, third reviewer if the two scores differ by 2 or more).
 - 2026-09-19, Claude (default, reversible): Flask + SQLite, Spanish interface, private-link reviewers

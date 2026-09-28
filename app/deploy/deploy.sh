@@ -56,7 +56,6 @@ BASE_URL=https://$DOMAIN
 SESSION_COOKIE_SECURE=1
 DATABASE=$DATA/sicvec.sqlite
 UPLOAD_DIR=$DATA/uploads
-ONLINE_SEATS=300
 # --- Fill these in, then: systemctl restart sicvec ---
 # SMTP_HOST=
 # SMTP_PORT=587

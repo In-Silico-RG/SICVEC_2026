@@ -41,7 +41,7 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 | `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email (status `pendiente` → `enviado` or `error`, see Admin → Correos). Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
 | `MAIL_BACKGROUND` | `1` (default): send from a background thread; `0`: send inside the request (PythonAnywhere) |
 | `CONSENT_TEXT` | official UNISUCRE data-treatment text (still `[PENDIENTE]`) |
-| `ONLINE_SEATS` | cap for virtual registrations, default 300 (AC, 2026-09-19); virtual attendance is free, in-person pays by category |
+| `ONLINE_SEATS` | optional cap for virtual registrations; unset = no cap (AC, 2026-09-28: the 300 figure removed). Virtual attendance is free, in-person pays by category |
 | `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-04T23:59:00-05:00` |
 | `DATABASE`, `UPLOAD_DIR` | paths; default `instance/` |
 | `SESSION_COOKIE_SECURE=1` | set behind HTTPS |

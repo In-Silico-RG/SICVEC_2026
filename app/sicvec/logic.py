@@ -12,7 +12,7 @@ AXES = [
 MODALITIES = {"oral": "Ponencia oral (20 min)", "poster": "Póster científico (90 × 120 cm)"}
 WORD_LIMITS = {"oral": 300, "poster": 250}   # Guia_Presentacion_Resumenes.tex
 CATEGORIES = {"pregrado": "Pregrado", "posgrado": "Posgrado", "profesional": "Profesional",
-              "virtual": "Asistencia virtual (cupos en línea)"}
+              "virtual": "Asistencia virtual"}
 # Rubrica_PeerReview.tex: weights 25/25/25/15/10, scale 1-5.
 CRITERIA = [("relevance", "Relevancia al evento", 0.25), ("originality", "Originalidad e innovación", 0.25),
             ("quality", "Calidad científica", 0.25), ("clarity", "Claridad y redacción", 0.15),
