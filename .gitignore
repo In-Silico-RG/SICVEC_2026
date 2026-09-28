@@ -19,3 +19,4 @@ app/.venv/
 app/instance/
 __pycache__/
 .pytest_cache/
+dist/

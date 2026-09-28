@@ -422,3 +422,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   password (is `unisucre.edu.co` on Google Workspace?), GitHub read token for the clone.
 - AC, 2026-09-28: "UNISUCRE.EDU.CO RUNS ON GOOGLE". Sender = `insilico@unisucre.edu.co` via `smtp.gmail.com:587` with a
   Google app password (needs 2-Step Verification on that account; a Workspace admin can disable app passwords).
+- AC: "haz el zip de app/ para subirlo". `dist/SICVEC_app_2026-09-28.zip` (346 KB, `git archive` of `app/` at HEAD, prefix
+  `SICVEC_2026/`, so `unzip` in `~` gives the path the WSGI file expects). Only tracked files: no database, uploads, venv or
+  secrets. `dist/` added to `.gitignore`; zip route added to `app/README.md`.
