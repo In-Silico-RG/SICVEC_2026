@@ -98,7 +98,7 @@ function formA_() {
 function formB_() {
   var f = base_('SICVEC 2026 — Inscripción / Registration',
     'Simposio Internacional de Ciencia Verde y Economía Circular, 19-20 de octubre de 2026, Sincelejo. ' +
-    'Tarifas: pregrado COP 20.000, posgrado COP 30.000, profesionales COP 40.000. Límite de pago: 15 de octubre de 2026. ' +
+    'Tarifas: pregrado COP 15.000, posgrado COP 30.000, profesionales COP 40.000. Límite de pago: 15 de octubre de 2026. ' +
     'Datos para la transferencia: [PENDIENTE: banco, cuenta, titular]. Envíe el comprobante a [PENDIENTE: correo de inscripciones].');
   f.setConfirmationMessage('Hemos recibido su inscripción. Recuerde enviar el comprobante de pago antes del 15 de octubre de 2026.');
   text_(f, 'Nombre completo', true);
@@ -107,7 +107,7 @@ function formB_() {
   text_(f, 'Documento de identidad (tipo y número)', true, 'Se usa para el certificado.');
   text_(f, 'Institución', true);
   text_(f, 'País', true);
-  choice_(f, 'Categoría', ['Pregrado — COP 20.000', 'Posgrado — COP 30.000', 'Profesional — COP 40.000',
+  choice_(f, 'Categoría', ['Pregrado — COP 15.000', 'Posgrado — COP 30.000', 'Profesional — COP 40.000',
     'Asistencia virtual (cupos en línea)'], true);
   choice_(f, 'Modalidad de asistencia', ['Presencial', 'Virtual'], true);
   choice_(f, '¿Presenta un trabajo?', ['No', 'Sí'], true);

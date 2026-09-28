@@ -145,7 +145,7 @@ def test_registration_and_receipt_validation(client):
     assert b"PDF, PNG o JPG" in client.post("/inscripcion", data=bad, content_type="multipart/form-data").data
     good = dict(base, receipt=(BytesIO(b"%PDF-1.4 ok"), "x.pdf"))
     r = client.post("/inscripcion", data=good, content_type="multipart/form-data")
-    assert b"REG-001" in r.data and b"20.000" in r.data
+    assert b"REG-001" in r.data and b"15.000" in r.data
 
 
 def test_online_seat_cap(tmp_path):
@@ -182,7 +182,7 @@ def test_default_online_seats_is_300(tmp_path):
 
 def test_public_info_pages(client):
     home = client.get("/").get_data(as_text=True)
-    for needle in ("Ejes temáticos", "ODS 12", "Pregrado: COP 20.000", "300 cupos en línea", "Centro Comercial Guacarí", "Calle 28 No. 25B-97", "google.com/maps"):
+    for needle in ("Ejes temáticos", "ODS 12", "Pregrado: COP 15.000", "300 cupos en línea", "Centro Comercial Guacarí", "Calle 28 No. 25B-97", "google.com/maps"):
         assert needle in home
     prog = client.get("/programa").get_data(as_text=True)
     assert "Programa preliminar" in prog and "Lunes 19 de octubre" in prog and "Martes 20 de octubre" in prog

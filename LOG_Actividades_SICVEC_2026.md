@@ -200,3 +200,4 @@ f7c898f Estructura inicial SICVEC 2026
 
 **Sesión actualizada:** 16 de septiembre de 2026, 16:50 UTC-5  
 **Próxima revisión:** 18 de septiembre (post-reunión coordinadores)
+- 2026-09-28: **Pregrado COP 20.000 → 15.000** (AC). Posgrado 30.000, profesionales 40.000 sin cambio (la propuesta dice 50.000: por confirmar).

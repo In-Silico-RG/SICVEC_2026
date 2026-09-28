@@ -22,7 +22,7 @@ def load_config(overrides=None):
         "PAYMENT_DEADLINE": _dt("PAYMENT_DEADLINE", "2026-10-15T23:59:00-05:00"),
         # AC, 2026-09-19: 300 online seats, free for external and international participants.
         "ONLINE_SEATS": int(os.environ.get("ONLINE_SEATS", "300")),
-        "FEES": {"pregrado": 20000, "posgrado": 30000, "profesional": 40000, "virtual": 0},
+        "FEES": {"pregrado": 15000, "posgrado": 30000, "profesional": 40000, "virtual": 0},
         "CONSENT_TEXT": os.environ.get(
             "CONSENT_TEXT",
             "[PENDIENTE: texto oficial de la política de tratamiento de datos de UNISUCRE]"),

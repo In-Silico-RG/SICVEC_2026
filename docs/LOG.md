@@ -454,3 +454,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   from the server yet. Pages still show [PENDIENTE]: consent text, data controller, bank details.
 - Free plan: site disabled on 28 Oct 2026 unless "Run until 1 month from today" is pressed in the Web tab.
 - `docs/03_app_plan.md` status: deployed. README: `virtualenv` instead of `python -m venv`, EU host noted.
+- AC, 2026-09-28: **pregrado fee COP 20.000 -> 15.000** (seen on the live home page). Propagated: `app/sicvec/config.py` (FEES),
+  `register.html`, tests, budget (60 x 15.000 = 900.000; subtotal 4.000.000; surplus now computed against the COP 2.500.000
+  budget = 1.500.000, the old 2.300.000 was against the superseded 2.000.000), TAREAS.md, docs/03, the superseded Forms spec
+  and .gs, LOG_Actividades, CLAUDE.md and memory. Poster and A4 carry no fees. 29 tests pass.
+- Found while propagating: `Propuesta_SICVEC_2026.tex` (upload e4c315d, 2026-09-17) already says pregrado 15.000 and
+  **profesionales 50.000**; everything else says 40.000. Asked AC.
+- New zip `dist/SICVEC_app_2026-09-28b.zip` for redeploy.

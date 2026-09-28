@@ -21,11 +21,13 @@
 - Plataforma de transmisión: cubierta
 
 **Ingresos por cuotas presenciales (150 asistentes, ejemplo 60/50/40):**
-- 60 pregrado × COP 20.000 = 1.200.000
+- 60 pregrado × COP 15.000 = 900.000
 - 50 posgrado × COP 30.000 = 1.500.000
 - 40 profesionales × COP 40.000 = 1.600.000
-- **Subtotal**: COP 4.300.000
+- **Subtotal**: COP 4.000.000
 
-**Resultado**: Ingresos cubren presupuesto y generan excedente de COP 2.300.000 para mejoras o reserva.
+**Resultado**: Ingresos cubren el presupuesto (COP 2.500.000) y generan excedente de COP 1.500.000 para mejoras o reserva.
+
+*Pregrado COP 20.000 -> 15.000 (AC, 2026-09-28); subtotal y excedente recalculados.*
 
 *Aprobado 16 sept 2026 por Aldo F. Combariza.*

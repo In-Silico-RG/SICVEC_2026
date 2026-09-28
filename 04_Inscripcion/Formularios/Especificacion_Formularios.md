@@ -31,7 +31,7 @@ sección "Confirmación" del final; cierre 4 oct 2026 23:59 (hora Colombia).
 | 1 | Nombre completo, correo, teléfono | texto | obligatorio |
 | 2 | Documento de identidad (tipo y número) | texto | obligatorio (para el certificado) |
 | 3 | Institución y país | texto | obligatorio |
-| 4 | Categoría | opción | Pregrado COP 20.000 / Posgrado COP 30.000 / Profesional COP 40.000 / Asistencia virtual gratuita (número de cupos por confirmar, ver pregunta abierta 4 del plan 02) |
+| 4 | Categoría | opción | Pregrado COP 15.000 / Posgrado COP 30.000 / Profesional COP 40.000 / Asistencia virtual gratuita (número de cupos por confirmar, ver pregunta abierta 4 del plan 02) |
 | 5 | Modalidad de asistencia | opción | Presencial / Virtual |
 | 6 | Presenta trabajo | opción | No / Sí (referencia SICVEC-###) |
 | 7 | Comprobante de pago | subir archivo (PDF/imagen) | solo categorías de pago; pide inicio de sesión de Google |
