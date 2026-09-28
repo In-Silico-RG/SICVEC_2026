@@ -429,3 +429,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   written to `dist/sicvec.env` (mode 600, git-ignored) with a generated SECRET_KEY and ADMIN_PASSWORD; SMTP_PASSWORD left for
   AC (app password). CONSENT_TEXT and INSTITUTION_DATA still pending. The URL goes on the poster QR codes and the A4 once
   the site is live, not before.
+- AC, 2026-09-28: "ya está arriba, revisa el sitio". Checked 20:01 UTC with curl: every path on
+  `https://sicvec2026.pythonanywhere.com` (and the `.eu.` host) returns 404 with PythonAnywhere's "Coming Soon ... you just need
+  to create a web app to handle this domain" page, i.e. no web app is registered for that domain yet. Site not live.
