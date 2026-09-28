@@ -55,11 +55,19 @@ write(483, 1209, "C.C. Guacarí", 15.5, BOLD, TINTA, "la")
 write(483, 1230, "Sincelejo, Sucre", 13, REG, TINTA, "la")
 LINK_BOXES = [(120, 1180, 580, 1260)]  # pin + map blocks, base-image pixels
 
-# 3. QR codes do not exist yet (no public URL): placeholder text inside the brackets
-for x in (70, 740):
+# 3. QR codes (2026-09-28, site live): Asistentes -> registration, Ponentes -> abstract submission.
+# Needs `segno` (pip install segno). The PDF also links each QR box to its page.
+import io
+import segno
+SITE = "https://sicvec2026.eu.pythonanywhere.com"
+QRS = [(70, SITE + "/inscripcion"), (740, SITE + "/enviar")]
+for x, url in QRS:
     erase(x, 983, x + 82, 1064)
-    write(x + 41, 1012, "Próxima-", 13, BOLD, VERDE_OSC)
-    write(x + 41, 1029, "mente", 13, BOLD, VERDE_OSC)
+    buf = io.BytesIO()
+    segno.make(url, error="m").save(buf, kind="png", scale=10, border=1, dark="#0e3e2a", light="#ffffff")
+    qr = Image.open(buf).convert("RGB").resize((78 * K, 78 * K), Image.NEAREST)
+    im.paste(qr, (int((x + 2) * K), int(985 * K)))
+QR_LINKS = [((x, 983, x + 82, 1064), url) for x, url in QRS]
 
 # 4. Footer (AC, 2026-09-28): ORGANIZAN IN SILICO + UNISUCRE; COLABORAN the departments; no sponsors
 FY = 1394
@@ -98,14 +106,14 @@ im.save(HERE / "Afiche_SICVEC_2026.png", optimize=True)
 DPI = 260  # 2048 px / 260 dpi = 20 cm wide
 im.save(HERE / "Afiche_SICVEC_2026.pdf", resolution=DPI)
 
-# clickable Google Maps link over the venue blocks (PDF only)
+# clickable links (PDF only): Google Maps over the venue blocks, the site over the QR codes
 from pypdf import PdfReader, PdfWriter
 from pypdf.annotations import Link
 w = PdfWriter(clone_from=PdfReader(HERE / "Afiche_SICVEC_2026.pdf"))
 pt = 72 / DPI * K
 H = 1536 * pt
-for x0, y0, x1, y1 in LINK_BOXES:
-    ann = Link(rect=(x0 * pt, H - y1 * pt, x1 * pt, H - y0 * pt), url=MAPS_URL)
+for (x0, y0, x1, y1), url in [(b, MAPS_URL) for b in LINK_BOXES] + QR_LINKS:
+    ann = Link(rect=(x0 * pt, H - y1 * pt, x1 * pt, H - y0 * pt), url=url)
     w.add_annotation(page_number=0, annotation=ann)
 w.write(HERE / "Afiche_SICVEC_2026.pdf")
 print("ok", im.size)

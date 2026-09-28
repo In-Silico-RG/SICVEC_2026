@@ -503,3 +503,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   works (home, registration); Pregrado COP 15.000 in all three; "Idiomas oficiales", "modalidad híbrida.", no "300",
   Organizan/Colaboran, Co-organizadores, Português in the language menu, consent text and NIT on the forms; admin pages
   200 (ui_lang migration ran). Only [PENDIENTE] left on the public pages: bank details.
+- AC, 2026-09-28: QR codes on the poster. `editar_afiche.py` step 3 now draws real QR codes (segno, error level M, dark
+  green) inside the image's brackets: "QR Asistentes" -> https://sicvec2026.eu.pythonanywhere.com/inscripcion,
+  "QR Ponentes" -> .../enviar. The PDF also links both QR boxes (plus the Maps link). Verified: both QR codes decoded with
+  OpenCV from the PNG to the exact URLs; PDF annotations listed with pypdf. Previous PNG/PDF in
+  `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-28_pre_qr/`. Script needs `segno` and `pypdf` (run here from a
+  scratch venv). Note: the QR codes carry the PythonAnywhere address; if the site moves to a UNISUCRE domain the poster
+  must be regenerated.
