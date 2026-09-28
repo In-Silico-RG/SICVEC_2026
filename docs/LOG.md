@@ -438,3 +438,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-28, rejected putting a mailbox password on the server ("No señor!"). Decision: email off at launch
   (`SMTP_HOST` empty in `dist/sicvec.env`); the app logs every email as `simulado` in Admin -> Correos and nothing is sent.
   Alternatives left open: a Google app password (separate from the account password, revocable) or a dedicated event Gmail.
+- Reversed (AC, 2026-09-28: "claro que quiero darle la opción de enviar correos a la app"): the earlier refusal came from my
+  unexplained request for a password. Email back on in `dist/sicvec.env` (smtp.gmail.com, insilico@unisucre.edu.co); AC to
+  create a Google app password (not the account password; revocable) and paste it into the file.
