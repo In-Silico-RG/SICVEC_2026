@@ -514,3 +514,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   budget (40 x 50.000 = 2.000.000; subtotal 4.400.000; surplus 1.900.000 over COP 2.500.000), TAREAS.md, docs/03, Forms
   spec/.gs (superseded), LOG_Actividades, CLAUDE.md, memory. Poster/flyer carry no fees. New test checks the three fees
   on the home page; 34 pass. New zip for redeploy.
+- Live check after AC's redeploy (f10f1b7): fees 15.000 / 30.000 / 50.000 on home and registration in es/en/pt; all public pages 200. (First reload attempt still served 40.000; fixed on AC's second pass.)
