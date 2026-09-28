@@ -367,3 +367,18 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   material requested by **30 Sept** (date proposed here; the speaker sheet's 20 Sept international deadline has passed).
 - Record `10_Ponentes/FICHA_Valli_Bologna.md`; TAREAS.md keynote item updated. Would be the 4th keynote slot.
 - Message and PDF brief sent by AC in the chat, 2026-09-22 ("message sent, all set"). Awaiting reply: speaker name, title, abstract, bio, photo by 30 Sept.
+
+## 2026-09-28 (flyers for UNISUCRE Comunicaciones)
+
+- AC: "necesitamos los flyers para comunicaciones UNISUCRE". The 19 Sept A4 flyer was out of date for public use: the event
+  name was not stated, it linked the private GitHub repo, had a typo ("resúmen") and broken icon glyphs. Replaced with a set
+  in `05_Material_Difusion/Flyers_Posters/`: `Flyer_SICVEC_2026.pdf` (A4), `Post_SICVEC_2026.png` (1080x1080),
+  `Story_SICVEC_2026.png` (1080x1920). Shared text/macros in `flyer_comun.tex`, so figures change in one place.
+  Old PDF kept in `Versiones/2026-09-28_pre_flyers_comunicaciones/`.
+- Content only from the record: dates, room at C.C. Guacarí, hybrid, 300 free online seats (external/international),
+  close 4 Oct 23:59, six axes, ODS, fees, contact insilico@. A4 names keynotes Castro and M. Combariza (names and
+  institutions only; no photo, pending Castro's consent). Física/Química department logos not in the repo; departments
+  listed as text. A4 carries "Envío de resúmenes: [PENDIENTE: enlace de la plataforma]": the app is not deployed.
+- Also received: `41_Certificate_poster Sebastian David Vargas Vergara .pdf` (V ISCMS, Rosario, 15 May 2026), dropped in
+  the project root by AC; no instruction yet, left untracked.
+- Open for AC: submission link for the A4 (or drop the line); approval by UNISUCRE Comunicaciones.

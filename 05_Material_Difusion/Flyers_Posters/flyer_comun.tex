@@ -1,0 +1,41 @@
+% Shared preamble and content for the SICVEC 2026 flyers (A4, post, story).
+% Every figure here comes from the decided record (CLAUDE.md / docs/LOG.md); change it here, not per flyer.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[default]{lato}
+\usepackage{graphicx}
+\graphicspath{{../../01_Propuesta/Logos/}}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{verdeosc}{RGB}{20,84,48}
+\definecolor{verde}{RGB}{26,107,60}
+\definecolor{verdeclaro}{RGB}{232,243,235}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{tinta}{RGB}{33,37,41}
+
+\newcommand{\Nombre}{I Simposio Internacional de\\Ciencia Verde y Economía Circular}
+\newcommand{\Sigla}{SICVEC 2026}
+\newcommand{\Fechas}{19 y 20 de octubre de 2026}
+\newcommand{\Lugar}{Sala de conferencias, C.C. Guacarí}
+\newcommand{\Ciudad}{Sincelejo, Sucre, Colombia}
+\newcommand{\Modalidad}{Modalidad híbrida}
+\newcommand{\Cupos}{300 cupos en línea gratuitos para participantes externos e internacionales}
+\newcommand{\Cierre}{4 de octubre de 2026, 23:59}
+\newcommand{\Contacto}{insilico@unisucre.edu.co}
+\newcommand{\Enlace}{Envío de resúmenes: [PENDIENTE: enlace de la plataforma]}
+\newcommand{\Organiza}{Universidad de Sucre · Facultad de Educación y Ciencias · Programa de Biología · Grupo IN SILICO}
+\newcommand{\Departamentos}{Departamentos: Biología y Química · Ingeniería Agroindustrial · Ingeniería Agrícola · Física}
+
+% Institutional logos strip, scaled to a common height #1
+\newcommand{\Logos}[1]{%
+  \includegraphics[height=#1]{logo_unisucre.png}\hspace{1.2em}%
+  \includegraphics[height=#1]{Logo_Bio.png}\hspace{1.2em}%
+  \includegraphics[height=#1]{logo_agroin.png}\hspace{1.2em}%
+  \includegraphics[height=#1]{logo_ingagrocola.png}\hspace{1.2em}%
+  \includegraphics[height=#1]{Logo_insilico.jpeg}}
