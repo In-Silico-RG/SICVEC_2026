@@ -104,7 +104,7 @@ def create_app(overrides=None):
                 errors.append("Correo de contacto no válido.")
             if not title or len(title) > 200:
                 errors.append("El título es obligatorio (máx. 200 caracteres).")
-            if language not in ("es", "en"):
+            if language not in ("es", "en", "pt"):
                 errors.append("Elija el idioma.")
             if modality not in logic.MODALITIES:
                 errors.append("Elija la modalidad.")

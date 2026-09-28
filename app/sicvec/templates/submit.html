@@ -9,7 +9,7 @@ Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster 
 <label>Correo de contacto <input type="email" name="email" value="{{ f.get('email','') }}" required></label>
 <label>Título del trabajo <input type="text" name="title" maxlength="200" value="{{ f.get('title','') }}" required></label>
 <label>Idioma del resumen
-<select name="language"><option value="es" {{ 'selected' if f.get('language')=='es' }}>Español</option><option value="en" {{ 'selected' if f.get('language')=='en' }}>English</option></select></label>
+<select name="language"><option value="es" {{ 'selected' if f.get('language')=='es' }}>Español</option><option value="en" {{ 'selected' if f.get('language')=='en' }}>English</option><option value="pt" {{ 'selected' if f.get('language')=='pt' }}>Português</option></select></label>
 <label>Modalidad
 <select name="modality">{% for k,v in MODALITIES.items() %}<option value="{{ k }}" {{ 'selected' if f.get('modality')==k }}>{{ v }}</option>{% endfor %}</select></label>
 <label>Presentación

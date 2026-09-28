@@ -253,3 +253,8 @@ def test_smtp_sent_inline_when_background_off(tmp_path, monkeypatch):
         from sicvec.db import get_db
         assert get_db().execute("SELECT status FROM emails").fetchone()[0] == "enviado"
     assert sent == ["ana@uni.co"]
+
+
+def test_submit_portuguese_accepted(client):
+    r = client.post("/enviar", data=submission_data(client, language="pt"))
+    assert r.status_code == 200 and b"SICVEC-001" in r.data

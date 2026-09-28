@@ -469,3 +469,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-28 (screenshot of the footer logo strip): logos regrouped as on the poster: ORGANIZAN = IN SILICO + UNISUCRE;
   COLABORAN = Biología, Ing. Agroindustrial, Ing. Agrícola, Física (text box, no logo yet). New static files
   `logo_agroin.jpg`, `logo_ingagricola.jpg` (from `01_Propuesta/Logos/`, 200 px high). Checked in Chrome on a local run.
+- AC, 2026-09-28: "idioma portugués es válido también". App: `pt` accepted, "Português" in the language menu, new test
+  (30 pass). Guides updated and recompiled: `Guia_Presentacion_Resumenes` (Idioma: español, inglés o portugués) and
+  `Manual_Memorias_PeerReview` (item and FAQ); PDFs checked with pdftotext; previous PDFs in
+  `03_Memorias_y_PeerReview/Guias_Autores/Versiones/2026-09-28_pre_portugues/`. Not changed: `SICVEC_2026_Brief_EN.tex`
+  (already sent to Bologna, 22 Sept).
