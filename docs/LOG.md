@@ -425,3 +425,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC: "haz el zip de app/ para subirlo". `dist/SICVEC_app_2026-09-28.zip` (346 KB, `git archive` of `app/` at HEAD, prefix
   `SICVEC_2026/`, so `unzip` in `~` gives the path the WSGI file expects). Only tracked files: no database, uploads, venv or
   secrets. `dist/` added to `.gitignore`; zip route added to `app/README.md`.
+- AC, 2026-09-28: PythonAnywhere user **sicvec2026**; site will be `https://sicvec2026.pythonanywhere.com`. Settings file
+  written to `dist/sicvec.env` (mode 600, git-ignored) with a generated SECRET_KEY and ADMIN_PASSWORD; SMTP_PASSWORD left for
+  AC (app password). CONSENT_TEXT and INSTITUTION_DATA still pending. The URL goes on the poster QR codes and the A4 once
+  the site is live, not before.
