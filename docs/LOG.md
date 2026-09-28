@@ -398,3 +398,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Hosting question from AC (free server for the event site): answered in chat. The app needs a persistent disk (SQLite + uploads),
   so Render/Vercel free tiers are out; options given: UNISUCRE TIC subdomain, PythonAnywhere free, Oracle Cloud Always Free VM.
   Recommended PythonAnywhere now + TIC request in parallel. Awaiting AC's choice.
+- Correction (AC, 2026-09-28: "cómo llegar hombreee, coloca la información, CC Guacarí, Sincelejo..."): "Cómo llegar: Google
+  Maps" dropped. Left block back to the image's "Sincelejo, Sucre (Colombia)"; map block now "Lugar: / C.C. Guacarí /
+  Sincelejo, Sucre". The PDF (online version) keeps the clickable Maps link over both blocks.
+- AC asked for more hosting options; a wider list was given in chat (VMs/credits, free PaaS + external DB, academic
+  platforms CMT/Sciencesconf/EasyChair, static site + forms). Terms not checked against provider sites. Awaiting choice.

@@ -47,15 +47,12 @@ for cx, l1, l2 in [(404, "Dr. Wilson M.", "Castro"), (878, "Dra. Marianny Y.", "
     write(cx, 668, l1, 19, HEAVY)
     write(cx, 692, l2, 19, HEAVY)
 
-# 2. Venue (AC, 2026-09-28): "Lugar: CC Guacarí, Sincelejo, Sucre ... con enlace a Maps".
-#    Pin block -> the venue; map block -> "Cómo llegar: Google Maps" (link only in the PDF, see MAPS_URL).
+# 2. Venue (AC, 2026-09-28): "Lugar: CC Guacarí, Sincelejo ..." in the map block; the online (PDF) version links to Maps.
 MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Centro+Comercial+Guacar%C3%AD+Sincelejo+Sucre"  # same as the app
-erase(188, 1190, 362, 1242)
-write(191, 1191, "Lugar: C.C. Guacarí", 17.5, BOLD, VERDE_OSC, "la")
-write(191, 1218, "Sincelejo, Sucre (Colombia)", 13.5, REG, TINTA, "la")
-erase(480, 1190, 580, 1244)
-write(483, 1193, "Cómo llegar:", 17, BOLD, VERDE_OSC, "la")
-write(483, 1219, "Google Maps", 16.5, REG, TINTA, "la")
+erase(480, 1190, 580, 1250)
+write(483, 1187, "Lugar:", 17, BOLD, VERDE_OSC, "la")
+write(483, 1209, "C.C. Guacarí", 15.5, BOLD, TINTA, "la")
+write(483, 1230, "Sincelejo, Sucre", 13, REG, TINTA, "la")
 LINK_BOXES = [(120, 1180, 580, 1260)]  # pin + map blocks, base-image pixels
 
 # 3. QR codes do not exist yet (no public URL): placeholder text inside the brackets
