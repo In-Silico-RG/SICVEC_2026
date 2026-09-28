@@ -499,3 +499,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   pdftotext; previous PDF in `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-28_pre_sin300/`. Not changed
   (already sent): Brief_EN, Información_Evento_Conferencistas, Propuesta_Muestra_Empresarial, departments' email.
   33 tests pass.
+- AC redeployed (zip b, d7ef1ec). Live check 2026-09-28 with curl: all public pages and new logos 200; ES/EN/PT switch
+  works (home, registration); Pregrado COP 15.000 in all three; "Idiomas oficiales", "modalidad híbrida.", no "300",
+  Organizan/Colaboran, Co-organizadores, Português in the language menu, consent text and NIT on the forms; admin pages
+  200 (ui_lang migration ran). Only [PENDIENTE] left on the public pages: bank details.
