@@ -382,3 +382,13 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Also received: `41_Certificate_poster Sebastian David Vargas Vergara .pdf` (V ISCMS, Rosario, 15 May 2026), dropped in
   the project root by AC; no instruction yet, left untracked.
 - Open for AC: submission link for the A4 (or drop the line); approval by UNISUCRE Comunicaciones.
+- AC rejected the 90d8855 flyers ("horrible") and pointed to his own image (`Versiones/2026-09-28_pre_flyers_comunicaciones/
+  photo_2026-09-28_12-38-47.jpg`, 1024x1536): "tomo el que te pase en photo* y mejoremos esa versión". A vector rebuild of that
+  image (SVG/cairosvg, speaker logos from Wikimedia) was started and dropped at AC's "stop all"; AC asked for a plan first.
+- Approved and applied (AC, 2026-09-28), by `05_Material_Difusion/Flyers_Posters/editar_afiche.py` on AC's image, upscaled 2x:
+  names "Dr. Wilson M. Castro" and "Dra. Marianny Y. Combariza"; "Lugar: A definir" -> "C.C. Guacarí"; the image's QR codes
+  (not real) -> "Próximamente"; footer rebuilt: ORGANIZAN IN SILICO + UNISUCRE, COLABORAN Biología, Ing. Agroindustrial,
+  Ing. Agrícola, Física ("Biología colabora", AC); Patrocinadores removed; Física as text until its logo arrives.
+  Output `Afiche_SICVEC_2026.png` (2048x3072) and `.pdf` (20 x 30 cm). The 90d8855 post/story/A4 removed; 19 Sept A4 restored.
+- Kept from AC's image without a record here: Dra. Monique Renon Eller (Universidade Federal de Viçosa, Brasil) as speaker.
+- Open: QR URLs (need the deployed site), Física logo, post/story formats of the new poster.
