@@ -412,3 +412,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   claimed (`pendiente` -> `enviando`) before sending so two gunicorn workers never send it twice; leftovers re-queued at
   startup. Without SMTP, behaviour unchanged (`simulado`). A row left in `enviando` by a crash is not retried (visible in
   Admin -> Correos). New test with a fake SMTP; 28 pytest tests pass.
+- AC clarified ("te decía si podemos subir eso al servidor que elegiremos y ya"): yes, the app is ready to upload; needs the
+  host, an SMTP mailbox, consent text and bank details.
+- Host decided (AC, 2026-09-28): **PythonAnywhere** (free plan). Checked on their site/forums: one web worker, no threads in
+  web apps, only Gmail SMTP (`smtp.gmail.com`) allowed, address `<user>.pythonanywhere.com` (own domain needs paid plan).
+  Consequence: new `MAIL_BACKGROUND` switch (`0` = send inside the request, as before 7890380; `1` default for a VPS).
+  `app/deploy/pythonanywhere_wsgi.py` (reads `~/sicvec.env`) and PythonAnywhere steps in `app/README.md`. 29 tests pass.
+- Open for AC: PythonAnywhere account (username; created by AC), a Gmail/Google Workspace account to send from with an app
+  password (is `unisucre.edu.co` on Google Workspace?), GitHub read token for the clone.

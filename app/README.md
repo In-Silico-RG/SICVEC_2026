@@ -38,7 +38,8 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 | `ADMIN_PASSWORD` | required for `/admin` |
 | `SECRET_KEY` | session key; set a fixed random value in production |
 | `BASE_URL` | public URL, used in reviewer invitation links |
-| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email, sent by a background thread (status `pendiente` → `enviado` or `error`, see Admin → Correos). Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
+| `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `MAIL_FROM` | real email (status `pendiente` → `enviado` or `error`, see Admin → Correos). Without `SMTP_HOST` emails are logged as `simulado` and nothing is sent |
+| `MAIL_BACKGROUND` | `1` (default): send from a background thread; `0`: send inside the request (PythonAnywhere) |
 | `CONSENT_TEXT` | official UNISUCRE data-treatment text (still `[PENDIENTE]`) |
 | `ONLINE_SEATS` | cap for virtual registrations, default 300 (AC, 2026-09-19); virtual attendance is free, in-person pays by category |
 | `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-04T23:59:00-05:00` |
@@ -52,8 +53,24 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 4. Set the variables above; back up `instance/` (database and receipts) daily.
 5. Personal data (IDs, receipts): restrict server access, and set the real consent text before opening the call.
 
+## Deploying on PythonAnywhere (free plan; chosen by AC, 2026-09-28)
+Free-plan limits checked on 2026-09-28 (PythonAnywhere pricing and help pages): one web app at
+`<user>.pythonanywhere.com` (no own domain), one web worker, **no threads in web apps**, outbound
+traffic filtered: the only SMTP server allowed is Gmail's (`smtp.gmail.com`).
+1. Bash console: `git clone https://github.com/In-Silico-RG/SICVEC_2026.git` (private repo: use a GitHub
+   fine-grained token with read-only access to this repo as the password), then
+   `python3.12 -m venv ~/venv && ~/venv/bin/pip install -r SICVEC_2026/app/requirements.txt`.
+2. Create `~/sicvec.env` (`chmod 600`), one `KEY=value` per line: `SECRET_KEY`, `ADMIN_PASSWORD`,
+   `BASE_URL=https://<user>.pythonanywhere.com`, `SESSION_COOKIE_SECURE=1`, `MAIL_BACKGROUND=0`,
+   `DATABASE=/home/<user>/data/sicvec.sqlite`, `UPLOAD_DIR=/home/<user>/data/uploads`, and for email
+   `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=587`, `SMTP_USER`, `SMTP_PASSWORD` (Google app password), `MAIL_FROM`.
+3. Web tab: *Add a new web app* → *Manual configuration* → Python 3.12; virtualenv `~/venv`; replace the WSGI
+   file with `deploy/pythonanywhere_wsgi.py`; static files: URL `/static/` → `~/SICVEC_2026/app/sicvec/static/`;
+   turn on *Force HTTPS*; *Reload*.
+4. Updates: `cd ~/SICVEC_2026 && git pull`, then *Reload* in the Web tab. Back up `~/data/` (Files tab download).
+
 ## Known limits
 - HTTP Basic auth for a single admin; no per-user accounts or audit trail beyond the email log.
 - No rate limiting on the public forms: put it in the reverse proxy if abuse appears.
-- Emails are sent synchronously; fine for ~200 users, not for thousands.
+- On PythonAnywhere emails are sent inside the request (one worker): fine for ~300 users, not for thousands.
 - Not security-audited. Treat it as an MVP that handles personal data.

@@ -229,3 +229,27 @@ def test_smtp_sent_in_background(tmp_path, monkeypatch):
     assert con.execute("PRAGMA journal_mode").fetchone()[0] == "wal"
     assert con.execute("SELECT status FROM emails").fetchone()[0] == "enviado"
     assert sent == ["ana@uni.co"]
+
+
+def test_smtp_sent_inline_when_background_off(tmp_path, monkeypatch):
+    from sicvec import mailer
+    sent = []
+
+    class FakeSMTP:
+        def __init__(self, *a, **k): pass
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+        def starttls(self): pass
+        def login(self, *a): pass
+        def send_message(self, msg): sent.append(msg["To"])
+
+    monkeypatch.setattr(mailer.smtplib, "SMTP", FakeSMTP)
+    app = create_app({"TESTING": True, "DATABASE": str(tmp_path / "s.sqlite"), "UPLOAD_DIR": str(tmp_path / "up"),
+                      "ADMIN_PASSWORD": "pw-test", "SECRET_KEY": "k", "SMTP_HOST": "smtp.test",
+                      "MAIL_FROM": "x@y.co", "MAIL_BACKGROUND": False})
+    c = app.test_client()
+    assert c.post("/enviar", data=submission_data(c)).status_code == 200
+    with app.app_context():
+        from sicvec.db import get_db
+        assert get_db().execute("SELECT status FROM emails").fetchone()[0] == "enviado"
+    assert sent == ["ana@uni.co"]

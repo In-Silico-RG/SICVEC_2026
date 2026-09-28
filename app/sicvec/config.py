@@ -34,6 +34,8 @@ def load_config(overrides=None):
         "SMTP_USER": os.environ.get("SMTP_USER", ""),
         "SMTP_PASSWORD": os.environ.get("SMTP_PASSWORD", ""),
         "MAIL_FROM": os.environ.get("MAIL_FROM", "insilico@unisucre.edu.co"),
+        # 1: send from a background thread (VPS). 0: send inside the request (PythonAnywhere: no threads in web apps).
+        "MAIL_BACKGROUND": os.environ.get("MAIL_BACKGROUND", "1") == "1",
         "BASE_URL": os.environ.get("BASE_URL", "http://localhost:5000"),
         "SESSION_COOKIE_SECURE": os.environ.get("SESSION_COOKIE_SECURE", "") == "1",
         "SESSION_COOKIE_SAMESITE": "Lax",

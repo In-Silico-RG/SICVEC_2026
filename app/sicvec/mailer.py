@@ -6,7 +6,8 @@ from datetime import datetime
 from email.message import EmailMessage
 from .config import CO
 
-# SMTP delivery runs in one background thread per process, so a slow mail server never holds a request.
+# With MAIL_BACKGROUND, SMTP delivery runs in one background thread per process, so a slow mail server never
+# holds a request; without it (PythonAnywhere), delivery happens inside the request.
 # A row is claimed ('pendiente' -> 'enviando') before sending, so two gunicorn workers never send the same email.
 _queue = queue.Queue()
 _worker_lock = threading.Lock()
@@ -25,14 +26,18 @@ def send_email(app, db, to_addr, subject, body):
                      (now, to_addr, subject, body, status, error))
     db.commit()
     if status == "pendiente":
-        _start_worker(app)
-        _queue.put(cur.lastrowid)
+        if app.config["MAIL_BACKGROUND"]:
+            _start_worker(app)
+            _queue.put(cur.lastrowid)
+        else:
+            _deliver(app, cur.lastrowid)
+            status = db.execute("SELECT status FROM emails WHERE id=?", (cur.lastrowid,)).fetchone()[0]
     return status
 
 
 def requeue_pending(app):
     """At startup, queue emails left 'pendiente' by a previous process (the claim prevents double sends)."""
-    if not app.config["SMTP_HOST"]:
+    if not app.config["SMTP_HOST"] or not app.config["MAIL_BACKGROUND"]:
         return
     con = _connect(app)
     try:
