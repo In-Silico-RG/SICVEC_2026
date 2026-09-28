@@ -25,10 +25,20 @@ def load_config(overrides=None):
         "FEES": {"pregrado": 15000, "posgrado": 30000, "profesional": 40000, "virtual": 0},
         "CONSENT_TEXT": os.environ.get(
             "CONSENT_TEXT",
-            "[PENDIENTE: texto oficial de la política de tratamiento de datos de UNISUCRE]"),
+            # Draft from Resolución 1129 de 2021 (UNISUCRE data policy), art. 6 purposes a, b, d; pending AC approval.
+            "Autorizo de manera libre, previa, expresa e informada a la Universidad de Sucre para tratar mis datos "
+            "personales con el fin de gestionar mi participación en SICVEC 2026 (envío y evaluación de resúmenes, "
+            "inscripción, pagos, certificados, memorias del evento y comunicaciones relacionadas), conforme a la Ley 1581 "
+            "de 2012 y a la Política de Tratamiento de Datos Personales de la Universidad de Sucre (Resolución 1129 de "
+            "2021). Conozco mis derechos a conocer, actualizar, rectificar y suprimir mis datos y a revocar esta "
+            "autorización."),
         "INSTITUTION_DATA": os.environ.get(
             "INSTITUTION_DATA",
-            "[PENDIENTE: responsable del tratamiento de datos (razón social, NIT, dirección y correo de contacto de UNISUCRE)]"),
+            # From Resolución 1129 de 2021; atencionalciudadano@ from unisucre.edu.co (egresados/normatividad page).
+            "Responsable del tratamiento: Universidad de Sucre, NIT 892.200.323-9, Cra. 28 # 5-267, Barrio Puerta Roja, "
+            "Sincelejo (Sucre), Colombia. Política: Resolución 1129 de 2021, disponible en unisucre.edu.co. Consultas y "
+            "reclamos: atencionalciudadano@unisucre.edu.co o comunicación escrita a la dirección indicada (respuesta en "
+            "máximo 15 días hábiles). Dudas sobre el evento: insilico@unisucre.edu.co."),
         "SMTP_HOST": os.environ.get("SMTP_HOST", ""),
         "SMTP_PORT": int(os.environ.get("SMTP_PORT", "587")),
         "SMTP_USER": os.environ.get("SMTP_USER", ""),

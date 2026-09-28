@@ -35,7 +35,7 @@ See `app/README.md`. Rules come from `Guia_Presentacion_Resumenes.tex` (modaliti
 ## Open questions
 1. **Host.** Decided 2026-09-28 (AC): PythonAnywhere free plan. Account still to be created by AC.
 2. **SMTP.** Decided 2026-09-28 (AC): unisucre.edu.co is on Google Workspace; send from `insilico@unisucre.edu.co` via smtp.gmail.com with an app password (pending: the password itself).
-3. **Consent text (AC).** UNISUCRE's official data-treatment text.
+3. **Consent text.** Drafted 2026-09-28 from UNISUCRE Resolución 1129 de 2021 (defaults in `app/sicvec/config.py`); pending AC's approval.
 4. **Bank details (SV / AC).** For the registration page.
 5. **In-person external attendees (AC).** The rule implemented: in-person always pays by category, even for external attendees; only virtual is free. Confirm.
 6. **Guide and flyer.** They still need the app's URL once it exists.

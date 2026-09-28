@@ -474,3 +474,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `Manual_Memorias_PeerReview` (item and FAQ); PDFs checked with pdftotext; previous PDFs in
   `03_Memorias_y_PeerReview/Guias_Autores/Versiones/2026-09-28_pre_portugues/`. Not changed: `SICVEC_2026_Brief_EN.tex`
   (already sent to Bologna, 22 Sept).
+- AC, 2026-09-28: "hagamos eso" (consent text). Source: UNISUCRE **Resolución 1129 de 2021** (27 Aug 2021), Política de
+  Tratamiento de Datos Personales, PDF at gestiondocumental.unisucre.edu.co (.../Rectoria/De Interés General/Resolucion_1129.pdf),
+  read 2026-09-28. Taken from it: NIT 892.200.323-9; Cra 28 # 5-267, Barrio Puerta Roja, Sincelejo; purposes art. 6 a, b, d;
+  holders' rights; written claims, 15 business days. `atencionalciudadano@unisucre.edu.co` is from unisucre.edu.co
+  (egresados/normatividad page), not from the resolution. The policy gives no model authorization text, so the consent
+  sentence is a draft (Ley 1581 de 2012 wording: libre, previa, expresa e informada), set as defaults for CONSENT_TEXT and
+  INSTITUTION_DATA in `app/sicvec/config.py`. Pending AC's approval. Bank details still [PENDIENTE].
