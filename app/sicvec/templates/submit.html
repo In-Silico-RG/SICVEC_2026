@@ -1,35 +1,32 @@
-{% extends "base.html" %}{% block body %}
-<h1>Envío de resúmenes / Abstract submission</h1>
-<p>Cierre: {{ config.SUBMISSION_DEADLINE|fecha }} (hora Colombia). El resumen se pega como texto y
-<b>no debe incluir nombres de autores ni afiliaciones</b> (revisión ciega).
-Máximo de palabras: oral {{ WORD_LIMITS.oral }}, póster {{ WORD_LIMITS.poster }}.</p>
+{% extends "base.html" %}{% block title %}{{ t('sub_h1') }} · SICVEC 2026{% endblock %}{% block body %}
+<h1>{{ t('sub_h1') }}</h1>
+<p>{{ t('sub_intro', date=config.SUBMISSION_DEADLINE|fecha, oral=WORD_LIMITS.oral, poster=WORD_LIMITS.poster) }}</p>
 {% if errors %}<div class="err"><ul>{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul></div>{% endif %}
 <form method="post">
 <input type="hidden" name="_csrf" value="{{ csrf_token() }}">
-<label>Correo de contacto <input type="email" name="email" value="{{ f.get('email','') }}" required></label>
-<label>Título del trabajo <input type="text" name="title" maxlength="200" value="{{ f.get('title','') }}" required></label>
-<label>Idioma del resumen
-<select name="language"><option value="es" {{ 'selected' if f.get('language')=='es' }}>Español</option><option value="en" {{ 'selected' if f.get('language')=='en' }}>English</option><option value="pt" {{ 'selected' if f.get('language')=='pt' }}>Português</option></select></label>
-<label>Modalidad
-<select name="modality">{% for k,v in MODALITIES.items() %}<option value="{{ k }}" {{ 'selected' if f.get('modality')==k }}>{{ v }}</option>{% endfor %}</select></label>
-<label>Presentación
-<select name="presentation"><option value="presencial" {{ 'selected' if f.get('presentation')=='presencial' }}>Presencial</option><option value="virtual" {{ 'selected' if f.get('presentation')=='virtual' }}>Virtual</option></select></label>
-<label>Eje temático principal
-<select name="axis">{% for a in AXES %}<option {{ 'selected' if f.get('axis')==a }}>{{ a }}</option>{% endfor %}</select></label>
-<label>Resumen (sin nombres de autores ni afiliaciones)
+<label>{{ t('l_email_contact') }} <input type="email" name="email" value="{{ f.get('email','') }}" required></label>
+<label>{{ t('l_title') }} <input type="text" name="title" maxlength="200" value="{{ f.get('title','') }}" required></label>
+<label>{{ t('l_lang') }}
+<select name="language">{% for l in LANGS %}<option value="{{ l }}" {{ 'selected' if f.get('language', lang)==l }}>{{ LANG_NAMES[l] }}</option>{% endfor %}</select></label>
+<label>{{ t('l_modality') }}
+<select name="modality">{% for k in MODALITIES %}<option value="{{ k }}" {{ 'selected' if f.get('modality')==k }}>{{ modality_label(k) }}</option>{% endfor %}</select></label>
+<label>{{ t('l_presentation') }}
+<select name="presentation"><option value="presencial" {{ 'selected' if f.get('presentation')=='presencial' }}>{{ t('opt_presencial') }}</option><option value="virtual" {{ 'selected' if f.get('presentation')=='virtual' }}>{{ t('opt_virtual') }}</option></select></label>
+<label>{{ t('l_axis') }}
+<select name="axis">{% for a in AXES %}<option value="{{ a }}" {{ 'selected' if f.get('axis')==a }}>{{ axis_label(a) }}</option>{% endfor %}</select></label>
+<label>{{ t('l_abstract') }}
 <textarea name="abstract" required>{{ f.get('abstract','') }}</textarea></label>
-<label>Palabras clave <span class="ayuda">(3 a 5, separadas por comas)</span>
+<label>{{ t('l_keywords') }} <span class="ayuda">{{ t('l_keywords_help') }}</span>
 <input type="text" name="keywords" value="{{ f.get('keywords','') }}" required></label>
-<h2>Autor que presenta</h2>
-<label>Nombre completo <input type="text" name="author_name" value="{{ f.get('author_name','') }}" required></label>
-<label>Institución <input type="text" name="author_institution" value="{{ f.get('author_institution','') }}" required></label>
-<label>Programa académico o profesión <input type="text" name="author_program" value="{{ f.get('author_program','') }}" required></label>
-<label>País de procedencia <input type="text" name="author_country" value="{{ f.get('author_country','') }}" required></label>
-<label>Otros autores <span class="ayuda">(opcional, uno por línea: nombre, institución; máximo 4 más)</span>
+<h2>{{ t('h_presenter') }}</h2>
+<label>{{ t('l_fullname') }} <input type="text" name="author_name" value="{{ f.get('author_name','') }}" required></label>
+<label>{{ t('l_institution') }} <input type="text" name="author_institution" value="{{ f.get('author_institution','') }}" required></label>
+<label>{{ t('l_program') }} <input type="text" name="author_program" value="{{ f.get('author_program','') }}" required></label>
+<label>{{ t('l_country_from') }} <input type="text" name="author_country" value="{{ f.get('author_country','') }}" required></label>
+<label>{{ t('l_others') }} <span class="ayuda">{{ t('l_others_help') }}</span>
 <textarea name="other_authors">{{ f.get('other_authors','') }}</textarea></label>
-<label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT }}</span></label>
-<p class="ayuda">{{ config.INSTITUTION_DATA }}</p>
-<label class="check"><input type="checkbox" name="originality" value="1" {{ 'checked' if f.get('originality') }}> <span>El trabajo es original y no está en evaluación en otro evento.</span></label>
-<button type="submit">Enviar resumen</button>
+{% include "_consent.html" %}
+<label class="check"><input type="checkbox" name="originality" value="1" {{ 'checked' if f.get('originality') }}> <span>{{ t('l_originality') }}</span></label>
+<button type="submit">{{ t('btn_send_abs') }}</button>
 </form>
 {% endblock %}

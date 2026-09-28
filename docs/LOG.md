@@ -481,3 +481,14 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (egresados/normatividad page), not from the resolution. The policy gives no model authorization text, so the consent
   sentence is a draft (Ley 1581 de 2012 wording: libre, previa, expresa e informada), set as defaults for CONSENT_TEXT and
   INSTITUTION_DATA in `app/sicvec/config.py`. Pending AC's approval. Bank details still [PENDIENTE].
+- AC, 2026-09-28: three official languages (es/en/pt); chose "declare + site in 3 languages". Built: `app/sicvec/i18n.py`
+  (interface strings, labels, emails), EN/PT content in `content.py` (`for_lang`), ES | EN | PT switcher in the header
+  (`?lang=` sets a 180-day cookie; otherwise browser language, then Spanish). Translated: home, programme, speakers, both
+  forms, validation messages, confirmation pages, author emails (confirmation in the language used; decision email in the
+  language stored in new column `ui_lang`, added to existing databases by `init_db`). Home shows "Idiomas oficiales: español,
+  inglés y portugués". Not translated: admin and reviewer pages; speakers' bios/abstracts (their own words, noted on the
+  page); the Spanish consent text prevails (stated in EN/PT). Stored values (axis names, keys) stay Spanish. Translations
+  are mine: need a review by a native EN/PT reader. 33 tests pass (3 new); checked in Chrome (PT home).
+- AC: "modalidad híbrida (presencial y en línea)" is redundant; now "modalidad híbrida" (all three languages).
+- AC saw "Pregrado: COP 20.000" on the live site: the server still runs the first zip (checked with curl: 20.000, no
+  "Co-organizadores"). Every change since 554aad9 reaches the site only with the new zip.

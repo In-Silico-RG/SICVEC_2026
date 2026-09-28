@@ -1,0 +1,2 @@
+<label class="check"><input type="checkbox" name="consent" value="1" {{ 'checked' if f.get('consent') }}> <span>{{ config.CONSENT_TEXT if lang == 'es' else t('consent') }}</span></label>
+<p class="ayuda">{{ config.INSTITUTION_DATA if lang == 'es' else t('institution_data') }}</p>

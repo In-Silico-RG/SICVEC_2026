@@ -197,3 +197,155 @@ DEPARTAMENTOS = [
 ]
 
 EMAIL_COORDINACION = "insilico@unisucre.edu.co"   # AC, 2026-09-19: the coordinators' contact email
+
+# ---------- English and Portuguese (AC, 2026-09-28: official languages es/en/pt) ----------
+# Translations of the Spanish texts above. Speakers' bios and abstracts are not translated (their own words).
+_EN = {
+    "OBJETIVO_GENERAL": ("To create a space for dialogue and knowledge production on green science and circular economy "
+                         "that strengthens the capacities of researchers, students and professionals in Latin America."),
+    "OBJETIVOS": [
+        "Disseminate cutting-edge research on sustainable processes, green biotechnology and circular economy.",
+        "Foster networking among academics, entrepreneurs and green innovators from Colombia and Latin America.",
+        "Identify opportunities for inter-institutional collaboration on applied research projects.",
+        "Build capacity in undergraduate and graduate students in sustainability and green innovation.",
+        "Document the state of the art of green science in the region to inform future public policy.",
+    ],
+    "EJES_TOPICOS": [
+        "Transition from linear to circular models, design for circularity, waste valorisation, cascade economy, "
+        "industrial symbiosis, life-cycle assessment.",
+        "Green synthesis, sustainable solvents and reagents, biocatalysis and catalysis, clean processes, molecular design "
+        "to minimise waste, sustainable pharmaceutical chemistry, efficient transformations, toxicity reduction, advanced "
+        "synthesis technologies (continuous flow, microwave, ultrasound), biomass valorisation.",
+        "Bioproducts, microbial fermentation, green enzymes, biorefineries, bioplastics, bioethanol, biofertilisers, "
+        "industrial enzymes from biological sources.",
+        "Clean energy, water treatment, environmental remediation, CO₂ capture technologies, artificial photosynthesis, "
+        "solar and wind energy in the food industry.",
+        "Green certifications, carbon footprint, cleaner production, innovation in agro-industry, sustainable agriculture, "
+        "traceability, short supply chains.",
+        "SDGs 2030, regulatory frameworks for circular economy, green incentives, corporate social responsibility, "
+        "environmental education, green local governments.",
+    ],
+    "ODS": [
+        ("12", "Responsible consumption and production", "Circular economy, waste valorisation, cleaner processes."),
+        ("13", "Climate action", "Green technologies, carbon emission reduction, environmental sustainability."),
+        ("15", "Life on land", "Biodiversity, sustainable agro-industrial processes, green transition."),
+        ("17", "Partnerships for the goals", "Academic collaboration, technology transfer, inter-institutional networks."),
+    ],
+    "PROGRAMA": [
+        ("Monday 19 October", [
+            ("08:00–09:00", "Official opening + keynote lecture"),
+            ("09:00–10:30", "Talks · Axis 1: Circular Economy"),
+            ("10:30–10:45", "Coffee break"),
+            ("10:45–12:15", "Talks · Axis 2: Green Chemistry and Sustainable Processes"),
+            ("12:15–13:45", "Lunch"),
+            ("13:45–15:15", "Talks · Axis 3: Sustainable Biotechnology"),
+            ("15:15–15:30", "Coffee break"),
+            ("15:30–17:00", "Talks · Axis 4: Green Technologies and Renewable Energy"),
+            ("17:00–18:00", "Posters + networking (Green Expo)"),
+        ]),
+        ("Tuesday 20 October", [
+            ("08:30–09:30", "Keynote lecture 2"),
+            ("09:30–11:00", "Talks · Axis 5: Sustainability in Supply Chains"),
+            ("11:00–11:15", "Coffee break"),
+            ("11:15–12:45", "Talks · Axis 6: Public Policy and Environmental Governance"),
+            ("12:45–14:15", "Lunch"),
+            ("14:15–15:45", "Talks (continued) + questions"),
+            ("15:45–16:45", "Round table: lessons and challenges"),
+            ("16:45–17:15", "Closing, awards and final networking"),
+        ]),
+    ],
+    "PUBLICO": [
+        "Researchers in chemistry, physics, mathematics, biology, environmental sciences and all branches of engineering.",
+        "Undergraduate and graduate students in basic sciences and engineering.",
+        "Science and engineering lecturers interested in sustainability and circular economy.",
+        "Professionals from the food, chemical, energy, agricultural, materials and environmental-services industries.",
+        "Entrepreneurs with green innovation initiatives, environmental managers and consultants.",
+        "Public-sector decision makers and civil-society organisations.",
+    ],
+    "ROLE": "Keynote speaker",
+    "COORDINADORES": [("Aldo F. Combariza", "General Coordination"), ("María Ximena Díaz", "Academic Coordination"),
+                      ("Sebastián Vargas", "Logistics Coordination"), ("Selena Arias Avila", "Administrative Coordination")],
+    "DEPARTAMENTOS": ["Department of Biology and Chemistry", "Department of Agro-industrial Engineering",
+                      "Department of Agricultural Engineering", "Department of Physics"],
+}
+_PT = {
+    "OBJETIVO_GENERAL": ("Criar um espaço de diálogo e produção de conhecimento sobre ciência verde e economia circular que "
+                         "fortaleça as capacidades de pesquisadores, estudantes e profissionais na América Latina."),
+    "OBJETIVOS": [
+        "Divulgar pesquisas de ponta em processos sustentáveis, biotecnologia verde e economia circular.",
+        "Promover o networking entre acadêmicos, empresários e inovadores verdes da Colômbia e da América Latina.",
+        "Identificar oportunidades de colaboração interinstitucional em projetos de pesquisa aplicada.",
+        "Fomentar a formação de estudantes de graduação e pós-graduação em sustentabilidade e inovação verde.",
+        "Documentar o estado da arte da ciência verde na região para futuros impactos em políticas públicas.",
+    ],
+    "EJES_TOPICOS": [
+        "Transição de modelos lineares para circulares, design para a circularidade, valorização de resíduos, economia "
+        "em cascata, simbiose industrial, avaliação do ciclo de vida.",
+        "Síntese verde, solventes e reagentes sustentáveis, biocatálise e catálise, processos limpos, design molecular "
+        "para minimizar resíduos, química farmacêutica sustentável, transformações eficientes, redução da toxicidade, "
+        "tecnologias de síntese avançadas (fluxo contínuo, micro-ondas, ultrassom), valorização da biomassa.",
+        "Bioprodutos, fermentação microbiana, enzimas verdes, biorrefinarias, bioplásticos, bioetanol, biofertilizantes, "
+        "enzimas industriais de fonte biológica.",
+        "Energias limpas, tratamento de águas, remediação ambiental, tecnologias de captura de CO₂, fotossíntese "
+        "artificial, energia solar e eólica na indústria de alimentos.",
+        "Certificações verdes, pegada de carbono, produção mais limpa, inovação na agroindústria, agricultura "
+        "sustentável, rastreabilidade, cadeias curtas.",
+        "ODS 2030, marcos regulatórios para a economia circular, incentivos verdes, responsabilidade social empresarial, "
+        "educação ambiental, governos locais verdes.",
+    ],
+    "ODS": [
+        ("12", "Consumo e produção responsáveis", "Economia circular, valorização de resíduos, processos mais limpos."),
+        ("13", "Ação contra a mudança global do clima", "Tecnologias verdes, redução de emissões de carbono, sustentabilidade ambiental."),
+        ("15", "Vida terrestre", "Biodiversidade, processos agroindustriais sustentáveis, transição verde."),
+        ("17", "Parcerias e meios de implementação", "Colaboração acadêmica, transferência de tecnologia, redes interinstitucionais."),
+    ],
+    "PROGRAMA": [
+        ("Segunda-feira, 19 de outubro", [
+            ("08:00–09:00", "Abertura oficial + conferência magistral"),
+            ("09:00–10:30", "Apresentações · Eixo 1: Economia Circular"),
+            ("10:30–10:45", "Intervalo (café)"),
+            ("10:45–12:15", "Apresentações · Eixo 2: Química Verde e Processos Sustentáveis"),
+            ("12:15–13:45", "Almoço"),
+            ("13:45–15:15", "Apresentações · Eixo 3: Biotecnologia Sustentável"),
+            ("15:15–15:30", "Intervalo (café)"),
+            ("15:30–17:00", "Apresentações · Eixo 4: Tecnologias Verdes e Energias Renováveis"),
+            ("17:00–18:00", "Pôsteres + networking (Expo verde)"),
+        ]),
+        ("Terça-feira, 20 de outubro", [
+            ("08:30–09:30", "Conferência magistral 2"),
+            ("09:30–11:00", "Apresentações · Eixo 5: Sustentabilidade em Cadeias de Suprimentos"),
+            ("11:00–11:15", "Intervalo (café)"),
+            ("11:15–12:45", "Apresentações · Eixo 6: Políticas Públicas e Governança Ambiental"),
+            ("12:45–14:15", "Almoço"),
+            ("14:15–15:45", "Apresentações (continuação) + perguntas"),
+            ("15:45–16:45", "Mesa-redonda: lições e desafios"),
+            ("16:45–17:15", "Encerramento, reconhecimentos e networking final"),
+        ]),
+    ],
+    "PUBLICO": [
+        "Pesquisadores em química, física, matemática, biologia, ciências ambientais e todas as engenharias.",
+        "Estudantes de graduação e pós-graduação em ciências básicas e engenharias.",
+        "Docentes de ciências e engenharia interessados em sustentabilidade e economia circular.",
+        "Profissionais das indústrias de alimentos, química, energia, agrícola, de materiais e de serviços ambientais.",
+        "Empreendedores com iniciativas de inovação verde, gestores ambientais e consultores.",
+        "Tomadores de decisão do setor público e organizações da sociedade civil.",
+    ],
+    "ROLE": "Palestrante magistral",
+    "COORDINADORES": [("Aldo F. Combariza", "Coordenação Geral"), ("María Ximena Díaz", "Coordenação Acadêmica"),
+                      ("Sebastián Vargas", "Coordenação de Logística"), ("Selena Arias Avila", "Coordenação Administrativa")],
+    "DEPARTAMENTOS": ["Departamento de Biologia e Química", "Departamento de Engenharia Agroindustrial",
+                      "Departamento de Engenharia Agrícola", "Departamento de Física"],
+}
+
+
+def for_lang(lang):
+    """Content for one interface language; anything not translated falls back to Spanish."""
+    from types import SimpleNamespace
+    names = ("OBJETIVO_GENERAL", "OBJETIVOS", "EJES_TOPICOS", "ODS", "PROGRAMA", "PUBLICO", "COORDINADORES",
+             "DEPARTAMENTOS", "SPEAKERS", "EMAIL_COORDINACION")
+    base = {n: globals()[n] for n in names}
+    tr = {"en": _EN, "pt": _PT}.get(lang)
+    if tr:
+        base.update({k: v for k, v in tr.items() if k != "ROLE"})
+        base["SPEAKERS"] = [dict(s, role=tr["ROLE"]) for s in SPEAKERS]
+    return SimpleNamespace(**base)

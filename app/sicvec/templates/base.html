@@ -1,41 +1,42 @@
 <!doctype html>
-<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="{{ lang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% block title %}SICVEC 2026{% endblock %}</title>
 <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
 <body>
 <header><a class="marca" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='marca_sicvec.jpg') }}" alt="SICVEC 2026"></a><span class="titulo">SICVEC 2026</span> &nbsp;
-<a href="{{ url_for('index') }}">Inicio</a><a href="{{ url_for('programa') }}">Programa</a><a href="{{ url_for('conferencistas') }}">Conferencistas</a><a href="{{ url_for('submit') }}">Enviar resumen</a><a href="{{ url_for('register') }}">Inscripción</a></header>
+<a href="{{ url_for('index') }}">{{ t('nav_home') }}</a><a href="{{ url_for('programa') }}">{{ t('nav_program') }}</a><a href="{{ url_for('conferencistas') }}">{{ t('nav_speakers') }}</a><a href="{{ url_for('submit') }}">{{ t('nav_submit') }}</a><a href="{{ url_for('register') }}">{{ t('nav_register') }}</a>
+<span class="idiomas">{% for l in LANGS %}{% if l == lang %}<b title="{{ LANG_NAMES[l] }}">{{ l|upper }}</b>{% else %}<a href="{{ request.path }}?lang={{ l }}" hreflang="{{ l }}" lang="{{ l }}" title="{{ LANG_NAMES[l] }}">{{ l|upper }}</a>{% endif %}{% endfor %}</span></header>
 <main>
 {% for m in get_flashed_messages() %}<div class="ok">{{ m }}</div>{% endfor %}
 {% block body %}{% endblock %}
 </main>
 {% block footer %}<footer class="pie-sitio">
 <div class="pie-logos">
-<div class="pie-grupo"><h5>Organizan</h5><div class="pie-fila">
+<div class="pie-grupo"><h5>{{ t('f_organizan') }}</h5><div class="pie-fila">
 <img src="{{ url_for('static', filename='logo_insilico.jpg') }}" alt="Grupo de Investigación IN SILICO">
 <img src="{{ url_for('static', filename='logo_unisucre.jpg') }}" alt="Universidad de Sucre">
 </div></div>
-<div class="pie-grupo"><h5>Colaboran</h5><div class="pie-fila">
+<div class="pie-grupo"><h5>{{ t('f_colaboran') }}</h5><div class="pie-fila">
 <img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Biología, Universidad de Sucre">
 <img src="{{ url_for('static', filename='logo_agroin.jpg') }}" alt="Ingeniería Agroindustrial, Universidad de Sucre">
 <img src="{{ url_for('static', filename='logo_ingagricola.jpg') }}" alt="Ingeniería Agrícola, Universidad de Sucre">
-<span class="pie-texto-logo">Departamento<br><strong>de Física</strong></span>
+<span class="pie-texto-logo">{{ t('f_fisica') }}</span>
 </div></div>
 </div>
 <div class="pie-cols">
-<div><h4>Organiza</h4>
-<p><strong>Grupo de Investigación IN SILICO</strong><br>Departamento de Biología y Química<br>Facultad de Educación y Ciencias<br>Universidad de Sucre (UNISUCRE)<br>Sincelejo, Sucre, Colombia</p></div>
-<div><h4>Co-organizadores</h4>
-<ul>{% for d in content.DEPARTAMENTOS %}<li>{{ d }}</li>{% endfor %}</ul>
+<div><h4>{{ t('f_organiza') }}</h4>
+<p>{{ t('f_org_text') }}</p></div>
+<div><h4>{{ t('f_coorg') }}</h4>
+<ul>{% for d in C.DEPARTAMENTOS %}<li>{{ d }}</li>{% endfor %}</ul>
 <p class="peq">Universidad de Sucre</p></div>
-<div><h4>Coordinación</h4>
-<ul>{% for n, r in content.COORDINADORES %}<li><strong>{{ n }}</strong><br><span class="peq">{{ r }}</span></li>{% endfor %}</ul>
-<p><a href="mailto:{{ content.EMAIL_COORDINACION }}">{{ content.EMAIL_COORDINACION }}</a></p></div>
-<div><h4>Evento y contacto</h4>
-<p><strong>SICVEC 2026</strong><br>19–20 de octubre de 2026<br>C.C. Guacarí, Sincelejo<br>Modalidad híbrida</p>
+<div><h4>{{ t('f_coord') }}</h4>
+<ul>{% for n, r in C.COORDINADORES %}<li><strong>{{ n }}</strong><br><span class="peq">{{ r }}</span></li>{% endfor %}</ul>
+<p><a href="mailto:{{ C.EMAIL_COORDINACION }}">{{ C.EMAIL_COORDINACION }}</a></p></div>
+<div><h4>{{ t('f_event') }}</h4>
+<p><strong>SICVEC 2026</strong><br>{{ t('f_dates') }}<br>C.C. Guacarí, Sincelejo<br>{{ t('f_hybrid') }}</p>
 <p><a href="mailto:{{ config.MAIL_FROM }}">{{ config.MAIL_FROM }}</a></p></div>
 </div>
-<p class="pie-fin">I Simposio Internacional de Ciencia Verde y Economía Circular · Universidad de Sucre, Colombia</p>
+<p class="pie-fin">{{ t('f_fin') }}</p>
 </footer>{% endblock %}
 </body></html>

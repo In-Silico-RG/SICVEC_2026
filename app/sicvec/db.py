@@ -96,5 +96,10 @@ def init_db(app):
     con = sqlite3.connect(app.config["DATABASE"])
     con.execute("PRAGMA journal_mode = WAL")  # persistent: readers no longer block writers
     con.executescript(SCHEMA)
+    # 2026-09-28: interface language of the author (es/en/pt), for the emails sent later. Added to existing databases.
+    for table in ("submissions", "registrations"):
+        cols = [r[1] for r in con.execute(f"PRAGMA table_info({table})")]
+        if "ui_lang" not in cols:
+            con.execute(f"ALTER TABLE {table} ADD COLUMN ui_lang TEXT NOT NULL DEFAULT 'es'")
     con.commit()
     con.close()

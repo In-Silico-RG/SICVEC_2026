@@ -6,10 +6,10 @@ import secrets
 from datetime import datetime
 from functools import wraps
 
-from flask import (Flask, Response, abort, flash, redirect, render_template, request,
+from flask import (Flask, Response, abort, flash, g, redirect, render_template, request,
                    send_from_directory, session, url_for)
 
-from . import content, logic
+from . import content, i18n, logic
 from .config import CO, load_config
 from .db import close_db, get_db, init_db
 from .mailer import requeue_pending, send_email
@@ -41,6 +41,36 @@ def create_app(overrides=None):
             if not sent or not hmac.compare_digest(sent, session.get("_csrf", "")):
                 abort(400, "Formulario caducado o inválido. Recargue la página.")
 
+    # ---------- interface language (es/en/pt): ?lang= sets a cookie; otherwise cookie, then browser, then Spanish ----------
+    @app.before_request
+    def pick_lang():
+        asked = request.args.get("lang")
+        if asked in i18n.LANGS:
+            g.lang, g.set_lang = asked, True
+        else:
+            cookie = request.cookies.get("lang")
+            g.lang = cookie if cookie in i18n.LANGS else (request.accept_languages.best_match(i18n.LANGS) or "es")
+            g.set_lang = False
+
+    @app.after_request
+    def remember_lang(resp):
+        if getattr(g, "set_lang", False):
+            resp.set_cookie("lang", g.lang, max_age=180 * 86400, samesite="Lax",
+                            secure=app.config.get("SESSION_COOKIE_SECURE", False))
+        return resp
+
+    @app.context_processor
+    def lang_context():
+        lang = getattr(g, "lang", "es")
+        return dict(lang=lang, LANGS=i18n.LANGS, LANG_NAMES=i18n.LANG_NAMES, C=content.for_lang(lang),
+                    t=lambda key, **kw: i18n.html(key, lang, **kw),
+                    axis_label=lambda a: i18n.axis_label(a, lang),
+                    modality_label=lambda k: i18n.modality_label(k, lang),
+                    category_label=lambda k: i18n.category_label(k, lang))
+
+    def tr(key, **kw):
+        return i18n.plain(key, getattr(g, "lang", "es"), **kw)
+
     @app.after_request
     def headers(resp):
         resp.headers.setdefault("X-Content-Type-Options", "nosniff")
@@ -71,28 +101,31 @@ def create_app(overrides=None):
     def fecha(dt):
         return dt.strftime("%d/%m/%Y %H:%M") if hasattr(dt, "strftime") else dt
 
+    @app.template_filter("cop")
+    def cop(n):
+        return f"{n:,}".replace(",", ".")
+
     def ref_for(prefix, n):
         return f"{prefix}-{n:03d}"
 
     # ---------- public ----------
     @app.get("/")
     def index():
-        return render_template("index.html", content=content, ejes=list(zip(logic.AXES, content.EJES_TOPICOS)))
+        return render_template("index.html", ejes=list(zip(logic.AXES, content.for_lang(g.lang).EJES_TOPICOS)))
 
     @app.get("/programa")
     def programa():
-        return render_template("programa.html", content=content)
+        return render_template("programa.html")
 
     @app.get("/conferencistas")
     def conferencistas():
-        return render_template("conferencistas.html", content=content)
+        return render_template("conferencistas.html")
 
     @app.route("/enviar", methods=["GET", "POST"])
     def submit():
         cfg = app.config
         if now() > cfg["SUBMISSION_DEADLINE"]:
-            return render_template("closed.html", what="el envío de resúmenes",
-                                   when=cfg["SUBMISSION_DEADLINE"]), 403
+            return render_template("closed.html", when=cfg["SUBMISSION_DEADLINE"]), 403
         errors, f = [], request.form
         if request.method == "POST":
             get = lambda k: f.get(k, "").strip()
@@ -101,63 +134,63 @@ def create_app(overrides=None):
             presentation, axis = get("presentation"), get("axis")
             keywords = [k.strip() for k in get("keywords").split(",") if k.strip()]
             if not logic.valid_email(email):
-                errors.append("Correo de contacto no válido.")
+                errors.append(tr("e_email"))
             if not title or len(title) > 200:
-                errors.append("El título es obligatorio (máx. 200 caracteres).")
+                errors.append(tr("e_title"))
             if language not in ("es", "en", "pt"):
-                errors.append("Elija el idioma.")
+                errors.append(tr("e_lang"))
             if modality not in logic.MODALITIES:
-                errors.append("Elija la modalidad.")
+                errors.append(tr("e_modality"))
             if presentation not in ("presencial", "virtual"):
-                errors.append("Elija presencial o virtual.")
+                errors.append(tr("e_presentation"))
             if axis not in logic.AXES:
-                errors.append("Elija el eje temático.")
+                errors.append(tr("e_axis"))
             if not 3 <= len(keywords) <= 5:
-                errors.append("Indique de 3 a 5 palabras clave separadas por comas.")
+                errors.append(tr("e_keywords"))
             wc = logic.word_count(abstract)
             limit = logic.WORD_LIMITS.get(modality)
             if not abstract:
-                errors.append("El resumen es obligatorio.")
+                errors.append(tr("e_abstract"))
             elif limit and wc > limit:
-                errors.append(f"El resumen tiene {wc} palabras; el máximo para esta modalidad es {limit}.")
-            for field, label in (("author_name", "nombre"), ("author_institution", "institución"),
-                                 ("author_program", "programa o profesión"), ("author_country", "país")):
+                errors.append(tr("e_words", wc=wc, limit=limit))
+            for field, label in (("author_name", "n_name"), ("author_institution", "n_institution"),
+                                 ("author_program", "n_program"), ("author_country", "n_country")):
                 if not get(field):
-                    errors.append(f"Autor que presenta: falta {label}.")
+                    errors.append(tr("e_presenter", label=tr(label)))
             other = get("other_authors")
             if len([l for l in other.splitlines() if l.strip()]) > 4:
-                errors.append("Máximo 5 autores en total (4 en 'otros autores').")
+                errors.append(tr("e_authors"))
             if not f.get("consent"):
-                errors.append("Debe autorizar el tratamiento de datos personales.")
+                errors.append(tr("e_consent"))
             if not f.get("originality"):
-                errors.append("Debe confirmar la originalidad del trabajo.")
+                errors.append(tr("e_orig"))
             if not errors:
                 names = logic.author_names_from(get("author_name"), other)
                 flags = logic.blind_flags(abstract, names, email)
+                shown_flags = logic.blind_flags(abstract, names, email, msg=lambda k, **kw: tr(k, **kw))
                 status = "revision_manual" if flags else "admisible"
                 db = get_db()
                 try:
                     cur = db.execute(
                         """INSERT INTO submissions(created_at,email,title,language,modality,presentation,axis,
                            abstract,keywords,word_count,author_name,author_institution,author_program,
-                           author_country,other_authors,consent,status,flags)
-                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                           author_country,other_authors,consent,status,flags,ui_lang)
+                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                         (now().isoformat(timespec="seconds"), email, title, language, modality, presentation,
                          axis, abstract, ", ".join(keywords), wc, get("author_name"),
                          get("author_institution"), get("author_program"), get("author_country"),
-                         other, 1, status, " | ".join(flags)))
+                         other, 1, status, " | ".join(flags), g.lang))
                 except Exception:
                     db.rollback()
-                    errors.append("Ya existe un envío con ese correo y ese título.")
+                    errors.append(tr("e_dup_sub"))
                 else:
                     ref = ref_for("SICVEC", cur.lastrowid)
                     db.execute("UPDATE submissions SET ref=? WHERE id=?", (ref, cur.lastrowid))
                     db.commit()
-                    send_email(app, db, email, f"SICVEC 2026 — resumen recibido ({ref})",
-                               f"Hemos recibido su resumen «{title}».\nReferencia: {ref}\n"
-                               f"Cierre: {cfg['SUBMISSION_DEADLINE']:%d/%m/%Y %H:%M} (hora Colombia). "
-                               f"La notificación se envía el 8-9 de octubre de 2026.")
-                    return render_template("submit_ok.html", ref=ref, flags=flags)
+                    send_email(app, db, email, tr("m_sub_subject", ref=ref),
+                               tr("m_sub_body", title=title, ref=ref,
+                                  close=f"{cfg['SUBMISSION_DEADLINE']:%d/%m/%Y %H:%M}"))
+                    return render_template("submit_ok.html", ref=ref, flags=shown_flags)
         return render_template("submit.html", errors=errors, f=f)
 
     def save_receipt(file):
@@ -169,7 +202,7 @@ def create_app(overrides=None):
         ok = {".pdf": head.startswith(b"%PDF"), ".png": head.startswith(b"\x89PNG"),
               ".jpg": head[:3] == b"\xff\xd8\xff", ".jpeg": head[:3] == b"\xff\xd8\xff"}
         if not ok.get(ext):
-            raise ValueError("El comprobante debe ser PDF, PNG o JPG válido.")
+            raise ValueError(tr("e_receipt"))
         name = secrets.token_hex(16) + ext
         file.save(os.path.join(app.config["UPLOAD_DIR"], name))
         return name
@@ -180,25 +213,25 @@ def create_app(overrides=None):
         if request.method == "POST":
             get = lambda k: f.get(k, "").strip()
             cat, att, email = get("category"), get("attendance"), get("email")
-            for field, label in (("name", "nombre"), ("phone", "teléfono"), ("document", "documento"),
-                                 ("institution", "institución"), ("country", "país")):
+            for field, label in (("name", "n_name"), ("phone", "n_phone"), ("document", "n_document"),
+                                 ("institution", "n_institution"), ("country", "n_country")):
                 if not get(field):
-                    errors.append(f"Falta {label}.")
+                    errors.append(tr("e_missing", label=tr(label)))
             if not logic.valid_email(email):
-                errors.append("Correo no válido.")
+                errors.append(tr("e_email2"))
             if cat not in logic.CATEGORIES:
-                errors.append("Elija la categoría.")
+                errors.append(tr("e_category"))
             if att not in ("presencial", "virtual"):
-                errors.append("Elija presencial o virtual.")
+                errors.append(tr("e_presentation"))
             if cat == "virtual" and att != "virtual":
-                errors.append("La categoría virtual requiere asistencia virtual.")
+                errors.append(tr("e_catvirtual"))
             if not f.get("consent"):
-                errors.append("Debe autorizar el tratamiento de datos personales.")
+                errors.append(tr("e_consent"))
             db = get_db()
             if att == "virtual" and cfg["ONLINE_SEATS"] is not None:
                 used = db.execute("SELECT COUNT(*) FROM registrations WHERE attendance='virtual'").fetchone()[0]
                 if used >= cfg["ONLINE_SEATS"]:
-                    errors.append("Los cupos en línea están agotados.")
+                    errors.append(tr("e_seats"))
             receipt = ""
             if not errors:
                 try:
@@ -209,22 +242,22 @@ def create_app(overrides=None):
                 try:
                     cur = db.execute(
                         """INSERT INTO registrations(created_at,name,email,phone,document,institution,country,
-                           category,attendance,presents,submission_ref,payment_ref,receipt_file,consent)
-                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+                           category,attendance,presents,submission_ref,payment_ref,receipt_file,consent,ui_lang)
+                           VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
                         (now().isoformat(timespec="seconds"), get("name"), email, get("phone"), get("document"),
                          get("institution"), get("country"), cat, att, 1 if f.get("presents") else 0,
-                         get("submission_ref"), get("payment_ref"), receipt, 1))
+                         get("submission_ref"), get("payment_ref"), receipt, 1, g.lang))
                 except Exception:
                     db.rollback()
-                    errors.append("Ya existe una inscripción con ese correo.")
+                    errors.append(tr("e_dup_reg"))
                 else:
                     ref = ref_for("REG", cur.lastrowid)
                     db.execute("UPDATE registrations SET ref=? WHERE id=?", (ref, cur.lastrowid))
                     db.commit()
                     fee = logic.fee_for(cfg["FEES"], cat, att)
-                    send_email(app, db, email, f"SICVEC 2026 — inscripción recibida ({ref})",
-                               f"Hemos recibido su inscripción ({ref}).\nValor: COP {fee:,}\n"
-                               f"Límite de pago: {cfg['PAYMENT_DEADLINE']:%d/%m/%Y} (hora Colombia).".replace(",", "."))
+                    send_email(app, db, email, tr("m_reg_subject", ref=ref),
+                               tr("m_reg_body", ref=ref, fee=f"{fee:,}".replace(",", "."),
+                                  date=f"{cfg['PAYMENT_DEADLINE']:%d/%m/%Y}"))
                     return render_template("register_ok.html", ref=ref, fee=fee)
         return render_template("register.html", errors=errors, f=f)
 
@@ -416,14 +449,15 @@ def create_app(overrides=None):
             comments = [c["comments"] for c in db.execute(
                 """SELECT rv.comments FROM assignments a JOIN reviews rv ON rv.assignment_id=a.id
                    WHERE a.submission_id=?""", (s["id"],))]
-            body = (f"Resultado de su resumen «{s['title']}» ({s['ref']}): "
-                    f"{logic.RECOMMENDATIONS[s['decision']]}.\n\n")
+            L = s["ui_lang"] if s["ui_lang"] in i18n.LANGS else "es"   # the language the author used on the site
+            body = i18n.plain("m_dec_result", L, title=s["title"], ref=s["ref"],
+                              decision=i18n.decision_label(s["decision"], L)) + "\n\n"
             if s["decision_note"]:
-                body += f"Nota del comité: {s['decision_note']}\n\n"
+                body += i18n.plain("m_dec_note", L, note=s["decision_note"]) + "\n\n"
             if comments:
-                body += "Comentarios de los revisores (anónimos):\n" + "\n".join(f"- {c}" for c in comments) + "\n\n"
-            body += "Material final de los aceptados: hasta el 14 de octubre de 2026."
-            send_email(app, db, s["email"], f"SICVEC 2026 — resultado de su resumen ({s['ref']})", body)
+                body += i18n.plain("m_dec_comments", L) + "\n" + "\n".join(f"- {c}" for c in comments) + "\n\n"
+            body += i18n.plain("m_dec_final", L)
+            send_email(app, db, s["email"], i18n.plain("m_dec_subject", L, ref=s["ref"]), body)
             db.execute("UPDATE submissions SET notified_at=? WHERE id=?", (now().isoformat(timespec="seconds"), s["id"]))
         db.commit()
         flash(f"{len(rows)} notificaciones procesadas.")

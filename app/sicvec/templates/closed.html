@@ -1,4 +1,4 @@
 {% extends "base.html" %}{% block body %}
-<h1>Plazo cerrado</h1>
-<p>{{ what|capitalize }} cerró el {{ when|fecha }} (hora Colombia).</p>
+<h1>{{ t('closed_h1') }}</h1>
+<p>{{ t('closed_submit', date=when|fecha) }}</p>
 {% endblock %}

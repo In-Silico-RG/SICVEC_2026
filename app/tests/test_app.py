@@ -258,3 +258,40 @@ def test_smtp_sent_inline_when_background_off(tmp_path, monkeypatch):
 def test_submit_portuguese_accepted(client):
     r = client.post("/enviar", data=submission_data(client, language="pt"))
     assert r.status_code == 200 and b"SICVEC-001" in r.data
+
+
+def test_three_languages_switch_and_persist(client):
+    assert b"Idiomas oficiales" in client.get("/").data
+    en = client.get("/?lang=en").get_data(as_text=True)
+    assert "Official languages" in en and "Undergraduate students: COP 15.000" in en and 'lang="en"' in en
+    # the choice is remembered by cookie
+    assert b"Abstract submission" in client.get("/enviar").data
+    pt = client.get("/programa?lang=pt").get_data(as_text=True)
+    assert "Programação" in pt and "Terça-feira, 20 de outubro" in pt
+    assert "Palestrantes" in client.get("/conferencistas").get_data(as_text=True)
+
+
+def test_browser_language_used_when_no_choice(app):
+    c = app.test_client()
+    assert b"Inscri\xc3\xa7\xc3\xa3o" in c.get("/inscripcion", headers={"Accept-Language": "pt-BR,pt;q=0.9"}).data
+
+
+def test_portuguese_author_gets_portuguese_emails(client, app):
+    client.get("/enviar?lang=pt")
+    r = client.post("/enviar", data=submission_data(client, language="pt", keywords="a, b"))
+    assert "Indique de 3 a 5 palavras-chave" in r.get_data(as_text=True)
+    r = client.post("/enviar", data=submission_data(client, language="pt"))
+    assert "Sua referência é" in r.get_data(as_text=True)
+    with app.app_context():
+        from sicvec.db import get_db
+        db = get_db()
+        m = db.execute("SELECT subject, body FROM emails").fetchone()
+        assert m["subject"].startswith("SICVEC 2026 — resumo recebido") and "Recebemos seu resumo" in m["body"]
+        assert db.execute("SELECT ui_lang FROM submissions").fetchone()[0] == "pt"
+        db.execute("UPDATE submissions SET decision='aceptado'")
+        db.commit()
+    client.post("/admin/notificar", data={"_csrf": token(client, "/enviar")}, headers=auth())
+    with app.app_context():
+        from sicvec.db import get_db
+        body = get_db().execute("SELECT body FROM emails WHERE subject LIKE '%resultado do seu%'").fetchone()[0]
+        assert "Aceito" in body and "Material final" in body

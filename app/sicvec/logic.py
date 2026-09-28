@@ -67,16 +67,21 @@ def suggest_decision(reviews):
     return "aceptado_con_cambios", f"Media ponderada {mean}."
 
 
-def blind_flags(abstract, author_names, contact_email):
-    """Ways the abstract text may reveal its authors."""
+_FLAG_ES = {"flag_email": "El texto contiene una dirección de correo.",
+            "flag_author": "El texto parece mencionar a un autor ({name})."}
+
+
+def blind_flags(abstract, author_names, contact_email, msg=None):
+    """Ways the abstract text may reveal its authors. msg(key, **kw) gives the wording (Spanish by default)."""
+    msg = msg or (lambda k, **kw: _FLAG_ES[k].format(**kw))
     flags = []
     low = abstract.lower()
     if re.search(r"[^@\s]+@[^@\s]+", abstract) or contact_email.lower() in low:
-        flags.append("El texto contiene una dirección de correo.")
+        flags.append(msg("flag_email"))
     for name in author_names:
         parts = [p for p in re.split(r"\s+", name.strip().lower()) if len(p) >= 3]
         if len(parts) >= 2 and all(p in low for p in parts[:2]):
-            flags.append(f"El texto parece mencionar a un autor ({name.strip()}).")
+            flags.append(msg("flag_author", name=name.strip()))
     return flags
 
 
