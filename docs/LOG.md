@@ -466,3 +466,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Biología" dropped). Applied in `app/sicvec/templates/base.html`. Not changed: letters already sent (07_Comunicaciones) that
   say "Programa de Biología". Dpto. de Biología y Química still also listed under "Departamentos co-organizadores".
 - AC, 2026-09-28: footer heading "Departamentos co-organizadores" -> "Co-organizadores".
+- AC, 2026-09-28 (screenshot of the footer logo strip): logos regrouped as on the poster: ORGANIZAN = IN SILICO + UNISUCRE;
+  COLABORAN = Biología, Ing. Agroindustrial, Ing. Agrícola, Física (text box, no logo yet). New static files
+  `logo_agroin.jpg`, `logo_ingagricola.jpg` (from `01_Propuesta/Logos/`, 200 px high). Checked in Chrome on a local run.

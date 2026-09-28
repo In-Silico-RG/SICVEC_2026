@@ -12,9 +12,16 @@
 </main>
 {% block footer %}<footer class="pie-sitio">
 <div class="pie-logos">
-<img src="{{ url_for('static', filename='logo_unisucre.jpg') }}" alt="Universidad de Sucre">
-<img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Programa de Biología, Universidad de Sucre">
+<div class="pie-grupo"><h5>Organizan</h5><div class="pie-fila">
 <img src="{{ url_for('static', filename='logo_insilico.jpg') }}" alt="Grupo de Investigación IN SILICO">
+<img src="{{ url_for('static', filename='logo_unisucre.jpg') }}" alt="Universidad de Sucre">
+</div></div>
+<div class="pie-grupo"><h5>Colaboran</h5><div class="pie-fila">
+<img src="{{ url_for('static', filename='logo_bio.jpg') }}" alt="Biología, Universidad de Sucre">
+<img src="{{ url_for('static', filename='logo_agroin.jpg') }}" alt="Ingeniería Agroindustrial, Universidad de Sucre">
+<img src="{{ url_for('static', filename='logo_ingagricola.jpg') }}" alt="Ingeniería Agrícola, Universidad de Sucre">
+<span class="pie-texto-logo">Departamento<br><strong>de Física</strong></span>
+</div></div>
 </div>
 <div class="pie-cols">
 <div><h4>Organiza</h4>

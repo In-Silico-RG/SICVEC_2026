@@ -34,8 +34,11 @@ form.inline{display:inline}
 
 .pie-sitio{background:var(--verde);color:#e8f2ec;margin:3rem 0 0;padding:0 1rem 1.2rem;max-width:none;border:0;font-size:.92rem}
 .pie-sitio a{color:#fff}
-.pie-logos{background:#fff;margin:0 -1rem 1.6rem;padding:1.2rem 1rem;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1.5rem 3rem;border-bottom:4px solid var(--verde2)}
-.pie-logos img{height:88px;width:auto;max-width:44%}
+.pie-logos{background:#fff;margin:0 -1rem 1.6rem;padding:1.2rem 1rem;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:1.5rem 3rem;border-bottom:4px solid var(--verde2)}
+.pie-grupo h5{margin:0 0 .7rem;text-align:center;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:#1b5e3a;border-bottom:1px solid #cfe3d6;padding-bottom:.3rem}
+.pie-fila{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:1rem 2rem}
+.pie-fila img{height:80px;width:auto;max-width:40vw}
+.pie-texto-logo{display:inline-block;padding:.6rem .9rem;background:#eef4f0;border-radius:8px;color:#1b5e3a;font-size:.85rem;text-align:center;line-height:1.3}
 .pie-cols{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.4rem 2rem}
 .pie-cols h4{margin:0 0 .5rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:#bfe0cc;border-bottom:1px solid #3f8a5f;padding-bottom:.3rem}
 .pie-cols p{margin:.2rem 0 .6rem}
@@ -43,7 +46,7 @@ form.inline{display:inline}
 .pie-cols li{margin:0 0 .45rem}
 .pie-sitio .peq{font-size:.82rem;color:#bfe0cc}
 .pie-fin{max-width:1000px;margin:1.4rem auto 0;padding-top:.8rem;border-top:1px solid #3f8a5f;font-size:.82rem;color:#bfe0cc;text-align:center}
-@media (max-width:600px){.pie-logos img{height:64px}}
+@media (max-width:600px){.pie-fila img{height:56px}}
 .ponente{display:flex;gap:1.2rem;align-items:flex-start;margin:1.5rem 0 .5rem}
 .ponente img,.ponente-sinfoto{width:160px;height:160px;flex:0 0 160px;border-radius:50%;object-fit:cover;border:3px solid #1b5e3a}
 .ponente-sinfoto{background:#e6efe9}
