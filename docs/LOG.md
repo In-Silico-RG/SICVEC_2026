@@ -444,3 +444,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC created the Google app password "SICVEC" for insilico@unisucre.edu.co (2-Step Verification on) and pasted it in chat;
   written into `dist/sicvec.env` (git-ignored, mode 600). SMTP login to smtp.gmail.com:587 tested OK (no email sent).
   Note: the code is in this chat's transcript; revoke and recreate it at myaccount.google.com/apppasswords if that matters.
+- PythonAnywhere setup with AC, 2026-09-28: account `sicvec2026` is on the **EU** server; site address
+  `https://sicvec2026.eu.pythonanywhere.com` (supersedes the non-EU URL above). Files uploaded; unzip OK. Snags: pasting three
+  lines at once joined them (`chmod: invalid option -- 'm'`), fixed by one line at a time; `python3.12 -m venv` gave a venv
+  without pip on PythonAnywhere, fixed with `virtualenv -p python3.12 ~/venv`. Requirements installed. Web app being created.
