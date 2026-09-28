@@ -55,13 +55,13 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 
 ## Deploying on PythonAnywhere (free plan; chosen by AC, 2026-09-28)
 Free-plan limits checked on 2026-09-28 (PythonAnywhere pricing and help pages): one web app at
-`<user>.pythonanywhere.com` (no own domain), one web worker, **no threads in web apps**, outbound
+`<user>.pythonanywhere.com` (or `<user>.eu.pythonanywhere.com` on the EU server) (no own domain), one web worker, **no threads in web apps**, outbound
 traffic filtered: the only SMTP server allowed is Gmail's (`smtp.gmail.com`).
 1. Bash console: `git clone https://github.com/In-Silico-RG/SICVEC_2026.git` (private repo: use a GitHub
    fine-grained token with read-only access to this repo as the password), or upload the zip made with
    `git archive --format=zip --prefix=SICVEC_2026/ -o dist/SICVEC_app_<date>.zip HEAD app/` (Files tab) and run
    `cd ~ && unzip -o SICVEC_app_<date>.zip`; then
-   `python3.12 -m venv ~/venv && ~/venv/bin/pip install -r SICVEC_2026/app/requirements.txt`.
+   `virtualenv -p python3.12 ~/venv && ~/venv/bin/pip install -r SICVEC_2026/app/requirements.txt`.
 2. Create `~/sicvec.env` (`chmod 600`), one `KEY=value` per line: `SECRET_KEY`, `ADMIN_PASSWORD`,
    `BASE_URL=https://<user>.pythonanywhere.com`, `SESSION_COOKIE_SECURE=1`, `MAIL_BACKGROUND=0`,
    `DATABASE=/home/<user>/data/sicvec.sqlite`, `UPLOAD_DIR=/home/<user>/data/uploads`, and for email

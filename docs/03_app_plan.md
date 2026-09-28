@@ -4,7 +4,7 @@
 
 **Objective.** Automate abstract submission, blind peer review, registration and notifications with a
 small web app, with no per-submission cost and no third-party permission grants.
-**Status.** in progress. MVP written and tested locally (24 tests pass; server smoke-tested). Not
+**Status.** deployed 2026-09-28 at https://sicvec2026.eu.pythonanywhere.com (PythonAnywhere free, EU). Previously: not
 deployed: needs a host, SMTP credentials, the consent text and the bank details.
 Every change of this status line gets a dated line in `LOG.md`.
 

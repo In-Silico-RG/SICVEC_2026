@@ -448,3 +448,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `https://sicvec2026.eu.pythonanywhere.com` (supersedes the non-EU URL above). Files uploaded; unzip OK. Snags: pasting three
   lines at once joined them (`chmod: invalid option -- 'm'`), fixed by one line at a time; `python3.12 -m venv` gave a venv
   without pip on PythonAnywhere, fixed with `virtualenv -p python3.12 ~/venv`. Requirements installed. Web app being created.
+- **Site live** 2026-09-28 20:44 UTC: `https://sicvec2026.eu.pythonanywhere.com`. Checked with curl: `/`, `/programa`,
+  `/conferencistas`, `/enviar`, `/inscripcion` 200; static CSS and images 200; unknown paths 404; `/admin` 401 without and 200
+  with the admin password; http redirects to https (302). SMTP configured (no "SMTP no configurado" warning); no email sent
+  from the server yet. Pages still show [PENDIENTE]: consent text, data controller, bank details.
+- Free plan: site disabled on 28 Oct 2026 unless "Run until 1 month from today" is pressed in the Web tab.
+- `docs/03_app_plan.md` status: deployed. README: `virtualenv` instead of `python -m venv`, EU host noted.
