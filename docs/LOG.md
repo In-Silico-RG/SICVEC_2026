@@ -435,3 +435,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Correction (AC, 2026-09-28): no PythonAnywhere account exists yet; "sicvec2026" was the intended username. My steps
   assumed an account and confused AC. Next step: AC signs up (free Beginner plan, username sicvec2026); then the upload and
   Web-tab setup.
+- AC, 2026-09-28, rejected putting a mailbox password on the server ("No señor!"). Decision: email off at launch
+  (`SMTP_HOST` empty in `dist/sicvec.env`); the app logs every email as `simulado` in Admin -> Correos and nothing is sent.
+  Alternatives left open: a Google app password (separate from the account password, revocable) or a dedicated event Gmail.
