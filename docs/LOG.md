@@ -510,3 +510,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-28_pre_qr/`. Script needs `segno` and `pypdf` (run here from a
   scratch venv). Note: the QR codes carry the PythonAnywhere address; if the site moves to a UNISUCRE domain the poster
   must be regenerated.
+- AC, 2026-09-28: **profesionales COP 50.000** (was 40.000; matches the proposal upload e4c315d). Propagated: app FEES,
+  budget (40 x 50.000 = 2.000.000; subtotal 4.400.000; surplus 1.900.000 over COP 2.500.000), TAREAS.md, docs/03, Forms
+  spec/.gs (superseded), LOG_Actividades, CLAUDE.md, memory. Poster/flyer carry no fees. New test checks the three fees
+  on the home page; 34 pass. New zip for redeploy.

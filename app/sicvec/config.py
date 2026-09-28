@@ -23,7 +23,7 @@ def load_config(overrides=None):
         # Online attendance is free for external and international participants. AC, 2026-09-28: no 300-seat figure;
         # no cap unless ONLINE_SEATS is set (empty or unset = unlimited).
         "ONLINE_SEATS": int(os.environ["ONLINE_SEATS"]) if os.environ.get("ONLINE_SEATS", "").strip() else None,
-        "FEES": {"pregrado": 15000, "posgrado": 30000, "profesional": 40000, "virtual": 0},
+        "FEES": {"pregrado": 15000, "posgrado": 30000, "profesional": 50000, "virtual": 0},
         "CONSENT_TEXT": os.environ.get(
             "CONSENT_TEXT",
             # Draft from Resolución 1129 de 2021 (UNISUCRE data policy), art. 6 purposes a, b, d; pending AC approval.

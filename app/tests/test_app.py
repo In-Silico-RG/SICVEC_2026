@@ -295,3 +295,8 @@ def test_portuguese_author_gets_portuguese_emails(client, app):
         from sicvec.db import get_db
         body = get_db().execute("SELECT body FROM emails WHERE subject LIKE '%resultado do seu%'").fetchone()[0]
         assert "Aceito" in body and "Material final" in body
+
+
+def test_fees_shown(client):
+    html = client.get("/?lang=es").get_data(as_text=True)
+    assert "Pregrado: COP 15.000" in html and "Posgrado: COP 30.000" in html and "Profesional: COP 50.000" in html
