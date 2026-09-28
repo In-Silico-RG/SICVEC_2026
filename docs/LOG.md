@@ -465,3 +465,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Química; Facultad de Educación y Ciencias; Universidad de Sucre (UNISUCRE); Sincelejo, Sucre, Colombia ("Programa de
   Biología" dropped). Applied in `app/sicvec/templates/base.html`. Not changed: letters already sent (07_Comunicaciones) that
   say "Programa de Biología". Dpto. de Biología y Química still also listed under "Departamentos co-organizadores".
+- AC, 2026-09-28: footer heading "Departamentos co-organizadores" -> "Co-organizadores".
