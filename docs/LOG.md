@@ -432,3 +432,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-28: "ya está arriba, revisa el sitio". Checked 20:01 UTC with curl: every path on
   `https://sicvec2026.pythonanywhere.com` (and the `.eu.` host) returns 404 with PythonAnywhere's "Coming Soon ... you just need
   to create a web app to handle this domain" page, i.e. no web app is registered for that domain yet. Site not live.
+- Correction (AC, 2026-09-28): no PythonAnywhere account exists yet; "sicvec2026" was the intended username. My steps
+  assumed an account and confused AC. Next step: AC signs up (free Beginner plan, username sicvec2026); then the upload and
+  Web-tab setup.
