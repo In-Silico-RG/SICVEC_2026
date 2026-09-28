@@ -461,3 +461,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Found while propagating: `Propuesta_SICVEC_2026.tex` (upload e4c315d, 2026-09-17) already says pregrado 15.000 and
   **profesionales 50.000**; everything else says 40.000. Asked AC.
 - New zip `dist/SICVEC_app_2026-09-28b.zip` for redeploy.
+- AC, 2026-09-28: site footer "Organiza" reordered/renamed to: Grupo de Investigación IN SILICO; Departamento de Biología y
+  Química; Facultad de Educación y Ciencias; Universidad de Sucre (UNISUCRE); Sincelejo, Sucre, Colombia ("Programa de
+  Biología" dropped). Applied in `app/sicvec/templates/base.html`. Not changed: letters already sent (07_Comunicaciones) that
+  say "Programa de Biología". Dpto. de Biología y Química still also listed under "Departamentos co-organizadores".
