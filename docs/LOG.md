@@ -569,3 +569,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `static/fig_ejes_pt.jpg` (top 100 px title band cropped, 1376x668). Static files renamed `fig_*_<lang>.jpg`;
   `index.html` loads `fig_ejes_<lang>` and `fig_ods_<lang>` for es/en/pt (the EN/PT text cards are gone) and builds the alt
   text in the page language. New test: every language's home page links both figures and they return 200. 37 pass. EN axes, EN SDG and PT SDG figures from the lost session checked by eye: text correct (PT SDG titles are the UN Portuguese names).
+- Commit f3f3087 (16:33); zip `dist/SICVEC_app_2026-09-29d.zip` for redeploy.
