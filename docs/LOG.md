@@ -545,6 +545,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   08:30-09:30, his 09:00 start needs it moved 30 min (AC to decide). TAREAS.md keynote item: 5 confirmed.
 - English invitation letter `07_Comunicaciones/Cartas_Departamentos/Invitacion_Conferencista_Enrico_Valli.tex/.pdf`
   (Carlos letter layout, English, one page, checked by rendering and pdftotext): keynote, 20 Oct 9:00 COT / 16:00 CEST,
-  45 min + questions, online, English, no fees; next steps: confirm date, abstract 150-250 words (length is my
-  proposal), link and connection test before the event (platform still [PENDIENTE], so no platform named). No [PENDING]
-  left in the letter.
+  45 min + questions, online, English, no fees; next steps: confirm date, short abstract, link and connection test before the event (platform still
+  [PENDIENTE], so no platform named). No [PENDING] left in the letter. First draft had "150-250 words ... for the
+  programme and the proceedings": removed per the letter rules (no word limit, no proceedings promise). Letter is in
+  English, not Spanish as the rules say: he writes in English and the 22 Sept message was in English.
