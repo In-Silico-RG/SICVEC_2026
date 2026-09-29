@@ -523,3 +523,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   poster). Format, title, bio, abstract, photo and email unknown: shown as "por confirmar"; the speakers page no longer
   prints a format when none is recorded. Record `10_Ponentes/FICHA_RenonEller.md`; TAREAS.md keynote item updated
   (4 confirmed). New test; 35 pass. New zip for redeploy.
+- AC: "Carlos irá como ponente de 20 min en economía circular", with a pasted profile line: Director ambiental y de
+  servicios generales, Parque Comercial Guacarí, since Jan 2018, Sincelejo. Record `10_Ponentes/FICHA_Carlos_Guacari.md`.
+  Surname unknown: not put on the site yet; asked AC.
