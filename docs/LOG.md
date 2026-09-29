@@ -549,3 +549,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   [PENDIENTE], so no platform named). No [PENDING] left in the letter. First draft had "150-250 words ... for the
   programme and the proceedings": removed per the letter rules (no word limit, no proceedings promise). Letter is in
   English, not Spanish as the rules say: he writes in English and the 22 Sept message was in English.
+- AC, 2026-09-29: "eso no me gusta, que tal si hacemos una figura explicativa. Usa figurelabs.ai" (home: Ejes temáticos),
+  then "igual para esto" (ODS). Two figures made with the FigureLabs illustration tool (Flat, 16:9, Spanish text, our
+  greens; SDG tiles in the UN goal colours, no UN logo). Projects: chat.figurelabs.ai/project/2105010271519866881 (axes),
+  .../2105010398221402114 (SDG); 50 credits each. Text checked by eye: all names and keywords correct. Originals in
+  `05_Material_Difusion/Figuras/`; web copies `static/fig_ejes.jpg` (title band cropped, the page has its own heading)
+  and `static/fig_ods.jpg`. Home page shows the figures in Spanish; EN/PT keep the text cards (figures carry Spanish
+  text). 36 tests pass. New zip for redeploy.
