@@ -556,3 +556,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `05_Material_Difusion/Figuras/`; web copies `static/fig_ejes.jpg` (title band cropped, the page has its own heading)
   and `static/fig_ods.jpg`. Home page shows the figures in Spanish; EN/PT keep the text cards (figures carry Spanish
   text). 36 tests pass. New zip for redeploy.
+- Live check after AC's redeploy (5bfcc3b, zip c): home (es) shows both figures; fig_ejes.jpg, fig_ods.jpg, speaker_valli.jpg 200; /conferencistas lists Renon Eller and Valli.
