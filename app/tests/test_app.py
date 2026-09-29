@@ -307,3 +307,10 @@ def test_speakers_include_renon_eller(client):
     for name in ("Beatriz Escobar Morales", "Wilson Manuel Castro Silupu", "Marianny Y. Combariza", "Monique Renon Eller"):
         assert name in html
     assert "Universidade Federal de Viçosa" in html
+
+
+def test_speakers_include_valli(client):
+    body = client.get("/conferencistas?lang=en").get_data(as_text=True)
+    assert "Enrico Valli" in body
+    assert "Valorization of by-products from olive oil production" in body
+    assert client.get("/static/speaker_valli.jpg").status_code == 200

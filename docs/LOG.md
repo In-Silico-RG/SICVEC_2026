@@ -533,3 +533,18 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (time TBC), no fees, next steps (availability; title and short summary; short bio and photo), site URL. Signature now
   "Departamento de Biología y Química" (AC's Organiza text of 28 Sept). No "300" figure. Red [PENDIENTE]: his surname (x2)
   and the reply-by date. One page (11pt; SDG line shortened to "ODS 12, 13, 15 y 17" in the page footer after the first footer version was clipped), checked by rendering.
+- Enrico Valli (Univ. of Bologna) accepted by email (to aldo.combariza@, 29 Sept 11:30; pasted by AC with his photo):
+  online 45-min keynote, himself as speaker; title "Valorization of by-products from olive oil production as a source of
+  bioactive compounds"; affiliation, short bio and photo sent; no abstract. He asks for "Tuesday, 20 February, at 9 AM
+  Colombian time (4 PM in Italy)": read as **Tuesday 20 October** (20 Oct 2026 is a Tuesday; the 7-h offset holds only
+  under CEST, which ends 25 Oct; in February it would be 3 PM). To be confirmed with him; the letter asks him to confirm.
+  His email verbatim in `10_Ponentes/Valli_Respuesta_2026-09-29.md`; record `FICHA_Valli_Bologna.md` rewritten (accepted).
+  Photo moved from the project root to `10_Ponentes/Foto Valli.jpg`; web copy `speaker_valli.jpg` (640x640 square crop).
+  Site: 5th keynote in `content.py` (affiliation, title, bio verbatim; format Virtual; abstract pending); new test, 36
+  pass. New zip for redeploy. Programme not changed: preliminary Tuesday block has "Conferencia magistral 2" at
+  08:30-09:30, his 09:00 start needs it moved 30 min (AC to decide). TAREAS.md keynote item: 5 confirmed.
+- English invitation letter `07_Comunicaciones/Cartas_Departamentos/Invitacion_Conferencista_Enrico_Valli.tex/.pdf`
+  (Carlos letter layout, English, one page, checked by rendering and pdftotext): keynote, 20 Oct 9:00 COT / 16:00 CEST,
+  45 min + questions, online, English, no fees; next steps: confirm date, abstract 150-250 words (length is my
+  proposal), link and connection test before the event (platform still [PENDIENTE], so no platform named). No [PENDING]
+  left in the letter.

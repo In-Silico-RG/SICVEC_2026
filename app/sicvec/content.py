@@ -191,6 +191,25 @@ SPEAKERS = [{
     "format": None,
     "bio": [],
     "abstract": [],
+}, {
+    # Enrico Valli: accepted by email, 2026-09-29 (aldo.combariza@). Affiliation, title and bio verbatim from that email
+    # (bio in English, his words). Photo: attachment of that email (10_Ponentes/Foto Valli.jpg). Abstract pending.
+    "name": "Prof. Enrico Valli",
+    "role": "Conferencista magistral",
+    "affiliation": "Department of Agricultural and Food Sciences and Interdepartmental Centre for Industrial Agrofood "
+                   "Research, Alma Mater Studiorum – Università di Bologna, Italia",
+    "photo": "speaker_valli.jpg",
+    "talk": "Valorization of by-products from olive oil production as a source of bioactive compounds",
+    "format": "Virtual",
+    "bio": [
+        "Associate professor in the Department of Agricultural and Food Sciences at the University of Bologna since 2022, "
+        "performing research in the field of instrumental and sensory analysis of foods and sustainable food technologies. "
+        "Main interests lie in the analytical methods for assessing the quality and authenticity of olive oil and the "
+        "technological valorization of agri-food by-products. He has been involved - and is currently part - of research "
+        "teams in several national and EU research projects. He is the delegate for orientation for the DISTAL bachelor's "
+        "and master's degree courses held in Cesena.",
+    ],
+    "abstract": [],
 }]
 
 # Footer. Source: proposal section 8.2 and CLAUDE.md/FICHA (roles). No personal emails or phones on the public page.
