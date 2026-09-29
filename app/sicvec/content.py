@@ -180,6 +180,17 @@ SPEAKERS = [{
     "format": "Virtual",
     "bio": [],
     "abstract": [],
+}, {
+    # Monique Renon Eller: speaker per AC, 2026-09-29 (also on AC's poster of 2026-09-28). Name and university only;
+    # format, title, bio, abstract and photo pending.
+    "name": "Dra. Monique Renon Eller",
+    "role": "Conferencista magistral",
+    "affiliation": "Universidade Federal de Viçosa (UFV), Brasil",
+    "photo": None,
+    "talk": None,
+    "format": None,
+    "bio": [],
+    "abstract": [],
 }]
 
 # Footer. Source: proposal section 8.2 and CLAUDE.md/FICHA (roles). No personal emails or phones on the public page.

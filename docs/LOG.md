@@ -515,3 +515,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   spec/.gs (superseded), LOG_Actividades, CLAUDE.md, memory. Poster/flyer carry no fees. New test checks the three fees
   on the home page; 34 pass. New zip for redeploy.
 - Live check after AC's redeploy (f10f1b7): fees 15.000 / 30.000 / 50.000 on home and registration in es/en/pt; all public pages 200. (First reload attempt still served 40.000; fixed on AC's second pass.)
+
+## 2026-09-29 (speakers)
+
+- AC: "Dra. Monique Renon Eller, Universidad Federal de Viçosa, otra ponente". Added as the 4th keynote on the site
+  (`content.py`; affiliation written "Universidade Federal de Viçosa (UFV), Brasil", the university's own name, as on the
+  poster). Format, title, bio, abstract, photo and email unknown: shown as "por confirmar"; the speakers page no longer
+  prints a format when none is recorded. Record `10_Ponentes/FICHA_RenonEller.md`; TAREAS.md keynote item updated
+  (4 confirmed). New test; 35 pass. New zip for redeploy.

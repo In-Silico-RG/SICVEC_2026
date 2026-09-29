@@ -300,3 +300,10 @@ def test_portuguese_author_gets_portuguese_emails(client, app):
 def test_fees_shown(client):
     html = client.get("/?lang=es").get_data(as_text=True)
     assert "Pregrado: COP 15.000" in html and "Posgrado: COP 30.000" in html and "Profesional: COP 50.000" in html
+
+
+def test_speakers_include_renon_eller(client):
+    html = client.get("/conferencistas?lang=es").get_data(as_text=True)
+    for name in ("Beatriz Escobar Morales", "Wilson Manuel Castro Silupu", "Marianny Y. Combariza", "Monique Renon Eller"):
+        assert name in html
+    assert "Universidade Federal de Viçosa" in html

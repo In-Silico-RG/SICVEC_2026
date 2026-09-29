@@ -6,7 +6,7 @@
 {% if s.photo %}<img src="{{ url_for('static', filename=s.photo) }}" alt="{{ s.name }}">{% else %}<div class="ponente-sinfoto" aria-hidden="true"></div>{% endif %}
 <div>
 <h2>{{ s.name }}</h2>
-<p class="rol">{{ s.role }} · {{ t('opt_virtual') if s.format == 'Virtual' else s.format }}</p>
+<p class="rol">{{ s.role }}{% if s.format %} · {{ t('opt_virtual') if s.format == 'Virtual' else s.format }}{% endif %}</p>
 <p>{{ s.affiliation }}</p>
 {% if s.talk %}<p><strong>{{ t('sp_talk') }}</strong> {{ s.talk }}</p>{% else %}<p class="pend">{{ t('sp_title_tbc') }}</p>{% endif %}
 <p class="pend">{{ t('sp_date_tbc') }}</p>
