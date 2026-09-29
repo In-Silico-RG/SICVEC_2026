@@ -532,4 +532,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   person at Guacarí (not virtual, unlike the keynote letters: he is at the venue), slot = axis-1 block Monday 19 Oct
   (time TBC), no fees, next steps (availability; title and short summary; short bio and photo), site URL. Signature now
   "Departamento de Biología y Química" (AC's Organiza text of 28 Sept). No "300" figure. Red [PENDIENTE]: his surname (x2)
-  and the reply-by date. One page (11pt, SDG line moved to the page footer), checked by rendering.
+  and the reply-by date. One page (11pt; SDG line shortened to "ODS 12, 13, 15 y 17" in the page footer after the first footer version was clipped), checked by rendering.
