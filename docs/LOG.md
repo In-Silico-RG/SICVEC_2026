@@ -526,3 +526,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC: "Carlos irá como ponente de 20 min en economía circular", with a pasted profile line: Director ambiental y de
   servicios generales, Parque Comercial Guacarí, since Jan 2018, Sincelejo. Record `10_Ponentes/FICHA_Carlos_Guacari.md`.
   Surname unknown: not put on the site yet; asked AC.
+- AC: invitation letter for Carlos (Parque Comercial Guacarí), talk on circular economy and sustainability "desde la
+  perspectiva del Guacarí". `07_Comunicaciones/Cartas_Departamentos/Invitacion_Ponente_Carlos_Guacari.tex/.pdf`, based on
+  the keynote letters (same header), dated 29 Sept. Content: 20-min talk, axis Economía Circular, suggested topic, in
+  person at Guacarí (not virtual, unlike the keynote letters: he is at the venue), slot = axis-1 block Monday 19 Oct
+  (time TBC), no fees, next steps (availability; title and short summary; short bio and photo), site URL. Signature now
+  "Departamento de Biología y Química" (AC's Organiza text of 28 Sept). No "300" figure. Red [PENDIENTE]: his surname (x2)
+  and the reply-by date. One page (11pt, SDG line moved to the page footer), checked by rendering.
