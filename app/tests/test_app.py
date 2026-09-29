@@ -314,3 +314,12 @@ def test_speakers_include_valli(client):
     assert "Enrico Valli" in body
     assert "Valorization of by-products from olive oil production" in body
     assert client.get("/static/speaker_valli.jpg").status_code == 200
+
+
+def test_home_figures_exist_in_every_language(client):
+    for lang in ("es", "en", "pt"):
+        body = client.get(f"/?lang={lang}").get_data(as_text=True)
+        srcs = re.findall(r'src="(/static/fig_[^"]+)"', body)
+        assert srcs == [f"/static/fig_ejes_{lang}.jpg", f"/static/fig_ods_{lang}.jpg"]
+        for s in srcs:
+            assert client.get(s).status_code == 200

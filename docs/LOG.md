@@ -557,3 +557,15 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   and `static/fig_ods.jpg`. Home page shows the figures in Spanish; EN/PT keep the text cards (figures carry Spanish
   text). 36 tests pass. New zip for redeploy.
 - Live check after AC's redeploy (5bfcc3b, zip c): home (es) shows both figures; fig_ejes.jpg, fig_ods.jpg, speaker_valli.jpg 200; /conferencistas lists Renon Eller and Valli.
+- Home figures in all three languages. English (axes, SDG) and Portuguese (SDG) FigureLabs figures were made in a session
+  that then broke off before the Portuguese axes figure, with nothing tested, logged or committed (AC asked "why did you
+  fail?"; the transcript is lost, so what happened is inferred from the files on disk). Cause found on the retry:
+  connector calls failed with `getaddrinfo EAI_AGAIN mcp-proxy.anthropic.com` (DNS timeout). The local network was unstable:
+  DNS lookups took ~1.5 s, IPv6 was unreachable, and IPv4 requests to the proxy and github.com sometimes timed out. The
+  third attempt went through. With the uncommitted template, the pt home page would have shown a broken axes image.
+- AC "ok" to finish it: Portuguese axes figure made with FigureLabs (Flat, 16:9, prompt copies the EN layout; PT names
+  from `i18n.AXES`, keywords from `content._PT`), project chat.figurelabs.ai/project/2105045313197539330, 50 credits.
+  Text checked by eye: all correct. Original `05_Material_Difusion/Figuras/Ejes_tematicos_FigureLabs_PT.jpg`, web copy
+  `static/fig_ejes_pt.jpg` (top 100 px title band cropped, 1376x668). Static files renamed `fig_*_<lang>.jpg`;
+  `index.html` loads `fig_ejes_<lang>` and `fig_ods_<lang>` for es/en/pt (the EN/PT text cards are gone) and builds the alt
+  text in the page language. New test: every language's home page links both figures and they return 200. 37 pass. EN axes, EN SDG and PT SDG figures from the lost session checked by eye: text correct (PT SDG titles are the UN Portuguese names).

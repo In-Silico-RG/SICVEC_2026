@@ -22,16 +22,10 @@
 <ul>{% for o in C.OBJETIVOS %}<li>{{ o }}</li>{% endfor %}</ul>
 
 <h2>{{ t('h_axes') }}</h2>
-{% if g.lang == 'es' %}<img class="figura" src="{{ url_for('static', filename='fig_ejes.jpg') }}" alt="Seis ejes temáticos: 1 Economía Circular, 2 Química Verde y Procesos Sostenibles, 3 Biotecnología Sostenible, 4 Tecnologías Verdes y Energías Renovables, 5 Sostenibilidad en Cadenas de Suministro, 6 Política Pública y Gobernanza Ambiental">
-{% else %}<div class="tarjetas">
-{% for name, topics in ejes %}<div class="caja"><h3>{{ t('axis_word') }} {{ loop.index }}. {{ axis_label(name) }}</h3><p>{{ topics }}</p></div>{% endfor %}
-</div>{% endif %}
+<img class="figura" src="{{ url_for('static', filename='fig_ejes_' ~ g.lang ~ '.jpg') }}" alt="{% for name, topics in ejes %}{{ loop.index }}. {{ axis_label(name) }}{{ '; ' if not loop.last }}{% endfor %}">
 
 <h2>{{ t('h_ods') }}</h2>
-{% if g.lang == 'es' %}<img class="figura" src="{{ url_for('static', filename='fig_ods.jpg') }}" alt="ODS 12 Producción y consumo responsables, ODS 13 Acción por el clima, ODS 15 Vida de ecosistemas terrestres, ODS 17 Alianzas para lograr los objetivos">
-{% else %}<div class="tarjetas">
-{% for n, ti, d in C.ODS %}<div class="caja"><b>{{ t('ods_word') }} {{ n }}</b><h3>{{ ti }}</h3><p>{{ d }}</p></div>{% endfor %}
-</div>{% endif %}
+<img class="figura" src="{{ url_for('static', filename='fig_ods_' ~ g.lang ~ '.jpg') }}" alt="{% for n, ti, d in C.ODS %}{{ t('ods_word') }} {{ n }}: {{ ti }}{{ '; ' if not loop.last }}{% endfor %}">
 
 <h2>{{ t('h_participate') }}</h2>
 <div class="tarjetas">
