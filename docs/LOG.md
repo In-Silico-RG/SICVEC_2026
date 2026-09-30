@@ -601,3 +601,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   tuesday 20 9:00 - 10.00 AM". New optional per-speaker field `when` (es/en/pt) in `content.py`; Valli: Tuesday 20
   October, 9:00–10:00, Colombia time (UTC−5). `conferencistas.html` shows it under "Fecha y hora" / "Date and time" /
   "Data e horário"; speakers without `when` keep the TBC line. New test; 39 pass.
+- Commit 56cf739 (08:27); zip `dist/SICVEC_app_2026-09-30c.zip` for redeploy (supersedes 30b).
