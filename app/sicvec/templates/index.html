@@ -47,7 +47,8 @@
 <ul>{% for p in C.PUBLICO %}<li>{{ p }}</li>{% endfor %}</ul>
 
 <h2>{{ t('h_venue') }}</h2>
-<p><strong>Centro Comercial Guacarí</strong><br>{{ t('venue_addr') }}</p>
+<div class="sede"><img src="{{ url_for('static', filename='logo_guacari.png') }}" alt="Parque Comercial Guacarí">
+<p><strong>Centro Comercial Guacarí</strong><br>{{ t('venue_addr') }}</p></div>
 <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Centro+Comercial+Guacar%C3%AD+Sincelejo+Sucre" target="_blank" rel="noopener">{{ t('btn_maps') }}</a>
 </p>
 <p>{{ t('venue_room') }}</p>

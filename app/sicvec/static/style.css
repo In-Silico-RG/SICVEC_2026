@@ -55,4 +55,7 @@ form.inline{display:inline}
 .idiomas{margin-left:auto;display:inline-flex;gap:.35rem;align-items:center;font-size:.85rem}
 .idiomas a,.idiomas b{padding:.1rem .35rem;border-radius:4px}
 .idiomas b{background:#fff;color:#1b5e3a}
+.sede{display:flex;align-items:center;gap:1rem;margin:.5rem 0}
+.sede img{height:96px;width:auto;flex:0 0 auto}
+.sede p{margin:0}
 .figura{display:block;width:100%;height:auto;border-radius:8px;margin:.5rem 0 1rem}

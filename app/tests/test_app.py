@@ -378,3 +378,9 @@ def test_programme_from_sheet(client):
     assert "16:35–17:00" in es and "Eje 1" not in es
     en = client.get("/programa?lang=en").get_data(as_text=True)
     assert "Keynote lecture 4 · Dra. Monique Renon Eller" in en and "Talk 12 (to be assigned)" in en
+
+
+def test_venue_logo(client):
+    body = client.get("/").get_data(as_text=True)
+    assert "/static/logo_guacari.png" in body
+    assert client.get("/static/logo_guacari.png").status_code == 200

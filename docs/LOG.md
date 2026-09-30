@@ -748,3 +748,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-30 (screenshot): "escribe CC Guacarí explícitamente, el texto de la imagen es muy pequeño". Poster: text
   restored ("Lugar:" / "C.C. Guacarí" / "Sincelejo, Sucre") and the Guacarí logo moved to the place of the map icon,
   82 px base high. Flyer already had the text beside the logo; unchanged.
+- AC, 2026-09-30: "¿la página se actualizó? ¿logo de física? ¿nuevas fechas?". Live check: the site runs zip 30i
+  (photos and bios of Renon Eller and Combariza are live); not live: axes-border fix (j), calendar 10/14/18 Oct (k), Física
+  logo (l), programme from the sheet (m) — live still shows 04/10, 07/10, 15/10 and would close submissions on 4 Oct. Told AC.
+- AC: "al hacer el flyer adicionamos cosas, el logo del Guacarí en Lugar, fechas, etc.". Of the poster/flyer additions
+  the site lacked only the Guacarí logo: home "Lugar" section now shows `static/logo_guacari.png` (228x240, transparent,
+  96 px high) beside name and address (`.sede` in style.css). New test; 45 pass.
