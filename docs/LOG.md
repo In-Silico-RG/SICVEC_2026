@@ -632,3 +632,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   professional summary. Site affiliation changed to her CV title ("Profesora de Química e Investigadora Sénior; directora
   del CEIAM, Escuela de Química, UIS"), which settles the open question. CV dates differ from ORCID (PhD 2004 vs 2003;
   UMass MSc 2003 vs 2000; professor 2007 vs 1998): bio follows the CV, noted in the FICHA. 39 tests pass.
+- Commit e9fb3c9 (08:52); zip `dist/SICVEC_app_2026-09-30g.zip` (supersedes 30f).
