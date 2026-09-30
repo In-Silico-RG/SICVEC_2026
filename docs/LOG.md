@@ -647,3 +647,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   biosurfactants), supervision counts, ~30 articles, three awards. Every fact sourced in FICHA_RenonEller.md. Found:
   our Academic Coordinator María Ximena Díaz did her MSc (2017, UFV) under her. New test; 41 pass.
 - Commit fc0439e (09:09); zip `dist/SICVEC_app_2026-09-30i.zip` (supersedes 30h).
+- AC, 2026-09-30 (screenshot of the home page): axes figure "pierde el borde superior". Cause: the web copies were made
+  by cropping the title band (top 95 px es/en, 100 px pt), but in es/en the title sits between the two top cards and
+  reaches y=91 while the card borders start at y=87, so the crop cut the top border of cards 1 and 4. Fix: from the
+  originals, white rectangle over the title between the cards (x 485-895 es/en; pt title painted out the same way) and
+  crop 12 px above the card tops (es/en from y=75, 1376x693; pt from y=93, 1376x675). Checked by eye: borders whole, no
+  title remnant (the first es pass left "Ej": the auto-detected card edge was wrong). SDG figures were never cropped. 41 pass.
