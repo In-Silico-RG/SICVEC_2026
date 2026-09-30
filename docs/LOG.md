@@ -754,3 +754,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC: "al hacer el flyer adicionamos cosas, el logo del Guacarí en Lugar, fechas, etc.". Of the poster/flyer additions
   the site lacked only the Guacarí logo: home "Lugar" section now shows `static/logo_guacari.png` (228x240, transparent,
   96 px high) beside name and address (`.sede` in style.css). New test; 45 pass.
+- Commit 7c5348c (16:48); zip `dist/SICVEC_app_2026-09-30n.zip` (supersedes 30m; everything since 30i).
