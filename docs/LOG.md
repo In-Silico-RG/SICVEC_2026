@@ -597,3 +597,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   SPEAKERS (es/en/pt share the list); order now Valli, Escobar, Castro, Combariza, Renon Eller. New test: Valli before
   Escobar on /conferencistas in the three languages. 38 pass.
 - Commit e35959f (08:20); zip `dist/SICVEC_app_2026-09-30b.zip` for redeploy (programme change + Valli first; supersedes 2026-09-30.zip).
+- AC, 2026-09-30: speakers page still said "Date and time: to be confirmed (19 or 20 October)" for Valli; "Is already set:
+  tuesday 20 9:00 - 10.00 AM". New optional per-speaker field `when` (es/en/pt) in `content.py`; Valli: Tuesday 20
+  October, 9:00–10:00, Colombia time (UTC−5). `conferencistas.html` shows it under "Fecha y hora" / "Date and time" /
+  "Data e horário"; speakers without `when` keep the TBC line. New test; 39 pass.

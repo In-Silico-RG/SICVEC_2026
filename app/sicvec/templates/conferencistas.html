@@ -9,7 +9,7 @@
 <p class="rol">{{ s.role }}{% if s.format %} · {{ t('opt_virtual') if s.format == 'Virtual' else s.format }}{% endif %}</p>
 <p>{{ s.affiliation }}</p>
 {% if s.talk %}<p><strong>{{ t('sp_talk') }}</strong> {{ s.talk }}</p>{% else %}<p class="pend">{{ t('sp_title_tbc') }}</p>{% endif %}
-<p class="pend">{{ t('sp_date_tbc') }}</p>
+{% if s.when %}<p><strong>{{ t('sp_when') }}</strong> {{ s.when[lang] }}</p>{% else %}<p class="pend">{{ t('sp_date_tbc') }}</p>{% endif %}
 </div>
 </section>
 {% if s.bio %}<h3>{{ t('sp_bio') }}</h3>{% for p in s.bio %}<p>{{ p }}</p>{% endfor %}{% endif %}

@@ -329,3 +329,13 @@ def test_valli_first_on_speakers_page(client):
     for lang in ("es", "en", "pt"):
         body = client.get(f"/conferencistas?lang={lang}").get_data(as_text=True)
         assert body.index("Enrico Valli") < body.index("Beatriz Escobar Morales")
+
+
+def test_valli_slot_shown_others_tbc(client):
+    body = client.get("/conferencistas?lang=en").get_data(as_text=True)
+    valli = body[body.index("Enrico Valli"):body.index("Beatriz Escobar Morales")]
+    assert "Tuesday 20 October, 9:00–10:00" in valli
+    assert "to be confirmed (19 or 20 October)" not in valli
+    assert "to be confirmed (19 or 20 October)" in body[body.index("Beatriz Escobar Morales"):]
+    assert "Martes 20 de octubre, 9:00–10:00" in client.get("/conferencistas?lang=es").get_data(as_text=True)
+    assert "Terça-feira, 20 de outubro, 9:00–10:00" in client.get("/conferencistas?lang=pt").get_data(as_text=True)

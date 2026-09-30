@@ -142,6 +142,7 @@ T = {
     "sp_talk": ("Conferencia:", "Talk:", "Palestra:"),
     "sp_title_tbc": ("Título de la conferencia: por confirmar.", "Talk title: to be confirmed.",
                      "Título da palestra: a confirmar."),
+    "sp_when": ("Fecha y hora:", "Date and time:", "Data e horário:"),
     "sp_date_tbc": ("Fecha y hora de la conferencia: por confirmar (19 o 20 de octubre).",
                     "Date and time: to be confirmed (19 or 20 October).",
                     "Data e horário: a confirmar (19 ou 20 de outubro)."),

@@ -81,6 +81,10 @@ SPEAKERS = [{
     "photo": "speaker_valli.jpg",
     "talk": "Valorization of by-products from olive oil production as a source of bioactive compounds",
     "format": "Virtual",
+    # Slot confirmed: Tuesday 20 Oct 09:00-10:00 COT (his emails of 29-30 Sept; AC chose 09:00, 2026-09-30).
+    "when": {"es": "Martes 20 de octubre, 9:00–10:00 (hora de Colombia, UTC−5)",
+             "en": "Tuesday 20 October, 9:00–10:00 (Colombia time, UTC−5)",
+             "pt": "Terça-feira, 20 de outubro, 9:00–10:00 (horário da Colômbia, UTC−5)"},
     "bio": [
         "Associate professor in the Department of Agricultural and Food Sciences at the University of Bologna since 2022, "
         "performing research in the field of instrumental and sensory analysis of foods and sustainable food technologies. "
