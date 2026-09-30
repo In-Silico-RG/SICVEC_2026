@@ -770,3 +770,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Commit d4037b2 (16:57); zip `dist/SICVEC_app_2026-09-30p.zip` (supersedes 30o).
 - AC, 2026-09-30 (screenshot, live): "make the UNISUCRE logo the same size as the others": `.pie-base img` 56→100 px
   (mobile 44→68), same as the organizer/support logos. 46 pass.
+- Commit db860a6 (18:25); zip `dist/SICVEC_app_2026-09-30q.zip` (supersedes 30p).
