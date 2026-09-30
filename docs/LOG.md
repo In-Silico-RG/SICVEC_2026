@@ -646,3 +646,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   INCT Leveduras, by-product bioprocesses (cassava bioethanol, selenium mushrooms on by-products, coffee vinegar,
   biosurfactants), supervision counts, ~30 articles, three awards. Every fact sourced in FICHA_RenonEller.md. Found:
   our Academic Coordinator María Ximena Díaz did her MSc (2017, UFV) under her. New test; 41 pass.
+- Commit fc0439e (09:09); zip `dist/SICVEC_app_2026-09-30i.zip` (supersedes 30h).
