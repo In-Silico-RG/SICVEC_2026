@@ -722,3 +722,15 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   "Programa de Biología" → "Grupo IN SILICO — Departamento de Biología y Química — Facultad de Educación y Ciencias"
   (AC, 28 Sept). Date 10 Oct already there. Everything else as it was. The v2 source is in git (6582876) if wanted.
   Rule for next time: "actualiza X" = edit the existing X in place, not redesign.
+- AC, 2026-09-30 ("mira el Afiche"; "¿dónde está Enrico Valli en el flyer/afiche? ¿y las fotos de los ponentes?"; "only one
+  QR ... pointing to the web page"): by "flyer" AC meant the poster. `editar_afiche.py` step 1b: fifth card for Prof.
+  Enrico Valli, built from the Renon Eller card (name, "Università di Bologna (en línea)", Italian flag drawn, seal of the
+  University of Bologna from Wikimedia Commons, `01_Propuesta/Logos/logo_unibo_sigillo.png`); the five cards scaled to
+  ~0.80 to fit the row, Valli first (as on the site); speakers' photos (the site's square crops) pasted in the round frames
+  with a green ring. Step 3: one QR code to the home page, label "QR Página web / Inscripción, resúmenes y programa"; the
+  second box now reads "Convocatoria abierta / Resúmenes hasta el 10 de octubre / Ponencias orales · Pósteres" (PDF link to
+  /enviar). Rest of the poster unchanged. Old files in `Flyers_Posters/Versiones/2026-09-30_pre_valli_qr/`.
+- AC, 2026-09-30: "¿Una gráfica de las líneas y de los ODS? ¡Ya tenemos figuras para eso!". A4 flyer (original design):
+  the text list of the six axes and the SDG line replaced by the FigureLabs figures (`fig_ejes_es.jpg`, `fig_ods_es.jpg`
+  from the app's static folder) under the same headings; vertical spacing trimmed and QR 2.4→2.0 cm to stay on one page.
+  Checked by rendering.
