@@ -97,10 +97,8 @@ d.line(box(430, FY + 25, 430, FY + 130), fill=LINE, width=2)
 heading(727, FY + 25, "COLABORAN", 260)
 for i, f in enumerate(["Logo_Bio.png", "logo_agroin.png", "logo_ingagrocola.png"]):
     logo(LOGOS / f, 537 + i * 125, FY + 88, 68, 110)
-# Física: logo not available yet
-d.rounded_rectangle(box(870, FY + 60, 970, FY + 116), radius=8 * K, fill=(232, 238, 234))
-write(920, FY + 67, "Departamento", 11, BOLD, VERDE_OSC)
-write(920, FY + 84, "de Física", 15, BOLD, VERDE_OSC)
+# Física: LIFI logo sent by AC 2026-09-30 (was a text box "Departamento de Física")
+logo(LOGOS / "logo_fisica_lifi_transparente.png", 920, FY + 88, 68, 110)
 
 im.save(HERE / "Afiche_SICVEC_2026.png", optimize=True)
 DPI = 260  # 2048 px / 260 dpi = 20 cm wide

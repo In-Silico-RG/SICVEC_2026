@@ -677,3 +677,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (message already sent), docs/01_easychair_plan.md and docs/02_google_forms_plan.md and the Google Forms spec/.gs
   (superseded, not in use). Poster (Afiche) carries no deadline. The live site still shows 4 Oct until the new zip is
   deployed.
+- AC, 2026-09-30: physics logo (LIFI, pasted image 1024x1024, grey #f7f7f7 background) to replace the "Departamento de
+  Física" text box. Saved `01_Propuesta/Logos/logo_fisica_lifi.png` (cropped to the circle, background to white, 866x868)
+  and `logo_fisica_lifi_transparente.png`. Site footer: `static/logo_fisica.jpg` (240 px) instead of the text box
+  (alt "Física, Universidad de Sucre"; the `f_fisica` string has HTML, not usable as alt). Poster: `editar_afiche.py` places
+  the logo at the old box position; regenerated PNG/PDF, only the footer changed (diff box checked); old files in
+  `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-30_pre_logo_fisica/`. Meaning of "LIFI" not recorded. New test; 43 pass.

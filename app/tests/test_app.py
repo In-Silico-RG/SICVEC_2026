@@ -360,3 +360,9 @@ def test_calendar_2026_09_30(app):
     assert f"{cfg['SUBMISSION_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-10 23:59"
     assert f"{cfg['REVIEW_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-14 23:59"
     assert f"{cfg['PAYMENT_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-18 23:59"
+
+
+def test_footer_physics_logo(client):
+    body = client.get("/").get_data(as_text=True)
+    assert "/static/logo_fisica.jpg" in body and "pie-texto-logo" not in body
+    assert client.get("/static/logo_fisica.jpg").status_code == 200
