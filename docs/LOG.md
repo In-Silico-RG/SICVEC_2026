@@ -624,3 +624,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   nanocellulose, bacterial cellulose, PHA/PHB, packaging), green-chemistry materials for water (dyes, textile wastewater,
   ammonium, emulsions) and her 2026 circular-economy papers; closes with the mapping to five of the six axes (our mapping).
   Metrics kept in a final paragraph. Every paper cited in FICHA_MCombariza.md (Scholar PDF). 39 tests pass.
+- Commit 3855b45 (08:50); zip `dist/SICVEC_app_2026-09-30f.zip` (supersedes 30e).
