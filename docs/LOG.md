@@ -586,3 +586,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   no word limit; site link). Not sent from here: the Gmail connector is logged in as fisicoquimicabiounisucre@gmail.com,
   while his thread is in aldo.combariza@unisucre.edu.co. AC sends it. Speaker record updated. 37 tests pass.
 - Commit 2b5c7af (08:11); zip `dist/SICVEC_app_2026-09-30.zip` for redeploy (programme change).
+- AC, 2026-09-30: "eso ya lo envió" (the abstract). Letter: next step "Send us a short abstract" removed, closing line now
+  lists the abstract as received; recompiled, one page, checked with pdftotext. Reply text: request replaced by a thank-you.
+  Earlier record said "no abstract": the pasted emails show only title and bio (the first is cut at "[Message clipped]").
+  The abstract text is not in our files; asked AC to paste it for the speakers page.

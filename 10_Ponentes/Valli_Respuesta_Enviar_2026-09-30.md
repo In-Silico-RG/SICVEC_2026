@@ -11,9 +11,9 @@ Thank you for the correction and for your quick reply. Tuesday 20 October at 9:0
 
 Please find attached the formal invitation letter.
 
-When convenient, could you send us a short abstract of your talk for the programme? Ahead of the event we will send you the connection link and the technical instructions, and we will arrange a short connection test a few days before.
+Ahead of the event we will send you the connection link and the technical instructions, and we will arrange a short connection test a few days before.
 
-Your affiliation, title, bio and photo are already on the symposium website: https://sicvec2026.eu.pythonanywhere.com/conferencistas?lang=en
+Thank you also for the abstract. Your affiliation, title, bio and photo are already on the symposium website: https://sicvec2026.eu.pythonanywhere.com/conferencistas?lang=en
 
 Thank you again for joining us.
 
