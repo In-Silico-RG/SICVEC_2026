@@ -760,3 +760,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   SILICO; APOYAN = Biología, Ing. Agroindustrial, Ing. Agrícola, Física; UNISUCRE logo on its own row below, centred,
   with a top rule (`.pie-base`). Labels: es "Organiza"/"Apoyan", en "Organised by"/"Supported by", pt
   "Organização"/"Apoio". Checked in the browser on a local run. 45 tests pass. Poster and flyer footers not changed yet.
+- Commit 47fd898 (16:53); zip `dist/SICVEC_app_2026-09-30o.zip` (supersedes 30n).
