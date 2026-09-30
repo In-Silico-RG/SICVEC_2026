@@ -323,3 +323,9 @@ def test_home_figures_exist_in_every_language(client):
         assert srcs == [f"/static/fig_ejes_{lang}.jpg", f"/static/fig_ods_{lang}.jpg"]
         for s in srcs:
             assert client.get(s).status_code == 200
+
+
+def test_valli_first_on_speakers_page(client):
+    for lang in ("es", "en", "pt"):
+        body = client.get(f"/conferencistas?lang={lang}").get_data(as_text=True)
+        assert body.index("Enrico Valli") < body.index("Beatriz Escobar Morales")

@@ -70,9 +70,29 @@ PUBLICO = [
     "Tomadores de decisión del sector público y organizaciones de la sociedad civil.",
 ]
 
-# Talk title and abstract: verbatim from her files (10_Ponentes). Bio: her own sentences, abridged (paragraphs 1-2 verbatim,
-# paragraph 3 = two sentences from the rest of her bio).
+# Order on the speakers page: Valli first (AC, 2026-09-30).
 SPEAKERS = [{
+    # Enrico Valli: accepted by email, 2026-09-29 (aldo.combariza@). Affiliation, title and bio verbatim from that email
+    # (bio in English, his words). Photo: attachment of that email (10_Ponentes/Foto Valli.jpg). Abstract pending.
+    "name": "Prof. Enrico Valli",
+    "role": "Conferencista magistral",
+    "affiliation": "Department of Agricultural and Food Sciences and Interdepartmental Centre for Industrial Agrofood "
+                   "Research, Alma Mater Studiorum – Università di Bologna, Italia",
+    "photo": "speaker_valli.jpg",
+    "talk": "Valorization of by-products from olive oil production as a source of bioactive compounds",
+    "format": "Virtual",
+    "bio": [
+        "Associate professor in the Department of Agricultural and Food Sciences at the University of Bologna since 2022, "
+        "performing research in the field of instrumental and sensory analysis of foods and sustainable food technologies. "
+        "Main interests lie in the analytical methods for assessing the quality and authenticity of olive oil and the "
+        "technological valorization of agri-food by-products. He has been involved - and is currently part - of research "
+        "teams in several national and EU research projects. He is the delegate for orientation for the DISTAL bachelor's "
+        "and master's degree courses held in Cesena.",
+    ],
+    "abstract": [],
+}, {
+    # Talk title and abstract: verbatim from her files (10_Ponentes). Bio: her own sentences, abridged (paragraphs 1-2 verbatim,
+    # paragraph 3 = two sentences from the rest of her bio).
     "name": "Dra. Beatriz Escobar Morales",
     "role": "Conferencista magistral",
     "affiliation": "Investigadora por México–SECIHTI, Unidad de Energía Renovable, Centro de Investigación Científica de "
@@ -190,25 +210,6 @@ SPEAKERS = [{
     "talk": None,
     "format": None,
     "bio": [],
-    "abstract": [],
-}, {
-    # Enrico Valli: accepted by email, 2026-09-29 (aldo.combariza@). Affiliation, title and bio verbatim from that email
-    # (bio in English, his words). Photo: attachment of that email (10_Ponentes/Foto Valli.jpg). Abstract pending.
-    "name": "Prof. Enrico Valli",
-    "role": "Conferencista magistral",
-    "affiliation": "Department of Agricultural and Food Sciences and Interdepartmental Centre for Industrial Agrofood "
-                   "Research, Alma Mater Studiorum – Università di Bologna, Italia",
-    "photo": "speaker_valli.jpg",
-    "talk": "Valorization of by-products from olive oil production as a source of bioactive compounds",
-    "format": "Virtual",
-    "bio": [
-        "Associate professor in the Department of Agricultural and Food Sciences at the University of Bologna since 2022, "
-        "performing research in the field of instrumental and sensory analysis of foods and sustainable food technologies. "
-        "Main interests lie in the analytical methods for assessing the quality and authenticity of olive oil and the "
-        "technological valorization of agri-food by-products. He has been involved - and is currently part - of research "
-        "teams in several national and EU research projects. He is the delegate for orientation for the DISTAL bachelor's "
-        "and master's degree courses held in Cesena.",
-    ],
     "abstract": [],
 }]
 

@@ -593,3 +593,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Reversed (AC, 2026-09-30: "nope, the abstract is not in, sorry!"): he has not sent the abstract. fd2736d undone by
   restoring the letter (.tex/.pdf), reply text and speaker record from 2b5c7af: the letter and reply ask for a short
   abstract again; record says abstract [PENDIENTE].
+- AC, 2026-09-30: "move enrico valli to first place in our speakers page". `content.py`: his entry moved to the top of
+  SPEAKERS (es/en/pt share the list); order now Valli, Escobar, Castro, Combariza, Renon Eller. New test: Valli before
+  Escobar on /conferencistas in the three languages. 38 pass.
