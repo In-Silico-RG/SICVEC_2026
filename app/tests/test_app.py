@@ -339,3 +339,9 @@ def test_valli_slot_shown_others_tbc(client):
     assert "to be confirmed (19 or 20 October)" in body[body.index("Beatriz Escobar Morales"):]
     assert "Martes 20 de octubre, 9:00–10:00" in client.get("/conferencistas?lang=es").get_data(as_text=True)
     assert "Terça-feira, 20 de outubro, 9:00–10:00" in client.get("/conferencistas?lang=pt").get_data(as_text=True)
+
+
+def test_combariza_photo(client):
+    body = client.get("/conferencistas").get_data(as_text=True)
+    assert "/static/speaker_combariza.jpg" in body
+    assert client.get("/static/speaker_combariza.jpg").status_code == 200

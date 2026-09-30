@@ -633,3 +633,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   del CEIAM, Escuela de Química, UIS"), which settles the open question. CV dates differ from ORCID (PhD 2004 vs 2003;
   UMass MSc 2003 vs 2000; professor 2007 vs 1998): bio follows the CV, noted in the FICHA. 39 tests pass.
 - Commit e9fb3c9 (08:52); zip `dist/SICVEC_app_2026-09-30g.zip` (supersedes 30f).
+- AC, 2026-09-30: photo for Marianny Combariza, `10_Ponentes/Foto_Combariza_2.png` (245x242, RGBA; AC wrote
+  "foto_combariza_2.png"). Flattened on white, cropped square: `static/speaker_combariza.jpg` (242x242; the page shows
+  160 px circles, so no upscaling). Linked in `content.py`; new test; 40 pass. `Foto_Combariza.jpeg` (08:57) not used.

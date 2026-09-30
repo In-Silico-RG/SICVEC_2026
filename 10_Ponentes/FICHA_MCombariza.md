@@ -8,7 +8,8 @@
 | Format | Virtual (as offered) | invitation email of 18 Sept |
 | Suggested topic in the invitation | Nanomateriales sostenibles, química verde o valorización de biomasa | invitation email |
 | Talk title | [PENDIENTE] | |
-| Abstract, photo | [PENDIENTE] — to request | |
+| Abstract | [PENDIENTE] — to request | |
+| Photo | `Foto_Combariza_2.png` (245x242; AC, 2026-09-30, "actualiza con esa foto"); web copy `app/sicvec/static/speaker_combariza.jpg` (242x242). `Foto_Combariza.jpeg` also in the folder, not used | AC |
 | Bio | Written by us from the public sources below (AC, 2026-09-30: "hagamos una semblanza... revisemos fuentes"); on the site; not yet seen by her | see below |
 | Slot | [PENDIENTE] | |
 | IDs | ORCID 0000-0002-6907-4759; Scopus 6603069339 | her signature |

@@ -200,7 +200,7 @@ SPEAKERS = [{
     "affiliation": "Profesora de Química e Investigadora Sénior; directora del Centro de Estudios e Investigaciones "
                    "Ambientales (CEIAM), Escuela de Química, Universidad Industrial de Santander (UIS), Bucaramanga, "
                    "Colombia",
-    "photo": None,
+    "photo": "speaker_combariza.jpg",  # 10_Ponentes/Foto_Combariza_2.png (AC, 2026-09-30); 242x242, shown at 160 px
     "talk": None,
     "format": "Virtual",
     # Bio written by us from her CV (10_Ponentes/cvCombariza.pdf, 2025, given by AC 2026-09-30) plus public sources;
