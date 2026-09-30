@@ -590,3 +590,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   lists the abstract as received; recompiled, one page, checked with pdftotext. Reply text: request replaced by a thank-you.
   Earlier record said "no abstract": the pasted emails show only title and bio (the first is cut at "[Message clipped]").
   The abstract text is not in our files; asked AC to paste it for the speakers page.
+- Reversed (AC, 2026-09-30: "nope, the abstract is not in, sorry!"): he has not sent the abstract. fd2736d undone by
+  restoring the letter (.tex/.pdf), reply text and speaker record from 2b5c7af: the letter and reply ask for a short
+  abstract again; record says abstract [PENDIENTE].
