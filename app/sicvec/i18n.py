@@ -128,15 +128,15 @@ T = {
                    "Sala: auditório do Centro Comercial Guacarí."),
     # programme
     "prog_title": ("Programa", "Programme", "Programação"),
-    "prog_notice": ("<strong>Programa preliminar.</strong> Estructura propuesta por el comité organizador; el orden de "
-                    "presentaciones y las franjas de conferencistas se publicarán tras la evaluación de resúmenes "
-                    "(decisiones el 15 de octubre) y pueden cambiar. Horario de Colombia (UTC−5). Modalidad híbrida.",
-                    "<strong>Preliminary programme.</strong> Structure proposed by the organising committee; the order of "
-                    "talks and the speakers' slots will be published after abstract review (decisions on 15 October) and "
-                    "may change. Colombia time (UTC−5). Hybrid format.",
-                    "<strong>Programação preliminar.</strong> Estrutura proposta pela comissão organizadora; a ordem das "
-                    "apresentações e os horários dos palestrantes serão publicados após a avaliação dos resumos (decisões "
-                    "em 15 de outubro) e podem mudar. Horário da Colômbia (UTC−5). Formato híbrido."),
+    "prog_notice": ("<strong>Programa preliminar.</strong> Los horarios de las conferencias magistrales están "
+                    "confirmados; las ponencias por asignar se definirán tras la evaluación de resúmenes (decisiones el 15 de "
+                    "octubre) y el programa puede cambiar. Horario de Colombia (UTC−5). Modalidad híbrida.",
+                    "<strong>Preliminary programme.</strong> Keynote times are confirmed; the talk slots still to be assigned "
+                    "will be filled after abstract review (decisions on 15 October), and the programme may change. Colombia "
+                    "time (UTC−5). Hybrid format.",
+                    "<strong>Programação preliminar.</strong> Os horários das conferências magistrais estão confirmados; as "
+                    "apresentações a definir serão preenchidas após a avaliação dos resumos (decisões em 15 de outubro) e a "
+                    "programação pode mudar. Horário da Colômbia (UTC−5). Formato híbrido."),
     # speakers
     "sp_title": ("Conferencistas", "Speakers", "Palestrantes"),
     "sp_talk": ("Conferencia:", "Talk:", "Palestra:"),

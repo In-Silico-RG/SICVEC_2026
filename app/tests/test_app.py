@@ -331,12 +331,15 @@ def test_valli_first_on_speakers_page(client):
         assert body.index("Enrico Valli") < body.index("Beatriz Escobar Morales")
 
 
-def test_valli_slot_shown_others_tbc(client):
+def test_keynote_slots_shown(client):
+    # AC, 2026-09-30: programme sheet gives every keynote its slot; no "to be confirmed" line left.
     body = client.get("/conferencistas?lang=en").get_data(as_text=True)
     valli = body[body.index("Enrico Valli"):body.index("Beatriz Escobar Morales")]
     assert "Tuesday 20 October, 9:00–10:00" in valli
-    assert "to be confirmed (19 or 20 October)" not in valli
-    assert "to be confirmed (19 or 20 October)" in body[body.index("Beatriz Escobar Morales"):]
+    for slot in ("Monday 19 October, 8:30–9:30", "Monday 19 October, 14:00–15:00", "Tuesday 20 October, 11:20–12:20",
+                 "Tuesday 20 October, 15:35–16:35"):
+        assert slot in body
+    assert "to be confirmed (19 or 20 October)" not in body
     assert "Martes 20 de octubre, 9:00–10:00" in client.get("/conferencistas?lang=es").get_data(as_text=True)
     assert "Terça-feira, 20 de outubro, 9:00–10:00" in client.get("/conferencistas?lang=pt").get_data(as_text=True)
 
@@ -366,3 +369,12 @@ def test_footer_physics_logo(client):
     body = client.get("/").get_data(as_text=True)
     assert "/static/logo_fisica.jpg" in body and "pie-texto-logo" not in body
     assert client.get("/static/logo_fisica.jpg").status_code == 200
+
+
+
+def test_programme_from_sheet(client):
+    es = client.get("/programa?lang=es").get_data(as_text=True)
+    assert "07:45–08:15" in es and "Conferencia magistral 5" in es and "Esp. Carlos Meza Bertel" in es
+    assert "16:35–17:00" in es and "Eje 1" not in es
+    en = client.get("/programa?lang=en").get_data(as_text=True)
+    assert "Keynote lecture 4 · Dra. Monique Renon Eller" in en and "Talk 12 (to be assigned)" in en

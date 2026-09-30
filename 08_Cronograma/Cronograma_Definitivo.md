@@ -56,10 +56,11 @@
 
 | Fecha | Hora | Actividad | Responsable |
 |---|---|---|---|
-| **19 oct** | 8:00 AM | Llegada de equipos y personal | SV |
-| **19 oct** | 8:30-09:00 | Bienvenida e inauguración | AC |
-| **19-20 oct** | Todo el día | Conferencias magistrales, ponencias, paneles, posters | Todos |
-| **20 oct** | 5:00 PM | Clausura y agradecimientos | AC |
+| **19 oct** | [PENDIENTE] | Llegada de equipos y personal (estaba 8:00 AM, después de la apertura del registro a las 7:45; SV decide) | SV |
+| **19 oct** | 7:45-08:15 | Inscripción y registro de participantes | SV |
+| **19 oct** | 8:15-08:30 | Acto de apertura e instalación | AC |
+| **19-20 oct** | Todo el día | Conferencias magistrales, ponencias, pósteres (programa: `app/sicvec/content.py` / hoja "Programacion SICVEC") | Todos |
+| **20 oct** | 4:35-5:00 PM | Clausura: reconocimiento a mejores pósteres y cierre | AC |
 | **20 oct** | 5:30 PM | Desmontaje y cierre | SV |
 
 ---

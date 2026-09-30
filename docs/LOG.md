@@ -684,3 +684,24 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   the logo at the old box position; regenerated PNG/PDF; outside the footer only the "Sincelejo, Sucre" line differs, by text anti-aliasing (script ran in a scratch venv with another Pillow; no visible change, checked by eye); old files in
   `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-30_pre_logo_fisica/`. Meaning of "LIFI" not recorded. New test; 43 pass.
 - Commit 077daa9 (13:45); zip `dist/SICVEC_app_2026-09-30l.zip` (supersedes 30k).
+- AC, 2026-09-30: `08_Cronograma/Programacion SICVEC - Copia de Hoja 1 (1).pdf` (Google Sheets export, 2 p.): full
+  programme. Day 1: registration 07:45, opening 08:15, keynote 1 Escobar 08:30–09:30, talks 1–6 (5 = Gobernación de
+  Sucre), lunch 12:20–14:00, keynote 2 Castro 14:00–15:00, talk 7 Dr. Pedro Meza Catellar (U. San Buenaventura,
+  Cartagena), talk 8, posters + networking 16:10–17:30. Day 2: registration 08:00, talk 9 Esp. Carlos Meza Bertel
+  (Guacarí) 08:30–09:00, keynote 3 Valli 09:00–10:00, talk 10 Dra. Laura Hil Pastor (UNISUCRE), talk 11 Est. Mg.
+  Guillermo Alejandro Corrales (U. Santo Tomás, Bogotá; title on methane in anaerobic co-digestion), sponsor slot
+  11:15–11:20, keynote 4 Renon Eller 11:20–12:20, talks 12–14, keynote 5 Combariza 15:35–16:35, closing 16:35–17:00.
+  The axis blocks, the round table and the Monday "08:00 inauguración" are gone.
+- Site: `content.PROGRAMA` replaced in es/en/pt from the sheet (empty talk slots "por asignar"); keynote titles as the
+  speakers sent them (Escobar's reads "sargazo holopelágico", the sheet shortens it); spelling fixed from the sheet
+  (Mérida, México, Montañez→ site name "Marianny Y. Combariza", "Magritsral", "14-25", Santo Tomás, codigestión
+  anaeróbica, estiércol). Programme notice: keynote times confirmed; talks filled after review (decisions 15 Oct).
+  Speakers page: `when` for Escobar, Castro, Renon Eller, Combariza (all five keynotes now dated). Tests rewritten/added; 44 pass.
+- Proposal: day tables replaced by a condensed version of the sheet (talks grouped per block), 14 pages as before, old
+  PDF in `Versiones/2026-09-30_pre_programa_hoja/`. Cronograma_Definitivo day-of rows (registration 7:45, opening 8:15,
+  closing 16:35–17:00); equipment arrival (was 8:00, now after registration opens) set to [PENDIENTE] for SV.
+- Carlos: name from the sheet, Esp. Carlos Meza Bertel; letter now "Esp. Carlos Meza Bertel", "Estimado señor Meza",
+  slot "Martes 20 de octubre, 08:30–09:00"; recompiled, 1 page; reply-by date still [PENDIENTE]. Letter says 20 min, the
+  slot is 30. FICHA updated.
+- To check with AC: "Catellar" (Castellar?) and "Hil" (Gil?) kept as written in the sheet; Renon Eller and Combariza talk
+  titles still missing.

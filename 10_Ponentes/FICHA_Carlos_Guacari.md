@@ -1,13 +1,14 @@
-# Speaker record — Carlos [PENDIENTE: apellidos] (invited talk, 20 min)
+# Speaker record — Esp. Carlos Meza Bertel (invited talk, 20 min)
 
 | Field | Value | Source |
 |---|---|---|
-| Name | Carlos [PENDIENTE: apellidos] | AC, 2026-09-29 (chat) |
+| Name | Esp. Carlos Meza Bertel | organizers' programme sheet (`08_Cronograma/Programacion SICVEC - Copia de Hoja 1 (1).pdf`), AC 2026-09-30 |
 | Position | Director ambiental y de servicios generales, Parque Comercial Guacarí (since Jan 2018), Sincelejo, Sucre, Colombia | profile text pasted by AC, 2026-09-29 |
 | Talk | 20 min, axis 1: Economía Circular | AC, 2026-09-29 ("irá como ponente de 20 min en economía circular") |
 | Format | presumably in person (the venue is C.C. Guacarí) — [PENDIENTE: confirm] | |
 | Title, abstract, short bio, photo | [PENDIENTE] | |
 | Email / phone | [PENDIENTE] | |
-| Slot | [PENDIENTE] (programme: Monday 19 Oct, 09:00–10:30, talks axis 1) | content.PROGRAMA |
+| Slot | Ponencia 9, Tuesday 20 Oct, 08:30–09:00 (30-min slot; letter still says 20 min of talk) | programme sheet, AC 2026-09-30 |
 
-Not yet on the site: needs his full name.
+On the site's programme since 2026-09-30 (not on the speakers page, which lists keynotes). Letter updated with his name
+and slot; reply-by date still [PENDIENTE].

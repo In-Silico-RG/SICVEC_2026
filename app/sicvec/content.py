@@ -36,28 +36,43 @@ ODS = [
     ("17", "Alianzas para lograr los objetivos", "Colaboración académica, transferencia de tecnología, redes entre instituciones."),
 ]
 
-# Preliminary structure from the formal proposal (section 6.4). The final programme is not decided yet.
+# Programme from the organizers' sheet (08_Cronograma/Programacion SICVEC - Copia de Hoja 1 (1).pdf, AC 2026-09-30).
+# Talk titles of the keynotes as sent by the speakers; empty talk slots are filled after peer review.
 PROGRAMA = [
-    ("Lunes 19 de octubre", [
-        ("08:00–09:00", "Inauguración oficial + conferencia magistral"),
-        ("09:00–10:30", "Ponencias · Eje 1: Economía Circular"),
-        ("10:30–10:45", "Receso (café)"),
-        ("10:45–12:15", "Ponencias · Eje 2: Química Verde y Procesos Sostenibles"),
-        ("12:15–13:45", "Almuerzo"),
-        ("13:45–15:15", "Ponencias · Eje 3: Biotecnología Sostenible"),
-        ("15:15–15:30", "Receso (café)"),
-        ("15:30–17:00", "Ponencias · Eje 4: Tecnologías Verdes y Energías Renovables"),
-        ("17:00–18:00", "Pósteres + networking (Expo verde)"),
+    ('Lunes 19 de octubre', [
+        ('07:45–08:15', 'Inscripción y registro de participantes'),
+        ('08:15–08:30', 'Acto de apertura e instalación del SICVEC 2026'),
+        ('08:30–09:30', 'Conferencia magistral 1 · Dra. Beatriz Escobar Morales, Centro de Investigación Científica de Yucatán (CICY), Mérida, México · «Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados»'),
+        ('09:30–09:55', 'Ponencia 1 (por asignar)'),
+        ('09:55–10:20', 'Ponencia 2 (por asignar)'),
+        ('10:20–10:40', 'Receso (café)'),
+        ('10:40–11:05', 'Ponencia 3 (por asignar)'),
+        ('11:05–11:30', 'Ponencia 4 (por asignar)'),
+        ('11:30–11:55', 'Ponencia 5 · Gobernación de Sucre, Sincelejo, Colombia'),
+        ('11:55–12:20', 'Ponencia 6 (por asignar)'),
+        ('12:20–14:00', 'Almuerzo libre'),
+        ('14:00–15:00', 'Conferencia magistral 2 · Dr. Wilson Manuel Castro Silupu, Universidad Nacional de Frontera, Perú · «Medicinal plant discrimination: A study of deep learning techniques and a novel approach for data augmentation»'),
+        ('15:00–15:25', 'Ponencia 7 · Dr. Pedro Meza Catellar, Universidad de San Buenaventura, Cartagena de Indias, Colombia'),
+        ('15:25–15:50', 'Ponencia 8 (por asignar)'),
+        ('15:50–16:10', 'Receso (café)'),
+        ('16:10–17:30', 'Sesión de pósteres + networking'),
     ]),
-    ("Martes 20 de octubre", [
-        ("09:00–10:00", "Conferencia magistral 2"),
-        ("10:00–11:30", "Ponencias · Eje 5: Sostenibilidad en Cadenas de Suministro"),
-        ("11:30–11:45", "Receso (café)"),
-        ("11:45–13:15", "Ponencias · Eje 6: Política Pública y Gobernanza Ambiental"),
-        ("13:15–14:15", "Almuerzo"),
-        ("14:15–15:45", "Ponencias (continuación) + sesión de preguntas"),
-        ("15:45–16:45", "Mesa redonda: lecciones y desafíos"),
-        ("16:45–17:15", "Clausura, reconocimientos y networking final"),
+    ('Martes 20 de octubre', [
+        ('08:00–08:30', 'Inscripción y registro de participantes'),
+        ('08:30–09:00', 'Ponencia 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+        ('09:00–10:00', 'Conferencia magistral 3 · Prof. Enrico Valli, Università di Bologna, Bolonia, Italia · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
+        ('10:00–10:25', 'Ponencia 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
+        ('10:25–10:50', 'Receso (café)'),
+        ('10:50–11:15', 'Ponencia 11 · Est. Mg. Guillermo Alejandro Corrales, Universidad Santo Tomás, Bogotá, Colombia · «Efecto de la producción de metano durante la codigestión anaeróbica de estiércol de bovino, residuos de maíz y lenteja de agua (Lemna sp.)»'),
+        ('11:15–11:20', 'Espacio publicitario'),
+        ('11:20–12:20', 'Conferencia magistral 4 · Dra. Monique Renon Eller, Universidade Federal de Viçosa, Viçosa, Brasil'),
+        ('12:20–14:00', 'Almuerzo libre'),
+        ('14:00–14:25', 'Ponencia 12 (por asignar)'),
+        ('14:25–14:50', 'Ponencia 13 (por asignar)'),
+        ('14:50–15:15', 'Ponencia 14 (por asignar)'),
+        ('15:15–15:35', 'Receso (café)'),
+        ('15:35–16:35', 'Conferencia magistral 5 · Dra. Marianny Y. Combariza, Universidad Industrial de Santander, Bucaramanga, Colombia'),
+        ('16:35–17:00', 'Acto de clausura: reconocimiento a los mejores pósteres y cierre del evento'),
     ]),
 ]
 
@@ -104,6 +119,10 @@ SPEAKERS = [{
     "photo": "speaker_escobar.jpg",
     "talk": "Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados",
     "format": "Virtual",
+    # Slot: organizers' programme sheet, AC 2026-09-30.
+    "when": {"es": "Lunes 19 de octubre, 8:30–9:30 (hora de Colombia, UTC−5)",
+             "en": "Monday 19 October, 8:30–9:30 (Colombia time, UTC−5)",
+             "pt": "Segunda-feira, 19 de outubro, 8:30–9:30 (horário da Colômbia, UTC−5)"},
     "bio": [
         "Investigadora por México–SECIHTI, adscrita a la Unidad de Energía Renovable del Centro de Investigación Científica "
         "de Yucatán (CICY). Es Doctora y Maestra en Energía por el Instituto de Energías Renovables de la Universidad "
@@ -156,6 +175,10 @@ SPEAKERS = [{
     "photo": "speaker_castro.jpg",
     "talk": "Medicinal plant discrimination: A study of deep learning techniques and a novel approach for data augmentation",
     "format": "Virtual",
+    # Slot: organizers' programme sheet, AC 2026-09-30.
+    "when": {"es": "Lunes 19 de octubre, 14:00–15:00 (hora de Colombia, UTC−5)",
+             "en": "Monday 19 October, 14:00–15:00 (Colombia time, UTC−5)",
+             "pt": "Segunda-feira, 19 de outubro, 14:00–15:00 (horário da Colômbia, UTC−5)"},
     "bio": [
         "El Dr. Wilson Manuel Castro Silupu es Profesor Principal y Docente Investigador en la Universidad Nacional de "
         "Frontera, Investigador Distinguido reconocido por el CONCYTEC y miembro senior del IEEE, distinción que consolida su "
@@ -203,6 +226,10 @@ SPEAKERS = [{
     "photo": "speaker_combariza.jpg",  # 10_Ponentes/Foto_Combariza_2.png (AC, 2026-09-30); 242x242, shown at 160 px
     "talk": None,
     "format": "Virtual",
+    # Slot: organizers' programme sheet, AC 2026-09-30.
+    "when": {"es": "Martes 20 de octubre, 15:35–16:35 (hora de Colombia, UTC−5)",
+             "en": "Tuesday 20 October, 15:35–16:35 (Colombia time, UTC−5)",
+             "pt": "Terça-feira, 20 de outubro, 15:35–16:35 (horário da Colômbia, UTC−5)"},
     # Bio written by us from her CV (10_Ponentes/cvCombariza.pdf, 2025, given by AC 2026-09-30) plus public sources;
     # sources in 10_Ponentes/FICHA_MCombariza.md. Not yet seen by her.
     "bio": [
@@ -248,6 +275,10 @@ SPEAKERS = [{
     "photo": "speaker_renon.jpg",  # 10_Ponentes/Foto_Monique_Renon.png (AC, 2026-09-30), cropped square without UFV logo
     "talk": None,
     "format": None,
+    # Slot: organizers' programme sheet, AC 2026-09-30.
+    "when": {"es": "Martes 20 de octubre, 11:20–12:20 (hora de Colombia, UTC−5)",
+             "en": "Tuesday 20 October, 11:20–12:20 (Colombia time, UTC−5)",
+             "pt": "Terça-feira, 20 de outubro, 11:20–12:20 (horário da Colômbia, UTC−5)"},
     # Bio written by us from her UFV faculty profile and her Lattes CV as mirrored by Escavador (10_Ponentes/Monique Renon
     # Eller _ Escavador.pdf, data of 2024-07-28), AC 2026-09-30; sources in 10_Ponentes/FICHA_RenonEller.md. Not yet seen by her.
     "bio": [
@@ -330,26 +361,40 @@ _EN = {
         ("17", "Partnerships for the goals", "Academic collaboration, technology transfer, inter-institutional networks."),
     ],
     "PROGRAMA": [
-        ("Monday 19 October", [
-            ("08:00–09:00", "Official opening + keynote lecture"),
-            ("09:00–10:30", "Talks · Axis 1: Circular Economy"),
-            ("10:30–10:45", "Coffee break"),
-            ("10:45–12:15", "Talks · Axis 2: Green Chemistry and Sustainable Processes"),
-            ("12:15–13:45", "Lunch"),
-            ("13:45–15:15", "Talks · Axis 3: Sustainable Biotechnology"),
-            ("15:15–15:30", "Coffee break"),
-            ("15:30–17:00", "Talks · Axis 4: Green Technologies and Renewable Energy"),
-            ("17:00–18:00", "Posters + networking (Green Expo)"),
+        ('Monday 19 October', [
+            ('07:45–08:15', 'Registration and check-in'),
+            ('08:15–08:30', 'Opening ceremony of SICVEC 2026'),
+            ('08:30–09:30', 'Keynote lecture 1 · Dra. Beatriz Escobar Morales, Centro de Investigación Científica de Yucatán (CICY), Mérida, Mexico · «Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados»'),
+            ('09:30–09:55', 'Talk 1 (to be assigned)'),
+            ('09:55–10:20', 'Talk 2 (to be assigned)'),
+            ('10:20–10:40', 'Coffee break'),
+            ('10:40–11:05', 'Talk 3 (to be assigned)'),
+            ('11:05–11:30', 'Talk 4 (to be assigned)'),
+            ('11:30–11:55', 'Talk 5 · Gobernación de Sucre, Sincelejo, Colombia'),
+            ('11:55–12:20', 'Talk 6 (to be assigned)'),
+            ('12:20–14:00', 'Lunch (on your own)'),
+            ('14:00–15:00', 'Keynote lecture 2 · Dr. Wilson Manuel Castro Silupu, Universidad Nacional de Frontera, Peru · «Medicinal plant discrimination: A study of deep learning techniques and a novel approach for data augmentation»'),
+            ('15:00–15:25', 'Talk 7 · Dr. Pedro Meza Catellar, Universidad de San Buenaventura, Cartagena de Indias, Colombia'),
+            ('15:25–15:50', 'Talk 8 (to be assigned)'),
+            ('15:50–16:10', 'Coffee break'),
+            ('16:10–17:30', 'Poster session + networking'),
         ]),
-        ("Tuesday 20 October", [
-            ("09:00–10:00", "Keynote lecture 2"),
-            ("10:00–11:30", "Talks · Axis 5: Sustainability in Supply Chains"),
-            ("11:30–11:45", "Coffee break"),
-            ("11:45–13:15", "Talks · Axis 6: Public Policy and Environmental Governance"),
-            ("13:15–14:15", "Lunch"),
-            ("14:15–15:45", "Talks (continued) + questions"),
-            ("15:45–16:45", "Round table: lessons and challenges"),
-            ("16:45–17:15", "Closing, awards and final networking"),
+        ('Tuesday 20 October', [
+            ('08:00–08:30', 'Registration and check-in'),
+            ('08:30–09:00', 'Talk 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+            ('09:00–10:00', 'Keynote lecture 3 · Prof. Enrico Valli, Università di Bologna, Bologna, Italy · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
+            ('10:00–10:25', 'Talk 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
+            ('10:25–10:50', 'Coffee break'),
+            ('10:50–11:15', 'Talk 11 · Est. Mg. Guillermo Alejandro Corrales, Universidad Santo Tomás, Bogotá, Colombia · «Efecto de la producción de metano durante la codigestión anaeróbica de estiércol de bovino, residuos de maíz y lenteja de agua (Lemna sp.)»'),
+            ('11:15–11:20', 'Sponsor slot'),
+            ('11:20–12:20', 'Keynote lecture 4 · Dra. Monique Renon Eller, Universidade Federal de Viçosa, Viçosa, Brazil'),
+            ('12:20–14:00', 'Lunch (on your own)'),
+            ('14:00–14:25', 'Talk 12 (to be assigned)'),
+            ('14:25–14:50', 'Talk 13 (to be assigned)'),
+            ('14:50–15:15', 'Talk 14 (to be assigned)'),
+            ('15:15–15:35', 'Coffee break'),
+            ('15:35–16:35', 'Keynote lecture 5 · Dra. Marianny Y. Combariza, Universidad Industrial de Santander, Bucaramanga, Colombia'),
+            ('16:35–17:00', 'Closing ceremony: best poster awards and close of the symposium'),
         ]),
     ],
     "PUBLICO": [
@@ -398,26 +443,40 @@ _PT = {
         ("17", "Parcerias e meios de implementação", "Colaboração acadêmica, transferência de tecnologia, redes interinstitucionais."),
     ],
     "PROGRAMA": [
-        ("Segunda-feira, 19 de outubro", [
-            ("08:00–09:00", "Abertura oficial + conferência magistral"),
-            ("09:00–10:30", "Apresentações · Eixo 1: Economia Circular"),
-            ("10:30–10:45", "Intervalo (café)"),
-            ("10:45–12:15", "Apresentações · Eixo 2: Química Verde e Processos Sustentáveis"),
-            ("12:15–13:45", "Almoço"),
-            ("13:45–15:15", "Apresentações · Eixo 3: Biotecnologia Sustentável"),
-            ("15:15–15:30", "Intervalo (café)"),
-            ("15:30–17:00", "Apresentações · Eixo 4: Tecnologias Verdes e Energias Renováveis"),
-            ("17:00–18:00", "Pôsteres + networking (Expo verde)"),
+        ('Segunda-feira, 19 de outubro', [
+            ('07:45–08:15', 'Inscrição e credenciamento dos participantes'),
+            ('08:15–08:30', 'Cerimônia de abertura do SICVEC 2026'),
+            ('08:30–09:30', 'Conferência magistral 1 · Dra. Beatriz Escobar Morales, Centro de Investigación Científica de Yucatán (CICY), Mérida, México · «Transformación sostenible del sargazo holopelágico en materiales funcionales avanzados»'),
+            ('09:30–09:55', 'Apresentação 1 (a definir)'),
+            ('09:55–10:20', 'Apresentação 2 (a definir)'),
+            ('10:20–10:40', 'Intervalo (café)'),
+            ('10:40–11:05', 'Apresentação 3 (a definir)'),
+            ('11:05–11:30', 'Apresentação 4 (a definir)'),
+            ('11:30–11:55', 'Apresentação 5 · Gobernación de Sucre, Sincelejo, Colombia'),
+            ('11:55–12:20', 'Apresentação 6 (a definir)'),
+            ('12:20–14:00', 'Almoço livre'),
+            ('14:00–15:00', 'Conferência magistral 2 · Dr. Wilson Manuel Castro Silupu, Universidad Nacional de Frontera, Peru · «Medicinal plant discrimination: A study of deep learning techniques and a novel approach for data augmentation»'),
+            ('15:00–15:25', 'Apresentação 7 · Dr. Pedro Meza Catellar, Universidad de San Buenaventura, Cartagena de Indias, Colombia'),
+            ('15:25–15:50', 'Apresentação 8 (a definir)'),
+            ('15:50–16:10', 'Intervalo (café)'),
+            ('16:10–17:30', 'Sessão de pôsteres + networking'),
         ]),
-        ("Terça-feira, 20 de outubro", [
-            ("09:00–10:00", "Conferência magistral 2"),
-            ("10:00–11:30", "Apresentações · Eixo 5: Sustentabilidade em Cadeias de Suprimentos"),
-            ("11:30–11:45", "Intervalo (café)"),
-            ("11:45–13:15", "Apresentações · Eixo 6: Políticas Públicas e Governança Ambiental"),
-            ("13:15–14:15", "Almoço"),
-            ("14:15–15:45", "Apresentações (continuação) + perguntas"),
-            ("15:45–16:45", "Mesa-redonda: lições e desafios"),
-            ("16:45–17:15", "Encerramento, reconhecimentos e networking final"),
+        ('Terça-feira, 20 de outubro', [
+            ('08:00–08:30', 'Inscrição e credenciamento dos participantes'),
+            ('08:30–09:00', 'Apresentação 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+            ('09:00–10:00', 'Conferência magistral 3 · Prof. Enrico Valli, Università di Bologna, Bolonha, Itália · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
+            ('10:00–10:25', 'Apresentação 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
+            ('10:25–10:50', 'Intervalo (café)'),
+            ('10:50–11:15', 'Apresentação 11 · Est. Mg. Guillermo Alejandro Corrales, Universidad Santo Tomás, Bogotá, Colombia · «Efecto de la producción de metano durante la codigestión anaeróbica de estiércol de bovino, residuos de maíz y lenteja de agua (Lemna sp.)»'),
+            ('11:15–11:20', 'Espaço publicitário'),
+            ('11:20–12:20', 'Conferência magistral 4 · Dra. Monique Renon Eller, Universidade Federal de Viçosa, Viçosa, Brasil'),
+            ('12:20–14:00', 'Almoço livre'),
+            ('14:00–14:25', 'Apresentação 12 (a definir)'),
+            ('14:25–14:50', 'Apresentação 13 (a definir)'),
+            ('14:50–15:15', 'Apresentação 14 (a definir)'),
+            ('15:15–15:35', 'Intervalo (café)'),
+            ('15:35–16:35', 'Conferência magistral 5 · Dra. Marianny Y. Combariza, Universidad Industrial de Santander, Bucaramanga, Colombia'),
+            ('16:35–17:00', 'Cerimônia de encerramento: reconhecimento aos melhores pôsteres e encerramento do evento'),
         ]),
     ],
     "PUBLICO": [
