@@ -345,3 +345,10 @@ def test_combariza_photo(client):
     body = client.get("/conferencistas").get_data(as_text=True)
     assert "/static/speaker_combariza.jpg" in body
     assert client.get("/static/speaker_combariza.jpg").status_code == 200
+
+
+def test_renon_photo_and_bio(client):
+    body = client.get("/conferencistas").get_data(as_text=True)
+    assert "/static/speaker_renon.jpg" in body
+    assert "bioeconomía circular" in body
+    assert client.get("/static/speaker_renon.jpg").status_code == 200

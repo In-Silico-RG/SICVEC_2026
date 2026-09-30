@@ -243,11 +243,40 @@ SPEAKERS = [{
     # format, title, bio, abstract and photo pending.
     "name": "Dra. Monique Renon Eller",
     "role": "Conferencista magistral",
-    "affiliation": "Universidade Federal de Viçosa (UFV), Brasil",
-    "photo": None,
+    "affiliation": "Profesora asociada, Departamento de Tecnología de Alimentos, Universidade Federal de Viçosa (UFV), "
+                   "Brasil",
+    "photo": "speaker_renon.jpg",  # 10_Ponentes/Foto_Monique_Renon.png (AC, 2026-09-30), cropped square without UFV logo
     "talk": None,
     "format": None,
-    "bio": [],
+    # Bio written by us from her UFV faculty profile and her Lattes CV as mirrored by Escavador (10_Ponentes/Monique Renon
+    # Eller _ Escavador.pdf, data of 2024-07-28), AC 2026-09-30; sources in 10_Ponentes/FICHA_RenonEller.md. Not yet seen by her.
+    "bio": [
+        "Profesora asociada del Departamento de Tecnología de Alimentos de la Universidade Federal de Viçosa (UFV), "
+        "Brasil, donde enseña desde 2013, y orientadora en su Programa de Posgrado en Ciencia y Tecnología de Alimentos. "
+        "Bioquímica (2008), magíster (2010) y doctora (2013) en Microbiología Agrícola por la UFV. Es investigadora DT-2 "
+        "del Consejo Nacional de Desarrollo Científico y Tecnológico (CNPq) en Biotecnología y Microbiología Industrial.",
+        "Estudia los bioprocesos desde la perspectiva de la bioeconomía circular y la sostenibilidad: usa levaduras, "
+        "bacterias, hongos y sus enzimas para convertir subproductos agroindustriales en productos de valor. Integra la "
+        "red Soja+ (Fapemig), que impulsa la economía circular en la cadena de procesamiento de la soja en Minas Gerais "
+        "transformando la cáscara y la melaza, subproductos abundantes y hoy poco aprovechados, en bioetanol y otros "
+        "productos de interés comercial, y la red INCT Leveduras (CNPq), dedicada a conocer, conservar y usar de forma "
+        "sostenible las levaduras de la biodiversidad brasileña. Con su grupo ha producido bioetanol a partir de yuca "
+        "industrial, hongos comestibles enriquecidos con selenio cultivados sobre subproductos agroindustriales y vinagre "
+        "a partir del agua de fermentación del café, y estudia la producción de biosurfactantes por levaduras a partir de "
+        "subproductos industriales. Desarrolla además sistemas colorimétricos para detectar microorganismos y "
+        "contaminantes en los alimentos. Su trabajo dialoga así con los ejes de Biotecnología Sostenible, Economía "
+        "Circular y Sostenibilidad en Cadenas de Suministro de SICVEC 2026.",
+        "Lidera el grupo de investigación «Productos y Procesos Biotecnológicos en la Industria de Alimentos», coordina "
+        "el Laboratorio de Procesos Bioquímicos y Fermentativos y el Laboratorio de Fermentación de la UFV, y creó el "
+        "Centro de Referencia en Bioprocesos de la UFV, un programa para impulsar el desarrollo tecnológico y la "
+        "innovación en Minas Gerais. Trabaja en alianza con empresas del sector agropecuario y de la industria de "
+        "alimentos. Ha dirigido 5 tesis de doctorado y 9 de maestría, ha codirigido 13 de doctorado y 11 de maestría, y "
+        "ha orientado 85 trabajos de iniciación científica y de grado. Es autora de una treintena de artículos en revistas "
+        "como Food & Function, Waste and Biomass Valorization, Archives of Virology, Coffee Science e Industrial "
+        "Biotechnology. Obtuvo el primer lugar del Programa Avança Café (Embrapa Café y parques tecnológicos de Viçosa y "
+        "Lavras, 2023) y del Desafío de Investigación, Innovación y Negocios del Parque Tecnológico de Viçosa (2018), y "
+        "el premio al mejor trabajo oral en biotecnología del XXII Simposio Nacional de Bioprocesos de Brasil (2019).",
+    ],
     "abstract": [],
 }]
 

@@ -637,3 +637,12 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   "foto_combariza_2.png"). Flattened on white, cropped square: `static/speaker_combariza.jpg` (242x242; the page shows
   160 px circles, so no upscaling). Linked in `content.py`; new test; 40 pass. `Foto_Combariza.jpeg` (08:57) not used.
 - Commit 6ad8d0a (09:00); zip `dist/SICVEC_app_2026-09-30h.zip` (supersedes 30g).
+- AC, 2026-09-30: photo and profile for Monique Renon Eller. Photo `10_Ponentes/Foto_Monique_Renon.png` (601x444, UFV logo
+  at the bottom) -> `static/speaker_renon.jpg` (280x280 face crop, logo out). Profile: UFV faculty page
+  (posmicrobiologiaagricola.ufv.br/en/faculty/, pasted by AC) and her Lattes via Escavador (AC's link and saved PDF
+  `10_Ponentes/Monique Renon Eller _ Escavador.pdf`, data of 2024-07-28; lattes.cnpq.br itself returned an empty page to
+  our scraper). Affiliation now "Profesora asociada, Departamento de Tecnología de Alimentos, UFV, Brasil". Spanish bio in
+  three paragraphs tied to the axes: circular bioeconomy, Soja+ network (soy hulls and molasses -> bioethanol),
+  INCT Leveduras, by-product bioprocesses (cassava bioethanol, selenium mushrooms on by-products, coffee vinegar,
+  biosurfactants), supervision counts, ~30 articles, three awards. Every fact sourced in FICHA_RenonEller.md. Found:
+  our Academic Coordinator María Ximena Díaz did her MSc (2017, UFV) under her. New test; 41 pass.
