@@ -10,13 +10,13 @@
 | Address | P.zza Goidanich, 60 - 47521 Cesena (FC), Italy | his signature |
 | Format | Online, 45 min (+ Q&A), English | his email; 22 Sept message |
 | Talk title | Valorization of by-products from olive oil production as a source of bioactive compounds | his email |
-| Requested slot | Tuesday 20 **October** 2026, 09:00 Colombia (16:00 Italy). He wrote "20 February": read as October (see reply file); to confirm | his email |
+| Slot | **Tuesday 20 October 2026, 09:00–10:00 Colombia (16:00 Italy)**, confirmed. He corrected "20 February" to "20 October" (email 2026-09-30); 10:00 COT was his latest option; AC chose 09:00 (2026-09-30) | `Valli_Respuesta_2026-09-30.md` |
 | Bio | Received, English, verbatim in `app/sicvec/content.py` | his email |
 | Abstract | [PENDIENTE] — not sent | |
 | Photo | `Foto Valli.jpg` (1930x1721, attachment); web copy `app/sicvec/static/speaker_valli.jpg` (640x640, square crop) | his email |
 | Email / phone | enrico.valli4@unibo.it / mobile +39 338 111 2823, +39 340 813 5573; office +39 0547 338116 / 338121 | his signature |
 
-Axes: 1 (Economía Circular), 2 (Química Verde y Procesos Sostenibles). Programme (preliminary) has "Conferencia magistral
-2" on Tuesday 08:30–09:30; his 09:00 start needs the Tuesday block moved by 30 min. Next: send the formal invitation
-letter (`07_Comunicaciones/Cartas_Departamentos/Invitacion_Conferencista_Enrico_Valli.pdf`) confirming 20 Oct 09:00
-COT; ask for a short abstract; technical details (platform [PENDIENTE]).
+Axes: 1 (Economía Circular), 2 (Química Verde y Procesos Sostenibles). Programme: Tuesday morning moved 30 min for him
+(keynote 09:00–10:00; lunch shortened to 13:15–14:15 so the afternoon is unchanged), 2026-09-30. Reply with the letter
+(dated 30 Sept, date marked confirmed) to be sent by AC from aldo.combariza@ (2026-09-30). Pending: short abstract;
+connection details (platform [PENDIENTE]).

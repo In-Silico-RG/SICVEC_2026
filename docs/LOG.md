@@ -570,3 +570,18 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `index.html` loads `fig_ejes_<lang>` and `fig_ods_<lang>` for es/en/pt (the EN/PT text cards are gone) and builds the alt
   text in the page language. New test: every language's home page links both figures and they return 200. 37 pass. EN axes, EN SDG and PT SDG figures from the lost session checked by eye: text correct (PT SDG titles are the UN Portuguese names).
 - Commit f3f3087 (16:33); zip `dist/SICVEC_app_2026-09-29d.zip` for redeploy.
+
+## 2026-09-30
+
+- AC pasted Enrico Valli's second email (30 Sept 03:29): "I meant to write 20 October"; he can also start at 10:00 COT,
+  not later. Verbatim in `10_Ponentes/Valli_Respuesta_2026-09-30.md`. AC, 2026-09-30: **9:00 COT** (his first choice;
+  options offered: 9:00, 10:00, let him pick).
+- Tuesday programme moved for it (site es/en/pt in `content.py`, and the proposal): keynote 2 09:00–10:00, Axis 5
+  10:00–11:30, break 11:30–11:45, Axis 6 11:45–13:15, lunch 13:15–14:15 (90 → 60 min so the afternoon and closing are
+  unchanged; AC to say if lunch should keep 90 min and the afternoon shift instead). Proposal recompiled (14 pages, as
+  before; old PDF in `Versiones/2026-09-30_pre_valli_9am/`), checked with pdftotext.
+- Valli letter: dated 30 Sept; next step 1 now says the date is confirmed instead of asking him to confirm. One page,
+  checked with pdftotext; old PDF in the same Versiones folder.
+- Reply drafted in `10_Ponentes/Valli_Respuesta_Enviar_2026-09-30.md` (English; letter attached; asks for a short abstract,
+  no word limit; site link). Not sent from here: the Gmail connector is logged in as fisicoquimicabiounisucre@gmail.com,
+  while his thread is in aldo.combariza@unisucre.edu.co. AC sends it. Speaker record updated. 37 tests pass.
