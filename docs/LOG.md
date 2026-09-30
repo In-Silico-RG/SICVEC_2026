@@ -618,3 +618,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   of women with most patents granted (Comunicaciones UIS, 12 May 2023); Editorial Advisory Board, Energy & Fuels (ACS
   page). ACS lecture dropped. Not found: projects and theses supervised (her CvLAC not reachable, UIS repository search
   empty) -> asked AC. 39 tests pass.
+- Commit f4ac5d5 (08:45); zip `dist/SICVEC_app_2026-09-30e.zip` (supersedes 30d).
