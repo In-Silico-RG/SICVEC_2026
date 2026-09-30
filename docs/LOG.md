@@ -653,3 +653,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   originals, white rectangle over the title between the cards (x 485-895 es/en; pt title painted out the same way) and
   crop 12 px above the card tops (es/en from y=75, 1376x693; pt from y=93, 1376x675). Checked by eye: borders whole, no
   title remnant (the first es pass left "Ej": the auto-detected card edge was wrong). SDG figures were never cropped. 41 pass.
+- Commit ac561c5 (11:54); zip `dist/SICVEC_app_2026-09-30j.zip` (supersedes 30i).
