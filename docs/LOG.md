@@ -755,3 +755,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   the site lacked only the Guacarí logo: home "Lugar" section now shows `static/logo_guacari.png` (228x240, transparent,
   96 px high) beside name and address (`.sede` in style.css). New test; 45 pass.
 - Commit 7c5348c (16:48); zip `dist/SICVEC_app_2026-09-30n.zip` (supersedes 30m; everything since 30i).
+- AC, 2026-09-30 (screenshot of the footer): "Organiza In-Silico, apoyan los dptos; la U de Sucre debe ir abajo de los
+  logos, centrada, con una línea de separación (el máximo común divisor)". Site footer (`base.html`): ORGANIZA = IN
+  SILICO; APOYAN = Biología, Ing. Agroindustrial, Ing. Agrícola, Física; UNISUCRE logo on its own row below, centred,
+  with a top rule (`.pie-base`). Labels: es "Organiza"/"Apoyan", en "Organised by"/"Supported by", pt
+  "Organização"/"Apoio". Checked in the browser on a local run. 45 tests pass. Poster and flyer footers not changed yet.
