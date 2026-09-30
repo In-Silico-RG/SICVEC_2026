@@ -117,14 +117,10 @@ d = ImageDraw.Draw(im)
 
 # 2. Venue (AC, 2026-09-28): "Lugar: CC Guacarí, Sincelejo ..." in the map block; the online (PDF) version links to Maps.
 MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Centro+Comercial+Guacar%C3%AD+Sincelejo+Sucre"  # same as the app
-# AC, 2026-09-30: the Guacarí logo where it said "C.C. Guacarí" (official logo, parquecomercialguacari.com,
-# 01_Propuesta/Logos/logo_guacari.png); "Sincelejo, Sucre" is already in the block to the left.
-erase(480, 1172, 582, 1262)
-write(483, 1176, "Lugar:", 16, BOLD, VERDE_OSC, "la")
-gl = Image.open(LOGOS / "logo_guacari.png").convert("RGBA")
-gl = gl.crop(gl.getbbox())
-gl = gl.resize((round(gl.width * 64 * K / gl.height), 64 * K), Image.LANCZOS)
-im.paste(gl, (483 * K, 1197 * K), gl)
+erase(480, 1190, 580, 1250)
+write(483, 1187, "Lugar:", 17, BOLD, VERDE_OSC, "la")
+write(483, 1209, "C.C. Guacarí", 15.5, BOLD, TINTA, "la")
+write(483, 1230, "Sincelejo, Sucre", 13, REG, TINTA, "la")
 LINK_BOXES = [(120, 1180, 580, 1260)]  # pin + map blocks, base-image pixels
 
 # 3. QR code (AC, 2026-09-30: "only one QR needed now, pointing to the web page"). Left box: QR to the home page,

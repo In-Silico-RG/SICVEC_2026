@@ -739,3 +739,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (400 px high, rounded frame, headings "EJES TEMÁTICOS" and "ODS 12 · 13 · 15 · 17"); QR row moved down 120 px (PDF link
   boxes shifted with it). Venue row, wave and footer unchanged. At print size (20 cm wide) the small keyword text inside
   the figures is ~1 mm: the axis names read, the keywords barely. Old files in `Flyers_Posters/Versiones/2026-09-30_pre_ejes_ods/`.
+- AC, 2026-09-30: "colocar el logo del CC Guacarí en el afiche/flyer, en Lugar del evento, ahí donde dice CC Guacarí".
+  Official logo downloaded from parquecomercialguacari.com (`sitio/wp-content/uploads/2023/06/Logo-Guacari-400.png`,
+  400x437 RGBA) → `01_Propuesta/Logos/logo_guacari.png`. Poster (`editar_afiche.py` step 2): "Lugar:" kept, the logo
+  (64 px base, cropped to its bbox) replaces "C.C. Guacarí / Sincelejo, Sucre" (the city is in the block to the left).
+  A4 flyer: logo (1.3 cm) beside "Centro Comercial Guacarí / Sincelejo, Sucre, Colombia" under UBICACIÓN; still one page.
+  Old files in `Flyers_Posters/Versiones/2026-09-30_pre_logo_guacari/`.
