@@ -197,37 +197,45 @@ SPEAKERS = [{
     # invitation letter (AC). Title, bio, abstract and photo: pending; the page shows "por confirmar".
     "name": "Dra. Marianny Y. Combariza",
     "role": "Conferencista magistral",
-    "affiliation": "Investigadora, Centro de Estudios e Investigaciones Ambientales (CEIAM), Universidad Industrial de "
-                   "Santander (UIS), Bucaramanga, Colombia",
+    "affiliation": "Profesora de Química e Investigadora Sénior; directora del Centro de Estudios e Investigaciones "
+                   "Ambientales (CEIAM), Escuela de Química, Universidad Industrial de Santander (UIS), Bucaramanga, "
+                   "Colombia",
     "photo": None,
     "talk": None,
     "format": "Virtual",
-    # Bio written by us from public sources (not sent by her), AC 2026-09-30; sources in 10_Ponentes/FICHA_MCombariza.md.
+    # Bio written by us from her CV (10_Ponentes/cvCombariza.pdf, 2025, given by AC 2026-09-30) plus public sources;
+    # sources in 10_Ponentes/FICHA_MCombariza.md. Not yet seen by her.
     "bio": [
-        "Profesora titular de la Escuela de Química de la Universidad Industrial de Santander (UIS) desde 1998 y "
-        "directora del Centro de Estudios e Investigaciones Ambientales (CEIAM). Química y magíster en Química de la UIS, "
-        "doctora en Química de la University of Massachusetts Amherst (2003), donde también fue investigadora "
-        "posdoctoral.",
-        "Su trabajo parte de una idea central para este simposio: Colombia, como país agrícola tropical, genera enormes "
-        "cantidades de biomasa residual que pueden convertirse en energía, combustibles y materiales. Su grupo "
-        "transforma los subproductos del desfibrado del fique, los residuos del fruto del cacao (cáscara, mucílago y "
-        "exudados) y los racimos vacíos de la palma de aceite en nanocelulosa, celulosa bacteriana, bioplásticos (PHA y "
-        "PHB) y biocompuestos para empaques; ha cuantificado el balance de masa del fruto de cacao para orientar su "
-        "aprovechamiento integral. Con rutas de química verde, como la síntesis de nanopartículas usando las propias "
-        "fibras naturales como plantilla, desarrolla materiales celulósicos que degradan colorantes, depuran aguas "
-        "residuales textiles, recuperan amonio de aguas residuales y rompen emulsiones de agua en crudo pesado. Sus "
-        "trabajos recientes evalúan el reciclaje de agua en la producción textil y tecnologías de recuperación de "
-        "nutrientes para llevar la economía circular a asentamientos informales. Su obra toca así la economía circular, "
-        "la química verde, la biotecnología, las tecnologías para el agua y las cadenas agroindustriales, cinco de los "
-        "seis ejes de SICVEC 2026.",
-        "Es también referente en espectrometría de masas de alta resolución aplicada a mezclas complejas como el "
-        "petróleo. Ha publicado más de 85 artículos en revistas como Green Chemistry, Analytical Chemistry, ACS Applied "
-        "Materials & Interfaces, Chemical Communications, Carbohydrate Polymers, Cellulose, Energy & Fuels y Fuel, con "
-        "más de 2.400 citas (índice h 30). Es coinventora de patentes sobre nanocelulosa funcionalizada y materiales "
-        "para remover contaminantes del agua, y figuró en el ranking de mujeres con más patentes concedidas en Colombia "
-        "en 2022 (Superintendencia de Industria y Comercio). Es miembro del Editorial Advisory Board de Energy & Fuels "
-        "(American Chemical Society) y recibió el Premio Eloy Valenzuela 2025-2026 de la UIS en la modalidad Trayectoria "
-        "Investigativa, el máximo reconocimiento de esa universidad a la investigación.",
+        "Profesora de Química e Investigadora Sénior (Ministerio de Ciencia, Tecnología e Innovación) de la Escuela de "
+        "Química de la Universidad Industrial de Santander (UIS), y directora del Centro de Estudios e Investigaciones "
+        "Ambientales (CEIAM) desde 2007. Química (1994) y magíster en Química Analítica (1996) de la UIS; magíster (2003) "
+        "y doctora en Química (2004) de la University of Massachusetts Amherst.",
+        "Su trabajo integra la química analítica avanzada, la ciencia de materiales y los principios de la bioeconomía "
+        "circular para entender, mitigar y transformar problemas ambientales, con un compromiso explícito: aumentar la "
+        "circularidad de los materiales en los sectores agroindustrial y tecnológico de Colombia. Aplica la "
+        "nanotecnología a la biomasa: aísla, caracteriza y modifica la celulosa, la lignina y la hemicelulosa de "
+        "residuos lignocelulósicos del cacao, el fique y la palma de aceite para crear materiales funcionales, como "
+        "aditivos que rompen o estabilizan emulsiones, nanocompuestos que remueven contaminantes recalcitrantes del "
+        "agua y materiales que capturan y liberan nutrientes de aguas residuales. Lidera además la valorización "
+        "biotecnológica de residuos agroindustriales ricos en azúcares (cacao, café, glicerol del biodiésel) para "
+        "producir biopolímeros como polihidroxialcanoatos (PHA) y celulosa bacteriana, con el fin de reducir la "
+        "dependencia de los polímeros sintéticos. Su obra toca así cinco de los seis ejes de SICVEC 2026: economía "
+        "circular, química verde, biotecnología, tecnologías para el agua y cadenas agroindustriales.",
+        "Ha dirigido 23 tesis de doctorado y maestría defendidas, sobre nanocelulosa de fique, materiales a partir de "
+        "biomasa residual de palma, producción de PHB con glicerol residual del biodiésel y celulosa bacteriana a partir "
+        "de efluentes de la fermentación del café, entre otros temas. Ha obtenido más de 3 millones de dólares en "
+        "financiación del Sistema General de Regalías, del Ministerio de Ciencia, Tecnología e Innovación y de agencias "
+        "internacionales para explorar nuevos usos de los materiales lignocelulósicos residuales de Colombia. Es "
+        "coinventora de patentes sobre nanocelulosa para inhibir y romper emulsiones, celulosa bacteriana modificada y "
+        "materiales para remover contaminantes del agua, y figuró en el ranking de mujeres con más patentes concedidas "
+        "en Colombia en 2022 (Superintendencia de Industria y Comercio).",
+        "Ha publicado más de 85 artículos en revistas como Green Chemistry, Analytical Chemistry, ACS Applied Materials "
+        "& Interfaces, Chemical Communications, Carbohydrate Polymers, Cellulose, Energy & Fuels y Fuel, con más de 2.400 "
+        "citas (índice h 30). Ha sido conferencista plenaria en las ACS Science Talks (2024), el Programa de Plásticos "
+        "Circulares en las Américas (2023) y la Conferencia Internacional de Palma de Aceite (2022). Es miembro del "
+        "Editorial Advisory Board de Energy & Fuels (American Chemical Society) y recibió el Premio Eloy Valenzuela "
+        "2025-2026 de la UIS en la modalidad Trayectoria Investigativa, el máximo reconocimiento de esa universidad a la "
+        "investigación.",
     ],
     "abstract": [],
 }, {

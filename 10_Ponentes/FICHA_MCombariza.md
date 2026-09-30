@@ -2,7 +2,7 @@
 
 | Field | Value | Source |
 |---|---|---|
-| Affiliation | Investigadora, Centro de Estudios e Investigaciones Ambientales (CEIAM), Universidad Industrial de Santander (UIS), Bucaramanga | our invitation letter (AC); her signature gives only UIS |
+| Affiliation | Profesora de Química e Investigadora Sénior; directora del CEIAM, Escuela de Química, UIS, Bucaramanga (site since 2026-09-30) | her CV 2025 header: "Professor of Chemistry, Senior Researcher / Director of the Center for Environmental Research / School of Chemistry, UIS"; before: our invitation letter (AC) |
 | Status | **Accepted** (email to insilico@, 2026-09-21 16:25 UTC: "Muchas gracias por la invitación que acepto gustosamente.") | insilico@ mailbox |
 | Email | marianny@uis.edu.co (the address marianny.combariza@unisucre.edu.co does not exist; first send bounced 18 Sept) | bounce + her reply |
 | Format | Virtual (as offered) | invitation email of 18 Sept |
@@ -62,3 +62,28 @@ economy. New facts and their sources (all in the Scholar PDF unless noted):
   economy in informal settlements (J. Water Process Eng. 92, 2026).
 - "cinco de los seis ejes": our mapping (axes 1-5), not her claim.
 Dropped in v3: exact years of BSc/MSc and ICP post (kept in the table above), MALDI matrices detail.
+
+## Bio v4 (2026-09-30): from her CV
+
+AC: "mira la cvCombariza en ponentes". `10_Ponentes/cvCombariza.pdf` = "MARIANNY Y COMBARIZA Resume 2025", 5 pages,
+scanned (no text layer; read as images), created 2025-11-12. Her own document, so it takes precedence over ORCID.
+Facts taken from it:
+- Header: Professor of Chemistry, Senior Researcher; Director, Center for Environmental Research; phone +57 76 459919.
+- Senior Researcher (Colombian Ministry of Science and Technology) in Analytical Chemistry and Biopolymers.
+- Director of CEIAM 2007-present; professor/senior researcher UIS "2007 – present".
+- Education: BSc UIS 1994; MSc Analytical Chemistry UIS 1996; MSc Analytical Chemistry UMass 2003; PhD UMass 2004.
+  **Differs from ORCID** (MSc 2000, PhD 2003; professor since 1998). Bio follows the CV; "desde 1998" dropped.
+- Professional summary (circular bioeconomy, material circularity, agroindustrial and technological sectors, cacao/fique/
+  palm, emulsions, recalcitrant water contaminants, nutrient capture and release, PHA and biocellulose from sugar-rich
+  residues, less reliance on synthetic polymers): paragraph 2 of the bio is a Spanish rendering of it.
+- Residues also include coffee and glycerol (section 2); PHB from biodiesel glycerol; PHA from yeast-industry wastewater VFA.
+- Patents (section 3): NC2016/0005653 (oxidized or sulfonated nanocellulose, inhibit emulsions); NC2016/0002323
+  (nanofluid, amidated CNF, break water in heavy crude emulsions); NC2018/0014024 (modified bacterial cellulose with
+  triglycerides); NC2016/0006149 (degrade/remove contaminants from aqueous matrices); WO/2014/033642 A2, US 2015/0315048
+  (material for removing contaminants in liquid matrices).
+- Plenary lectures: ACS Science Talks June 2024; "Cacao Fruit's Metamorphosis: From Byproducts to Bioproducts",
+  Programa de Plásticos Circulares en las Américas (CPAP), Oct 2023; "Biomasa y bioeconomía ¿Dónde está la industria de
+  palma?", XX Conferencia Internacional de Palma de Aceite, Sept 2022; also Rio de Janeiro Nov 2022, Colombianas haciendo
+  Ciencia 2020, ACS Spring 2019 Orlando.
+- Mentorship: principal advisor of 23 defended PhD theses and/or master's dissertations (as of 2025); topics as in bio.
+- Funding: over USD 3.0 million (Colombian Royalty System, Minciencias, international agencies).

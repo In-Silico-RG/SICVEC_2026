@@ -625,3 +625,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   ammonium, emulsions) and her 2026 circular-economy papers; closes with the mapping to five of the six axes (our mapping).
   Metrics kept in a final paragraph. Every paper cited in FICHA_MCombariza.md (Scholar PDF). 39 tests pass.
 - Commit 3855b45 (08:50); zip `dist/SICVEC_app_2026-09-30f.zip` (supersedes 30e).
+- Bio v4 for Marianny Combariza from her CV (AC: "mira la cvCombariza en ponentes"; `10_Ponentes/cvCombariza.pdf`, her
+  "Resume 2025", scanned, read as images). Added: Senior Researcher (Minciencias); CEIAM director since 2007; 23 defended
+  PhD/MSc theses as principal advisor; > USD 3.0 M funding (SGR, Minciencias, international); patents from her own list;
+  plenary lectures (ACS 2024, CPAP circular plastics 2023, Palm Oil conference 2022); circular-bioeconomy framing from her
+  professional summary. Site affiliation changed to her CV title ("Profesora de Química e Investigadora Sénior; directora
+  del CEIAM, Escuela de Química, UIS"), which settles the open question. CV dates differ from ORCID (PhD 2004 vs 2003;
+  UMass MSc 2003 vs 2000; professor 2007 vs 1998): bio follows the CV, noted in the FICHA. 39 tests pass.
