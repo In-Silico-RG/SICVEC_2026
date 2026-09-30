@@ -771,3 +771,15 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-30 (screenshot, live): "make the UNISUCRE logo the same size as the others": `.pie-base img` 56→100 px
   (mobile 44→68), same as the organizer/support logos. 46 pass.
 - Commit db860a6 (18:25); zip `dist/SICVEC_app_2026-09-30q.zip` (supersedes 30p).
+- AC, 2026-09-30: "ok, the flyers/afiche in 3 languages" ("ok" also taken as yes to the question of giving the poster
+  footer the website's structure). Poster: `editar_afiche.py [es|en|pt]` → `Afiche_SICVEC_2026{,_EN,_PT}.png/.pdf`.
+  For en/pt the texts baked into the base image are painted over and rewritten (positions measured on the base with a
+  grid): subtitle, date ("19–20 / October", "19 e 20 / de outubro"), heading (KEYNOTE SPEAKERS / PALESTRANTES), the hybrid
+  block (en: IN PERSON + ONLINE / HYBRID; pt unchanged), "Contact:"/"Contato:", "(Colômbia)" (pt), country names in the
+  cards, "Dra."→"Dr." in English; script texts via a per-language table (QR box, call box, venue, axes/SDG headings,
+  Valli's line); figures fig_ejes_/fig_ods_{lang}. Footer in all three: ORGANIZA IN SILICO | APOYAN four departments, rule,
+  UNISUCRE centred below (labels per language). First en pass smeared "Contacto:" (sample edge fell inside the "C";
+  erase widened) and pt clipped "Sincelejo, Sucre" descenders (both lines rewritten). Checked by eye in all three.
+- Flyer: `Flyer_SICVEC_2026_EN.tex` and `_PT.tex`, translations of the Spanish flyer with the en/pt figures; one page
+  each. PT compiled with babel spanish: Portuguese babel (texlive-lang-portuguese) is not installed; affects hyphenation only.
+  Old poster files in `Flyers_Posters/Versiones/2026-09-30_pre_3_idiomas/`.

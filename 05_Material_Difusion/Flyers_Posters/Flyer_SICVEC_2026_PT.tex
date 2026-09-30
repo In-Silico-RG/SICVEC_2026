@@ -1,0 +1,227 @@
+% Portuguese version of Flyer_SICVEC_2026.tex (AC, 2026-09-30: flyer in 3 languages). Keep in step with the Spanish one.
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel} % no Portuguese babel installed (texlive-lang-portuguese); only affects hyphenation
+\usepackage[margin=0.8cm, top=0.8cm, bottom=0.8cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{{../../01_Propuesta/Logos/}{../../app/sicvec/static/}{./}}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+
+% Colores institucionales
+\definecolor{verdeosc}{RGB}{26,107,60}
+\definecolor{verdemid}{RGB}{46,139,87}
+\definecolor{verdelimpio}{RGB}{76,175,80}
+\definecolor{dorado}{RGB}{212,172,13}
+\definecolor{blanco}{RGB}{255,255,255}
+\definecolor{grisclaro}{RGB}{248,248,248}
+
+% Sin encabezados/pies
+\pagestyle{empty}
+
+\begin{document}
+
+% ─────────────────────────────────────────────────────────────────────
+% FLYER A5 (mitad de página A4) — imprimible en ambos lados
+% ─────────────────────────────────────────────────────────────────────
+
+\vspace{-1.5cm}
+
+\begin{tikzpicture}[remember picture, overlay]
+  % Fondo superior degradado (verde oscuro)
+  \fill[verdeosc] (current page.north west) rectangle (current page.north east);
+
+  % Fondo inferior (verde claro)
+  \fill[grisclaro] (current page.south west) rectangle (current page.south east);
+
+  % Borde dorado en costado derecho
+  \draw[line width=8pt, dorado] (current page.north east) -- (current page.south east);
+\end{tikzpicture}
+
+% ═════════════════════════════════════════════════════════════════════
+% ENCABEZADO CON LOGOS
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \vspace{0.3cm}
+
+  \begin{minipage}{0.20\textwidth}
+    \centering
+    \includegraphics[width=1.6cm]{logo_unisucre.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.25\textwidth}
+    \centering
+    \includegraphics[width=2.0cm]{logo_sicvec2026.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.20\textwidth}
+    \centering
+    \includegraphics[width=1.6cm]{Logo_insilico.jpeg}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.20\textwidth}
+    \centering
+    \includegraphics[width=1.6cm]{Logo_Bio.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.12\textwidth}
+    \centering
+    \includegraphics[width=1.6cm]{logo_fisica_lifi.png}
+  \end{minipage}
+
+  \vspace{0.2cm}
+\end{center}
+
+% ═════════════════════════════════════════════════════════════════════
+% TÍTULO PRINCIPAL
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdeosc}{\textbf{\Large Economia Circular para o Futuro}}
+
+  \vspace{0.2cm}
+
+  \textcolor{verdemid}{\small Processos Sustentáveis • Pesquisa Verde • ODS 2030}
+
+  \vspace{0.2cm}
+\end{center}
+
+% ═════════════════════════════════════════════════════════════════════
+% INFORMACIÓN CLAVE
+% ═════════════════════════════════════════════════════════════════════
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+  \textcolor{verdeosc}{\textbf{$\bullet$ DATAS}}
+
+  \vspace{0.15cm}
+
+  \textcolor{verdemid}{\textbf{19 e 20 de outubro de 2026}}
+
+  Segunda e terça-feira
+
+  \vspace{0.3cm}
+
+  \textcolor{verdeosc}{\textbf{* LOCAL}}
+
+  \vspace{0.15cm}
+
+  \begin{minipage}[c]{0.68\linewidth}
+  Centro Comercial Guacarí
+
+  Sincelejo, Sucre, Colômbia
+  \end{minipage}\hfill
+  \begin{minipage}[c]{0.28\linewidth}\raggedleft
+  \includegraphics[height=1.3cm]{logo_guacari.png}
+  \end{minipage}
+
+  \vspace{0.3cm}
+
+  \textcolor{verdeosc}{\textbf{+ FORMATO}}
+
+  \vspace{0.15cm}
+
+  Presencial + Híbrido
+
+  120--150 participantes presenciais
+
+  On-line: gratuito
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \textcolor{verdeosc}{\textbf{6 EIXOS TEMÁTICOS}}
+
+  \vspace{0.15cm}
+
+  \includegraphics[width=\linewidth]{fig_ejes_pt.jpg}
+
+  \vspace{0.2cm}
+
+  \textcolor{dorado}{\textbf{Alinhado aos ODS 12, 13, 15, 17}}
+
+  \vspace{0.15cm}
+
+  \includegraphics[width=\linewidth]{fig_ods_pt.jpg}
+\end{minipage}
+
+\vspace{0.12cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% CONVOCATORIA
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \begin{tikzpicture}
+    \node[draw=dorado, line width=2pt, inner sep=0.3cm, rounded corners=0.2cm, fill=blanco] {
+      \begin{minipage}{0.85\textwidth}
+        \centering
+        \textcolor{verdeosc}{\textbf{\large = CHAMADA ABERTA!}} \\
+        \vspace{0.1cm}
+        \small Envie seu resumo até \textcolor{dorado}{\textbf{10 de outubro de 2026}} \\
+        \vspace{0.08cm}
+        Apresente como \textbf{comunicação oral} ou \textbf{pôster}, ou participe como \textbf{avaliador}
+      \end{minipage}
+    };
+  \end{tikzpicture}
+\end{center}
+
+\vspace{0.12cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% PÚBLICO OBJETIVO
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdeosc}{\textbf{Quem convidamos?}}
+
+  \vspace{0.1cm}
+
+  {\small Estudantes • Docentes • Pesquisadores • Profissionais de Química, Física, Biologia, Matemática, Engenharias, Ciências Ambientais}
+\end{center}
+
+\vspace{0.12cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% CONTACTO Y ENLACES
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{verdemid}{\textbf{INFORMAÇÕES E CONTATO}}
+
+  \vspace{0.15cm}
+
+  \small
+  \textbf{Aldo F. Combariza} — Grupo de Pesquisa IN SILICO \\
+  → \href{mailto:aldo.combariza@unisucre.edu.co}{\textcolor{verdemid}{aldo.combariza@unisucre.edu.co}} \\
+
+  \vspace{0.1cm}
+
+  → \href{https://sicvec2026.eu.pythonanywhere.com}{\textcolor{verdemid}{sicvec2026.eu.pythonanywhere.com}} \\
+
+  \vspace{0.15cm}
+
+  \href{https://sicvec2026.eu.pythonanywhere.com}{\includegraphics[width=2.0cm]{qr_web.png}} \\
+
+  \vspace{0.15cm}
+
+  \textcolor{verdeosc}{\textbf{Universidad de Sucre}}
+
+  Grupo IN SILICO — Departamento de Biologia e Química — Faculdade de Educação e Ciências
+\end{center}
+
+\vspace{0.12cm}
+
+% ═════════════════════════════════════════════════════════════════════
+% PIE DE PÁGINA
+% ═════════════════════════════════════════════════════════════════════
+
+\begin{center}
+  \textcolor{dorado}{\textbf{* Processos Sustentáveis para o Futuro *}}
+\end{center}
+
+\end{document}
