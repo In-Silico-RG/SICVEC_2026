@@ -767,3 +767,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   processor), so each deploy forces a fresh CSS. AC also: "incrementemos los tamaños de los logos de organizador y apoyo":
   `.pie-fila img` 80→100 px (mobile 56→68), `.pie-base img` 56 px (mobile 44). Checked locally in Chrome: IN SILICO and
   departments 100 px high, UNISUCRE 106x56. New test; 46 pass.
+- Commit d4037b2 (16:57); zip `dist/SICVEC_app_2026-09-30p.zip` (supersedes 30o).
