@@ -596,3 +596,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-30: "move enrico valli to first place in our speakers page". `content.py`: his entry moved to the top of
   SPEAKERS (es/en/pt share the list); order now Valli, Escobar, Castro, Combariza, Renon Eller. New test: Valli before
   Escobar on /conferencistas in the three languages. 38 pass.
+- Commit e35959f (08:20); zip `dist/SICVEC_app_2026-09-30b.zip` for redeploy (programme change + Valli first; supersedes 2026-09-30.zip).
