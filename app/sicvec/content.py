@@ -204,24 +204,30 @@ SPEAKERS = [{
     "format": "Virtual",
     # Bio written by us from public sources (not sent by her), AC 2026-09-30; sources in 10_Ponentes/FICHA_MCombariza.md.
     "bio": [
-        "Química (1994) y magíster en Química (1996) de la Universidad Industrial de Santander (UIS); magíster (2000) y "
-        "doctora (2003) en Química de la University of Massachusetts Amherst, donde fue investigadora posdoctoral "
-        "(2005–2007). Fue investigadora del Instituto Colombiano del Petróleo (1996–1997). Es profesora titular de la "
-        "Escuela de Química de la UIS desde 1998 y directora del Centro de Estudios e Investigaciones Ambientales (CEIAM).",
-        "Su investigación integra la química analítica, la química de materiales y la nanotecnología: análisis por "
-        "espectrometría de masas de alta resolución de mezclas complejas (petróleo, asfaltenos y pigmentos naturales), "
-        "desarrollo de matrices MALDI de transferencia electrónica para el análisis de moléculas lábiles, y obtención, "
-        "caracterización y modificación de nanocelulosa y otros biopolímeros a partir de biomasa residual "
-        "lignocelulósica, con aplicaciones en energía, combustibles, empaques y recuperación mejorada de petróleo.",
-        "Es autora de más de 85 artículos científicos en revistas como Analytical Chemistry, ACS Applied Materials & "
-        "Interfaces, Green Chemistry, Chemical Communications, Carbohydrate Polymers, Energy & Fuels, Fuel, Cellulose y "
-        "Journal of Chromatography A, con más de 2.400 citas e índice h de 30. Es coinventora de patentes sobre "
-        "nanocelulosa funcionalizada para romper emulsiones de agua en crudo pesado, materiales fibrosos con "
-        "nanopartículas para remover contaminantes del agua y extracción selectiva para análisis MALDI-MS; figuró en el "
-        "ranking de mujeres con más patentes concedidas en Colombia en 2022 de la Superintendencia de Industria y "
-        "Comercio. Es miembro del Editorial Advisory Board de la revista Energy & Fuels (American Chemical Society).",
-        "Recibió el Premio Eloy Valenzuela 2025-2026 de la UIS en la modalidad Trayectoria Investigativa (Ciencias), el "
-        "máximo reconocimiento de esa universidad a la investigación.",
+        "Profesora titular de la Escuela de Química de la Universidad Industrial de Santander (UIS) desde 1998 y "
+        "directora del Centro de Estudios e Investigaciones Ambientales (CEIAM). Química y magíster en Química de la UIS, "
+        "doctora en Química de la University of Massachusetts Amherst (2003), donde también fue investigadora "
+        "posdoctoral.",
+        "Su trabajo parte de una idea central para este simposio: Colombia, como país agrícola tropical, genera enormes "
+        "cantidades de biomasa residual que pueden convertirse en energía, combustibles y materiales. Su grupo "
+        "transforma los subproductos del desfibrado del fique, los residuos del fruto del cacao (cáscara, mucílago y "
+        "exudados) y los racimos vacíos de la palma de aceite en nanocelulosa, celulosa bacteriana, bioplásticos (PHA y "
+        "PHB) y biocompuestos para empaques; ha cuantificado el balance de masa del fruto de cacao para orientar su "
+        "aprovechamiento integral. Con rutas de química verde, como la síntesis de nanopartículas usando las propias "
+        "fibras naturales como plantilla, desarrolla materiales celulósicos que degradan colorantes, depuran aguas "
+        "residuales textiles, recuperan amonio de aguas residuales y rompen emulsiones de agua en crudo pesado. Sus "
+        "trabajos recientes evalúan el reciclaje de agua en la producción textil y tecnologías de recuperación de "
+        "nutrientes para llevar la economía circular a asentamientos informales. Su obra toca así la economía circular, "
+        "la química verde, la biotecnología, las tecnologías para el agua y las cadenas agroindustriales, cinco de los "
+        "seis ejes de SICVEC 2026.",
+        "Es también referente en espectrometría de masas de alta resolución aplicada a mezclas complejas como el "
+        "petróleo. Ha publicado más de 85 artículos en revistas como Green Chemistry, Analytical Chemistry, ACS Applied "
+        "Materials & Interfaces, Chemical Communications, Carbohydrate Polymers, Cellulose, Energy & Fuels y Fuel, con "
+        "más de 2.400 citas (índice h 30). Es coinventora de patentes sobre nanocelulosa funcionalizada y materiales "
+        "para remover contaminantes del agua, y figuró en el ranking de mujeres con más patentes concedidas en Colombia "
+        "en 2022 (Superintendencia de Industria y Comercio). Es miembro del Editorial Advisory Board de Energy & Fuels "
+        "(American Chemical Society) y recibió el Premio Eloy Valenzuela 2025-2026 de la UIS en la modalidad Trayectoria "
+        "Investigativa, el máximo reconocimiento de esa universidad a la investigación.",
     ],
     "abstract": [],
 }, {

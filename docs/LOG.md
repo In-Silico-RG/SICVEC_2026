@@ -619,3 +619,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   page). ACS lecture dropped. Not found: projects and theses supervised (her CvLAC not reachable, UIS repository search
   empty) -> asked AC. 39 tests pass.
 - Commit f4ac5d5 (08:45); zip `dist/SICVEC_app_2026-09-30e.zip` (supersedes 30d).
+- Bio v3 for Marianny Combariza. AC: "terrible ... no puede relacionar su trabajo con la temática del evento". v2 was a
+  list of metrics with no link to the symposium. Rewritten around residual biomass valorization (fique, cacao, oil palm ->
+  nanocellulose, bacterial cellulose, PHA/PHB, packaging), green-chemistry materials for water (dyes, textile wastewater,
+  ammonium, emulsions) and her 2026 circular-economy papers; closes with the mapping to five of the six axes (our mapping).
+  Metrics kept in a final paragraph. Every paper cited in FICHA_MCombariza.md (Scholar PDF). 39 tests pass.

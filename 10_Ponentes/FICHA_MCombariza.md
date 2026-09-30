@@ -41,3 +41,24 @@ publicados, revistas de alto impacto"). Not found in reachable public sources: r
 for ChemComm 2023" (a Scholar entry with a long author list; her name in it not verified). Full name in UIS sources: Marianny Yajaira Combariza
 Montañez. Site affiliation still says "Investigadora, CEIAM" (from our letter); ORCID gives "Professor, Escuela de
 Química": AC to decide.
+
+## Bio v3 (2026-09-30): tied to the symposium themes
+
+AC: "no puede relacionar su trabajo con la temática del evento". Rewritten around biomass valorization and circular
+economy. New facts and their sources (all in the Scholar PDF unless noted):
+- Framing "Colombia, como país agrícola tropical ... biomasa residual ... energía, combustibles y materiales":
+  Comunicaciones UIS, 8 May 2024 (her ACS lecture description).
+- Fique decortication by-products -> cellulose nanofibrils (Carbohydrate Polymers 2018); fique fibers, tow, pulp
+  (Cellulose 2018); MnO2/fique biocomposite for dye degradation (Green Chemistry 2013); Au and Ag nanoparticles grown in
+  situ on fique fibers (Cellulose 2012; Rev. Colomb. Quím. 2013); nanofiber hydrogels from fique tow (2020).
+- Cacao: bacterial cellulose from residual cacao mucilage exudate sugars (2021); PHA from cacao fruit liquid residues
+  with native Bacillus megaterium (2024); biogenic nanocellulose and PHB from cacao fruit waste for PHBV films, barrier
+  performance (2025); mass balance of biomass outputs from cacao fruits (2022); cacao epicarp extracts (2023); cacao
+  mucilage syrup (IJFST 2023).
+- Palm oil empty fruit bunches -> nanofibers, TEMPO oxidation (RSC Advances 2023; 2023 paper).
+- Textile wastewater with green cellulose/Fe3O4 bionanocomposite (2023); ammonium catch and release with TEMPO-CNF beads
+  (2026); nanocellulose/amidated CNF against water-in-crude-oil emulsions (Fuel 2020; 2020).
+- Denim water recycling, environmental assessment (Water Resources and Industry, 2026); nutrient recovery for circular
+  economy in informal settlements (J. Water Process Eng. 92, 2026).
+- "cinco de los seis ejes": our mapping (axes 1-5), not her claim.
+Dropped in v3: exact years of BSc/MSc and ICP post (kept in the table above), MALDI matrices detail.
