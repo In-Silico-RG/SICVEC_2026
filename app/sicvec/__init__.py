@@ -59,10 +59,14 @@ def create_app(overrides=None):
                             secure=app.config.get("SESSION_COOKIE_SECURE", False))
         return resp
 
+    # Stylesheet version = its modification time, so browsers fetch the new CSS after each redeploy (AC, 2026-09-30:
+    # the footer showed the UNISUCRE logo at full size because a cached old style.css had no rule for it).
+    css_version = int(os.path.getmtime(os.path.join(app.static_folder, "style.css")))
+
     @app.context_processor
     def lang_context():
         lang = getattr(g, "lang", "es")
-        return dict(lang=lang, LANGS=i18n.LANGS, LANG_NAMES=i18n.LANG_NAMES, C=content.for_lang(lang),
+        return dict(lang=lang, LANGS=i18n.LANGS, LANG_NAMES=i18n.LANG_NAMES, C=content.for_lang(lang), CSS_V=css_version,
                     t=lambda key, **kw: i18n.html(key, lang, **kw),
                     axis_label=lambda a: i18n.axis_label(a, lang),
                     modality_label=lambda k: i18n.modality_label(k, lang),

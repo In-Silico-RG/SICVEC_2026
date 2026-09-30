@@ -2,7 +2,7 @@
 <html lang="{{ lang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% block title %}SICVEC 2026{% endblock %}</title>
 <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=CSS_V) }}"></head>
 <body>
 <header><a class="marca" href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='marca_sicvec.jpg') }}" alt="SICVEC 2026"></a><span class="titulo">SICVEC 2026</span> &nbsp;
 <a href="{{ url_for('index') }}">{{ t('nav_home') }}</a><a href="{{ url_for('programa') }}">{{ t('nav_program') }}</a><a href="{{ url_for('conferencistas') }}">{{ t('nav_speakers') }}</a><a href="{{ url_for('submit') }}">{{ t('nav_submit') }}</a><a href="{{ url_for('register') }}">{{ t('nav_register') }}</a>

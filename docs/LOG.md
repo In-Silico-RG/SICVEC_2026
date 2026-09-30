@@ -761,3 +761,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   with a top rule (`.pie-base`). Labels: es "Organiza"/"Apoyan", en "Organised by"/"Supported by", pt
   "Organização"/"Apoio". Checked in the browser on a local run. 45 tests pass. Poster and flyer footers not changed yet.
 - Commit 47fd898 (16:53); zip `dist/SICVEC_app_2026-09-30o.zip` (supersedes 30n).
+- AC, 2026-09-30: "el logo de UNISUCRE quedó exageradamente grande" (live, after AC deployed zip o). Cause: the browser
+  kept the old cached style.css, which has no `.pie-base` rule, so the logo showed at its natural 455x240 (measured in
+  Chrome on the live page). Fix: stylesheet link now carries `?v=<mtime of style.css>` (`CSS_V` in the context
+  processor), so each deploy forces a fresh CSS. AC also: "incrementemos los tamaños de los logos de organizador y apoyo":
+  `.pie-fila img` 80→100 px (mobile 56→68), `.pie-base img` 56 px (mobile 44). Checked locally in Chrome: IN SILICO and
+  departments 100 px high, UNISUCRE 106x56. New test; 46 pass.

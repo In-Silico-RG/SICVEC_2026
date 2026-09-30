@@ -384,3 +384,8 @@ def test_venue_logo(client):
     body = client.get("/").get_data(as_text=True)
     assert "/static/logo_guacari.png" in body
     assert client.get("/static/logo_guacari.png").status_code == 200
+
+
+def test_stylesheet_versioned(client):
+    body = client.get("/").get_data(as_text=True)
+    assert "/static/style.css?v=" in body
