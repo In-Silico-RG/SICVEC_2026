@@ -705,3 +705,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   slot is 30. FICHA updated.
 - To check with AC: "Catellar" (Castellar?) and "Hil" (Gil?) kept as written in the sheet; Renon Eller and Combariza talk
   titles still missing.
+- Commit e0f5610 (14:18); zip `dist/SICVEC_app_2026-09-30m.zip` (supersedes 30l).
