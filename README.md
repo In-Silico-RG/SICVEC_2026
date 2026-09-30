@@ -147,8 +147,8 @@ SICVEC_2026/
 | **Público** | 120-150 participantes | 01_Propuesta/Documentos |
 | **Presupuesto** | COP 2.500.000 | 06_Logistica/Presupuesto |
 | **Modalidades** | Ponencias, Posters | 03_Memorias_y_PeerReview/Guias_Autores |
-| **Cierre resúmenes** | 4 de octubre de 2026 (23:59) | 03_Memorias_y_PeerReview/Guias_Autores |
-| **Notificación aceptación** | 8-9 de octubre de 2026 (material final: 14 oct; límite de pago: 15 oct) | 03_Memorias_y_PeerReview/Guias_Autores |
+| **Cierre resúmenes** | 10 de octubre de 2026 (23:59) | 03_Memorias_y_PeerReview/Guias_Autores |
+| **Notificación aceptación** | 15 de octubre de 2026 (evaluación de pares hasta 14 oct; material final: 17 oct; límite de pago: 18 oct) | 03_Memorias_y_PeerReview/Guias_Autores |
 
 ---
 

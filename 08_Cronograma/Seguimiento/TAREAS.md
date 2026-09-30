@@ -6,7 +6,7 @@
 Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo Combariza (General), **MXD** = María Ximena Díaz (Académica), **SV** = Sebastián Vargas (Logística).
 
 ## 🔴 Urgente (esta semana — actualizado 17 sept)
-- [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 4 oct (no 15 sept cierre), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
+- [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 10 oct (AC, 30 sept: antes 4 oct), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
 - [x] **Venue confirmado** (reunión 18 sept, AC 19 sept). Verificar por escrito: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
 - [ ] **Datos de contacto** completos de los 3 coordinadores (teléfonos, email de MXD) — AC
 - [x] **Presupuesto** fijado en COP 2.500.000 (AC, 19 sept) — 06_Logistica/Presupuesto/
@@ -38,15 +38,16 @@ Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo
 - [x] Confirmar conferencistas magistrales — 5 confirmados: Escobar (CICY, 18 sept), Wilson Castro (UNF, 21 sept, material completo), Marianny Combariza (UIS, 21 sept, falta título/bio/foto), Monique Renon Eller (UFV, Brasil; confirmada por AC 29 sept, falta contacto, formato y material), Enrico Valli (Univ. Bologna; aceptó 29 sept, en línea, pide martes 20 oct 9:00 COT; título, bio y foto recibidos, falta resumen; carta de invitación lista). Kafarov (UIS): sin respuesta. Fichas en `10_Ponentes/`. Pendiente: franjas horarias, instrucciones técnicas antes del 1 oct, material de M. Combariza.
 - [ ] Completar hojas de vida de coordinadores (`02_Organizadores/`)
 
-## Calendario de peer review (vigente — actualizado 16 sept)
+## Calendario de peer review (vigente — actualizado 30 sept, AC)
 | Hito | Fecha |
 |---|---|
-| Convocatoria abierta | 22 sept - 4 oct |
-| Cierre de resúmenes | 4 oct, 23:59 |
-| Admisibilidad y asignación de revisores | 4-5 oct |
-| Evaluación de pares | 5-7 oct |
-| Decisión académica | 8 oct |
-| Notificación a autores | 8-9 oct |
-| Material final de aceptados | 14 oct |
+| Convocatoria abierta | 22 sept - 10 oct |
+| Cierre de resúmenes | 10 oct, 23:59 |
+| Admisibilidad y asignación de revisores | 11 oct |
+| Evaluación de pares | 11-14 oct (hasta 14 oct, 23:59) |
+| Decisión académica | 15 oct |
+| Notificación a autores | 15 oct |
+| Material final de aceptados | 17 oct |
+| Límite de pago de inscripción | 18 oct |
 | Simposio | 19-20 oct |
 | Publicación de memorias | 20 oct |

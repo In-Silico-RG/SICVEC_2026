@@ -664,3 +664,16 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (decision email), es/en/pt; app README example. Home dates table, submit page, registration page and reviewer pages
   read the config. New test; 42 pass.
 - Commit 0aa148c (12:04); zip `dist/SICVEC_app_2026-09-30k.zip` (supersedes 30j).
+- Calendar propagated to the documents (AC: "actualicemos todo lo que contenga esa info"). Updated and, for LaTeX,
+  recompiled (two passes, same page counts, checked with pdftotext: no old date left, new dates present; old PDFs in
+  `Versiones/2026-09-30_pre_calendario_10oct/`): Guia_Presentacion_Resumenes (6 p.), Manual_Memorias_PeerReview (7),
+  Template_Resumen_Cientifico (4), Flyer (1), Información_Evento_Conferencistas (1), SICVEC_2026_Brief_EN (1), Propuesta
+  (14), Carta_Jefes_Departamentos_Generica (2), Solicitud_Entidad_Asociada_Internacional (3), Conformacion_Comite_Cientifico
+  (2). Markdown: README, TAREAS (table + payment row), Cronograma_Definitivo, Anuncio_Rapido_Departamentos. Also
+  ~/.claude/CLAUDE.md (calendar and Tareas lines) and memory.
+- Cronograma_Definitivo: reminders moved to 3 Oct (1 week) and 8 Oct (2 days) to keep their meaning; "12 oct: cierre de
+  inscripción en línea" set to [PENDIENTE] (it would fall before the new abstract closing; AC to decide).
+- Not changed, on purpose: LOG_Actividades_SICVEC_2026.md (historical log), 07_Comunicaciones/Mensaje_Enrico_Valli_2026-09-22.md
+  (message already sent), docs/01_easychair_plan.md and docs/02_google_forms_plan.md and the Google Forms spec/.gs
+  (superseded, not in use). Poster (Afiche) carries no deadline. The live site still shows 4 Oct until the new zip is
+  deployed.
