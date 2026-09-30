@@ -16,10 +16,10 @@ def load_config(overrides=None):
         "DATABASE": os.environ.get("DATABASE", os.path.join("instance", "sicvec.sqlite")),
         "UPLOAD_DIR": os.environ.get("UPLOAD_DIR", os.path.join("instance", "uploads")),
         "MAX_CONTENT_LENGTH": 6 * 1024 * 1024,
-        # Dates come from docs/LOG.md (AC, 2026-09-16 schedule change).
-        "SUBMISSION_DEADLINE": _dt("SUBMISSION_DEADLINE", "2026-10-04T23:59:00-05:00"),
-        "REVIEW_DEADLINE": _dt("REVIEW_DEADLINE", "2026-10-07T23:59:00-05:00"),
-        "PAYMENT_DEADLINE": _dt("PAYMENT_DEADLINE", "2026-10-15T23:59:00-05:00"),
+        # Dates: AC, 2026-09-30 (closing 10 Oct, review until 14 Oct, payment 18 Oct; supersedes 4/7/15 Oct).
+        "SUBMISSION_DEADLINE": _dt("SUBMISSION_DEADLINE", "2026-10-10T23:59:00-05:00"),
+        "REVIEW_DEADLINE": _dt("REVIEW_DEADLINE", "2026-10-14T23:59:00-05:00"),
+        "PAYMENT_DEADLINE": _dt("PAYMENT_DEADLINE", "2026-10-18T23:59:00-05:00"),
         # Online attendance is free for external and international participants. AC, 2026-09-28: no 300-seat figure;
         # no cap unless ONLINE_SEATS is set (empty or unset = unlimited).
         "ONLINE_SEATS": int(os.environ["ONLINE_SEATS"]) if os.environ.get("ONLINE_SEATS", "").strip() else None,

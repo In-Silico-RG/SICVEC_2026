@@ -352,3 +352,11 @@ def test_renon_photo_and_bio(client):
     assert "/static/speaker_renon.jpg" in body
     assert "bioeconomía circular" in body
     assert client.get("/static/speaker_renon.jpg").status_code == 200
+
+
+def test_calendar_2026_09_30(app):
+    # AC, 2026-09-30: closing 10 Oct, review until 14 Oct, decision 15 Oct, final material 17 Oct, payment 18 Oct.
+    cfg = app.config
+    assert f"{cfg['SUBMISSION_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-10 23:59"
+    assert f"{cfg['REVIEW_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-14 23:59"
+    assert f"{cfg['PAYMENT_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-18 23:59"

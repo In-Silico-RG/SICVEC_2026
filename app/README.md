@@ -42,7 +42,7 @@ Admin panel: `/admin`, user `admin`, password from `ADMIN_PASSWORD` (no default;
 | `MAIL_BACKGROUND` | `1` (default): send from a background thread; `0`: send inside the request (PythonAnywhere) |
 | `CONSENT_TEXT` | official UNISUCRE data-treatment text (still `[PENDIENTE]`) |
 | `ONLINE_SEATS` | optional cap for virtual registrations; unset = no cap (AC, 2026-09-28: the 300 figure removed). Virtual attendance is free, in-person pays by category |
-| `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-04T23:59:00-05:00` |
+| `SUBMISSION_DEADLINE`, `REVIEW_DEADLINE`, `PAYMENT_DEADLINE` | ISO 8601 with offset, e.g. `2026-10-10T23:59:00-05:00` |
 | `DATABASE`, `UPLOAD_DIR` | paths; default `instance/` |
 | `SESSION_COOKIE_SECURE=1` | set behind HTTPS |
 

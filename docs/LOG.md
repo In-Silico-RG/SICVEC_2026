@@ -654,3 +654,12 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   crop 12 px above the card tops (es/en from y=75, 1376x693; pt from y=93, 1376x675). Checked by eye: borders whole, no
   title remnant (the first es pass left "Ej": the auto-detected card edge was wrong). SDG figures were never cropped. 41 pass.
 - Commit ac561c5 (11:54); zip `dist/SICVEC_app_2026-09-30j.zip` (supersedes 30i).
+- AC, 2026-09-30: calendar change. "Cierre de res Oct 10 // Evaluación 14 / pago 18"; asked for the dates in between; AC
+  chose proposal A: closing **10 Oct 23:59** → admissibility 11 Oct → peer review 11–14 Oct (until 14 Oct 23:59) →
+  decision and notification **15 Oct** → final material **17 Oct** → payment **18 Oct** → symposium 19–20 Oct.
+  Supersedes 4 Oct / 4–5 / 5–7 / 8 / 8–9 / 14 / 15 Oct (AC, 2026-09-22 calendar). AC: "actualicemos todo lo que contenga
+  esa info".
+- App: `config.py` deadlines (SUBMISSION 2026-10-10, REVIEW 2026-10-14, PAYMENT 2026-10-18, all 23:59 COT; no override
+  in `dist/sicvec.env`); `i18n.py` decision date 15 Oct (programme note, confirmation email) and final material 17 Oct
+  (decision email), es/en/pt; app README example. Home dates table, submit page, registration page and reviewer pages
+  read the config. New test; 42 pass.

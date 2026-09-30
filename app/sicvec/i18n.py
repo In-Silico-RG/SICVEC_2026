@@ -130,13 +130,13 @@ T = {
     "prog_title": ("Programa", "Programme", "Programação"),
     "prog_notice": ("<strong>Programa preliminar.</strong> Estructura propuesta por el comité organizador; el orden de "
                     "presentaciones y las franjas de conferencistas se publicarán tras la evaluación de resúmenes "
-                    "(decisiones 8–9 de octubre) y pueden cambiar. Horario de Colombia (UTC−5). Modalidad híbrida.",
+                    "(decisiones el 15 de octubre) y pueden cambiar. Horario de Colombia (UTC−5). Modalidad híbrida.",
                     "<strong>Preliminary programme.</strong> Structure proposed by the organising committee; the order of "
-                    "talks and the speakers' slots will be published after abstract review (decisions 8–9 October) and "
+                    "talks and the speakers' slots will be published after abstract review (decisions on 15 October) and "
                     "may change. Colombia time (UTC−5). Hybrid format.",
                     "<strong>Programação preliminar.</strong> Estrutura proposta pela comissão organizadora; a ordem das "
                     "apresentações e os horários dos palestrantes serão publicados após a avaliação dos resumos (decisões "
-                    "em 8–9 de outubro) e podem mudar. Horário da Colômbia (UTC−5). Formato híbrido."),
+                    "em 15 de outubro) e podem mudar. Horário da Colômbia (UTC−5). Formato híbrido."),
     # speakers
     "sp_title": ("Conferencistas", "Speakers", "Palestrantes"),
     "sp_talk": ("Conferencia:", "Talk:", "Palestra:"),
@@ -302,11 +302,11 @@ T = {
     "m_sub_subject": ("SICVEC 2026 — resumen recibido ({ref})", "SICVEC 2026 — abstract received ({ref})",
                       "SICVEC 2026 — resumo recebido ({ref})"),
     "m_sub_body": ("Hemos recibido su resumen «{title}».\nReferencia: {ref}\nCierre: {close} (hora Colombia). "
-                   "La notificación se envía el 8-9 de octubre de 2026.",
+                   "La notificación se envía el 15 de octubre de 2026.",
                    "We have received your abstract “{title}”.\nReference: {ref}\nDeadline: {close} (Colombia time). "
-                   "Decisions will be sent on 8-9 October 2026.",
+                   "Decisions will be sent on 15 October 2026.",
                    "Recebemos seu resumo “{title}”.\nReferência: {ref}\nPrazo: {close} (horário da Colômbia). "
-                   "O resultado será enviado em 8-9 de outubro de 2026."),
+                   "O resultado será enviado em 15 de outubro de 2026."),
     "m_reg_subject": ("SICVEC 2026 — inscripción recibida ({ref})", "SICVEC 2026 — registration received ({ref})",
                       "SICVEC 2026 — inscrição recebida ({ref})"),
     "m_reg_body": ("Hemos recibido su inscripción ({ref}).\nValor: COP {fee}\nLímite de pago: {date} (hora Colombia).",
@@ -320,9 +320,9 @@ T = {
     "m_dec_note": ("Nota del comité: {note}", "Note from the committee: {note}", "Nota da comissão: {note}"),
     "m_dec_comments": ("Comentarios de los revisores (anónimos):", "Reviewers' comments (anonymous):",
                        "Comentários dos avaliadores (anônimos):"),
-    "m_dec_final": ("Material final de los aceptados: hasta el 14 de octubre de 2026.",
-                    "Final material for accepted works: by 14 October 2026.",
-                    "Material final dos trabalhos aceitos: até 14 de outubro de 2026."),
+    "m_dec_final": ("Material final de los aceptados: hasta el 17 de octubre de 2026.",
+                    "Final material for accepted works: by 17 October 2026.",
+                    "Material final dos trabalhos aceitos: até 17 de outubro de 2026."),
     # blind-review flags shown to the author
     "flag_email": ("El texto contiene una dirección de correo.", "The text contains an email address.",
                    "O texto contém um endereço de e-mail."),
