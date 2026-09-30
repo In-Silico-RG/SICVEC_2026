@@ -636,3 +636,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC, 2026-09-30: photo for Marianny Combariza, `10_Ponentes/Foto_Combariza_2.png` (245x242, RGBA; AC wrote
   "foto_combariza_2.png"). Flattened on white, cropped square: `static/speaker_combariza.jpg` (242x242; the page shows
   160 px circles, so no upscaling). Linked in `content.py`; new test; 40 pass. `Foto_Combariza.jpeg` (08:57) not used.
+- Commit 6ad8d0a (09:00); zip `dist/SICVEC_app_2026-09-30h.zip` (supersedes 30g).
