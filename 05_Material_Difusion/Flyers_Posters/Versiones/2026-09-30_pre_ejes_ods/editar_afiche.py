@@ -106,12 +106,12 @@ put_photo(valli, CARDS[2], "speaker_valli.jpg")
 
 fill_blend(im, 62, 1040, 2008, 1802)          # clear the row (page background)
 row = [valli] + cards
-GAP, TOP, f = 22, 1030, 0.70   # 0.70 (was 0.80) to make room for the axes/SDG strip (step 3b)
-widths = [round(c.width * f) for c in row]
-x = (2048 - sum(widths) - GAP * (len(row) - 1)) / 2
+GAP, X0, X1, TOP, BOT = 22, 70, 1998, 1062, 1780
+f = (X1 - X0 - GAP * (len(row) - 1)) / sum(c.width for c in row)
+x = X0
 for c in row:
     c = c.resize((round(c.width * f), round(c.height * f)), Image.LANCZOS)
-    im.paste(c, (round(x), TOP))
+    im.paste(c, (round(x), TOP + (BOT - TOP - c.height) // 2))
     x += c.width + GAP
 d = ImageDraw.Draw(im)
 
@@ -145,28 +145,6 @@ write(851, 992, "Resúmenes hasta el", 15, REG, TINTA)
 write(851, 1013, "10 de octubre", 24, HEAVY, VERDE_OSC)
 write(851, 1052, "Ponencias orales · Pósteres", 13, REG, TINTA)
 QR_LINKS = [((30, 945, 345, 1110), SITE), ((695, 945, 995, 1110), SITE + "/enviar")]
-
-# 3b. Axes and SDGs (AC, 2026-09-30: "¿podríamos meter ejes temáticos y ODS en el afiche?"): the FigureLabs figures
-# (the site's Spanish copies) in a strip under the speaker cards; the QR row moves down 120 px (full resolution) into
-# the space the smaller cards left. Venue row, wave and footer stay where they were.
-qr_row = im.crop((0, 1885, 2048, 2225))
-fill_blend(im, 8, 1550, 2040, 2345)
-im.paste(qr_row, (0, 2005))
-QR_LINKS = [((x0, y0 + 60, x1, y1 + 60), url) for (x0, y0, x1, y1), url in QR_LINKS]
-FIG = ROOT / "app/sicvec/static"
-H = 400
-ejes = Image.open(FIG / "fig_ejes_es.jpg").convert("RGB")
-ods = Image.open(FIG / "fig_ods_es.jpg").convert("RGB")
-ejes = ejes.resize((round(ejes.width * H / ejes.height), H), Image.LANCZOS)
-ods = ods.resize((round(ods.width * H / ods.height), H), Image.LANCZOS)
-FGAP = 50
-fx = (2048 - ejes.width - ods.width - FGAP) // 2
-for img, x, title in [(ejes, fx, "EJES TEMÁTICOS"), (ods, fx + ejes.width + FGAP, "ODS 12 · 13 · 15 · 17")]:
-    m = Image.new("L", img.size, 0)
-    ImageDraw.Draw(m).rounded_rectangle([0, 0, img.width - 1, img.height - 1], radius=18, fill=255)
-    im.paste(img, (x, 1592), m)
-    d.rounded_rectangle([x - 1, 1591, x + img.width, 1592 + img.height], radius=18, outline=(200, 214, 204), width=2)
-    d.text((x + img.width // 2, 1552), title, font=ImageFont.truetype(BOLD, 13 * K), fill=VERDE_OSC, anchor="ma")
 
 # 4. Footer (AC, 2026-09-28): ORGANIZAN IN SILICO + UNISUCRE; COLABORAN the departments; no sponsors
 FY = 1394

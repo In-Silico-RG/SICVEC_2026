@@ -734,3 +734,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   the text list of the six axes and the SDG line replaced by the FigureLabs figures (`fig_ejes_es.jpg`, `fig_ods_es.jpg`
   from the app's static folder) under the same headings; vertical spacing trimmed and QR 2.4→2.0 cm to stay on one page.
   Checked by rendering.
+- AC, 2026-09-30: "¿podríamos meter ejes temáticos y ODS en el afiche?". `editar_afiche.py`: speaker cards 0.80→0.70
+  (row 1030–1540 px, centred); new step 3b: strip with the site's Spanish figures `fig_ejes_es.jpg` and `fig_ods_es.jpg`
+  (400 px high, rounded frame, headings "EJES TEMÁTICOS" and "ODS 12 · 13 · 15 · 17"); QR row moved down 120 px (PDF link
+  boxes shifted with it). Venue row, wave and footer unchanged. At print size (20 cm wide) the small keyword text inside
+  the figures is ~1 mm: the axis names read, the keywords barely. Old files in `Flyers_Posters/Versiones/2026-09-30_pre_ejes_ods/`.
