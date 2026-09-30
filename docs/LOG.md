@@ -602,3 +602,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   October, 9:00–10:00, Colombia time (UTC−5). `conferencistas.html` shows it under "Fecha y hora" / "Date and time" /
   "Data e horário"; speakers without `when` keep the TBC line. New test; 39 pass.
 - Commit 56cf739 (08:27); zip `dist/SICVEC_app_2026-09-30c.zip` for redeploy (supersedes 30b).
+- AC, 2026-09-30: "hagamos una semblanza de la profesora combariza, revisemos fuentes". Sources checked: ORCID public
+  record (education, employment, her own biography), Comunicaciones UIS (8 May 2024: CEIAM director, research lines), ACS
+  Science Talks page (lecture 4 June 2024), Investigación UIS award page (Premio Eloy Valenzuela 2025-2026, Trayectoria
+  Investigativa, Ciencias). Three-paragraph Spanish bio on the site (`content.py`), each fact mapped to its source in
+  `10_Ponentes/FICHA_MCombariza.md`. Left out: citation count (undated snippet); CEIAM directorship written as "ha sido"
+  (only a 2024 source). Open for AC: she has not seen the text; site affiliation "Investigadora, CEIAM" vs ORCID
+  "Professor, Escuela de Química". 39 tests pass.

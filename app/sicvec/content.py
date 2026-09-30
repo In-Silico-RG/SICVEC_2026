@@ -202,7 +202,23 @@ SPEAKERS = [{
     "photo": None,
     "talk": None,
     "format": "Virtual",
-    "bio": [],
+    # Bio written by us from public sources (not sent by her), AC 2026-09-30; sources in 10_Ponentes/FICHA_MCombariza.md.
+    "bio": [
+        "Química (1994) y magíster en Química (1996) de la Universidad Industrial de Santander (UIS); magíster (2000) y "
+        "doctora (2003) en Química de la University of Massachusetts Amherst, donde fue investigadora posdoctoral "
+        "(2005–2007). Fue investigadora del Instituto Colombiano del Petróleo (1996–1997) y es profesora de la Escuela de "
+        "Química de la UIS desde 1998. Ha sido directora del Centro de Estudios e Investigaciones Ambientales (CEIAM) de "
+        "la UIS.",
+        "Su investigación integra la química analítica, la química de materiales y la nanotecnología: análisis por "
+        "espectrometría de masas de alta resolución de mezclas complejas (petróleo, asfaltenos y pigmentos naturales), "
+        "desarrollo de matrices MALDI de transferencia electrónica para el análisis de moléculas lábiles, y obtención, "
+        "caracterización y modificación de nanocelulosa y otros biopolímeros a partir de biomasa residual "
+        "lignocelulósica, con aplicaciones en energía, combustibles, empaques y recuperación mejorada de petróleo.",
+        "En 2024 dictó, por invitación de la American Chemical Society, la conferencia «Enverdeciendo el futuro de "
+        "Colombia: oportunidades en el uso de biomasa residual agroindustrial en energía, combustibles y materiales». "
+        "Recibió el Premio Eloy Valenzuela 2025-2026 de la UIS en la modalidad Trayectoria Investigativa (Ciencias), el "
+        "máximo reconocimiento de esa universidad a la investigación.",
+    ],
     "abstract": [],
 }, {
     # Monique Renon Eller: speaker per AC, 2026-09-29 (also on AC's poster of 2026-09-28). Name and university only;
