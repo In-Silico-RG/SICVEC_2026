@@ -609,3 +609,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `10_Ponentes/FICHA_MCombariza.md`. Left out: citation count (undated snippet); CEIAM directorship written as "ha sido"
   (only a 2024 source). Open for AC: she has not seen the text; site affiliation "Investigadora, CEIAM" vs ORCID
   "Professor, Escuela de Química". 39 tests pass.
+- Commit e3fabb7 (08:37); zip `dist/SICVEC_app_2026-09-30d.zip` for redeploy (supersedes 30c).
