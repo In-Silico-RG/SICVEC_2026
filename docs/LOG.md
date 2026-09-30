@@ -715,3 +715,10 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Física (LIFI) and the organizer line of the site footer. Removed: title "Economía Circular para el Futuro", the private
   GitHub link, "Programa de Biología", "revisor par", typos ("resúmen", "poster"). Fees not printed (no amounts). Checked by
   rendering and pdftotext. Old version in `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-30_pre_flyer_v2/`.
+- Reversed (AC, 2026-09-30: "that's not the old one updated, is a new one changed totally!"): the flyer v2 was a
+  redesign, AC wanted the existing flyer updated. Restored the original design (from
+  `Flyers_Posters/Versiones/2026-09-30_pre_flyer_v2/`) and changed only: Física (LIFI) logo added to the header row;
+  "resúmen" → "resumen", "poster" → "póster"; private GitHub link → website link plus one QR code to the home page;
+  "Programa de Biología" → "Grupo IN SILICO — Departamento de Biología y Química — Facultad de Educación y Ciencias"
+  (AC, 28 Sept). Date 10 Oct already there. Everything else as it was. The v2 source is in git (6582876) if wanted.
+  Rule for next time: "actualiza X" = edit the existing X in place, not redesign.
