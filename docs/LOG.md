@@ -745,3 +745,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (64 px base, cropped to its bbox) replaces "C.C. Guacarí / Sincelejo, Sucre" (the city is in the block to the left).
   A4 flyer: logo (1.3 cm) beside "Centro Comercial Guacarí / Sincelejo, Sucre, Colombia" under UBICACIÓN; still one page.
   Old files in `Flyers_Posters/Versiones/2026-09-30_pre_logo_guacari/`.
+- AC, 2026-09-30 (screenshot): "escribe CC Guacarí explícitamente, el texto de la imagen es muy pequeño". Poster: text
+  restored ("Lugar:" / "C.C. Guacarí" / "Sincelejo, Sucre") and the Guacarí logo moved to the place of the map icon,
+  82 px base high. Flyer already had the text beside the logo; unchanged.
