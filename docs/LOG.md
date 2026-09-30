@@ -610,3 +610,11 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   (only a 2024 source). Open for AC: she has not seen the text; site affiliation "Investigadora, CEIAM" vs ORCID
   "Professor, Escuela de Química". 39 tests pass.
 - Commit e3fabb7 (08:37); zip `dist/SICVEC_app_2026-09-30d.zip` for redeploy (supersedes 30c).
+- Bio v2 for Marianny Combariza. AC: CEIAM "sigue siendo" (she is still director); ACS lecture paragraph "muy simplón, hay
+  mucha más achievements"; wants projects, thesis supervision, articles, high-impact journals; "mira el pdf en ponentes"
+  (Google Scholar profile AC saved at 08:43). New facts, each sourced in FICHA_MCombariza.md: full professor (ResearchGate);
+  86 journal articles and 5 patent entries (ORCID); 2,417 citations, h 30 (Scholar PDF); journals incl. Anal. Chem., ACS
+  AMI, Green Chem., Chem. Commun., Carbohydr. Polym., Energy & Fuels, Fuel, Cellulose, J. Chromatogr. A; SIC 2022 ranking
+  of women with most patents granted (Comunicaciones UIS, 12 May 2023); Editorial Advisory Board, Energy & Fuels (ACS
+  page). ACS lecture dropped. Not found: projects and theses supervised (her CvLAC not reachable, UIS repository search
+  empty) -> asked AC. 39 tests pass.
