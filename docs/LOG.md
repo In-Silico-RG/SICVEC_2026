@@ -681,6 +681,6 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Física" text box. Saved `01_Propuesta/Logos/logo_fisica_lifi.png` (cropped to the circle, background to white, 866x868)
   and `logo_fisica_lifi_transparente.png`. Site footer: `static/logo_fisica.jpg` (240 px) instead of the text box
   (alt "Física, Universidad de Sucre"; the `f_fisica` string has HTML, not usable as alt). Poster: `editar_afiche.py` places
-  the logo at the old box position; regenerated PNG/PDF, only the footer changed (diff box checked); old files in
+  the logo at the old box position; regenerated PNG/PDF; outside the footer only the "Sincelejo, Sucre" line differs, by text anti-aliasing (script ran in a scratch venv with another Pillow; no visible change, checked by eye); old files in
   `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-30_pre_logo_fisica/`. Meaning of "LIFI" not recorded. New test; 43 pass.
 - Commit 077daa9 (13:45); zip `dist/SICVEC_app_2026-09-30l.zip` (supersedes 30k).
