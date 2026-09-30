@@ -585,3 +585,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Reply drafted in `10_Ponentes/Valli_Respuesta_Enviar_2026-09-30.md` (English; letter attached; asks for a short abstract,
   no word limit; site link). Not sent from here: the Gmail connector is logged in as fisicoquimicabiounisucre@gmail.com,
   while his thread is in aldo.combariza@unisucre.edu.co. AC sends it. Speaker record updated. 37 tests pass.
+- Commit 2b5c7af (08:11); zip `dist/SICVEC_app_2026-09-30.zip` for redeploy (programme change).
