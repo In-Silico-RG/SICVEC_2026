@@ -706,3 +706,12 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - To check with AC: "Catellar" (Castellar?) and "Hil" (Gil?) kept as written in the sheet; Renon Eller and Combariza talk
   titles still missing.
 - Commit e0f5610 (14:18); zip `dist/SICVEC_app_2026-09-30m.zip` (supersedes 30l).
+- AC, 2026-09-30: "actualiza el flyer"; mid-way "only one QR needed now, pointing to the web page"; "el logo de física
+  también está listo". Flyer rewritten (one A4 page, Roboto): event name and dates in the header with the SICVEC logo;
+  call box with the 30 Sept calendar (close 10 Oct 23:59, decision 15 Oct, payment 18 Oct); the five keynotes with
+  institution and country (Valli "en línea"); full names of the six axes and SDGs; "Participa" (online free, in person by
+  category, audience); one QR code `qr_web.png` to https://sicvec2026.eu.pythonanywhere.com (colour as the poster's);
+  website and insilico@ as contact; footer ORGANIZAN UNISUCRE + IN SILICO / COLABORAN Biología, Agroindustrial, Agrícola,
+  Física (LIFI) and the organizer line of the site footer. Removed: title "Economía Circular para el Futuro", the private
+  GitHub link, "Programa de Biología", "revisor par", typos ("resúmen", "poster"). Fees not printed (no amounts). Checked by
+  rendering and pdftotext. Old version in `05_Material_Difusion/Flyers_Posters/Versiones/2026-09-30_pre_flyer_v2/`.
