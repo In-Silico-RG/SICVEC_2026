@@ -663,3 +663,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   in `dist/sicvec.env`); `i18n.py` decision date 15 Oct (programme note, confirmation email) and final material 17 Oct
   (decision email), es/en/pt; app README example. Home dates table, submit page, registration page and reviewer pages
   read the config. New test; 42 pass.
+- Commit 0aa148c (12:04); zip `dist/SICVEC_app_2026-09-30k.zip` (supersedes 30j).
