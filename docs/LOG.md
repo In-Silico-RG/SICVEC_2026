@@ -789,3 +789,25 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - AC: "memorice". Project memory updated: state at the close of 30 Sept (calendar, programme, speakers, material in three
   languages, deploy status), new notes `feedback-update-in-place` ("actualiza X" = edit in place; "flyer" may mean the
   poster) and `sicvec-deploy` (AC uploads the zips; how to verify live). Live style.css matches the latest commit (zip q is up).
+- AC, 2026-10-02: "let's make changes to the proposal updating everything". `Propuesta_SICVEC_2026.tex` brought up to the
+  decisions already in the log; layout kept. Changed: (1) organizer wording on the cover, in 8.1 and in appendix B: "Programa
+  de Biología" → Grupo de Investigación IN SILICO / Departamento de Biología y Química / Facultad de Educación y Ciencias
+  (AC, 28 Sept); (2) cover: "Departamento de Física" text box → `logo_fisica_lifi.png` (AC, 30 Sept); (3) 6.2 and section 7:
+  "300 cupos" and "número definido de cupos" removed, online participation free with no figure (AC, 28 Sept), box title
+  "Cupos virtuales…" → "Participación en línea para redes internacionales"; (4) official languages es/en/pt (AC, 28 Sept)
+  after the modalities table; (5) site URL https://sicvec2026.eu.pythonanywhere.com in 6.2 and appendix B; (6) venue box:
+  "Sala de conferencias del Centro Comercial Guacarí" (AC, 22 Sept) with the Guacarí logo, box made unbreakable; street
+  address not added (not confirmed by the venue); (7) new 6.4 "Conferencistas Magistrales Confirmados": the five keynotes
+  with institution, title and slot as in `app/sicvec/content.py` (Renon Eller and M. Combariza: "Título por confirmar");
+  programme now 6.5, starts on a new page; (8) 8.3 "ambas instituciones" → "la Universidad de Sucre" (leftover of the UNF
+  co-organisation, removed 7 Sept); (9) typos: coberturan→cubren, microebiólogos→microbiólogos, Minimalización→Minimización,
+  "ODT 12, 13, 15"→"ODS 12, 13, 15 y 17". 15 pages (was 14). Checked with pdftotext (no "300", "cupos", "Programa de
+  Biología", "ambas") and by eye on the rendered pages. Previous .tex/.pdf in
+  `01_Propuesta/Versiones/Propuesta_SICVEC_2026_pre_actualizacion_2026-10-02.*`.
+- Left as is, for AC to decide: "Panel de debate (60 min)" row in 6.1 and "paneles" in 6.2 (the programme has no panel);
+  "colaboración binacional iniciada en 2026" in the conclusions (UNF no longer co-organises); "Eje 1: Economía Circular y
+  Procesos Lineales" (site and poster say "Economía Circular"); unsourced statistics in 2.1; cover logo grid not regrouped
+  as Organiza/Apoyan/UNISUCRE; modalities table 39 pt wider than the text block (AC set 10 cm on 16 Sept).
+- Found: the "Presupuesto Estimado" section in the proposal was re-added by AC on 16 Sept 10:32 (`6ad4ed3`), after the
+  exclusion note in memory (written 09:59 the same day), and survived his uploads of 17 Sept. Kept; memory note corrected:
+  what stays out is the expense table, the budget notes box and the "Convenios" item.
