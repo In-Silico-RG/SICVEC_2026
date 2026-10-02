@@ -833,3 +833,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Eje 1 title, cover logo grid), whether Guacarí lends the spaces free of charge, `10_Ponentes/Foto_Combariza.jpeg`
   (untracked, unused), online-registration closing date, announcing the extension to 10 Oct, titles of Renon Eller and
   M. Combariza, Valli's abstract.
+- AC: "delete the photo". `10_Ponentes/Foto_Combariza.jpeg` (26 KB, 30 Sept 08:57, untracked, never used; the site uses `Foto_Combariza_2.png`) deleted from disk. It was never in git, so there is no copy in the repo.
