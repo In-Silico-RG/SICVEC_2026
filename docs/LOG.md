@@ -783,3 +783,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Flyer: `Flyer_SICVEC_2026_EN.tex` and `_PT.tex`, translations of the Spanish flyer with the en/pt figures; one page
   each. PT compiled with babel spanish: Portuguese babel (texlive-lang-portuguese) is not installed; affects hyphenation only.
   Old poster files in `Flyers_Posters/Versiones/2026-09-30_pre_3_idiomas/`.
+
+## 2026-10-02
+
+- AC: "memorice". Project memory updated: state at the close of 30 Sept (calendar, programme, speakers, material in three
+  languages, deploy status), new notes `feedback-update-in-place` ("actualiza X" = edit in place; "flyer" may mean the
+  poster) and `sicvec-deploy` (AC uploads the zips; how to verify live). Live style.css matches the latest commit (zip q is up).
