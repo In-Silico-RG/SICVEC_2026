@@ -826,3 +826,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   invitación lo antes posible para incluir su charla en el programa." `Invitacion_Ponente_Carlos_Guacari.tex` edited and
   recompiled (1 page, no [PENDIENTE] left, checked with pdftotext). Previous PDF in
   `07_Comunicaciones/Cartas_Departamentos/Versiones/2026-10-02_pre_lo_antes_posible/`. FICHA updated.
+- Commit 118a05d (15:53). AC: "push it"; first push blocked by the auto-mode classifier ("Out-of-Place Publication"), second attempt after AC said "do it yourself" went through: `476b047..118a05d` (88 commits, everything since 22 Sept) now on origin/main.
