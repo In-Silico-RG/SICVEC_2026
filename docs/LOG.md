@@ -811,3 +811,4 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
 - Found: the "Presupuesto Estimado" section in the proposal was re-added by AC on 16 Sept 10:32 (`6ad4ed3`), after the
   exclusion note in memory (written 09:59 the same day), and survived his uploads of 17 Sept. Kept; memory note corrected:
   what stays out is the expense table, the budget notes box and the "Convenios" item.
+- Commit 2358275 (12:57), not pushed.
