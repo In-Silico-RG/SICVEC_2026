@@ -827,3 +827,9 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   recompiled (1 page, no [PENDIENTE] left, checked with pdftotext). Previous PDF in
   `07_Comunicaciones/Cartas_Departamentos/Versiones/2026-10-02_pre_lo_antes_posible/`. FICHA updated.
 - Commit 118a05d (15:53). AC: "push it"; first push blocked by the auto-mode classifier ("Out-of-Place Publication"), second attempt after AC said "do it yourself" went through: `476b047..118a05d` (88 commits, everything since 22 Sept) now on origin/main.
+- AC: "memorice". Project memory updated: state at the close of 2 Oct (proposal, the two letters to Carlos Meza Bertel,
+  push, open items), letter rule "lo antes posible" when no reply date is decided, and the push note (origin was 88
+  commits behind; check the ahead count at session start). Open for AC: untouched proposal items (panel row, "binacional",
+  Eje 1 title, cover logo grid), whether Guacarí lends the spaces free of charge, `10_Ponentes/Foto_Combariza.jpeg`
+  (untracked, unused), online-registration closing date, announcing the extension to 10 Oct, titles of Renon Eller and
+  M. Combariza, Valli's abstract.
