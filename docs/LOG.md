@@ -812,3 +812,12 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   exclusion note in memory (written 09:59 the same day), and survived his uploads of 17 Sept. Kept; memory note corrected:
   what stays out is the expense table, the budget notes box and the "Convenios" item.
 - Commit 2358275 (12:57), not pushed.
+- AC, 2026-10-02: "a letter asking Carlos Meza for the Guacarí auditorium for the symposium, and space for the
+  entrepreneurial fair and poster sessions". New `07_Comunicaciones/Cartas_Departamentos/Solicitud_Espacios_Guacari.tex/.pdf`
+  (layout of `Invitacion_Ponente_Carlos_Guacari`, dated 2 Oct, one page, signature on page 1; rendered and read).
+  Asks for: auditorium (sala de conferencias) Mon 19 Oct 07:45–17:30 and Tue 20 Oct 08:00–17:00, with sound, projection
+  and internet for the stream; space for the muestra empresarial both days (stands with table, chairs, power: from
+  `Propuesta_Muestra_Empresarial`); space for the poster session Mon 16:10–17:30 (posters 90 × 120 cm); access on Sun
+  18 Oct 4:00 p.m. for set-up and stream test (from `Cronograma_Definitivo.md`). Says 120–150 in person, final number of
+  posters known on 15 Oct, Sebastián Vargas as contact for a site visit. Not stated, because not on record: whether the
+  use is free of charge, number of stands, what was agreed at the 18 Sept meeting, a reply-by date. Not sent; AC sends.
