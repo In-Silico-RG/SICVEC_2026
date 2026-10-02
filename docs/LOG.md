@@ -821,3 +821,8 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   18 Oct 4:00 p.m. for set-up and stream test (from `Cronograma_Definitivo.md`). Says 120–150 in person, final number of
   posters known on 15 Oct, Sebastián Vargas as contact for a site visit. Not stated, because not on record: whether the
   use is free of charge, number of stands, what was agreed at the 18 Sept meeting, a reply-by date. Not sent; AC sends.
+- Commit 526adcb (13:03), not pushed.
+- AC, 2026-10-02: in Carlos's speaker invitation, "antes del [PENDIENTE: fecha de respuesta]" → "Rogamos responder esta
+  invitación lo antes posible para incluir su charla en el programa." `Invitacion_Ponente_Carlos_Guacari.tex` edited and
+  recompiled (1 page, no [PENDIENTE] left, checked with pdftotext). Previous PDF in
+  `07_Comunicaciones/Cartas_Departamentos/Versiones/2026-10-02_pre_lo_antes_posible/`. FICHA updated.

@@ -11,4 +11,5 @@
 | Slot | Ponencia 9, Tuesday 20 Oct, 08:30–09:00 (30-min slot; letter still says 20 min of talk) | programme sheet, AC 2026-09-30 |
 
 On the site's programme since 2026-09-30 (not on the speakers page, which lists keynotes). Letter updated with his name
-and slot; reply-by date still [PENDIENTE].
+and slot; reply asked "lo antes posible" (AC, 2026-10-02), no date. Second letter of 2 Oct asks him for the
+auditorium and spaces: `07_Comunicaciones/Cartas_Departamentos/Solicitud_Espacios_Guacari`.
