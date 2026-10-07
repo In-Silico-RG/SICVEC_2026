@@ -1,6 +1,7 @@
 {% extends "admin_base.html" %}{% block admin %}
 <h1>Inscripciones ({{ rows|length }})</h1>
-<p><a class="btn" href="{{ url_for('admin_export', name='inscripciones') }}">Descargar CSV</a></p>
+<p><a class="btn" href="{{ url_for('admin_export', name='inscripciones') }}">Descargar CSV</a>
+<a class="btn" href="{{ url_for('admin_database') }}">Descargar base de datos completa (.sqlite)</a></p>
 <table><tr><th>Fecha</th><th>Ref.</th><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Documento</th><th>Institución</th>
 <th>País</th><th>Categoría</th><th>Modalidad</th><th>Presenta</th><th>Ref. resumen</th><th>Valor COP</th>
 <th>Referencia de pago</th><th>Comprobante</th><th>Pagado</th></tr>

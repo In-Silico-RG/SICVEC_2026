@@ -520,4 +520,13 @@ def create_app(overrides=None):
         return Response("﻿" + out.getvalue(), mimetype="text/csv",
                         headers={"Content-Disposition": f"attachment; filename=sicvec_{name}.csv"})
 
+    @app.get("/admin/basededatos")
+    @admin_required
+    def admin_database():
+        db_path = os.path.abspath(app.config["DATABASE"])
+        get_db().execute("PRAGMA wal_checkpoint(TRUNCATE)")  # flush WAL so the file on disk is complete
+        stamp = now().strftime("%Y%m%d_%H%M")
+        return send_from_directory(os.path.dirname(db_path), os.path.basename(db_path),
+                                    as_attachment=True, download_name=f"sicvec_{stamp}.sqlite")
+
     return app

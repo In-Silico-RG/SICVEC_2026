@@ -8,4 +8,6 @@
 <form method="post" action="{{ url_for('admin_notify') }}" class="inline"><input type="hidden" name="_csrf" value="{{ csrf_token() }}"><button>Enviar decisiones pendientes</button></form>
 <h2>Exportar (CSV)</h2>
 <p><a href="{{ url_for('admin_export', name='resumenes') }}">Resúmenes</a> · <a href="{{ url_for('admin_export', name='inscripciones') }}">Inscripciones</a> · <a href="{{ url_for('admin_export', name='evaluaciones') }}">Evaluaciones</a></p>
+<h2>Base de datos completa</h2>
+<p><a class="btn" href="{{ url_for('admin_database') }}">Descargar base de datos (.sqlite)</a></p>
 {% endblock %}
