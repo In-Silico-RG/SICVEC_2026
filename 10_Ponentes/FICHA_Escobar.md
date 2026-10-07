@@ -13,4 +13,4 @@
 | Email / phone | [PENDIENTE] (reply address not in the pasted text) | |
 | Bio, abstract, photo | Received. Photo is 640x640, enough for web/app, low for print | files here |
 
-Sources: axes 1, 2, 4. Invitation letter: `07_Comunicaciones/Cartas_Departamentos/Invitacion_Conferencista_Beatriz_Escobar.tex`.
+Sources: axes 1, 2, 4. Invitation letter: `07_Comunicaciones/Cartas_Ponentes/Invitacion_Conferencista_Beatriz_Escobar.tex`.

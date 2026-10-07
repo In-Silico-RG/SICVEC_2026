@@ -1,7 +1,7 @@
 # Reply to Enrico Valli (to send by AC from aldo.combariza@unisucre.edu.co, 2026-09-30)
 
 To: enrico.valli4@unibo.it (reply in his thread "Conference - invited speaker")
-Attachment: `07_Comunicaciones/Cartas_Departamentos/Invitacion_Conferencista_Enrico_Valli.pdf`
+Attachment: `07_Comunicaciones/Cartas_Ponentes/Invitacion_Conferencista_Enrico_Valli.pdf`
 
 ---
 

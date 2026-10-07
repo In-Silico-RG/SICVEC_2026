@@ -833,6 +833,7 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Eje 1 title, cover logo grid), whether Guacarí lends the spaces free of charge, `10_Ponentes/Foto_Combariza.jpeg`
   (untracked, unused), online-registration closing date, announcing the extension to 10 Oct, titles of Renon Eller and
   M. Combariza, Valli's abstract.
+- AC: "delete the photo". `10_Ponentes/Foto_Combariza.jpeg` (26 KB, 30 Sept 08:57, untracked, never used; the site uses `Foto_Combariza_2.png`) deleted from disk. It was never in git, so there is no copy in the repo.
 
 ## 2026-10-07 (payment channel resolved: Academusoft)
 
@@ -865,5 +866,32 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `Invitacion_Ponente_Carlos_Guacari` layout — ponente, 20 minutes, in person, theme/axis of her choice, slot
   "19 o 20 de octubre, por acordar", reply "lo antes posible". Nothing about her research was written (not
   known, not invented). Checked now: 1 page, signature on p.1, no `[PENDIENTE]` left (`pdftotext`/`pdfinfo`).
-  Added to git (was never committed). Not sent; AC sends.
-- AC: "delete the photo". `10_Ponentes/Foto_Combariza.jpeg` (26 KB, 30 Sept 08:57, untracked, never used; the site uses `Foto_Combariza_2.png`) deleted from disk. It was never in git, so there is no copy in the repo.
+  Added to git (was never committed).
+- AC then pasted her full name, degrees and email, and separately her CvLAC (BUAP doctorate on Cu2O/ZnO
+  thin-film heterojunctions for photovoltaics, publications in *Thin Solid Films*, *Materials Science in
+  Semiconductor Processing*, IEEE). Letter updated: full name and degrees in the address block; body now
+  points to the **Tecnologías Verdes y Energías Renovables** axis as the natural fit for her photovoltaics/
+  semiconductor work, while leaving any other axis open. Previous version kept in
+  `Versiones/2026-10-07_pre_datos_completos/`. Record written to `10_Ponentes/FICHA_Hill.md` (new file, same
+  format as the other speaker fichas). She also appears as "Laura Hil Pastor" (uncertain spelling) on the
+  2026-09-30 programme sheet, item 10 — same person, now confirmed.
+- AC: "no sabes como hacer una carta verdad?" — the address block should not carry a credentials line
+  (none of the other letters do, e.g. `Invitacion_Conferencista_Beatriz_Escobar.tex`); removed. "Doctora en
+  Dispositivos Semiconductores" (from AC's first paste, a thesis-topic gloss, not the actual degree) corrected
+  to "Doctora en Física" then dropped entirely with the credentials line.
+- AC: "sugerimos el tema y después le decimos que no, que cualquiera... qué pendejada" — the body suggested
+  the Tecnologías Verdes y Energías Renovables axis and then immediately hedged it with a full list of the
+  other five axes. Simplified to one plain sentence naming the axis once; the details table's "a su elección
+  entre los ejes" row now reads "Eje temático: Tecnologías Verdes y Energías Renovables / Tema: a su elección
+  dentro de ese eje". Recompiled each time (`pdftotext`/`pdfinfo` check), 1 page. Not sent; AC sends to
+  laura.hill@unisucrevirtual.edu.co.
+- AC: "por qué eso va en CARTAS_DEPARTAMENTOS? eso es invitaciones a ponentes!" — correct: every other speaker
+  invitation (Escobar, Valli, Castro, M. Combariza, Kafarov, Carlos Guacarí) was already there too, not just
+  department letters. Created `07_Comunicaciones/Cartas_Ponentes/` and moved all eight `Invitacion_*` letters
+  and their `Versiones/` copies there with `git mv`; `Cartas_Departamentos/` keeps only genuine department/
+  institution letters (`Carta_Jefes_Departamentos_Generica`, `Conformacion_Comite_Cientifico`,
+  `Solicitud_Entidad_Asociada_Internacional`, `Solicitud_Espacios_Guacari`). Updated the path references in
+  `10_Ponentes/FICHA_Hill.md`, `FICHA_Escobar.md`, `Valli_Respuesta_Enviar_2026-09-30.md`. Recompiled
+  `Invitacion_Ponente_Laura_Hill.tex` from the new path to confirm `\graphicspath` still resolves (unchanged
+  depth). Old LOG entries above keep the old `Cartas_Departamentos/Invitacion_...` paths as written (history,
+  not rewritten).
