@@ -1,8 +1,14 @@
 {% extends "admin_base.html" %}{% block admin %}
 <h1>Inscripciones ({{ rows|length }})</h1>
 <p><a class="btn" href="{{ url_for('admin_export', name='inscripciones') }}">Descargar CSV</a></p>
-<table><tr><th>Ref.</th><th>Nombre</th><th>Correo</th><th>Categoría</th><th>Valor COP</th><th>Referencia de pago</th><th>Comprobante</th><th>Pagado</th></tr>
-{% for r in rows %}<tr><td>{{ r.ref }}</td><td>{{ r.name }}</td><td>{{ r.email }}</td><td>{{ CATEGORIES[r.category] }}</td>
+<table><tr><th>Fecha</th><th>Ref.</th><th>Nombre</th><th>Correo</th><th>Teléfono</th><th>Documento</th><th>Institución</th>
+<th>País</th><th>Categoría</th><th>Modalidad</th><th>Presenta</th><th>Ref. resumen</th><th>Valor COP</th>
+<th>Referencia de pago</th><th>Comprobante</th><th>Pagado</th></tr>
+{% for r in rows %}<tr><td>{{ r.created_at|fecha }}</td><td>{{ r.ref }}</td><td>{{ r.name }}</td><td>{{ r.email }}</td>
+<td>{{ r.phone }}</td><td>{{ r.document }}</td><td>{{ r.institution }}</td><td>{{ r.country }}</td>
+<td>{{ CATEGORIES[r.category] }}</td><td>{{ r.attendance }}</td>
+<td>{{ 'Sí' if r.presents else 'No' }}</td>
+<td>{{ r.submission_ref or '—' }}</td>
 <td>{{ '{:,}'.format(fee_for(r.category, r.attendance)).replace(',', '.') }}</td><td>{{ r.payment_ref or '—' }}</td>
 <td>{% if r.receipt_file %}<a href="{{ url_for('admin_receipt', rid=r.id) }}">ver</a>{% else %}—{% endif %}</td>
 <td><form method="post" action="{{ url_for('admin_paid', rid=r.id) }}"><input type="hidden" name="_csrf" value="{{ csrf_token() }}"><button class="sec">{{ 'Sí' if r.paid else 'No' }}</button></form></td></tr>{% endfor %}</table>
