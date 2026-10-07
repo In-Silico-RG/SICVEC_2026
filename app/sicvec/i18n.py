@@ -207,13 +207,25 @@ T = {
     "reg_h1": ("Inscripción", "Registration", "Inscrição"),
     "reg_intro": ("Asistencia presencial: pregrado COP {pre} · posgrado COP {pos} · profesional COP {pro}. "
                   "Participación virtual: <b>gratuita</b> para participantes externos e internacionales. "
-                  "Límite de pago: {date}. Datos para la transferencia: <b>[PENDIENTE: banco, cuenta, titular]</b>.",
+                  "Límite de pago: {date}. El pago se realiza en el portal oficial de la Universidad de Sucre: "
+                  "<a href=\"https://academusoft.unisucre.edu.co/inscripcionFormacionIG/ingreso.jsp?estecnicolaboral=0\" "
+                  "target=\"_blank\" rel=\"noopener\">academusoft.unisucre.edu.co</a>. "
+                  "Al diligenciar ese formulario no use caracteres especiales (puntos, comas, tildes, numerales, "
+                  "guiones, asteriscos) en los datos.",
                   "In-person attendance: undergraduate COP {pre} · graduate COP {pos} · professional COP {pro}. "
                   "Online participation: <b>free</b> for external and international participants. "
-                  "Payment deadline: {date}. Bank transfer details: <b>[to be announced]</b>.",
+                  "Payment deadline: {date}. Payment is made through Universidad de Sucre's official portal: "
+                  "<a href=\"https://academusoft.unisucre.edu.co/inscripcionFormacionIG/ingreso.jsp?estecnicolaboral=0\" "
+                  "target=\"_blank\" rel=\"noopener\">academusoft.unisucre.edu.co</a>. "
+                  "When filling that form, do not use special characters (periods, commas, accents, hash signs, "
+                  "hyphens, asterisks) in the data.",
                   "Participação presencial: graduação COP {pre} · pós-graduação COP {pos} · profissional COP {pro}. "
                   "Participação on-line: <b>gratuita</b> para participantes externos e internacionais. "
-                  "Prazo de pagamento: {date}. Dados para a transferência: <b>[a ser anunciado]</b>."),
+                  "Prazo de pagamento: {date}. O pagamento é feito no portal oficial da Universidad de Sucre: "
+                  "<a href=\"https://academusoft.unisucre.edu.co/inscripcionFormacionIG/ingreso.jsp?estecnicolaboral=0\" "
+                  "target=\"_blank\" rel=\"noopener\">academusoft.unisucre.edu.co</a>. "
+                  "Ao preencher esse formulário, não use caracteres especiais (pontos, vírgulas, acentos, "
+                  "cerquilhas, hífens, asteriscos) nos dados."),
     "l_email": ("Correo electrónico", "Email", "E-mail"),
     "l_phone": ("Teléfono", "Phone", "Telefone"),
     "l_document": ("Documento de identidad (tipo y número)", "ID document (type and number)",
@@ -224,8 +236,8 @@ T = {
     "l_presents": ("Presento un trabajo", "I am presenting a work", "Vou apresentar um trabalho"),
     "l_subref": ("Referencia del resumen (SICVEC-###)", "Abstract reference (SICVEC-###)",
                  "Referência do resumo (SICVEC-###)"),
-    "l_payref": ("Referencia o fecha de la transferencia", "Transfer reference or date",
-                 "Referência ou data da transferência"),
+    "l_payref": ("Número de recibo o referencia de pago (Academusoft)", "Receipt or payment reference (Academusoft)",
+                 "Número de recibo ou referência de pagamento (Academusoft)"),
     "l_receipt": ("Comprobante de pago", "Payment receipt", "Comprovante de pagamento"),
     "l_receipt_help": ("(PDF, PNG o JPG, máx. 5 MB; opcional ahora)", "(PDF, PNG or JPG, max. 5 MB; optional now)",
                        "(PDF, PNG ou JPG, máx. 5 MB; opcional agora)"),

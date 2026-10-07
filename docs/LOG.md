@@ -833,4 +833,25 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   Eje 1 title, cover logo grid), whether Guacarí lends the spaces free of charge, `10_Ponentes/Foto_Combariza.jpeg`
   (untracked, unused), online-registration closing date, announcing the extension to 10 Oct, titles of Renon Eller and
   M. Combariza, Valli's abstract.
+
+## 2026-10-07 (payment channel resolved: Academusoft)
+
+- AC requested on 2026-10-01 that Posgrados create a payment product for SICVEC 2026 registrations (email from
+  `insilico@unisucre.edu.co` to Francisco Hernández Sierra, Director de Posgrados, Educación Continuada y
+  Relaciones Internacionales, UNISUCRE). Posgrados replied 2026-10-06 16:12: the product is created, and
+  registrants pay through the university's own Academusoft portal:
+  `https://academusoft.unisucre.edu.co/inscripcionFormacionIG/ingreso.jsp?estecnicolaboral=0`. Posgrados warned
+  that the Academusoft form rejects special characters (periods, commas, accents, hash signs, hyphens,
+  asterisks) in its fields. AC acknowledged 2026-10-07 08:40 ("Recibido. Mil gracias!").
+- This replaces the long-pending "bank transfer details" item (never a bank account — the fee is collected by
+  the university, not SICVEC). Updated `app/sicvec/i18n.py`: `reg_intro` (es/en/pt) now links to the Academusoft
+  URL and carries the special-character warning instead of `[PENDIENTE: banco, cuenta, titular]`; `l_payref`
+  relabelled "Número de recibo o referencia de pago (Academusoft)" (was "Referencia o fecha de la
+  transferencia"). `docs/03_app_plan.md` open question 4 marked resolved. 46 app tests still pass
+  (`.venv/bin/python -m pytest`, no test asserted the old wording).
+- Not done: redeploy to PythonAnywhere (AC uploads the zip himself, see [[sicvec-deploy]]); no new zip built yet
+  this session.
+- Open for AC: same list as 2 Oct, plus — tell Posgrados the registration fees (pregrado 15.000 / posgrado
+  30.000 / profesional 50.000 COP) so the Academusoft product's price matches what the app and proposal say
+  (not confirmed in the thread); confirm the Academusoft link on the proposal/flyers if desired.
 - AC: "delete the photo". `10_Ponentes/Foto_Combariza.jpeg` (26 KB, 30 Sept 08:57, untracked, never used; the site uses `Foto_Combariza_2.png`) deleted from disk. It was never in git, so there is no copy in the repo.

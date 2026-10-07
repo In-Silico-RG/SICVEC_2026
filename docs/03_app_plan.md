@@ -36,7 +36,11 @@ See `app/README.md`. Rules come from `Guia_Presentacion_Resumenes.tex` (modaliti
 1. **Host.** Decided 2026-09-28 (AC): PythonAnywhere free plan. Account still to be created by AC.
 2. **SMTP.** Decided 2026-09-28 (AC): unisucre.edu.co is on Google Workspace; send from `insilico@unisucre.edu.co` via smtp.gmail.com with an app password (pending: the password itself).
 3. **Consent text.** Drafted 2026-09-28 from UNISUCRE Resolución 1129 de 2021 (defaults in `app/sicvec/config.py`); pending AC's approval.
-4. **Bank details (SV / AC).** For the registration page.
+4. **Payment.** Resolved 2026-10-01/06: no bank transfer. Payment goes through Universidad de Sucre's official
+   Academusoft portal (requested by AC 2026-10-01, product created by Posgrados 2026-10-06):
+   https://academusoft.unisucre.edu.co/inscripcionFormacionIG/ingreso.jsp?estecnicolaboral=0 . The registration
+   page (`reg_intro` in `app/sicvec/i18n.py`) links to it; `l_payref`/`l_receipt` now ask for the Academusoft
+   receipt/reference instead of a bank transfer reference.
 5. **In-person external attendees (AC).** The rule implemented: in-person always pays by category, even for external attendees; only virtual is free. Confirm.
 6. **Guide and flyer.** They still need the app's URL once it exists.
 
