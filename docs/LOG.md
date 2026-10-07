@@ -849,9 +849,21 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   relabelled "Número de recibo o referencia de pago (Academusoft)" (was "Referencia o fecha de la
   transferencia"). `docs/03_app_plan.md` open question 4 marked resolved. 46 app tests still pass
   (`.venv/bin/python -m pytest`, no test asserted the old wording).
-- Not done: redeploy to PythonAnywhere (AC uploads the zip himself, see [[sicvec-deploy]]); no new zip built yet
-  this session.
+- Commit `0085aa0`, pushed clean (no classifier block this time). Zip `dist/SICVEC_app_2026-10-07.zip` built and
+  AC uploaded/reloaded it on PythonAnywhere; verified live with curl (`academusoft.unisucre.edu.co/...` present
+  on `/inscripcion`, old `[PENDIENTE: banco...]` text gone).
 - Open for AC: same list as 2 Oct, plus — tell Posgrados the registration fees (pregrado 15.000 / posgrado
   30.000 / profesional 50.000 COP) so the Academusoft product's price matches what the app and proposal say
   (not confirmed in the thread); confirm the Academusoft link on the proposal/flyers if desired.
+
+### Invitation letter: Dra. Laura Hill (Física)
+
+- AC: "Hagamos una invitación específica para la profesora Laura Hill de UNISUCRE, dpto de física", as ponente,
+  short talk. A draft had already been made earlier the same day in an unrelated (amylose) session, which AC
+  flagged as the wrong place for it; found on disk here, untracked:
+  `07_Comunicaciones/Cartas_Departamentos/Invitacion_Ponente_Laura_Hill.tex/.pdf`, built on the
+  `Invitacion_Ponente_Carlos_Guacari` layout — ponente, 20 minutes, in person, theme/axis of her choice, slot
+  "19 o 20 de octubre, por acordar", reply "lo antes posible". Nothing about her research was written (not
+  known, not invented). Checked now: 1 page, signature on p.1, no `[PENDIENTE]` left (`pdftotext`/`pdfinfo`).
+  Added to git (was never committed). Not sent; AC sends.
 - AC: "delete the photo". `10_Ponentes/Foto_Combariza.jpeg` (26 KB, 30 Sept 08:57, untracked, never used; the site uses `Foto_Combariza_2.png`) deleted from disk. It was never in git, so there is no copy in the repo.
