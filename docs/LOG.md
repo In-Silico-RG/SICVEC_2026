@@ -895,3 +895,38 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `Invitacion_Ponente_Laura_Hill.tex` from the new path to confirm `\graphicspath` still resolves (unchanged
   depth). Old LOG entries above keep the old `Cartas_Departamentos/Invitacion_...` paths as written (history,
   not rewritten).
+
+### Admin panel: registrations visibility (AC, live session)
+
+- AC couldn't see who had registered: the `/admin/inscripciones` table only showed ref/name/email/category/
+  fee/payment/paid, even though the database (and the existing `/admin/exportar/inscripciones.csv`, which AC
+  didn't know about either) already captured phone, document, institution, country, attendance mode, whether
+  presenting, submission reference and the registration date. Added those columns to the table template.
+  Also added a "Descargar CSV" button on that page linking to the existing export route.
+- AC then asked for a one-click download of the raw database file (he knew he could already get it by hand
+  through PythonAnywhere's Files browser at `/home/sicvec2026/data/sicvec.sqlite`, from `~/sicvec.env`'s
+  `DATABASE` setting). Added `/admin/basededatos` (WAL checkpoint, then serves the file) with buttons on
+  `/admin` and `/admin/inscripciones` — then AC said "no botones, ya se como bajarla": reverted
+  (`fd56211`, clean revert of `d1338d0`) since he already had a way to get the file and didn't want the UI
+  addition. The CSV column fix and its button stayed (that one he didn't object to).
+- Commits: `7f1454a` (CSV button), `857cd76` (table columns), `d1338d0` (DB download, reverted), `fd56211`
+  (revert). Zips built and deployed along the way: `2026-10-07b/c` live; `d` was never meant to stay deployed
+  (superseded by the revert — if it was uploaded, re-upload `c` and reload).
+
+### Letters requesting help spreading the free online-attendance offer (AC, live session)
+
+- AC: "Vamos a crear una carta para enviar a Enrico Valli, Wilson Castro, Beatriz [Escobar], Monique [Renon
+  Eller] y Marianny [Combariza] para que compartan la información con sus universidades para asistencia
+  virtual con certificación vía el proceso de inscripción gratis en línea."
+- Five one-page letters in `07_Comunicaciones/Cartas_Ponentes/Solicitud_Difusion_<Name>.tex/.pdf`, same
+  template as the invitation letters (logos, footer). Spanish for Escobar (CICY, México), Castro (UNF, Perú)
+  and M. Combariza (UIS, Colombia); English for Valli (Bologna) and Renon Eller (UFV) — matching the language
+  each was already corresponded in, except Renon Eller who has no prior letter; English chosen as the
+  neutral academic default, not from any precedent. Asks each to share with colleagues/students that online
+  attendance is free for external/international participants, with a certificate of participation (grounded
+  in `08_Cronograma/Cronograma_Definitivo.md`'s "envío de certificados antes del 31 oct", not invented — the
+  app does not yet auto-generate certificates), via `sicvec2026.eu.pythonanywhere.com/inscripcion` (no
+  Academusoft step, since virtual attendance is free). Escobar's email is still `[PENDIENTE]` (not in any
+  record checked — her FICHA and reply both lack a return address); the other four: wcastro@unf.edu.pe,
+  monique.eller@ufv.br, enrico.valli4@unibo.it, marianny@uis.edu.co. Checked 1 page each, no `[PENDIENTE]`
+  (`pdftotext`). Not sent; AC sends (needs Escobar's email first).
