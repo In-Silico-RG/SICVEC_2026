@@ -29,21 +29,21 @@ T = {
                countries=None, dra="Dra.", valli2="Bologna (en línea)", italy="Italia",
                lugar="Lugar:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
                qr=["QR", "Página web", "Inscripción, resúmenes", "y programa"],
-               call=["Convocatoria abierta", "Resúmenes hasta el", "10 de octubre", "Ponencias orales · Pósteres"],
+               call=["Convocatoria abierta", "Resúmenes hasta el", "12 de octubre", "Ponencias orales · Pósteres"],
                axes="EJES TEMÁTICOS", sdg="ODS 12 · 13 · 15 · 17", org="ORGANIZA", sup="APOYAN"),
     "en": dict(sub=["1ST INTERNATIONAL SYMPOSIUM ON GREEN", "SCIENCE AND CIRCULAR ECONOMY"], date=["19–20", "October"],
                conf="KEYNOTE SPEAKERS", hybrid=["IN PERSON + ONLINE", "HYBRID"], contact="Contact:", colombia=None,
                countries=["Mexico", "Peru", "Brazil", "Colombia"], dra="Dr.", valli2="Bologna (online)", italy="Italy",
                lugar="Venue:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
                qr=["QR", "Website", "Registration, abstracts", "and programme"],
-               call=["Call for abstracts", "Abstracts due by", "10 October", "Oral talks · Posters"],
+               call=["Call for abstracts", "Abstracts due by", "12 October", "Oral talks · Posters"],
                axes="THEMATIC AXES", sdg="SDGs 12 · 13 · 15 · 17", org="ORGANISED BY", sup="SUPPORTED BY"),
     "pt": dict(sub=["I SIMPÓSIO INTERNACIONAL DE CIÊNCIA", "VERDE E ECONOMIA CIRCULAR"], date=["19 e 20", "de outubro"],
                conf="PALESTRANTES", hybrid=None, contact="Contato:", colombia="(Colômbia)",
                countries=["México", "Peru", "Brasil", "Colômbia"], dra="Dra.", valli2="Bologna (on-line)", italy="Itália",
                lugar="Local:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
                qr=["QR", "Site", "Inscrição, resumos", "e programação"],
-               call=["Chamada aberta", "Resumos até", "10 de outubro", "Apresentações orais · Pôsteres"],
+               call=["Chamada aberta", "Resumos até", "12 de outubro", "Apresentações orais · Pôsteres"],
                axes="EIXOS TEMÁTICOS", sdg="ODS 12 · 13 · 15 · 17", org="ORGANIZAÇÃO", sup="APOIO"),
 }[LANG]
 
@@ -288,17 +288,18 @@ def logo(path, cx, cy, h, maxw=10**6, white_to_alpha=False):
     im.paste(lg, (int(cx * K - lg.width / 2), int(cy * K - lg.height / 2)), lg)
 
 
-# AC, 2026-09-30 (as on the website): ORGANIZA = IN SILICO; APOYAN = the four departments; UNISUCRE centred below a
-# rule, the same size as the other logos.
-heading(150, FY + 6, T["org"], 118)
-logo(LOGOS / "Logo_insilico.jpeg", 150, FY + 52, 60, 190)
-d.line(box(290, FY + 8, 290, FY + 84), fill=LINE, width=2)
-heading(655, FY + 6, T["sup"], 330)
-for cx, f in zip([405, 565, 725, 890], ["Logo_Bio.png", "logo_agroin.png", "logo_ingagrocola.png",
+# AC, 2026-10-07: single row -- ORGANIZA = IN SILICO (smaller); APOYAN = the four departments; UNISUCRE at the
+# right end of the same row (was centred on a row below; AC: "no me gusta el pie... logo insilico mas pequeno...
+# logo unisucre a la derecha").
+heading(110, FY + 6, T["org"], 85)
+logo(LOGOS / "Logo_insilico.jpeg", 110, FY + 52, 45, 150)
+d.line(box(205, FY + 8, 205, FY + 84), fill=LINE, width=2)
+heading(530, FY + 6, T["sup"], 310)
+for cx, f in zip([320, 460, 600, 740], ["Logo_Bio.png", "logo_agroin.png", "logo_ingagrocola.png",
                                          "logo_fisica_lifi_transparente.png"]):
-    logo(LOGOS / f, cx, FY + 52, 60, 145)
-d.line(box(262, FY + 88, 762, FY + 88), fill=LINE, width=2)
-logo(LOGOS / "logo_unisucre.png", 512, FY + 114, 44, 170)
+    logo(LOGOS / f, cx, FY + 52, 58, 120)
+d.line(box(845, FY + 8, 845, FY + 84), fill=LINE, width=2)
+logo(LOGOS / "logo_unisucre.png", 935, FY + 52, 55, 160)
 
 OUT = f"Afiche_SICVEC_2026{SUFFIX}"
 im.save(HERE / f"{OUT}.png", optimize=True)

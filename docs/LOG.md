@@ -930,3 +930,55 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   record checked — her FICHA and reply both lack a return address); the other four: wcastro@unf.edu.pe,
   monique.eller@ufv.br, enrico.valli4@unibo.it, marianny@uis.edu.co. Checked 1 page each, no `[PENDIENTE]`
   (`pdftotext`). Not sent; AC sends (needs Escobar's email first).
+- AC caught that Renon Eller is Brazilian and should get the letter in Portuguese, not English: rewritten
+  (babel has no Portuguese hyphenation patterns installed, left unloaded for that one file).
+- Letterhead redesign, many rejected rounds before converging (full detail in
+  `~/.claude/projects/.../memory/cartas-letterhead-diseno.md`): final approved design is a single left-aligned
+  logo row (SICVEC | IN SILICO (1.28cm, 20% smaller) | 4 dept logos | Universidad de Sucre, green vertical
+  rules between groups) and a three-column `\tiny` footer (Organiza+Co-organizadores merged into one column;
+  Coordinación; Contacto, with the event email only once). Applied to all 5 original difusión letters plus
+  two new ones for Pedro Javier Meza Castellar (USBCTG, ponente + evaluador de pósteres per his acceptance of
+  2026-10-02, email thread "Invitación a Ponencia – SICVEC 2026") and Laura Hill (confirmed as ponente --
+  `FICHA_Hill.md` corrected, it wrongly said "not sent"). Each letter asks the recipient to share it through
+  their institution's channels and their academic/research networks; Laura Hill's version drops the
+  "institutional channels" framing since she's UNISUCRE's own Física department, keeping only the networks
+  ask. One generic complementary email to all five keynote speakers (BCC) with the poster attached in three
+  languages: `Email_Complemento_Difusion_Magistrales.md`.
+- Calendar change (AC, 2026-10-07): submissions close 12 Oct (was 10), peer review until 15 Oct (was 14), no
+  separate "Admisibilidad" step; decision (15 Oct) and payment (18 Oct) unchanged. Propagated to
+  `app/sicvec/config.py` (SUBMISSION_DEADLINE, REVIEW_DEADLINE) and `app/tests/test_app.py`
+  (`test_calendar_2026_10_07`, supersedes `test_calendar_2026_09_30`); 46 tests pass. Also propagated to the
+  flyer (`Flyer_SICVEC_2026{,_EN,_PT}.tex`) and the poster script (`editar_afiche.py`, all 3 languages) --
+  needed installing `segno` and `pypdf` into user site-packages (`pip install --user --break-system-packages`)
+  since the script had never been run with those deps present. Not yet propagated to README.md,
+  Cronograma_Definitivo.md, the author guides/manual/template, or the proposal -- still showing 10/14 Oct and
+  "Admisibilidad" in several places; left for a future session since AC moved on to other work.
+- New letter to the 4 co-organizing department heads with final event info (the updated calendar) and a
+  diffusion request, replacing the stale initial recruitment pitch (`Carta_Jefes_Departamentos_Generica`,
+  dated 17 Sept, never touched -- it was already sent and accepted, see below):
+  `Comunicacion_Final_Jefes_Departamentos.tex/.pdf` + `Email_Comunicacion_Final_Jefes_Departamentos.md`
+  (to the four `dpto.*@unisucre.edu.co` addresses on record; Física to Yurimar Ruiz Rocha by name).
+- AC: "las invitaciones y cartas viejas ya se enviaron, para que las vamos a cambiar?????" -- correct. An
+  early, abandoned attempt at this same letterhead redesign had been mechanically applied to 12 already-sent
+  letters (the four `Invitacion_Conferencista_*`, `Invitacion_Ponente_Carlos_Guacari`,
+  `Invitacion_Ponente_Laura_Hill`, and the four `Cartas_Departamentos` institution letters). Reverted all 12
+  to HEAD (`git checkout`) and deleted the now-redundant pre-edit backup copies under their `Versiones/`
+  folders -- those letters are historical record of what was actually sent and are not touched going
+  forward, only new letters get the new design.
+- Social banners for IN SILICO's and Universidad de Sucre's social media, derived from the already-approved
+  poster rather than designed from scratch (`05_Material_Difusion/Redes_Sociales/crear_banners.py`): a square
+  post (1080x1080, top crop of the poster) and a story (1080x1920) in es/en/pt. First story attempt clipped
+  "ORGANIZA"/"Universidad de Sucre" at the edges because the footer band runs edge-to-edge and was being
+  width-trimmed like the rest of the crop (AC: "se salen las cosas de la imagen"); fixed by trimming only the
+  content above the footer and shrinking the full-width footer separately to fit.
+- Housekeeping before commit: deleted two empty local test artifacts that had landed in the repo root
+  (`sicvec.sqlite`, `sicvec_inscripciones.csv` -- zero rows, from this session's admin-panel testing) and
+  added both to `.gitignore`; deleted three unused browser-screenshot PNGs from an abandoned "embed a
+  screenshot of the live footer" attempt (`01_Propuesta/Logos/pie_organiza_apoyo_{es,en,pt}.png`, superseded
+  by the LaTeX-rebuilt footer). Left untouched and unexplained: a stray
+  `05_Material_Difusion/Flyers_Posters/..._flyer_comms_unisucre.jpg` (1080x1920, timestamped during this
+  session) of unknown origin -- not created by me, not committed; ask AC.
+- `10_Ponentes/Resumen ponencia.docx` (Pedro Meza's submitted title/abstract/bio) and
+  `10_Ponentes/Meza_Respuesta_Enviar_2026-10-07.md` (draft acknowledgement, not sent) added; his FICHA
+  created. `PLANTILLA_PREVIEW.tex/.pdf` kept at the repo root per AC's own use during the redesign -- the
+  reference copy of the approved letterhead for future tweaks (see the memory file above).

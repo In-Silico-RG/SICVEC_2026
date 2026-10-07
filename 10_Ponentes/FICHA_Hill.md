@@ -8,6 +8,7 @@
 | Research lines | Ciencia de materiales, semiconductores y sistemas fotovoltaicos (materiales semiconductores para aplicaciones fotovoltaicas) | AC + CvLAC, 2026-10-07 |
 | Selected publications | *Materials Science in Semiconductor Processing* 109 (2020); *Thin Solid Films* 693 (2020); IEEE ICEEE 2018 proceedings; Springer LNCS 12616 (2021, co-authored) | CvLAC pasted by AC, 2026-10-07 |
 | Email | laura.hill@unisucrevirtual.edu.co | AC, 2026-10-07 |
+| Status | **Accepted** | AC, 2026-10-07 |
 | Talk | Ponente, 20 min, presencial, eje sugerido: Tecnologías Verdes y Energías Renovables (a su elección) | AC, 2026-10-07 |
 | Slot | 19 o 20 de octubre, por acordar — [PENDIENTE: confirmar] | |
 | Title, abstract, short bio, photo | [PENDIENTE] | |
@@ -21,4 +22,5 @@ Also appears as "Laura Hil Pastor" (uncertain spelling then) in the organizers' 
 (`08_Cronograma/Programacion SICVEC - Copia de Hoja 1 (1).pdf`, item 10) — same person, name now confirmed.
 
 Letter: `07_Comunicaciones/Cartas_Ponentes/Invitacion_Ponente_Laura_Hill.tex/.pdf` (invitation as ponente,
-reply "lo antes posible"). Not sent; AC sends to the email above.
+reply "lo antes posible"). **Sent by AC; she accepted** (AC, 2026-10-07). Status updated from
+"not sent" — the previous note in this file was stale.

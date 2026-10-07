@@ -20,3 +20,5 @@ app/instance/
 __pycache__/
 .pytest_cache/
 dist/
+/sicvec.sqlite
+/sicvec_inscripciones.csv

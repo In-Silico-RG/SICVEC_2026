@@ -357,11 +357,12 @@ def test_renon_photo_and_bio(client):
     assert client.get("/static/speaker_renon.jpg").status_code == 200
 
 
-def test_calendar_2026_09_30(app):
-    # AC, 2026-09-30: closing 10 Oct, review until 14 Oct, decision 15 Oct, final material 17 Oct, payment 18 Oct.
+def test_calendar_2026_10_07(app):
+    # AC, 2026-10-07: closing 12 Oct, review until 15 Oct, decision 15 Oct, payment 18 Oct; no separate
+    # admisibilidad step. Supersedes test_calendar_2026_09_30 (10/14/15/17/18 Oct).
     cfg = app.config
-    assert f"{cfg['SUBMISSION_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-10 23:59"
-    assert f"{cfg['REVIEW_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-14 23:59"
+    assert f"{cfg['SUBMISSION_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-12 23:59"
+    assert f"{cfg['REVIEW_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-15 23:59"
     assert f"{cfg['PAYMENT_DEADLINE']:%Y-%m-%d %H:%M}" == "2026-10-18 23:59"
 
 

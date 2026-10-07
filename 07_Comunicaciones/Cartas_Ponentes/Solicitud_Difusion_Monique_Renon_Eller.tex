@@ -2,9 +2,12 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage[margin=2cm, top=2.6cm, bottom=1.8cm, footskip=0.6cm]{geometry}
+% No Portuguese hyphenation patterns installed in this TeX distribution;
+% babel is left unloaded for this file (short formal letter, hyphenation not critical).
+\usepackage[margin=2cm, bottom=6.2cm, footskip=0.6cm]{geometry}
 \usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
 \graphicspath{{../../01_Propuesta/Logos/}{./}}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
@@ -17,79 +20,119 @@
 \definecolor{verdeosc}{RGB}{26,107,60}
 \definecolor{verdemid}{RGB}{46,139,87}
 
-\setlength{\headheight}{40pt}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}cccc@{}}
-    \includegraphics[height=1.0cm]{logo_unisucre.png} &
-    \includegraphics[height=1.0cm]{logo_sicvec2026.png} &
-    \includegraphics[height=1.0cm]{Logo_insilico.jpeg} &
-    \includegraphics[height=1.0cm]{Logo_Bio.png} \\
-  \end{tabular*}%
+\fancyfoot[C]{%
+  \tiny
+  \hyphenpenalty=10000\exhyphenpenalty=10000
+  \noindent
+  \begin{minipage}{\textwidth}
+  \begin{minipage}[t]{4.4cm}
+  {\color{verdeosc}\textbf{ORGANIZAÇÃO}}\\[3pt]
+  Grupo de Pesquisa IN SILICO\\[6pt]
+  {\color{verdeosc}\textbf{CO-ORGANIZADORES}}\\[3pt]
+  Departamento de Biologia e Química\\
+  Departamento de Engenharia Agroindustrial\\
+  Departamento de Engenharia Agrícola\\
+  Departamento de Física\\
+  Universidad de Sucre
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{3.7cm}
+  {\color{verdeosc}\textbf{COORDENAÇÃO}}\\[3pt]
+  \textbf{Aldo F. Combariza}\\
+  Coordenação Geral\\
+  \textbf{María Ximena Díaz}\\
+  Coordenação Acadêmica\\
+  \textbf{Sebastián Vargas}\\
+  Coordenação Logística\\
+  \textbf{Selena Arias Avila}\\
+  Coordenação Administrativa
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{3.7cm}
+  {\color{verdeosc}\textbf{CONTATO}}\\[3pt]
+  \textbf{SICVEC 2026}\\
+  19--20 de outubro de 2026\\
+  C.C. Guacarí, Sincelejo\\
+  Formato híbrido\\
+  \href{mailto:insilico@unisucre.edu.co}{insilico@unisucre.edu.co}
+  \end{minipage}%
+  \end{minipage}%
 }
-\fancyfoot[C]{\footnotesize\itshape SICVEC 2026 contributes to Sustainable Development Goals 12, 13, 15 and 17.}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\headrule}{\hbox to\headwidth{\color{verdeosc}\leaders\hrule height\headrulewidth\hfill}}
+\renewcommand{\headrulewidth}{0pt}
 
 \begin{document}
 
-\vspace{0.1cm}
+\noindent
+\includegraphics[height=1.6cm]{logo_sicvec2026.png}%
+\hspace{10pt}{\color{verdeosc}\vrule width 1.2pt height 1.5cm}\hspace{10pt}%
+\includegraphics[height=1.28cm]{Logo_insilico.jpeg}%
+\hspace{10pt}{\color{verdeosc}\vrule width 1.2pt height 1.5cm}\hspace{10pt}%
+\includegraphics[height=1.3cm]{Logo_Bio.png}\hspace{6pt}%
+\includegraphics[height=1.3cm]{logo_agroin.png}\hspace{6pt}%
+\includegraphics[height=1.3cm]{logo_ingagrocola.png}\hspace{6pt}%
+\includegraphics[height=1.3cm]{logo_fisica_lifi.png}%
+\hspace{10pt}{\color{verdeosc}\vrule width 1.2pt height 1.5cm}\hspace{10pt}%
+\includegraphics[height=1.3cm]{logo_unisucre.png}
+
+\vspace{0.4cm}
 
 \noindent
-\textbf{Sincelejo, October 7, 2026}
+\textbf{Sincelejo, 7 de outubro de 2026}
 
 \vspace{0.15cm}
 
 \noindent
-Prof. Monique Renon Eller\\
-Department of Food Technology\\
-Universidade Federal de Vi\c{c}osa (UFV)\\
-Vi\c{c}osa, Minas Gerais, Brazil
+Prof.ª Dra. Monique Renon Eller\\
+Departamento de Tecnologia de Alimentos\\
+Universidade Federal de Viçosa (UFV)\\
+Viçosa, Minas Gerais, Brasil
 
 \vspace{0.15cm}
 
 \noindent
-\textbf{\large Subject: Sharing SICVEC 2026's free online participation with your network}
+\textbf{\large Assunto: Divulgação da participação virtual gratuita — SICVEC 2026}
 
 \vspace{0.15cm}
 
-Dear Prof. Renon Eller,
+Prezada Prof.ª Renon Eller,
 
 \vspace{0.1cm}
 
-As a confirmed keynote speaker of the \textbf{International Symposium on Green Science and Circular Economy (SICVEC 2026)}, we would like to ask you an additional favour.
+Como palestrante confirmada do \textbf{Simpósio Internacional de Ciência Verde e Economia Circular (SICVEC 2026)}, gostaríamos de lhe pedir um favor adicional.
 
-The symposium offers \textbf{free online participation} for external and international attendees, including a certificate of participation, through a simple, free online registration for that format. We would be delighted if colleagues, students and researchers at the Universidade Federal de Vi\c{c}osa could join us, especially during your talk. We would be very grateful if you could share this information at your institution, through whichever channels you find appropriate.
+O simpósio oferece \textbf{participação virtual gratuita} para o público externo e internacional, com certificado de participação, mediante uma inscrição on-line simples e sem custo para essa modalidade. Poderia compartilhar a carta anexa, pelos canais institucionais adequados da UFV, para divulgar tanto o evento quanto a sua participação nele? Gostaríamos que o evento fosse o mais aberto possível à comunidade estudantil e aos colegas de sua instituição, assim como às suas redes acadêmicas e de pesquisa mais amplas.
 
 \vspace{0.1cm}
 
 \noindent
-\textbf{INFORMATION TO SHARE}
+\textbf{INFORMAÇÕES PARA DIVULGAR}
 
-\begin{tabular}{ll}
-\textbf{Event:} & International Symposium on Green Science and Circular Economy (SICVEC 2026) \\
-\textbf{Dates:} & October 19--20, 2026 (Monday and Tuesday) \\
-\textbf{Format:} & Hybrid -- in person in Sincelejo, Colombia / free online for external and international attendees \\
-\textbf{Online registration (free):} & \href{https://sicvec2026.eu.pythonanywhere.com/inscripcion}{sicvec2026.eu.pythonanywhere.com/inscripcion} \\
-\textbf{Certificate:} & of participation, for those who register and attend \\
-\textbf{Programme and speakers:} & \href{https://sicvec2026.eu.pythonanywhere.com/programa}{sicvec2026.eu.pythonanywhere.com/programa} \\
-\end{tabular}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Evento:} & Simpósio Internacional de Ciência Verde e Economia Circular (SICVEC 2026) \\
+\textbf{Datas:} & 19 e 20 de outubro de 2026 (segunda e terça-feira) \\
+\textbf{Modalidade:} & Híbrida — presencial em Sincelejo, Colômbia / virtual gratuita (externos e internacionais) \\
+\textbf{Site (em português):} & \href{https://sicvec2026.eu.pythonanywhere.com/?lang=pt}{sicvec2026.eu.pythonanywhere.com/?lang=pt} \\
+\textbf{Inscrição virtual (gratuita):} & \href{https://sicvec2026.eu.pythonanywhere.com/inscripcion?lang=pt}{sicvec2026.eu.pythonanywhere.com/inscripcion?lang=pt} \\
+\textbf{Certificado:} & de participação, para quem se inscrever e participar \\
+\textbf{Programação e palestrantes:} & \href{https://sicvec2026.eu.pythonanywhere.com/programa?lang=pt}{sicvec2026.eu.pythonanywhere.com/programa?lang=pt} \\
+\end{tabularx}
 
 \vspace{0.1cm}
 
-Thank you very much in advance for your help spreading the word, and for joining us with your talk at SICVEC 2026.
+Muito obrigado antecipadamente pelo apoio na divulgação, e por nos acompanhar com sua palestra no SICVEC 2026.
 
 \vspace{0.15cm}
 
-Sincerely,
+Atenciosamente,
 
 \vspace{0.15cm}
 
 \textbf{Dr. Aldo F. Combariza}\\
-General Coordinator, SICVEC 2026\\
-IN SILICO Research Group · Department of Biology and Chemistry\\
-Faculty of Education and Sciences · Universidad de Sucre\\
+Coordenador Geral, SICVEC 2026\\
+Grupo de Pesquisa IN SILICO · Departamento de Biologia e Química\\
+Faculdade de Educação e Ciências · Universidad de Sucre\\
 \href{mailto:aldo.combariza@unisucre.edu.co}{aldo.combariza@unisucre.edu.co}
 
 \end{document}
