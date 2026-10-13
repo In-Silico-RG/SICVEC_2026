@@ -59,7 +59,7 @@ PROGRAMA = [
     ]),
     ('Martes 20 de octubre', [
         ('08:00–08:30', 'Inscripción y registro de participantes'),
-        ('08:30–09:00', 'Ponencia 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+        ('08:30–09:00', 'Ponencia 9 (por asignar)'),
         ('09:00–10:00', 'Conferencia magistral 3 · Prof. Enrico Valli, Università di Bologna, Bolonia, Italia · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
         ('10:00–10:25', 'Ponencia 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
         ('10:25–10:50', 'Receso (café)'),
@@ -381,7 +381,7 @@ _EN = {
         ]),
         ('Tuesday 20 October', [
             ('08:00–08:30', 'Registration and check-in'),
-            ('08:30–09:00', 'Talk 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+            ('08:30–09:00', 'Talk 9 (to be assigned)'),
             ('09:00–10:00', 'Keynote lecture 3 · Prof. Enrico Valli, Università di Bologna, Bologna, Italy · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
             ('10:00–10:25', 'Talk 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
             ('10:25–10:50', 'Coffee break'),
@@ -463,7 +463,7 @@ _PT = {
         ]),
         ('Terça-feira, 20 de outubro', [
             ('08:00–08:30', 'Inscrição e credenciamento dos participantes'),
-            ('08:30–09:00', 'Apresentação 9 · Esp. Carlos Meza Bertel, Parque Comercial Guacarí, Sincelejo, Colombia'),
+            ('08:30–09:00', 'Apresentação 9 (a definir)'),
             ('09:00–10:00', 'Conferência magistral 3 · Prof. Enrico Valli, Università di Bologna, Bolonha, Itália · «Valorization of by-products from olive oil production as a source of bioactive compounds»'),
             ('10:00–10:25', 'Apresentação 10 · Dra. Laura Hil Pastor, Universidad de Sucre, Sincelejo, Colombia'),
             ('10:25–10:50', 'Intervalo (café)'),

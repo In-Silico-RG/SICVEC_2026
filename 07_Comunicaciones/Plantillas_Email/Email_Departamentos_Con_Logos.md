@@ -39,7 +39,7 @@ Simposio Internacional de Ciencia Verde y Economía Circular (SICVEC 2026).
 📌 EVENTO EN BREVE
 
 Fechas:    19-20 de octubre de 2026 (lunes y martes)
-Lugar:     Centro Comercial Guacarí, Sincelejo, Sucre
+Lugar:     [PENDIENTE: sede], Sincelejo, Sucre
 Modalidad: Presencial + híbrida (120-150 asistentes + 300 cupos en línea)
 Público:   Académicos, investigadores, profesionales en ciencias e ingenierías
 
@@ -153,7 +153,7 @@ de trabajos y contribuciones académicas.
 Estimados Colegas,
 
 Invitamos al Departamento de Ingeniería Agrícola a co-organizar 
-SICVEC 2026 (19-20 octubre, C.C. Guacarí).
+SICVEC 2026 (19-20 octubre, sede por confirmar).
 
 El simposio aborda temas estratégicos como tecnologías verdes, 
 energías renovables y sostenibilidad agrícola, con participación de 

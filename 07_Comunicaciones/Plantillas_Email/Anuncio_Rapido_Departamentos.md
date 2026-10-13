@@ -7,7 +7,7 @@
 El **Departamento es co-organizador** del **SICVEC 2026** — Simposio Internacional de Ciencia Verde y Economía Circular.
 
 📅 **19-20 de octubre de 2026** (lunes y martes)  
-📍 **Centro Comercial Guacarí, Sincelejo**  
+📍 **Sincelejo, Sucre (sede por confirmar)**  
 🌍 **Modalidad híbrida** (presencial + en línea)
 
 ✅ Invitamos a docentes y estudiantes a:
@@ -32,7 +32,7 @@ El **Departamento es co-organizador** del **SICVEC 2026** — Simposio Internaci
 ║        Y ECONOMÍA CIRCULAR                                     ║
 ║                                                                ║
 ║  🗓️  19-20 de octubre de 2026 (lunes y martes)                ║
-║  📍  Centro Comercial Guacarí, Sincelejo, Sucre                ║
+║  📍  Sincelejo, Sucre (sede por confirmar)                     ║
 ║  🌐  Modalidad híbrida (presencial + en línea)                 ║
 ║                                                                ║
 ║  6 EJES TEMÁTICOS:                                             ║

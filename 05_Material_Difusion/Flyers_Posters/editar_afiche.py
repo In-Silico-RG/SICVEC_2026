@@ -27,21 +27,21 @@ SUFFIX = {"es": "", "en": "_EN", "pt": "_PT"}[LANG]
 T = {
     "es": dict(sub=None, date=None, conf=None, hybrid=None, contact=None, colombia=None,
                countries=None, dra="Dra.", valli2="Bologna (en línea)", italy="Italia",
-               lugar="Lugar:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
+               lugar="Lugar:", venue="Por confirmar", city="Sincelejo, Sucre",
                qr=["QR", "Página web", "Inscripción, resúmenes", "y programa"],
                call=["Convocatoria abierta", "Resúmenes hasta el", "12 de octubre", "Ponencias orales · Pósteres"],
                axes="EJES TEMÁTICOS", sdg="ODS 12 · 13 · 15 · 17", org="ORGANIZA", sup="APOYAN"),
     "en": dict(sub=["1ST INTERNATIONAL SYMPOSIUM ON GREEN", "SCIENCE AND CIRCULAR ECONOMY"], date=["19–20", "October"],
                conf="KEYNOTE SPEAKERS", hybrid=["IN PERSON + ONLINE", "HYBRID"], contact="Contact:", colombia=None,
                countries=["Mexico", "Peru", "Brazil", "Colombia"], dra="Dr.", valli2="Bologna (online)", italy="Italy",
-               lugar="Venue:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
+               lugar="Venue:", venue="To be confirmed", city="Sincelejo, Sucre",
                qr=["QR", "Website", "Registration, abstracts", "and programme"],
                call=["Call for abstracts", "Abstracts due by", "12 October", "Oral talks · Posters"],
                axes="THEMATIC AXES", sdg="SDGs 12 · 13 · 15 · 17", org="ORGANISED BY", sup="SUPPORTED BY"),
     "pt": dict(sub=["I SIMPÓSIO INTERNACIONAL DE CIÊNCIA", "VERDE E ECONOMIA CIRCULAR"], date=["19 e 20", "de outubro"],
                conf="PALESTRANTES", hybrid=None, contact="Contato:", colombia="(Colômbia)",
                countries=["México", "Peru", "Brasil", "Colômbia"], dra="Dra.", valli2="Bologna (on-line)", italy="Itália",
-               lugar="Local:", venue="C.C. Guacarí", city="Sincelejo, Sucre",
+               lugar="Local:", venue="A confirmar", city="Sincelejo, Sucre",
                qr=["QR", "Site", "Inscrição, resumos", "e programação"],
                call=["Chamada aberta", "Resumos até", "12 de outubro", "Apresentações orais · Pôsteres"],
                axes="EIXOS TEMÁTICOS", sdg="ODS 12 · 13 · 15 · 17", org="ORGANIZAÇÃO", sup="APOIO"),
@@ -207,20 +207,13 @@ for c in row:
     x += c.width + GAP
 d = ImageDraw.Draw(im)
 
-# 2. Venue (AC, 2026-09-28): "Lugar: CC Guacarí, Sincelejo ..." in the map block; the online (PDF) version links to Maps.
-MAPS_URL = "https://www.google.com/maps/search/?api=1&query=Centro+Comercial+Guacar%C3%AD+Sincelejo+Sucre"  # same as the app
-# AC, 2026-09-30: Guacarí logo (official, parquecomercialguacari.com, 01_Propuesta/Logos/logo_guacari.png) in place of
-# the map icon, and the venue written out next to it ("ESCRIBE CC GUACARÍ EXPLÍCITAMENTE": the logo's text is too small).
+# 2. Venue (AC, 2026-10-13: C.C. Guacarí discarded as venue; no new venue confirmed yet, so this block just
+# erases the old text/logo and writes "Por confirmar" / "To be confirmed" / "A confirmar" instead).
 erase(480, 1172, 582, 1262)
 write(483, 1187, T["lugar"], 17, BOLD, VERDE_OSC, "la")
 write(483, 1209, T["venue"], 15.5, BOLD, TINTA, "la")
 write(483, 1230, T["city"], 13, REG, TINTA, "la")
 erase(386, 1172, 472, 1264)
-gl = Image.open(LOGOS / "logo_guacari.png").convert("RGBA")
-gl = gl.crop(gl.getbbox())
-gl = gl.resize((round(gl.width * 82 * K / gl.height), 82 * K), Image.LANCZOS)
-im.paste(gl, (round(429 * K - gl.width / 2), 1177 * K), gl)
-LINK_BOXES = [(120, 1180, 580, 1260)]  # pin + map blocks, base-image pixels
 
 # 3. QR code (AC, 2026-09-30: "only one QR needed now, pointing to the web page"). Left box: QR to the home page,
 # label "QR Página web"; right box: the QR is replaced by the call for abstracts (calendar of 30 Sept).
@@ -306,13 +299,13 @@ im.save(HERE / f"{OUT}.png", optimize=True)
 DPI = 260  # 2048 px / 260 dpi = 20 cm wide
 im.save(HERE / f"{OUT}.pdf", resolution=DPI)
 
-# clickable links (PDF only): Google Maps over the venue blocks, the site over the QR codes
+# clickable links (PDF only): the site over the QR codes (no venue link, Lugar is unconfirmed)
 from pypdf import PdfReader, PdfWriter
 from pypdf.annotations import Link
 w = PdfWriter(clone_from=PdfReader(HERE / f"{OUT}.pdf"))
 pt = 72 / DPI * K
 H = 1536 * pt
-for (x0, y0, x1, y1), url in [(b, MAPS_URL) for b in LINK_BOXES] + QR_LINKS:
+for (x0, y0, x1, y1), url in QR_LINKS:
     ann = Link(rect=(x0 * pt, H - y1 * pt, x1 * pt, H - y0 * pt), url=url)
     w.add_annotation(page_number=0, annotation=ann)
 w.write(HERE / f"{OUT}.pdf")

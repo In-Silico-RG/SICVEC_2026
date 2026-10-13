@@ -2,7 +2,7 @@
 
 ## Simposio Internacional de Ciencia Verde y Economía Circular
 **Fecha:** 19-20 de octubre de 2026 (lunes y martes)  
-**Lugar:** Centro Comercial Guacarí, Sincelejo, Sucre, Colombia  
+**Lugar:** [PENDIENTE: sede], Sincelejo, Sucre, Colombia  
 **Público esperado:** 120-150 participantes
 
 ---
@@ -143,7 +143,7 @@ SICVEC_2026/
 | **Nombre** | Simposio Internacional de Ciencia Verde y Economía Circular | 01_Propuesta/Documentos |
 | **Sigla** | SICVEC 2026 | - |
 | **Fechas** | 19-20 de octubre de 2026 (lunes-martes) | 08_Cronograma/Propuesta |
-| **Lugar** | Centro Comercial Guacarí, Sincelejo | 06_Logistica/Venue |
+| **Lugar** | [PENDIENTE: sede], Sincelejo | 06_Logistica/Venue |
 | **Público** | 120-150 participantes | 01_Propuesta/Documentos |
 | **Presupuesto** | COP 2.500.000 | 06_Logistica/Presupuesto |
 | **Modalidades** | Ponencias, Posters | 03_Memorias_y_PeerReview/Guias_Autores |

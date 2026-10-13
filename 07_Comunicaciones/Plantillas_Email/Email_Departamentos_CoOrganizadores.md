@@ -17,7 +17,7 @@ Desde el Grupo de Investigación IN SILICO y el Programa de Biología, nos compl
 
 **EVENTO EN BREVE:**
 - **Fechas:** 19-20 de octubre de 2026 (lunes y martes)
-- **Lugar:** Centro Comercial Guacarí, Sincelejo, Sucre
+- **Lugar:** [PENDIENTE: sede], Sincelejo, Sucre
 - **Modalidad:** Presencial + híbrida (120-150 asistentes + 300 cupos en línea)
 - **Público:** Académicos, investigadores, profesionales en ciencias e ingenierías
 
@@ -94,7 +94,7 @@ Aldo F. Combariza
 
 Estimados Colegas,
 
-Invitamos al **Departamento de Ingeniería Agrícola** a co-organizar el **SICVEC 2026** (19-20 octubre, C.C. Guacarí).
+Invitamos al **Departamento de Ingeniería Agrícola** a co-organizar el **SICVEC 2026** (19-20 octubre, sede por confirmar).
 
 El simposio aborda temas estratégicos como **tecnologías verdes**, **energías renovables** y **sostenibilidad agrícola**, con participación de profesionales e investigadores del sector.
 

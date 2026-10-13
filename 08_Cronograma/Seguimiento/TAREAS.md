@@ -1,13 +1,13 @@
 # Tareas SICVEC 2026 — seguimiento
 
-**Evento:** 19-20 de octubre de 2026 (lunes y martes), C.C. Guacarí, Sincelejo
-**Actualizado:** 19 de septiembre de 2026
+**Evento:** 19-20 de octubre de 2026 (lunes y martes), [PENDIENTE: sede], Sincelejo
+**Actualizado:** 13 de octubre de 2026
 
 Marca `[x]` al completar y anota fecha y responsable. Convención: **AC** = Aldo Combariza (General), **MXD** = María Ximena Díaz (Académica), **SV** = Sebastián Vargas (Logística).
 
 ## 🔴 Urgente (esta semana — actualizado 17 sept)
 - [ ] **Comunicar cambio de cronograma**: convocatoria 22 sept - 10 oct (AC, 30 sept: antes 4 oct), nueva fecha evento 19-20 oct confirmada (email + redes) — AC / MXD
-- [x] **Venue confirmado** (reunión 18 sept, AC 19 sept). Verificar por escrito: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
+- [ ] **Sede por definir** (AC, 13 oct: C.C. Guacarí descartado como sede y Carlos Meza Bertel descartado como ponente, en todo). Buscar y confirmar nuevo venue: salón principal, salas paralelas, capacidad, sonido/proyección, WiFi, parqueo — SV
 - [ ] **Datos de contacto** completos de los 3 coordinadores (teléfonos, email de MXD) — AC
 - [x] **Presupuesto** fijado en COP 2.500.000 (AC, 19 sept) — 06_Logistica/Presupuesto/
 

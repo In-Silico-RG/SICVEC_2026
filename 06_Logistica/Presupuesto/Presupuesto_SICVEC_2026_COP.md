@@ -15,7 +15,7 @@
 
 - Materiales asistentes: 1.000.000 COP (escarapelas, libretas, flyers, lapiceros)
 - Imagen y Audiovisuales: 1.500.000 COP (transmisión online, redes, publicidad)
-- Infraestructura (C.C. Guacarí): cubierto
+- Infraestructura: [PENDIENTE: sede del evento sin confirmar desde el 13 oct; costo por definir]
 - RRHH (coordinadores, personal): cubierto por UNISUCRE
 - Transporte y alojamiento (conferencistas): cubierto por aliados
 - Plataforma de transmisión: cubierta

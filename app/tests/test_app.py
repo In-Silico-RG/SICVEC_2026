@@ -182,7 +182,7 @@ def test_no_online_seat_cap_by_default(tmp_path):
 
 def test_public_info_pages(client):
     home = client.get("/").get_data(as_text=True)
-    for needle in ("Ejes temáticos", "ODS 12", "Pregrado: COP 15.000", "Participación en línea gratuita", "Centro Comercial Guacarí", "Calle 28 No. 25B-97", "google.com/maps"):
+    for needle in ("Ejes temáticos", "ODS 12", "Pregrado: COP 15.000", "Participación en línea gratuita", "sede por confirmar"):
         assert needle in home
     prog = client.get("/programa").get_data(as_text=True)
     assert "Programa preliminar" in prog and "Lunes 19 de octubre" in prog and "Martes 20 de octubre" in prog
@@ -201,7 +201,7 @@ def test_footer_has_coordinators_email(client):
 
 
 def test_home_names_the_venue_room(client):
-    assert "sala de conferencias del Centro Comercial Guacarí" in client.get("/").get_data(as_text=True)
+    assert "Sede: por confirmar." in client.get("/").get_data(as_text=True)
 
 
 def test_smtp_sent_in_background(tmp_path, monkeypatch):
@@ -375,16 +375,10 @@ def test_footer_physics_logo(client):
 
 def test_programme_from_sheet(client):
     es = client.get("/programa?lang=es").get_data(as_text=True)
-    assert "07:45–08:15" in es and "Conferencia magistral 5" in es and "Esp. Carlos Meza Bertel" in es
+    assert "07:45–08:15" in es and "Conferencia magistral 5" in es and "Ponencia 9 (por asignar)" in es
     assert "16:35–17:00" in es and "Eje 1" not in es
     en = client.get("/programa?lang=en").get_data(as_text=True)
     assert "Keynote lecture 4 · Dra. Monique Renon Eller" in en and "Talk 12 (to be assigned)" in en
-
-
-def test_venue_logo(client):
-    body = client.get("/").get_data(as_text=True)
-    assert "/static/logo_guacari.png" in body
-    assert client.get("/static/logo_guacari.png").status_code == 200
 
 
 def test_stylesheet_versioned(client):

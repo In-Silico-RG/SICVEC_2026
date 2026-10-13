@@ -982,3 +982,230 @@ the commit or memory records them as his. Older narrative log: `../LOG_Actividad
   `10_Ponentes/Meza_Respuesta_Enviar_2026-10-07.md` (draft acknowledgement, not sent) added; his FICHA
   created. `PLANTILLA_PREVIEW.tex/.pdf` kept at the repo root per AC's own use during the redesign -- the
   reference copy of the approved letterhead for future tweaks (see the memory file above).
+- AC asked to print the two letters to Carlos Meza Bertel (Parque Comercial Guacarí) and then asked to
+  propagate the new letterhead to them first: `Cartas_Ponentes/Invitacion_Ponente_Carlos_Guacari.tex` and
+  `Cartas_Departamentos/Solicitud_Espacios_Guacari.tex`. These two were not yet sent, so the "already-sent,
+  don't touch" rule from earlier this session didn't apply to them. Applied the same header/footer as the
+  `Solicitud_Difusion_*` letters.
+- Both letters have more body content (two info tables + a numbered list; a 4-row requirements table) than
+  the letters the design was tuned against, and don't fit 1 page at normal spacing once the footer claims
+  6.2cm of bottom margin. First attempt crushed spacing to force 1 page (`\parskip` to 1pt, `\vspace` to
+  0-0.02cm, tables to `\footnotesize`+`arraystretch 0.8`, `top` margin to 0.3-0.5cm) -- technically fit, but
+  AC caught it immediately: "esda carta esta muy aspretada!!! se ve muy mal!", then "las dos cartas estan
+  exaGERADAMENTE APRETADAS". Reverted all of that back to the template's normal spacing and full-size
+  tables, and let both letters run to 2 pages instead (AC: "HNO IMPORTA QUE SEAN DOS O MAS PÁGINAS!" --
+  overrides the general "signature must fit on page 1" rule for these two specifically).
+- AC asked for still more room ("TODAVIA! MAS ESPACIOS, MENOS APRETUJAMIENTO!"): increased further to
+  `\parskip 8pt`, `\vspace 0.3-0.35cm` between sections, table `arraystretch 1.3-1.35`. This then exposed a
+  second bug: the "ESPACIOS SOLICITADOS" heading landed at the bottom of page 1 with its table pushed whole
+  to page 2 (tables can't split), leaving a half-blank page 1 (AC, with a screenshot: "HAY MEDIA PAGINA EN
+  BLANCO AHI...TERRIBLE!"). Same issue existed in the other letter for "DETALLES DE LA PONENCIA". Fixed with
+  `\usepackage{needspace}` + `\needspace{Ncm}` before each heading so the break happens before the heading,
+  not after it. Final PDFs: both 2 pages, generous spacing, no orphaned headings. Lessons recorded in
+  [[cartas-letterhead-diseno]]: don't force long content onto 1 page by crushing spacing, let it run long;
+  and check every multi-page letter for orphaned-heading gaps by rendering to PNG, not just `pdftotext`.
+
+## 2026-10-08 (Solicitud_Espacios_Guacari: tone rewrite)
+
+- AC: reframe the letter's tone from "solicitud de préstamo de espacios" (asking Guacarí for a favor) to
+  "invitación a vincularse" -- Guacarí joins SICVEC 2026 as an ally/partner, in line with its own interest in
+  promoting its spaces, not as a loan. Rewrote: Asunto (now "Invitación a vincularse al Simposio
+  Internacional de Ciencia Verde y Economía Circular (SICVEC 2026)", changed twice per AC's own wording),
+  opening paragraph, the "ESPACIOS SOLICITADOS" table heading renamed "ESPACIOS PARA LA VINCULACIÓN", and the
+  closing paragraph.
+- AC: credit IN SILICO and all four co-organizing departments (Biología y Química, Ingeniería Agroindustrial,
+  Ingeniería Agrícola, Física) in the opening paragraph, not just Biología y Química.
+- AC: added a reciprocity ("contraprestación") paragraph -- UNISUCRE, through its marine-science research
+  groups, supports Guacarí's own initiatives by helping divulge the department's marine spaces.
+- AC: added a paragraph that Guacarí's own commercial image/branding will appear on the SICVEC website,
+  flyers, banners, and printed material for attendees (separate paragraph, not folded into the intro).
+- AC: the letter requests **one** complementary space (not two) -- dropped the "muestra empresarial" row and
+  its mentions entirely; the one complementary space is used for **two** poster sessions, one per day (Mon
+  19 and Tue 20), not one. Updated the "dos espacios complementarios" intro line to "un espacio
+  complementario" accordingly.
+- AC: attendee estimate changed from 120-150 to 150-200 **for this letter only** -- explicitly declined to
+  propagate to the ~20 other project files carrying the 120-150 figure (proposal, README, flyers, email
+  templates, other speaker letters); 120-150 remains the official figure everywhere else.
+- Mistake made and corrected mid-session: while chasing the "fits on 1 page" default, re-crushed this
+  letter's spacing (10pt font, `\parskip` 5pt, `\vspace` 0.1cm, table `\footnotesize`/`arraystretch 0.9`,
+  bottom margin 5.6cm) without checking [[cartas-letterhead-diseno]] first, which already records AC's
+  explicit decision that *this specific letter* is allowed to run 2 pages with generous spacing and that
+  crushing it was rejected once before ("esda carta esta muy aspretada!!!"). AC caught it again this session
+  ("otra vez vamos a apretar todo en una página! por que?????????????????"). Reverted to the approved
+  spacing (`\parskip` 8pt, `\vspace` 0.3cm, table `\small`/`arraystretch` 1.3, bottom margin 6.2cm, 11pt
+  font) and re-added `\needspace{7cm}` before the "ESPACIOS PARA LA VINCULACIÓN" heading (the content changes
+  had removed the line it was anchored to). Final PDF: 2 pages, no orphaned heading, verified by rendering
+  both pages to PNG.
+- **Lesson for next time**: for `Solicitud_Espacios_Guacari.tex` and `Invitacion_Ponente_Carlos_Guacari.tex`
+  specifically, never reach for smaller fonts/tighter `\vspace`/`\parskip` to force 1 page -- check
+  [[cartas-letterhead-diseno]] before touching spacing on either file; 2 pages is the accepted, approved
+  outcome for these two.
+
+## 2026-10-08 (continued: Solicitud_Espacios_Guacari content + layout fixes)
+
+- AC: the "contraprestación" paragraph was too narrow -- rewrote it twice. Final scope: UNISUCRE research
+  groups support Parque-programmed activities about the natural species of Sucre's subregions (Golfo de
+  Morrosquillo, La Mojana, Montes de María) through divulgación de información, presentaciones guiadas and
+  muestras de colecciones (not just "divulgación de espacios marinos", AC: "EXTIENDE ESO, ESTÁ MAL!"); plus
+  Bienestar Universitario's dance/music/theatre groups; plus a separate paragraph offering Ingeniería
+  Agrícola and Ingeniería Agroindustrial's research groups and semilleros for training/divulgación/joint
+  projects on the symposium's own themes (green science, circular economy) -- paraphrased and extended once
+  more on AC's request ("PARAFRASEA Y EXTIENDE MEJOR LA IDEA!") into its own paragraph about a relationship
+  that outlasts the event itself.
+- AC: the "La imagen comercial..." paragraph said "el sitio web" / "los correos" without ever writing the
+  actual URL or address -- AC caught this hard ("donde putas está la pagina del evento escrita???"). Fixed:
+  now spells out `sicvec2026.eu.pythonanywhere.com` and `insilico@unisucre.edu.co` as clickable links inline.
+- Created, then deleted same session: `07_Comunicaciones/Resumen_Ejecutivo_SICVEC_2026.tex/.pdf`, a 1-page
+  event fact sheet (dates, axes, calendar, fees, contacts) built from the project's own confirmed data,
+  **using the official 120-150 attendee figure**, not the 150-200 used only in the Guacarí letter. AC
+  rejected it outright ("que mierda de resumen... es vergonzoso") without specifying what was wrong; asked
+  to delete rather than iterate, so it's gone (was never committed/tracked, no git trace).
+- Two footer/layout bugs found via AC's own screenshot, fixed:
+  1. **Table text touching the footer directly** (no visual gap) -- root cause was the long-standing
+     `footskip=0.6cm` (fancyhdr kept warning about this all session, see every earlier needspace fix) being
+     too small for the actual footer height. Fixed properly this time instead of patching around it: raised
+     `footskip` to 1.7cm (not just the 1.3cm fancyhdr initially suggested -- adding the separator line below
+     grew the footer's own height, so the warning reappeared once at 1.3cm and required another bump).
+  2. **No visible separation line** between body and footer, per AC's explicit ask ("ponga una linea...o la
+     tabla en un marco, o el pie en un marco!"). First attempt used fancyhdr's own `\footrule` /
+     `\footrulewidth` mechanism (redefining `\footrule` with a colored `\hrule`) -- rendered invisible,
+     cause not fully diagnosed. **Working fix**: draw the rule manually as the first line inside the
+     `\fancyfoot[C]{...}` content itself (`{\color{verdeosc}\rule{\textwidth}{0.8pt}}\\[6pt]` before the
+     three-column minipage), which is unaffected by fancyhdr's own rule-drawing logic. Prefer this
+     direct-content approach over `\footrule`/`\footrulewidth` for any future footer rule on this letterhead.
+- Re-confirmed the `\needspace{Ncm}` pattern from the earlier session (see above) is still required every
+  time body-paragraph edits shift the page break near the "ESPACIOS SOLICITADOS" table -- it had to be
+  re-added twice more this session after text edits (URL/email addition, contraprestación rewrites) pushed
+  the heading-table boundary around. Table now intentionally lands as a unit on page 2 (with
+  `arraystretch 1.3`, matching the letter's generous page-2 spacing) rather than fighting to keep it on
+  page 1; AC tried pushing it onto page 1 once (smaller `\footnotesize`/`arraystretch 1.0` table) and it
+  worked visually but is more fragile to future text edits than letting it flow to page 2 with needspace.
+- **New mistake, same pattern as before**: when AC asked for "mas espacio entre lineas" after the table
+  jumped pages again, over-corrected by raising `\parskip` to 10pt, every `\vspace` to 0.4cm, and adding
+  `\linespread{1.15}` globally -- this pushed the letter to **3 pages** with the closing email address
+  (`aldo.combariza@unisucre.edu.co`) orphaned alone on page 3. AC's ask was about the table's own row
+  spacing (which had room to grow on page 2), not the whole document's line spacing. Reverted `\parskip`
+  to 8pt and `\vspace` to 0.3cm (the already-approved baseline), and instead only raised the *table's*
+  `arraystretch` to 1.3 -- back to 2 pages, no orphans. **Lesson: "add more space" requests on this letter
+  need to be scoped to the specific element the person is looking at (the table, a paragraph) before
+  touching document-wide spacing (`\parskip`, `\linespread`) -- global spacing changes on this particular
+  letter have caused a page-count regression three separate times this project** (crushed-to-1-page,
+  crushed-again-mid-session, and now over-expanded-to-3-pages).
+- Found `administracion@guacari.com.co` (Parque Comercial Guacarí's general admin mailbox, not personal
+  to Carlos Meza Bertel) on the mall's own website; AC wrote it with an accent
+  ("administración@...") which isn't valid in an email address, recorded unaccented. Logged in
+  `10_Ponentes/FICHA_Carlos_Guacari.md` (phone still [PENDIENTE]).
+- Wrote `07_Comunicaciones/Email_Solicitud_Espacios_Guacari.md` (cover email for the space-request
+  letter, same template style as the project's other `Email_Difusion_*` files) and **AC sent it** to
+  `administracion@guacari.com.co`, attention Carlos Meza Bertel, with `Solicitud_Espacios_Guacari.pdf`
+  attached, 2026-10-08. First outbound contact with the Parque on the space request.
+- New speaker: Guillermo Alejandro Corrales Ducuara (Mg. student, Tecnologías Limpias, Universidad Santo
+  Tomás Bogotá), already listed on the programme sheet as talk 11 day 2 with provisional title "metano en
+  codigestión anaeróbica". He replied 2026-10-08 accepting the 2026-10-06 invitation and asking how to
+  submit his info -- AC: "solicita info, a pesar de que le envió la carta de invitacion". Created
+  `10_Ponentes/FICHA_Guillermo_Corrales.md`.
+- AC pasted the original invitation thread content directly (not a file) -- initially no attachment existed
+  anywhere: checked the whole repo, home dir and `/media/aldo/Aldo`, nothing; the Gmail connector in this
+  session turned out to be authenticated as `fisicoquimicabiounisucre@gmail.com`, not
+  `insilico@unisucre.edu.co` (the account that actually sent it), confirmed by a `Corrales` search
+  returning unrelated results -- so it couldn't be pulled from Gmail either. Built
+  `Invitacion_Ponente_Guillermo_Corrales.tex/.pdf` from scratch using the current approved letterhead, with
+  invented-but-sourced content (eje Economía Circular, tema from the programme sheet). **AC then located
+  the real original PDF himself** (`Invitacion_Ponencia_ Guillermo Alejandro.pdf`, dropped into
+  `Cartas_Ponentes/` directly) -- it turned out to be a generic old-template letter with several stale
+  facts: addressed him as "Ing." and called his work "investigación doctoral" (he's a Master's student),
+  "Centro Comercial Guacarí" (old name), "120-150 + 300 cupos en línea" (the 300 cap was removed project-wide
+  weeks ago), old axis names, and a calendar with "cierre de resúmenes: 4 de octubre" (now 10 Oct). Not yet
+  reconciled/fixed -- AC may want the real original corrected in place rather than my from-scratch version
+  kept as canonical; flagged but not resolved this session.
+- Built two new PDFs for the reply (AC: "crea un documento, pdf con la plantilla de siempre... tambien le
+  enviamos el fiche del evento y la info para difusion"): `Comunicacion_Aceptacion_Guillermo_Corrales.pdf`
+  (acceptance + what to send: título, resumen, reseña, foto) and `Solicitud_Difusion_Guillermo_Corrales.pdf`
+  (same genre as `Solicitud_Difusion_Pedro_Meza`, asking him to share event info via USTA's channels). First
+  draft of the acceptance letter used the Guacarí letters' "generous 2-page" spacing pattern out of habit --
+  wrong call for a short letter with no content-fit problem, produced a half-empty orphaned page 2. Reverted
+  to the project's normal short-letter spacing (`\parskip` 4pt, `\vspace` 0.1-0.15cm, no `\needspace`) and it
+  fit cleanly on 1 page. **Lesson: the "let it run to 2 pages, don't crush" rule in
+  [[cartas-letterhead-diseno]] is specific to the two long Guacarí letters, not a general default for every
+  new letter** -- check actual content length before choosing a spacing preset.
+- AC caught a copy-paste leftover in the difusión letter: "¿Podría compartir la carta adjunta...?" was
+  copied from the Pedro Meza template, where a separate invitation PDF really was attached alongside the
+  difusión letter -- here there's no second attachment, the info is already in the same letter. Fixed to
+  "¿Podría compartir esta información...?".
+- AC: "lo adjunto es el afiche del evento!" -- added `05_Material_Difusion/Flyers_Posters/Afiche_SICVEC_2026.pdf`
+  as a third attachment to the reply (poster for his social media, alongside the two letters). Updated
+  `10_Ponentes/Corrales_Respuesta_Enviar_2026-10-08.md` accordingly. AC confirmed ready to send
+  ("ok, listos"); not sent by me, AC sends manually.
+- AC: "actualiza el formato y la info!" on `Invitacion_Ponente_Carlos_Guacari.tex` (the speaker-invitation
+  letter, not yet confirmed sent). Brought it in line with the fixes/facts already applied to
+  `Solicitud_Espacios_Guacari.tex` this session: footer separator rule + `footskip=1.7cm` (same
+  direct-content-rule technique, see [[cartas-letterhead-diseno]]); date bumped 29 Sept -> 8 Oct 2026;
+  opening paragraph credits all 4 co-organizing departments, not just Biología y Química; normalized
+  "Centro Comercial Guacarí" -> "Parque Comercial Guacarí" everywhere (was mixed); fixed a real stale-data
+  bug flagged in `FICHA_Carlos_Guacari.md` -- the letter said "Duración: 20 minutos" but his actual
+  programme slot is 30 min (08:30-09:00), now "30 minutos (20 de charla + 10 de preguntas)". Photo request
+  was already present in "Próximos pasos" step 3, nothing to add there. Final PDF: 2 pages, no orphans,
+  separator line renders correctly (confirmed by rendering to PNG, not just `pdftotext`).
+
+## 2026-10-13 — Guacarí pulled out entirely: no longer the venue, Carlos Meza Bertel no longer a speaker
+
+- AC: "saquemos al guacarí de absolutamente todo lo que tenemos, incluso la web". Clarified via question: scope is
+  both roles — C.C. Guacarí drops as the event venue, and Esp. Carlos Meza Bertel (its director, listed as
+  Ponencia 9) drops as a speaker, everywhere ("Sacamos al guacarí como espacio para el evento y a carlos meza
+  como ponente, en todo", AC, 2026-10-13).
+- **Deleted** (none confirmed sent): `10_Ponentes/FICHA_Carlos_Guacari.md`,
+  `07_Comunicaciones/Cartas_Ponentes/Invitacion_Ponente_Carlos_Guacari.tex/.pdf`,
+  `07_Comunicaciones/Email_Invitacion_Ponente_Carlos_Guacari.md`. The FICHA itself said this letter was "not
+  confirmed sent yet".
+- **Left untouched, on purpose** (established house rule: "ya se enviaron, para qué las vamos a cambiar",
+  see `docs/LOG.md` 7 Oct entry and [[cartas-reglas]]): `Cartas_Departamentos/Solicitud_Espacios_Guacari.tex/.pdf`
+  and `Email_Solicitud_Espacios_Guacari.md` — sent 8 Oct to `administracion@guacari.com.co` (attn Carlos Meza
+  Bertel), stay as historical record of what was actually sent; `Cartas_Departamentos/Carta_Jefes_Departamentos_
+  Generica.tex` (sent+accepted 17 Sept), `Solicitud_Entidad_Asociada_Internacional.tex` (already-sent per the
+  7 Oct letterhead-revert note) and `Comunicacion_Final_Jefes_Departamentos.tex` (send status unconfirmed,
+  treated as sent out of caution — AC should confirm); every individual `Invitacion_Conferencista_*` and
+  `Solicitud_Difusion_*` speaker letter in `Cartas_Ponentes/` (venue mention is incidental, not worth the risk
+  of touching possibly-sent personal letters); `LOG_Actividades_SICVEC_2026.md` and this file's own past entries
+  (historical, append-only); `Emails_Enviados/SICVEC_Email_Departamentos.txt` (sent-record snapshot); archived
+  copies under any `Versiones/` folder.
+- **Edited** (working/reusable masters, not frozen sent letters) — venue text replaced with "[PENDIENTE: sede]"
+  (internal docs) or "por confirmar"/"to be confirmed"/"a confirmar" (public-facing copy), Carlos Meza's
+  Ponencia 9 slot replaced with "(por asignar)"/"(to be assigned)"/"(a definir)":
+  `01_Propuesta/Documentos/Propuesta_SICVEC_2026.tex` (venue box + logo removed, schedule row), the 3
+  `Flyer_SICVEC_2026{,_EN,_PT}.tex`, `Información_Evento_Conferencistas.tex`,
+  `Propuesta_Muestra_Empresarial_SICVEC_2026.tex`, `SICVEC_2026_Brief_EN.tex`, `PLANTILLA_PREVIEW.tex`,
+  `README.md`, `08_Cronograma/Seguimiento/TAREAS.md`, `06_Logistica/Presupuesto/Presupuesto_SICVEC_2026_COP.md`,
+  the 4 `Plantillas_Email/` department templates. All recompiled (two passes, `pdftotext` checked clean of
+  "guacar", page counts unchanged: propuesta 15p, flyers 1p each, Información_Evento 1p, Muestra_Empresarial 3p,
+  Brief_EN 1p, PLANTILLA_PREVIEW 1p); old PDFs saved to `Versiones/2026-10-13_pre_sin_guacari/` in each folder
+  before overwriting.
+- **App** (live at sicvec2026.eu.pythonanywhere.com): `content.py` (3 schedule lines, es/en/pt), `i18n.py`
+  (`idx_lead`, `venue_addr`, `venue_room`; dropped the `btn_maps` key and the unconfirmed street address, since
+  neither applies without a venue), `templates/index.html` (dropped the Guacarí logo image and the Google Maps
+  button), `templates/base.html` (dropped the hardcoded footer venue line). `tests/test_app.py` updated to match
+  (dropped `test_venue_logo`, the two venue-text needles, re-pointed two substring checks); `.venv/bin/python -m
+  pytest`: 33 passed (was 34 before `test_venue_logo` was removed), same 12 pre-existing CSRF failures as on
+  HEAD before this session (submission deadline, 12 Oct, has already passed — unrelated to this change, confirmed
+  by running the suite on `git stash`). **Not redeployed** — AC uploads the zip to PythonAnywhere per
+  [[sicvec-deploy]].
+- **Poster script** `05_Material_Difusion/Flyers_Posters/editar_afiche.py`: venue text in the `T` dict changed to
+  "Por confirmar"/"To be confirmed"/"A confirmar", the Guacarí-logo paste block removed, `MAPS_URL`/`LINK_BOXES`
+  (pointed at the Guacarí Google Maps listing) removed from the PDF-link loop. Regenerated all 3
+  `Afiche_SICVEC_2026{,_EN,_PT}.{png,pdf}` (`python3 editar_afiche.py es|en|pt`, needs `segno`/`pypdf` in user
+  site-packages, already installed from a prior session); `pdftotext` clean of "guacar" on all 3; ES and EN
+  renders checked visually (PNG), layout intact, no artifacts from the erase+redraw.
+- **TAREAS.md**: "Venue confirmado" task flipped back to open ("Sede por definir"), dated note on the decision.
+  Budget note "Infraestructura (C.C. Guacarí): cubierto" flagged `[PENDIENTE]` — a new venue may not be free,
+  budget impact unknown.
+- Open for AC: find and confirm a new venue; `Comunicacion_Final_Jefes_Departamentos.tex` and
+  `Solicitud_Entidad_Asociada_Internacional.tex` send status, to decide whether they also need a now-current
+  reissue; whether to tell Carlos Meza Bertel / Parque Comercial Guacarí directly that SICVEC is no longer
+  pursuing the space (the sent `Solicitud_Espacios_Guacari` letter is still an open, unanswered ask on his end).
+- Not committed yet; AC to review before pushing.
+- AC, same session, after seeing the regenerated posters: "el flyers, o los flyers esos mueren, no me gustan,
+  me quedo solo con los afiches" — the A4 `Flyer_SICVEC_2026{,_EN,_PT}.tex/.pdf` are dropped entirely, keeping
+  only the `Afiche_SICVEC_2026{,_EN,_PT}` posters going forward. `git rm` on the 6 files; also dropped the
+  now-pointless flyer PDFs from today's `Versiones/2026-10-13_pre_sin_guacari/` backup (kept the afiche
+  backups there). Older historical `Versiones/` copies of the flyer from past sessions left untouched. No
+  other file referenced `Flyer_SICVEC_2026` by name outside this log and the flyer files themselves (checked
+  with grep); README/TAREAS only mention "flyer/afiche" generically and weren't touched.
